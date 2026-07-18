@@ -12,6 +12,25 @@ To rebuild HTML after editing markdown:
 python scripts/build_site.py
 ```
 
+## GitHub
+
+This project is a standalone git repository. To publish or clone:
+
+```bash
+# One-time: log in to GitHub (opens browser)
+gh auth login
+
+# Create the remote repo and push (from project root)
+gh repo create Electrochemistry --public --source=. --remote=origin --push --description "One-week electrochemistry lab workshop for ages 15-16"
+```
+
+If the repo already exists on GitHub:
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/Electrochemistry.git
+git push -u origin main
+```
+
 ## Course theme
 
 Electrochemistry is chemistry controlled by electrons. Students will see that chemical reactions can produce electricity, use electricity to drive reactions, move atoms around, split molecules, store energy, and explain corrosion.
