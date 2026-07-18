@@ -67,7 +67,9 @@ Solar → electricity → H₂ → storage → fuel cell → electricity → mot
 
 ## Preview Session 5 (85–90 min)
 
-*"We used electricity to **make** hydrogen. Can we run the reaction backward and get electricity back? Tomorrow: corrosion, galvanic cells, and a fuel cell demo."*
+*"We used electricity to **make** hydrogen. Overnight we'll use electricity to **undo** rust on iron. Tomorrow: reveal the results, then connect corrosion, galvanic cells, and sacrificial protection."*
+
+Start derusting cells per [experiment.md](experiment.md) Part E before students leave.
 
 ---
 
@@ -75,7 +77,7 @@ Solar → electricity → H₂ → storage → fuel cell → electricity → mot
 
 - [ ] Balanced equation with mole/volume ratio highlighted
 - [ ] Photo of setup with gas volumes marked
-- [ ] Simple energy diagram: renewable → H₂ → fuel cell
+- [ ] Simple energy diagram: renewable → H₂ → (optional fuel cell concept)
 
 ---
 

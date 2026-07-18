@@ -1,6 +1,45 @@
-# Session 5 — Experiment: Corrosion + Fuel Cell
+# Session 5 — Experiment: Corrosion and Electrolytic Rust Removal
 
-Two-part lab: **Part A & B** (student hands-on), **Part C** (instructor-led or supervised demo with kit).
+**Part C** opens the session (overnight reveal). **Parts A & B** are student hands-on.
+
+---
+
+## Part C — Electrolytic rust removal reveal (0–15 min)
+
+![Electrolytic rust removal](../../assets/figures/session5-electrolytic-derusting.svg)
+
+*Figure 1 — Cells started at end of Session 4: rusty iron on cathode (−), sacrificial anode on (+), in washing soda or baking soda solution.*
+
+### Setup (started Session 4, end of class)
+
+1. Fill small jar with **washing soda** solution (~1 tbsp per cup water) or baking soda solution
+2. **Cathode (−):** clip to **rusty iron** nail or hardware
+3. **Anode (+):** clip to sacrificial **steel** strip or graphite rod (will corrode)
+4. Connect 9 V battery; leave running overnight (or until Session 5)
+5. Keep a **control** rusty nail in plain water (no power) for comparison
+
+**Do NOT use table salt (NaCl)** — same rule as Session 4 electrolysis.
+
+### Today's reveal
+
+1. Disconnect power; carefully remove nails
+2. Rinse treated nail under water; compare to control and to pre-treatment photo
+3. Note bubbles at cathode (H₂ possible) and anode discoloration
+4. Link to corrosion jars: **spontaneous** rust vs. **driven** rust removal
+
+### Observation sheet
+
+| Sample | Electrolyte | Power overnight? | Appearance after rinse | Cleaner than control? |
+|--------|-------------|------------------|------------------------|----------------------|
+| Treated nail | Washing soda | Yes | | |
+| Control nail | Water only | No | | |
+| Sacrificial anode | — | Yes | | |
+
+### Discussion prompts
+
+- Which electrode was **cathode**? What happens at the cathode?
+- How is this like Session 4 electrolysis? (electricity drives a non-spontaneous reaction)
+- How is this **opposite** of galvanic corrosion in the jars?
 
 ---
 
@@ -8,7 +47,7 @@ Two-part lab: **Part A & B** (student hands-on), **Part C** (instructor-led or s
 
 ![Zn–Cu galvanic cell in saltwater](../../assets/figures/session5-galvanic-cell.svg)
 
-*Figure 1 — Spontaneous cell: Zn corrodes (anode), Cu is cathode; measure ~1.1 V with a multimeter.*
+*Figure 2 — Spontaneous cell: Zn corrodes (anode), Cu is cathode; measure ~1.1 V with a multimeter.*
 
 ### Setup
 
@@ -47,7 +86,7 @@ Each pair: two different metals + multimeter in saltwater
 
 ![Corrosion comparison jars](../../assets/figures/session5-corrosion-jars.svg)
 
-*Figure 2 — Jar B: iron rusts faster when coupled to copper. Jar C: zinc sacrificially protects iron.*
+*Figure 3 — Jar B: iron rusts faster when coupled to copper. Jar C: zinc sacrificially protects iron.*
 
 ### Three jars (can start earlier in week for visible rust)
 
@@ -62,6 +101,7 @@ Each pair: two different metals + multimeter in saltwater
 1. Observe jars (same day or pre-rusted from earlier setup)
 2. Compare rust color, bubble formation, metal appearance
 3. Explain using galvanic cell model
+4. Connect to Part C: sacrificial anode **corrodes** so iron is protected — same idea as the steel anode in the derusting cell
 
 ### Observation sheet
 
@@ -75,51 +115,17 @@ Each pair: two different metals + multimeter in saltwater
 
 ---
 
-## Part C — PEM fuel cell demo (55–70 min)
-
-![PEM fuel cell schematic](../../assets/figures/session5-fuel-cell.svg)
-
-*Figure 3 — Fuel cell mode: H₂ + O₂ → electricity + H₂O (reverse of Session 4 electrolysis).*
-
-**Use commercial educational reversible PEM kit only** — not homemade.
-
-### Mode 1 — Electrolyzer (like Session 4)
-
-1. Add distilled water per kit instructions
-2. Connect to small solar panel or battery pack
-3. Run until small H₂/O₂ stored in kit reservoirs (follow kit times)
-
-### Mode 2 — Fuel cell
-
-1. Disconnect power supply
-2. Connect kit output to small fan, LED, or motor
-3. Observe operation until gas depleted
-
-### Class observations
-
-| Mode | Energy in | Energy out | Chemical change |
-|------|-----------|------------|-----------------|
-| Electrolyzer | Electricity | H₂ + O₂ stored | Water split |
-| Fuel cell | H₂ + O₂ | Electricity | Water formed |
-
-### Discussion while running
-
-- How is this like Session 1? Session 4?
-- Why can't the fuel cell run forever?
-- Where does the energy ultimately come from (solar/battery)?
-
----
-
 ## Part D — Compare operations (70–80 min)
 
 Students complete comparison table (worksheet):
 
-| Feature | Fruit battery | Electroplating | Water electrolysis | Fuel cell |
-|---------|---------------|----------------|--------------------|-----------|
+| Feature | Fruit battery | Electroplating | Water electrolysis | Rust removal |
+|---------|---------------|----------------|--------------------|--------------|
 | Needs external power? | | | | |
 | Produces electricity? | | | | |
 | Gas involved? | | | | |
 | Metal transferred? | | | | |
+| Reverses corrosion? | | | | |
 
 ---
 
@@ -132,14 +138,16 @@ See [lecture.md](lecture.md) — Final challenge questions.
 ## Safety
 
 - Saltwater corrosion jars: gloves optional; wash hands after
-- Fuel cell: follow manufacturer limits; no open flames
-- Small H₂ volumes in kit only — no student pop tests today unless instructor repeats Session 4 protocol
+- Rust removal: washing soda or baking soda only — **no NaCl**
+- Disconnect derusting cells when room is unsupervised
+- No open flames near any gas-evolving setup
 
 ---
 
 ## Experiment status
 
-- [ ] PEM kit charged/tested before class
+- [ ] Derusting cells started Session 4 end-of-class
+- [ ] Control nail and before photo ready
 - [ ] Corrosion jars prepared (same-day or multi-day)
 - [ ] Metal strips cleaned and labeled
 - [ ] Final worksheet printed

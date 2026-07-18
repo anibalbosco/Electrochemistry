@@ -17,7 +17,7 @@ Apply these across all sessions. Session-specific hazards are listed in each ses
 | 2 | Copper solutions | Goggles; no ingestion; collect waste |
 | 3 | Silver nitrate | Gloves + goggles; stains skin/clothing; small volumes |
 | 4 | Gas evolution | No saltwater; no flames near setup; instructor-only pop test |
-| 5 | Corrosion demos + hydrogen | Small gas volumes; commercial PEM kit only |
+| 5 | Corrosion demos + electrolytic derusting | Use washing soda or baking soda only — NOT NaCl; disconnect power when not supervised |
 
 ## Hydrogen pop test (Session 4, instructor-only)
 

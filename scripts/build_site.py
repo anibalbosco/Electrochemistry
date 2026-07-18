@@ -40,8 +40,8 @@ SESSIONS = [
     {
         "num": 5,
         "slug": "05-galvanic-corrosion-fuel-cell",
-        "title": "Galvanic Corrosion + Fuel Cell",
-        "hook": "Corrosion, batteries, and hydrogen storage",
+        "title": "Galvanic Corrosion + Rust Removal",
+        "hook": "Corrosion, sacrificial protection, and reversing rust",
     },
 ]
 

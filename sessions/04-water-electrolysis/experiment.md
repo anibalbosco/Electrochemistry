@@ -82,6 +82,31 @@ V_H₂ / V_O₂ ≈ **2** (ideal); 1.6–2.2 common in classroom conditions
 
 ---
 
+## Part E — Start electrolytic rust removal (80–90 min)
+
+![Electrolytic rust removal setup](../../assets/figures/session5-electrolytic-derusting.svg)
+
+*Figure 2 — Start cells now; reveal cleaned nails at opening of Session 5. Rusty iron on cathode (−); sacrificial anode on (+).*
+
+**Quick setup (5–10 min per group or instructor demo stations):**
+
+1. Mix **washing soda** solution (~1 tbsp per cup warm water) or reuse baking soda electrolyte from Part B
+2. Place **rusty iron** nail in jar; clip to **cathode (−)** of 9 V battery
+3. Place **steel strip or graphite** as sacrificial **anode (+)**
+4. Leave running overnight; keep **control** rusty nail in plain water (no power)
+5. Label each cell with group name; photograph before state
+
+**Do NOT use NaCl** — same safety rule as water electrolysis.
+
+### End-of-class checklist
+
+- [ ] All derusting cells connected and bubbling (or current confirmed)
+- [ ] Control nails in plain water labeled
+- [ ] Before photos taken
+- [ ] Instructor note: disconnect if fire/safety policy requires (ideal: run overnight supervised or in locked prep room)
+
+---
+
 ## Troubleshooting
 
 | Problem | Cause | Fix |
@@ -108,3 +133,4 @@ V_H₂ / V_O₂ ≈ **2** (ideal); 1.6–2.2 common in classroom conditions
 - [ ] H₂ vs. O₂ side identified in pilot (cathode = H₂)
 - [ ] Typical ratio documented from pilot run
 - [ ] Solar panel extension tested (optional)
+- [ ] Rust-removal jars staged for Part E end-of-class

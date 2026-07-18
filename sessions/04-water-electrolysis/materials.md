@@ -24,6 +24,14 @@
 - [ ] Separate tiny collection vessel
 - [ ] Fire extinguisher accessible
 
+## Part E — Start rust removal (end of class)
+
+- [ ] Rusty iron nails or hardware (2+ per group)
+- [ ] Washing soda **or** baking soda (NOT NaCl)
+- [ ] Sacrificial steel strips or graphite rods
+- [ ] Small jars or cups
+- [ ] Labels and camera for before photos
+
 ## Explicitly excluded
 
 - [ ] ~~Table salt (NaCl)~~ — **do not use**

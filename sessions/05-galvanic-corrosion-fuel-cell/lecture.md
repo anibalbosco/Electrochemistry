@@ -1,23 +1,26 @@
-# Session 5 — Lecture: Corrosion, Galvanic Cells, and Fuel Cells
+# Session 5 — Lecture: Corrosion, Galvanic Cells, and Electrolytic Rust Removal
 
 **Target duration:** ~20 minutes (+ 10 min synthesis at end)
 
 ---
 
-## Opening hook (0–10 min)
+## Opening hook (0–15 min)
+
+*Conducted with [experiment.md](experiment.md) Part C — reveal overnight derusting cells.*
 
 Display:
 
-- Rusty iron nail
+- Treated vs. control rusty nails (from Session 4 setup)
+- Corrosion jars A/B/C
 - Shiny galvanized nail
 - Copper wire
 - Optional: photo of ship hull with sacrificial anode
 
-*"Why does iron rust faster when it touches copper? Why does zinc 'sacrifice' itself on galvanized steel?"*
+*"Last session we used electricity to split water. Overnight we used the same idea to **undo** rust. Why does iron rust faster when it touches copper — and how can we force the reaction the other way?"*
 
 ---
 
-## Core concepts (10–25 min)
+## Core concepts (15–30 min)
 
 ### 1. Galvanic cells — back to Session 1
 
@@ -47,23 +50,22 @@ Mg > Al > Zn > Fe > Cu (simplified for class)
 - Zinc is more active → becomes anode → corrodes preferentially
 - Used on ships, pipelines, water heaters
 
-### 4. Fuel cells — reversing Session 4
+### 4. Electrolytic rust removal — reversing corrosion
 
-| | **Electrolysis (Session 4)** | **Fuel cell (Session 5)** |
-|--|------------------------------|---------------------------|
-| Input | Electricity + water | H₂ + O₂ (or air) |
-| Output | H₂ + O₂ | Electricity + water |
-| Spontaneous? | No | Yes (like a battery) |
+| | **Galvanic corrosion** | **Electrolytic derusting** |
+|--|------------------------|----------------------------|
+| Driven by | Spontaneous metal activity difference | External power supply |
+| Iron | Corrodes (anode in couple) | **Cathode** — rust reduced |
+| Partner metal | Copper cathode protects itself | Sacrificial **anode** corrodes |
+| Electrolyte | Often saltwater (demo) | Washing soda or baking soda — **not NaCl** |
 
-**PEM fuel cell:** thin membrane allows H⁺ to pass; combines H₂ and O₂ to make water and electrons.
+![Electrolytic rust removal](../../assets/figures/session5-electrolytic-derusting.svg)
 
-![PEM fuel cell schematic](../../assets/figures/session5-fuel-cell.svg)
+**Key idea:** Same electrolysis principle as Session 4 — electricity forces a non-spontaneous reaction. At the cathode, rust is reduced toward clean iron; H₂ may evolve.
 
-### 5. Energy reality check
+### 5. Fuel cells — brief concept (optional, no demo)
 
-- H₂ is a **carrier** — you spend energy making it (Session 4)
-- Fuel cell recovers **some** of that energy, not all
-- Round-trip efficiency < 100% always
+Session 4 stored energy in **H₂**. A **fuel cell** could convert H₂ + O₂ back to electricity + water (reverse of electrolysis). Hydrogen is an **energy carrier** — round-trip efficiency is always < 100%. We skip the PEM kit demo; the rust-removal cell shows the same "electricity drives chemistry" idea on a visible timescale.
 
 ---
 
@@ -76,20 +78,22 @@ Ask the class (whole-group or worksheet):
 3. Which **moved metal atoms**?
 4. Which **split molecules**?
 5. Which explained **corrosion**?
-6. Where did **electrons** flow? Where did **ions** flow?
-7. What was **oxidized**? What was **reduced**?
-8. Which experiment is most relevant to **renewable energy**?
+6. Which **reversed** corrosion?
+7. Where did **electrons** flow? Where did **ions** flow?
+8. What was **oxidized**? What was **reduced**?
+9. Which experiment is most relevant to **renewable energy**?
 
 ### Answer key (instructor)
 
 | Question | Session(s) |
 |----------|------------|
 | Made electricity | 1, 5 (galvanic) |
-| Consumed electricity | 2, 3, 4, 5 (electrolyzer mode) |
+| Consumed electricity | 2, 3, 4, 5 (rust removal) |
 | Moved metal atoms | 2, 3 |
 | Split molecules | 4 |
 | Corrosion | 5 |
-| Renewable energy link | 4 + 5 (H₂ storage loop) |
+| Reversed corrosion | 5 (electrolytic derusting) |
+| Renewable energy link | 4 (H₂ storage concept) |
 
 ---
 
@@ -97,7 +101,7 @@ Ask the class (whole-group or worksheet):
 
 - [ ] Activity series chart with arrows showing anode/cathode
 - [ ] Diagram: ship with sacrificial anode
-- [ ] Side-by-side energy arrows: battery, electrolysis, fuel cell
+- [ ] Before/after photos of derusted nails
 - [ ] Week-at-a-glance timeline (5 sessions)
 
 ---
@@ -106,7 +110,6 @@ Ask the class (whole-group or worksheet):
 
 - [ ] Galvanic vs. electrolytic cell
 - [ ] Sacrificial anode
-- [ ] Fuel cell
 - [ ] Energy carrier
 - [ ] Oxidation / reduction (every session)
 

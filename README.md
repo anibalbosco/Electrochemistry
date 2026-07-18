@@ -52,7 +52,7 @@ Electrochemistry is chemistry controlled by electrons. Students will see that ch
 | 2 | [sessions/02-copper-electroplating](sessions/02-copper-electroplating) | Copper Electroplating | Students visibly transform a metal object |
 | 3 | [sessions/03-silver-plating-faraday](sessions/03-silver-plating-faraday) | Silver Plating + Faraday's Law | Estimate how many atoms were deposited |
 | 4 | [sessions/04-water-electrolysis](sessions/04-water-electrolysis) | Water Electrolysis + Gas Collection | Split water and see a 2:1 stoichiometric ratio |
-| 5 | [sessions/05-galvanic-corrosion-fuel-cell](sessions/05-galvanic-corrosion-fuel-cell) | Galvanic Corrosion + Fuel Cell Demo | Connect corrosion, batteries, and hydrogen storage |
+| 5 | [sessions/05-galvanic-corrosion-fuel-cell](sessions/05-galvanic-corrosion-fuel-cell) | Galvanic Corrosion + Electrolytic Rust Removal | Connect corrosion, sacrificial protection, and reversing rust with electricity |
 
 ## Folder structure (each session)
 

@@ -1,5 +1,15 @@
 # Session 5 — Materials
 
+## Part C — Electrolytic rust removal (started Session 4)
+
+- [ ] Rusty iron nails or small rusty hardware (2+ per group)
+- [ ] Washing soda (sodium carbonate) **or** baking soda
+- [ ] Sacrificial steel strips or graphite rods (anodes)
+- [ ] Small plastic cups or jars
+- [ ] 9 V batteries and alligator clips
+- [ ] Control container (plain water, no power)
+- [ ] Camera or labels for before/after comparison
+
 ## Part A & B — Galvanic corrosion
 
 ### Per group
@@ -18,25 +28,12 @@
 
 - [ ] Magnesium ribbon
 
-## Part C — Fuel cell demonstration
-
-- [ ] Small educational reversible PEM fuel cell kit
-- [ ] Distilled water (kit-specified amount)
-- [ ] Small solar panel or battery pack
-- [ ] Small fan, LED, or motor (kit-compatible)
-
 ## Instructor
 
-- [ ] Rusty iron sample for hook display
 - [ ] Photos of sacrificial anodes (ships, water heaters)
 - [ ] Final review worksheets
 
-## Multi-day prep (optional)
+## Multi-day prep
 
-- [ ] Jars B and C set up at start of week for visible corrosion
-
-## Kit checklist
-
-- [ ] Kit tested within last ___ days
-- [ ] Membrane hydrated per instructions
-- [ ] Spare distilled water available
+- [ ] Derusting cells started **Session 4** end-of-class
+- [ ] Jars B and C set up at start of week for visible corrosion (optional)

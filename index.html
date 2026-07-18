@@ -53,7 +53,7 @@
   <a class="nav-link sub" href="sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Fuel Cell</a>
+  <a class="nav-link session-title" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
   <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
   <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
   <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
@@ -77,6 +77,18 @@
 <p>Open <strong><a href="index.html">index.html</a></strong> in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep notes. Markdown sources (<code>.md</code>) are kept alongside the HTML.</p>
 <p>To rebuild HTML after editing markdown:</p>
 <pre><code class="language-bash">python scripts/build_site.py
+</code></pre>
+<h2>GitHub</h2>
+<p>This project is a standalone git repository. To publish or clone:</p>
+<pre><code class="language-bash"># One-time: log in to GitHub (opens browser)
+gh auth login
+
+# Create the remote repo and push (from project root)
+gh repo create Electrochemistry --public --source=. --remote=origin --push --description &quot;One-week electrochemistry lab workshop for ages 15-16&quot;
+</code></pre>
+<p>If the repo already exists on GitHub:</p>
+<pre><code class="language-bash">git remote add origin https://github.com/YOUR_USERNAME/Electrochemistry.git
+git push -u origin main
 </code></pre>
 <h2>Course theme</h2>
 <p>Electrochemistry is chemistry controlled by electrons. Students will see that chemical reactions can produce electricity, use electricity to drive reactions, move atoms around, split molecules, store energy, and explain corrosion.</p>
@@ -130,8 +142,8 @@
   </a>
   <a class="session-card" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">
     <div class="num">Session 5</div>
-    <h3>Galvanic Corrosion + Fuel Cell</h3>
-    <p>Corrosion, batteries, and hydrogen storage</p>
+    <h3>Galvanic Corrosion + Rust Removal</h3>
+    <p>Corrosion, sacrificial protection, and reversing rust</p>
   </a>
 </div>
 <h2>Weekly sequence</h2>
@@ -172,8 +184,8 @@
 <tr>
 <td>5</td>
 <td><a href="sessions/05-galvanic-corrosion-fuel-cell/index.html">sessions/05-galvanic-corrosion-fuel-cell</a></td>
-<td>Galvanic Corrosion + Fuel Cell Demo</td>
-<td>Connect corrosion, batteries, and hydrogen storage</td>
+<td>Galvanic Corrosion + Electrolytic Rust Removal</td>
+<td>Connect corrosion, sacrificial protection, and reversing rust with electricity</td>
 </tr>
 </tbody>
 </table>

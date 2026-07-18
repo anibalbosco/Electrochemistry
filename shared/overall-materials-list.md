@@ -34,17 +34,23 @@ Master checklist for the full week. Per-session quantities are in each session's
 - [ ] White vinegar
 - [ ] Table salt
 - [ ] Baking soda
+- [ ] Washing soda (sodium carbonate) — preferred for electrolytic rust removal
 - [ ] Distilled water
 - [ ] Copper sulfate backup solution
 - [ ] Silver nitrate (0.01 M AgNO₃)
 - [ ] Sodium sulfate (optional electrolyte for water electrolysis)
 - [ ] pH paper or indicator
 
+## Session 4–5 (rust removal)
+
+- [ ] Rusty iron nails or small rusty hardware
+- [ ] Sacrificial steel or graphite anodes
+- [ ] Washing soda or baking soda (NOT NaCl)
+- [ ] Small plastic cups or jars for overnight cells
+
 ## Optional items
 
-- [ ] Small PEM fuel cell kit
 - [ ] Small solar panel
-- [ ] Hydrogen fuel-cell toy car kit
 - [ ] Conductivity meter
 - [ ] pH meter
 

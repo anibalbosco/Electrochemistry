@@ -8,6 +8,7 @@
 - Run water electrolysis safely with a non-chloride electrolyte
 - Measure H₂ and O₂ volumes and compare to 2:1 ratio
 - Connect electrolysis to hydrogen as an energy storage concept
+- **Start** electrolytic rust-removal cells for Session 5 reveal
 
 ## Session plan (90 min)
 
@@ -15,11 +16,11 @@
 |------|----------|-----------|
 | 0–10 min | Hook: inverted water-filled tubes — which gas appears faster? | [lecture.md](lecture.md) |
 | 10–25 min | Water splitting and stoichiometry | [lecture.md](lecture.md) |
-| 25–40 min | Build gas collection setup | [experiment.md](experiment.md) — Build |
-| 40–65 min | Run electrolysis; record volumes over time | [experiment.md](experiment.md) — Run |
-| 65–75 min | Instructor-only H₂ pop test (optional) | [experiment.md](experiment.md) — Pop test |
-| 75–85 min | Energy storage discussion | [lecture.md](lecture.md) |
-| 85–90 min | Preview Session 5 — reversing the reaction | [lecture.md](lecture.md) |
+| 25–40 min | Build gas collection setup | [experiment.md](experiment.md) — Part A |
+| 40–60 min | Run electrolysis; record volumes over time | [experiment.md](experiment.md) — Part B |
+| 60–70 min | Discuss ratio; optional instructor H₂ pop test | [experiment.md](experiment.md) — Part C |
+| 70–80 min | Brief energy storage discussion | [lecture.md](lecture.md) |
+| 80–90 min | **Start derusting cells** for Session 5 | [experiment.md](experiment.md) — Part E |
 
 ## Key reactions
 
@@ -37,3 +38,4 @@ Anode (+):   2H₂O → O₂ + 4H⁺ + 4e⁻   (acidic media)
 - [ ] Gas collection apparatus pilot-tested
 - [ ] **No saltwater** — baking soda or Na₂SO₄ only
 - [ ] Pop test protocol reviewed
+- [ ] Rusty nails + washing soda ready for Part E
