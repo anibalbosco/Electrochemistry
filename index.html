@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Week Electrochemistry Lab Course | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link active" href="index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Fuel Cell</a>
+  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="index.html">Home</a></div>
+      <header class="page-header">
+        <h1>One-Week Electrochemistry Lab Course</h1>
+        <div class="page-meta"><span class="badge">Course overview</span></div>
+      </header>
+      <article class="main-article">
+<p>Five 90-minute sessions for science-oriented students, ages 15–16.</p>
+<h2>Browse the workshop (HTML)</h2>
+<p>Open <strong><a href="index.html">index.html</a></strong> in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep notes. Markdown sources (<code>.md</code>) are kept alongside the HTML.</p>
+<p>To rebuild HTML after editing markdown:</p>
+<pre><code class="language-bash">python scripts/build_site.py
+</code></pre>
+<h2>Course theme</h2>
+<p>Electrochemistry is chemistry controlled by electrons. Students will see that chemical reactions can produce electricity, use electricity to drive reactions, move atoms around, split molecules, store energy, and explain corrosion.</p>
+<h2>Format</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sessions</td>
+<td>5 × 90 minutes</td>
+</tr>
+<tr>
+<td>Rhythm</td>
+<td>~20 min concept discussion + ~70 min hands-on work</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>Motivated high-school-age students (~15–16)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>Maximize visible, entertaining experiments while building electrochemical concepts</td>
+</tr>
+</tbody>
+</table>
+<div class="session-cards">
+  <a class="session-card" href="sessions/01-fruit-battery/index.html">
+    <div class="num">Session 1</div>
+    <h3>Fruit Battery</h3>
+    <p>Familiar objects make electricity</p>
+  </a>
+  <a class="session-card" href="sessions/02-copper-electroplating/index.html">
+    <div class="num">Session 2</div>
+    <h3>Copper Electroplating</h3>
+    <p>Students visibly transform a metal object</p>
+  </a>
+  <a class="session-card" href="sessions/03-silver-plating-faraday/index.html">
+    <div class="num">Session 3</div>
+    <h3>Silver Plating + Faraday's Law</h3>
+    <p>Estimate how many atoms were deposited</p>
+  </a>
+  <a class="session-card" href="sessions/04-water-electrolysis/index.html">
+    <div class="num">Session 4</div>
+    <h3>Water Electrolysis</h3>
+    <p>Split water and see a 2:1 ratio</p>
+  </a>
+  <a class="session-card" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">
+    <div class="num">Session 5</div>
+    <h3>Galvanic Corrosion + Fuel Cell</h3>
+    <p>Corrosion, batteries, and hydrogen storage</p>
+  </a>
+</div>
+<h2>Weekly sequence</h2>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Folder</th>
+<th>Topic</th>
+<th>Main hook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="sessions/01-fruit-battery/index.html">sessions/01-fruit-battery</a></td>
+<td>Fruit Battery</td>
+<td>Familiar objects make electricity</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="sessions/02-copper-electroplating/index.html">sessions/02-copper-electroplating</a></td>
+<td>Copper Electroplating</td>
+<td>Students visibly transform a metal object</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="sessions/03-silver-plating-faraday/index.html">sessions/03-silver-plating-faraday</a></td>
+<td>Silver Plating + Faraday's Law</td>
+<td>Estimate how many atoms were deposited</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="sessions/04-water-electrolysis/index.html">sessions/04-water-electrolysis</a></td>
+<td>Water Electrolysis + Gas Collection</td>
+<td>Split water and see a 2:1 stoichiometric ratio</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="sessions/05-galvanic-corrosion-fuel-cell/index.html">sessions/05-galvanic-corrosion-fuel-cell</a></td>
+<td>Galvanic Corrosion + Fuel Cell Demo</td>
+<td>Connect corrosion, batteries, and hydrogen storage</td>
+</tr>
+</tbody>
+</table>
+<h2>Folder structure (each session)</h2>
+<p>Each session folder contains:</p>
+<ul>
+<li><strong>README.md</strong> — Overview, learning outcomes, and timed session plan</li>
+<li><strong>lecture.md</strong> — Concept block: hooks, talking points, key questions, and visual aids</li>
+<li><strong>experiment.md</strong> — Hands-on procedure, variables, observations, and data sheets</li>
+<li><strong>materials.md</strong> — Per-session materials checklist</li>
+<li><strong>preparation.md</strong> — Pre-class setup (overnight steps, solution prep, etc.)</li>
+</ul>
+<h2>Reference</h2>
+<p>Full syllabus: <a href="electrochemistry_lab_syllabus.docx">electrochemistry_lab_syllabus.docx</a></p>
+<p>Experiment schematics (SVG): <a href="assets/figures/">assets/figures/</a></p>
+<p>Shared resources (add as needed):</p>
+<ul>
+<li><code>shared/</code> — Safety notes, overall materials list, student handouts</li>
+<li><code>shared/overall-materials-list.md</code> — Master equipment and chemicals list</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="title desc">
+  <title id="title">Fruit batteries in series</title>
+  <desc id="desc">Three lemon cells connected in series so voltages add while electrons flow through the external circuit.</desc>
+  <defs>
+    <linearGradient id="lemonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="720" height="320" fill="#f8fafc"/>
+  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 1  Cells in series (voltages add)</text>
+
+  <!-- Cell 1 -->
+  <g transform="translate(80,70)">
+    <ellipse cx="70" cy="90" rx="62" ry="48" fill="url(#lemonGrad)" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="58" y="35" width="8" height="70" fill="#94a3b8"/>
+    <rect x="74" y="35" width="8" height="70" fill="#b45309"/>
+    <text x="70" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">~0.9 V</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Cell 1</text>
+  </g>
+
+  <!-- Cell 2 -->
+  <g transform="translate(280,70)">
+    <ellipse cx="70" cy="90" rx="62" ry="48" fill="url(#lemonGrad)" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="58" y="35" width="8" height="70" fill="#94a3b8"/>
+    <rect x="74" y="35" width="8" height="70" fill="#b45309"/>
+    <text x="70" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">~0.9 V</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Cell 2</text>
+  </g>
+
+  <!-- Cell 3 -->
+  <g transform="translate(480,70)">
+    <ellipse cx="70" cy="90" rx="62" ry="48" fill="url(#lemonGrad)" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="58" y="35" width="8" height="70" fill="#94a3b8"/>
+    <rect x="74" y="35" width="8" height="70" fill="#b45309"/>
+    <text x="70" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">~0.9 V</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Cell 3</text>
+  </g>
+
+  <!-- Series wires: Cu of cell n to Zn of cell n+1 -->
+  <path d="M162 105 L218 105" stroke="#334155" stroke-width="2"/>
+  <path d="M362 105 L418 105" stroke="#334155" stroke-width="2"/>
+  <text x="190" y="98" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Cu�Zn</text>
+  <text x="390" y="98" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Cu�Zn</text>
+
+  <!-- External circuit top -->
+  <path d="M552 70 L552 40 L88 40 L88 70" stroke="#334155" stroke-width="2.5" fill="none"/>
+  <path d="M250 40 L470 40" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowRed)" fill="none"/>
+  <text x="360" y="32" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#dc2626">e{ flow</text>
+
+  <!-- Load -->
+  <rect x="310" y="48" width="100" height="40" rx="6" fill="#fff" stroke="#334155" stroke-width="1.5"/>
+  <polygon points="330,78 330,58 350,68" fill="#22c55e"/>
+  <rect x="352" y="58" width="44" height="20" rx="3" fill="#ecfdf5" stroke="#22c55e"/>
+  <text x="374" y="72" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#166534">LED</text>
+  <text x="360" y="68" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#0d9488">~2.7 V total</text>
+
+  <rect x="120" y="240" width="480" height="52" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <text x="360" y="262" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Connect () of one cell to (+) of the next  voltages add, current stays limited</text>
+  <text x="360" y="280" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Free ends: Zn () of Cell 1 and Cu (+) of Cell 3 go to the load</text>
+</svg>

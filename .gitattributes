@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.md text
+*.html text
+*.css text
+*.svg text
+*.py text

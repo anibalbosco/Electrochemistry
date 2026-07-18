@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 1 — Lecture: Fruit Battery Concepts | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub active" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Fuel Cell</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/01-fruit-battery/index.html">Session 1</a> / Lecture: Fruit Battery Concepts</div>
+      <header class="page-header">
+        <h1>Session 1 — Lecture: Fruit Battery Concepts</h1>
+        <div class="page-meta"><span class="badge">Session 1</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Target duration:</strong> ~20 minutes (may occur before, during, or after the experiment)</p>
+<hr>
+<h2>Opening hook (0–10 min)</h2>
+<h3>Demo</h3>
+<ol>
+<li>Insert zinc and copper into one lemon (rolled first)</li>
+<li>Connect multimeter; read voltage (~0.8–1.0 V typical)</li>
+<li>Ask: <em>"Where did this voltage come from? Is the lemon a battery?"</em></li>
+</ol>
+<h3>Guiding questions</h3>
+<ul>
+<li>What is moving — electrons, ions, or both?</li>
+<li>Which electrode is positive on the meter? Which is negative?</li>
+<li>Would this work with other fruits? Other metals?</li>
+</ul>
+<hr>
+<h2>Core concepts (10–25 min)</h2>
+<h3>1. Oxidation and reduction</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+<th>In this cell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Oxidation</strong></td>
+<td>Loss of electrons</td>
+<td>Zn → Zn²⁺ + 2e⁻</td>
+</tr>
+<tr>
+<td><strong>Reduction</strong></td>
+<td>Gain of electrons</td>
+<td>2H⁺ + 2e⁻ → H₂</td>
+</tr>
+<tr>
+<td><strong>Redox</strong></td>
+<td>Coupled transfer of electrons</td>
+<td>One cannot happen without the other</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mnemonic:</strong> OIL RIG — Oxidation Is Loss, Reduction Is Gain (of electrons)</p>
+<h3>2. Anode and cathode</h3>
+<table>
+<thead>
+<tr>
+<th>Electrode</th>
+<th>Role</th>
+<th>Sign in a <strong>galvanic</strong> cell</th>
+<th>What happens here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anode</strong></td>
+<td>Oxidation</td>
+<td>Negative (−)</td>
+<td>Zn loses electrons</td>
+</tr>
+<tr>
+<td><strong>Cathode</strong></td>
+<td>Reduction</td>
+<td>Positive (+)</td>
+<td>H⁺ gains electrons</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Common confusion:</strong> In electrolysis (Session 2+), the anode is connected to the <strong>positive</strong> terminal of the power supply. In a <strong>battery</strong> (galvanic cell), the anode is <strong>negative</strong>. Always ask: <em>spontaneous cell or driven cell?</em></p>
+</blockquote>
+<h3>3. Electron flow vs. ion flow</h3>
+<ul>
+<li><strong>Electrons</strong> travel through the <strong>external wire</strong> (metal path): anode → cathode</li>
+<li><strong>Ions</strong> move through the <strong>electrolyte</strong> (fruit juice) to complete the circuit</li>
+<li>Without ion flow inside the fruit, the cell stops — charge builds up at the electrodes</li>
+</ul>
+<figure class="figure-wrap" aria-label="Electron and ion paths in a fruit cell"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="fig1_title">Fruit battery  single galvanic cell</title>
+  <desc id="fig1_desc">Zinc anode and copper cathode in a lemon with electron flow through the external wire and ion flow in the fruit juice electrolyte.</desc>
+  <defs>
+    <linearGradient id="fig1_lemonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <marker id="fig1_arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="fig1_arrowTeal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0d9488"/>
+    </marker>
+  </defs>
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 1  Single fruit cell (galvanic)</text>
+
+  <!-- Lemon cross-section -->
+  <ellipse cx="360" cy="230" rx="155" ry="115" fill="url(#fig1_lemonGrad)" stroke="#d97706" stroke-width="2"/>
+  <ellipse cx="360" cy="230" rx="95" ry="70" fill="#fef3c7" opacity="0.85"/>
+  <text x="360" y="238" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#92400e">Fruit juice (Hz electrolyte)</text>
+
+  <!-- Zn anode -->
+  <rect x="248" y="95" width="14" height="170" rx="3" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="250" y="95" width="10" height="170" fill="#cbd5e1"/>
+  <text x="255" y="82" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#334155">Zn</text>
+  <text x="210" y="200" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Anode ()</text>
+  <text x="210" y="216" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">oxidation</text>
+
+  <!-- Cu cathode -->
+  <rect x="458" y="95" width="14" height="170" rx="3" fill="#b45309" stroke="#92400e" stroke-width="1.5"/>
+  <text x="465" y="82" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#92400e">Cu</text>
+  <text x="510" y="200" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Cathode (+)</text>
+  <text x="510" y="216" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">reduction</text>
+
+  <!-- Ion arrows in electrolyte -->
+  <text x="310" y="280" font-family="Segoe UI, sans-serif" font-size="11" fill="#0d9488">Hz �</text>
+  <text x="300" y="300" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Zn�z �</text>
+  <path d="M330 275 L400 275" stroke="#0d9488" stroke-width="1.5" marker-end="url(#fig1_arrowTeal)" fill="none"/>
+  <path d="M400 295 L330 295" stroke="#64748b" stroke-width="1.5" marker-end="url(#fig1_arrowTeal)" fill="none"/>
+
+  <!-- External circuit -->
+  <path d="M465 95 L465 55 L255 55 L255 95" stroke="#334155" stroke-width="2.5" fill="none"/>
+  <path d="M300 55 L380 55" stroke="#dc2626" stroke-width="2" marker-end="url(#fig1_arrowRed)" fill="none"/>
+  <text x="340" y="48" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#dc2626">e{ flow</text>
+
+  <!-- Multimeter -->
+  <rect x="310" y="58" width="80" height="36" rx="6" fill="#fff" stroke="#334155" stroke-width="1.5"/>
+  <text x="350" y="81" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0d9488">0.9 V</text>
+
+  <!-- Reactions -->
+  <rect x="24" y="340" width="672" height="68" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <text x="40" y="362" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Anode:  Zn � Zn�z + 2e{</text>
+  <text x="40" y="382" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Cathode:  2Hz + 2e{ � H�</text>
+  <text x="380" y="362" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Electrons through wire</text>
+  <text x="380" y="382" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Ions through fruit juice</text>
+</svg></figure>
+<p><em>See <a href="experiment.html">experiment.md</a> for build steps and the series-cell schematic.</em></p>
+<h3>4. Voltage</h3>
+<ul>
+<li>Voltage = electrical "push" from the chemical difference between the two metals</li>
+<li>Depends on: metal pair, electrolyte, temperature, electrode surface area</li>
+<li><strong>Not</strong> the same as current or power</li>
+</ul>
+<h3>5. Cells in series</h3>
+<ul>
+<li>Connecting cells <strong>positive to negative</strong> adds voltages</li>
+<li>3 lemons × ~0.9 V ≈ 2.7 V — enough to try an LED (often needs ~2 V+)</li>
+<li>Current is still limited by the weakest cell and internal resistance</li>
+</ul>
+<h3>6. Why batteries die</h3>
+<ul>
+<li>Reactants get used up (Zn dissolves, H⁺ consumed)</li>
+<li>Internal resistance increases as surfaces change</li>
+<li>Side reactions and polarization reduce efficiency</li>
+</ul>
+<hr>
+<h2>Discussion prompts (use during lab)</h2>
+<ul>
+<li>Why roll the fruit first?</li>
+<li>Why must the two electrodes <strong>not touch</strong> inside the fruit?</li>
+<li>What happens if you swap zinc and copper?</li>
+<li>Why might an LED flicker or not light even when V looks high enough?</li>
+<li>What is <strong>internal resistance</strong>? (Relate to why a lemon cell has low current)</li>
+</ul>
+<hr>
+<h2>Visual aids to prepare</h2>
+<ul>
+<li>[ ] Whiteboard diagram: single cell with e⁻ and ion paths labeled</li>
+<li>[ ] Table: anode vs. cathode in galvanic vs. electrolytic cells</li>
+<li>[ ] Photo or live demo: multimeter reading on one cell vs. three in series</li>
+<li>[ ] Optional: pH strips showing less acidic region near cathode</li>
+</ul>
+<hr>
+<h2>Vocabulary checklist</h2>
+<p>Ensure students can define before leaving:</p>
+<ul>
+<li>[ ] Oxidation / reduction</li>
+<li>[ ] Anode / cathode (in a <strong>battery</strong>)</li>
+<li>[ ] Electrolyte</li>
+<li>[ ] Voltage</li>
+<li>[ ] Series connection</li>
+<li>[ ] Internal resistance</li>
+</ul>
+<hr>
+<h2>Bridge to Session 2</h2>
+<p>End concept block with a preview:</p>
+<p><em>"Today we used chemistry to </em><em>make</em><em> electricity. Next session we'll </em><em>use</em><em> electricity to force chemistry — moving copper atoms onto a nail. We'll need copper ions in solution; we'll start making that solution at the end of today."</em></p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

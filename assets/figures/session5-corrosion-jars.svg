@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="title desc">
+  <title id="title">Corrosion comparison jars</title>
+  <desc id="desc">Three jars comparing iron corrosion alone, iron with copper, and iron with zinc sacrificial protection.</desc>
+  <rect width="720" height="340" fill="#f8fafc"/>
+  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 5  Corrosion comparison jars</text>
+
+  <!-- Jar A -->
+  <g transform="translate(70,55)">
+    <rect x="0" y="40" width="140" height="180" rx="6" fill="#e0f2fe" stroke="#64748b" stroke-width="1.5"/>
+    <rect x="62" y="0" width="16" height="50" fill="#64748b"/>
+    <polygon points="70,-5 78,0 62,0" fill="#64748b"/>
+    <text x="70" y="240" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#334155">Jar A</text>
+    <text x="70" y="258" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Fe alone</text>
+    <text x="70" y="274" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Normal rust</text>
+  </g>
+
+  <!-- Jar B -->
+  <g transform="translate(290,55)">
+    <rect x="0" y="40" width="140" height="180" rx="6" fill="#e0f2fe" stroke="#64748b" stroke-width="1.5"/>
+    <rect x="50" y="0" width="14" height="50" fill="#64748b"/>
+    <rect x="76" y="5" width="14" height="45" fill="#b45309"/>
+    <line x1="64" y1="25" x2="76" y2="25" stroke="#334155" stroke-width="2"/>
+    <text x="70" y="240" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#334155">Jar B</text>
+    <text x="70" y="258" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Fe + Cu touching</text>
+    <text x="70" y="274" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#dc2626">Faster Fe rust</text>
+  </g>
+
+  <!-- Jar C -->
+  <g transform="translate(510,55)">
+    <rect x="0" y="40" width="140" height="180" rx="6" fill="#e0f2fe" stroke="#64748b" stroke-width="1.5"/>
+    <rect x="50" y="0" width="14" height="50" fill="#64748b"/>
+    <rect x="76" y="5" width="14" height="45" fill="#94a3b8"/>
+    <line x1="64" y1="25" x2="76" y2="25" stroke="#334155" stroke-width="2"/>
+    <text x="70" y="240" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#334155">Jar C</text>
+    <text x="70" y="258" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Fe + Zn touching</text>
+    <text x="70" y="274" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#0d9488">Zn sacrifices; Fe protected</text>
+  </g>
+
+  <rect x="24" y="295" width="672" height="32" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <text x="360" y="316" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Galvanic coupling: when dissimilar metals touch in electrolyte, the more active metal corrodes preferentially</text>
+</svg>

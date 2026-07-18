@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 1 — Build a Fruit Battery | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title active" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub active" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Fuel Cell</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/01-fruit-battery/index.html">Session 1</a></div>
+      <header class="page-header">
+        <h1>Session 1 — Build a Fruit Battery</h1>
+        <div class="page-meta"><span class="badge">Session 1</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Hook:</strong> Familiar objects make electricity.</p>
+<h2>Learning outcomes</h2>
+<p>By the end of this session, students should be able to:</p>
+<ul>
+<li>Build a simple electrochemical cell from fruit and metal electrodes</li>
+<li>Explain oxidation and reduction in a galvanic cell</li>
+<li>Identify anode and cathode and describe electron vs. ion flow</li>
+<li>Measure voltage with a multimeter</li>
+<li>Explain why cells in series add voltage</li>
+<li>Describe why batteries eventually die (internal resistance, reactant depletion)</li>
+</ul>
+<h2>Session plan (90 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–10 min</td>
+<td>Hook: measure one lemon cell; ask whether a lemon can make electricity</td>
+<td>See <a href="lecture.html">lecture.md</a> — Opening hook</td>
+</tr>
+<tr>
+<td>10–25 min</td>
+<td>Concept: zinc oxidation, copper cathode, acid electrolyte, electron flow</td>
+<td>See <a href="lecture.html">lecture.md</a></td>
+</tr>
+<tr>
+<td>25–45 min</td>
+<td>Build one cell; measure voltage</td>
+<td>See <a href="experiment.html">experiment.md</a> — Part 1</td>
+</tr>
+<tr>
+<td>45–60 min</td>
+<td>Series battery challenge</td>
+<td>See <a href="experiment.html">experiment.md</a> — Part 2</td>
+</tr>
+<tr>
+<td>60–75 min</td>
+<td>Power LED, buzzer, or clock; discuss V, I, and internal resistance</td>
+<td>See <a href="experiment.html">experiment.md</a> — Part 3</td>
+</tr>
+<tr>
+<td>75–85 min</td>
+<td>Side experiments: fruits, metals, pH, salt, parallel</td>
+<td>See <a href="experiment.html">experiment.md</a> — Extensions</td>
+</tr>
+<tr>
+<td>85–90 min</td>
+<td>Start copper solution prep for Session 2</td>
+<td>See <a href="preparation.html">preparation.md</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Key reactions</h2>
+<pre><code>Anode:  Zn(s) → Zn²⁺(aq) + 2e⁻
+Cathode: 2H⁺(aq) + 2e⁻ → H₂(g)
+Overall: Zn(s) + 2H⁺(aq) → Zn²⁺(aq) + H₂(g)
+</code></pre>
+<h2>Files in this folder</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="lecture.html">lecture.md</a></td>
+<td>~20 min concept block</td>
+</tr>
+<tr>
+<td><a href="experiment.html">experiment.md</a></td>
+<td>Hands-on procedures and data</td>
+</tr>
+<tr>
+<td><a href="materials.html">materials.md</a></td>
+<td>Session checklist</td>
+</tr>
+<tr>
+<td><a href="preparation.html">preparation.md</a></td>
+<td>Pre-class and end-of-session prep</td>
+</tr>
+</tbody>
+</table>
+<h2>Instructor reminders</h2>
+<ul>
+<li>Roll lemons/limes first to break internal membranes</li>
+<li>Cells in series add voltage ~linearly; current stays limited</li>
+<li>Galvanized nail = steel + zinc coating (zinc is the active metal)</li>
+<li>pH near cathode may become less acidic (protons consumed)</li>
+</ul>
+<h2>Status</h2>
+<ul>
+<li>[ ] Lecture outline finalized</li>
+<li>[ ] Experiment procedure tested</li>
+<li>[ ] Materials procured</li>
+<li>[ ] Copper solution prep started for Session 2</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

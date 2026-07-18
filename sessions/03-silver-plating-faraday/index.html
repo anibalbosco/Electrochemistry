@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 3 — Silver Plating and Faraday's Law | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title active" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub active" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Fuel Cell</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/03-silver-plating-faraday/index.html">Session 3</a></div>
+      <header class="page-header">
+        <h1>Session 3 — Silver Plating and Faraday's Law</h1>
+        <div class="page-meta"><span class="badge">Session 3</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Hook:</strong> Calculate how many silver atoms you deposit and how thick the film is.</p>
+<h2>Learning outcomes</h2>
+<ul>
+<li>Plate silver onto a metal object with controlled current and time</li>
+<li>Use Q = It, n = Q/F, and mass/thickness relations</li>
+<li>Discuss assumptions (100% efficiency, uniform coverage)</li>
+<li>Compare ideal Faraday prediction to visual result</li>
+</ul>
+<h2>Session plan (90 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–10 min</td>
+<td>Hook: dull copper object — can we count the atoms we add?</td>
+<td><a href="lecture.html">lecture.md</a></td>
+</tr>
+<tr>
+<td>10–25 min</td>
+<td>Ag⁺ reduction and Faraday's law</td>
+<td><a href="lecture.html">lecture.md</a></td>
+</tr>
+<tr>
+<td>25–35 min</td>
+<td>Estimate plated surface area</td>
+<td><a href="experiment.html">experiment.md</a> — Area</td>
+</tr>
+<tr>
+<td>35–45 min</td>
+<td>Set up cell with ammeter in series</td>
+<td><a href="experiment.html">experiment.md</a> — Setup</td>
+</tr>
+<tr>
+<td>45–65 min</td>
+<td>Plate with timed current readings</td>
+<td><a href="experiment.html">experiment.md</a> — Run</td>
+</tr>
+<tr>
+<td>65–80 min</td>
+<td>Calculate charge, moles, mass, thickness</td>
+<td><a href="experiment.html">experiment.md</a> — Calculations</td>
+</tr>
+<tr>
+<td>80–90 min</td>
+<td>Discuss efficiency and side reactions</td>
+<td><a href="lecture.html">lecture.md</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Key equations</h2>
+<pre><code>Ag⁺(aq) + e⁻ → Ag(s)
+Q = I × t
+n_e = Q / F     (F = 96,485 C/mol)
+n_Ag = n_e
+m_Ag = n_Ag × M_Ag   (M_Ag = 107.87 g/mol)
+d = m_Ag / (ρ_Ag × A)   (ρ_Ag = 10.49 g/cm³)
+</code></pre>
+<h2>Status</h2>
+<ul>
+<li>[ ] AgNO₃ solution prepared (0.01 M)</li>
+<li>[ ] Calculation worksheet ready</li>
+<li>[ ] Pilot plating run completed</li>
+<li>[ ] Waste container labeled for silver</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
