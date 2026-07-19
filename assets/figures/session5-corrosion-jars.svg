@@ -2,7 +2,7 @@
   <title id="title">Corrosion comparison jars</title>
   <desc id="desc">Three jars comparing iron corrosion alone, iron with copper, and iron with zinc sacrificial protection.</desc>
   <rect width="720" height="340" fill="#f8fafc"/>
-  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 5  Corrosion comparison jars</text>
+  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 5 - Corrosion comparison jars</text>
 
   <!-- Jar A -->
   <g transform="translate(70,55)">

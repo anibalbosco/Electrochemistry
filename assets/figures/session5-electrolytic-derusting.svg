@@ -14,7 +14,7 @@
   <rect x="310" y="120" width="10" height="150" fill="#92400e"/>
   <rect x="308" y="118" width="14" height="40" fill="#b45309" opacity="0.6"/>
   <text x="315" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#334155">Rusty nail</text>
-  <text x="270" y="200" font-family="Segoe UI, sans-serif" font-size="10" fill="#0d9488">Cathode (-)</text>
+  <text x="270" y="200" font-family="Segoe UI, sans-serif" font-size="10" fill="#0d9488">Cathode (&#x2212;)</text>
   <text x="250" y="216" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">reduction / cleaning</text>
 
   <!-- Sacrificial anode -->
@@ -32,7 +32,7 @@
   <text x="365" y="60" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700">9V</text>
   <path d="M315 120 L315 72 L340 72" stroke="#334155" stroke-width="2" fill="none"/>
   <path d="M406 120 L406 72 L390 72" stroke="#dc2626" stroke-width="2" fill="none"/>
-  <text x="325" y="68" font-family="Segoe UI, sans-serif" font-size="9" fill="#334155">(-)</text>
+  <text x="325" y="68" font-family="Segoe UI, sans-serif" font-size="9" fill="#334155">(&#x2212;)</text>
   <text x="398" y="68" font-family="Segoe UI, sans-serif" font-size="9" fill="#dc2626">(+)</text>
 
   <rect x="24" y="320" width="672" height="48" rx="8" fill="#fff" stroke="#e2e8f0"/>

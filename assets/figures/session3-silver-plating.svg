@@ -7,16 +7,16 @@
     </marker>
   </defs>
   <rect width="720" height="440" fill="#f8fafc"/>
-  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 3  Silver plating with current measurement</text>
+  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 3 - Silver plating with current measurement</text>
 
   <!-- Beaker -->
   <path d="M200 130 L200 320 L520 320 L520 130" fill="none" stroke="#64748b" stroke-width="2"/>
   <rect x="202" y="190" width="316" height="128" fill="#f1f5f9" opacity="0.9"/>
-  <text x="360" y="255" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#475569">0.01 M AgNO� (small volume)</text>
+  <text x="360" y="255" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#475569">0.01 M AgNO&#x2083; (small volume)</text>
 
   <!-- Ag+ arrows -->
   <path d="M280 220 L360 250" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrowBlue)" fill="none"/>
-  <text x="265" y="215" font-family="Segoe UI, sans-serif" font-size="10" fill="#2563eb">Agz</text>
+  <text x="265" y="215" font-family="Segoe UI, sans-serif" font-size="10" fill="#2563eb">Ag&#x207a;</text>
 
   <!-- Ag anode -->
   <rect x="260" y="105" width="16" height="120" rx="2" fill="#cbd5e1" stroke="#94a3b8"/>
@@ -26,7 +26,7 @@
   <circle cx="430" cy="250" r="28" fill="#b45309" stroke="#92400e" stroke-width="1.5"/>
   <circle cx="430" cy="250" r="22" fill="#d97706" opacity="0.5"/>
   <text x="430" y="254" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#fff">Cu</text>
-  <text x="430" y="115" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#334155">Object ()</text>
+  <text x="430" y="115" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#334155">Object (&#x2212;)</text>
   <text x="490" y="250" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">silver deposits</text>
 
   <!-- 3V pack -->
@@ -46,7 +46,7 @@
 
   <!-- Faraday box -->
   <rect x="24" y="345" width="672" height="78" rx="8" fill="#fff" stroke="#e2e8f0"/>
-  <text x="40" y="368" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Agz + e{ � Ag(s)     Record I every 3060 s and total time t</text>
-  <text x="40" y="388" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Q = I � t  �  n = Q/F  �  m_Ag  �  thickness d = m/(��A)</text>
+  <text x="40" y="368" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Ag&#x207a; + e&#x207b; &#x2192; Ag(s)     Record I every 30-60 s and total time t</text>
+  <text x="40" y="388" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Q = I &#x00d7; t  &#x2192;  n = Q/F  &#x2192;  m_Ag  &#x2192;  thickness d = m/(&#x03c1;A)</text>
   <text x="40" y="408" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Estimate plated area A before starting (coin face, washer ring, etc.)</text>
 </svg>
