@@ -28,7 +28,7 @@
 
 **Expected result:** Pale blue, green, or blue-green solution after overnight standing. Color intensity varies.
 
-**Backup:** Have commercial copper sulfate solution ready for Session 2 if homemade solution is weak.
+**Backup for Session 2:** Prepare **0.5 M CuSO₄** (e.g. 125 g CuSO₄·5H₂O per liter, or 25 g per 200 mL). See Session 2 experiment for the full recipe table.
 
 ## After class
 

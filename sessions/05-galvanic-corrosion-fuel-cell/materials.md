@@ -3,7 +3,7 @@
 ## Part C — Electrolytic rust removal (started Session 4)
 
 - [ ] Rusty iron nails or small rusty hardware (2+ per group)
-- [ ] Washing soda (sodium carbonate) **or** baking soda
+- [ ] Washing soda: **1 tbsp / ~250 mL** water (or baking soda same)
 - [ ] Sacrificial steel strips or graphite rods (anodes)
 - [ ] Small plastic cups or jars
 - [ ] 9 V batteries and alligator clips
@@ -14,7 +14,7 @@
 
 ### Per group
 
-- [ ] Saltwater solution (for corrosion demos — separate from Session 4 electrolyte)
+- [ ] Saltwater **5–10% w/v** (25–50 g NaCl per 500 mL) — corrosion demos only, labeled
 - [ ] Copper strip or wire
 - [ ] Iron nail
 - [ ] Zinc strip or galvanized nail

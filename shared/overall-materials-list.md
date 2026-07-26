@@ -36,8 +36,8 @@ Master checklist for the full week. Per-session quantities are in each session's
 - [ ] Baking soda
 - [ ] Washing soda (sodium carbonate) — preferred for electrolytic rust removal
 - [ ] Distilled water
-- [ ] Copper sulfate backup solution
-- [ ] Silver nitrate (0.01 M AgNO₃)
+- [ ] Copper sulfate pentahydrate for **0.5 M CuSO₄** backup (Session 2)
+- [ ] Silver nitrate for **0.01 M AgNO₃** working solution (Session 3)
 - [ ] Sodium sulfate (optional electrolyte for water electrolysis)
 - [ ] pH paper or indicator
 

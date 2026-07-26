@@ -4,42 +4,80 @@
 
 ---
 
+## Electrolyte recipes — concentrations
+
+**Never use table salt (NaCl)** — chloride can produce toxic chlorine gas at the anode.
+
+### Option A — Baking soda (recommended, easy)
+
+| Batch | Baking soda (NaHCO₃) | Water |
+|-------|----------------------|-------|
+| ~500 mL (one tub) | **1–2 tsp** (~5–10 g) | ~500 mL |
+| ~1 L | **2–4 tsp** (~10–20 g) | ~1 L |
+
+Stir until dissolved. Label **"baking soda electrolyte — NO SALT"**.
+
+Approximate concentration: **~0.1–0.2 M NaHCO₃** (kitchen measuring is fine; exact molarity is not critical).
+
+### Option B — Sodium sulfate (optional)
+
+| Batch | Na₂SO₄ (anhydrous) | Water |
+|-------|--------------------|-------|
+| 500 mL | **~7 g** | 500 mL |
+
+≈ **0.1 M Na₂SO₄**. Clear, effective supporting electrolyte.
+
+### Volume per station
+
+Fill the tub deep enough to fully cover inverted tube mouths (~3–5 cm liquid depth typical). Mix **fresh** electrolyte if someone contaminated a tub with salt.
+
+---
+
 ## Part A — Build gas collection setup (25–40 min)
 
 ![Water electrolysis with gas collection](../../assets/figures/session4-water-electrolysis.svg)
 
 *Figure 1 — Inverted water-filled tubes collect H₂ (2× volume) and O₂. Use baking soda or sodium sulfate — not salt.*
 
-### Electrolyte recipe
+### Materials
 
-- Water + **1–2 tsp baking soda per ~500 mL** (or sodium sulfate)
-- **Do NOT use table salt (NaCl)**
+- Clear tub + electrolyte (Option A or B)
+- Two small test tubes, vials, or narrow bottles (same size preferred)
+- Two graphite electrodes (pencil leads ~2–3 mm or carbon rods)
+- 9 V battery + alligator clips
+- Ruler or graduated markings for gas column height
+- Goggles
 
 ### Build steps
 
-1. Fill tub with electrolyte solution
-2. Fill two small test tubes/vials **completely** with the same solution — no bubbles
-3. Cover mouth of each tube with finger/card; invert into tub underwater
-4. Release under water — tubes stay filled with liquid
-5. Insert graphite electrodes into tubes (or position so gas collects into tubes)
-6. Connect **cathode (−)** and **anode (+)** to 9 V battery
-7. Identify which tube collects gas **faster** → assign H₂ vs. O₂
+1. Fill the tub with electrolyte.
+2. Fill tube 1 **completely** with the same electrolyte — no air bubble at the closed end.
+3. Cover the mouth with a finger or card; invert; lower into the tub; release underwater. Tube stays full of liquid.
+4. Repeat for tube 2.
+5. Slide a graphite electrode up into each tube (or position electrodes so bubbles rise into each tube).
+6. Connect:
+   - **Cathode (−)** / black → electrode in tube that will collect **H₂** (will fill faster)
+   - **Anode (+)** / red → other electrode (**O₂**)
+7. Keep battery clips **dry** (not submerged).
+8. When current flows, the **faster-filling** tube is hydrogen (cathode).
 
 ### Pre-run checklist
 
-- [ ] Tubes water-filled with no air gap at start
-- [ ] Electrodes secure; clips not submerged at battery
-- [ ] Baking soda electrolyte confirmed (not salt)
+- [ ] Both tubes liquid-filled with **no air gap** at start
+- [ ] Electrodes secure; battery clips dry
+- [ ] Electrolyte is baking soda or Na₂SO₄ — **not salt**
 - [ ] Goggles on
+- [ ] Tubes labeled H₂ / O₂ after first bubbles appear
 
 ---
 
 ## Part B — Run and measure (40–65 min)
 
-1. Start timer when current flows (bubbles visible)
-2. Every **2–3 min**, mark or measure gas volume in each tube
-3. Use ruler: height of gas column × tube cross-section, or graduated markings
-4. Record until clear difference visible or 20+ min elapsed
+1. Start the timer when bubbles are clearly visible at both electrodes.
+2. Every **2–3 min**, measure gas volume in each tube:
+   - Prefer graduated tubes (mL), **or**
+   - Measure gas column height (cm) with a ruler (ratio of heights ≈ ratio of volumes if tubes match).
+3. Continue until a clear difference appears or ~15–20 min have elapsed.
 
 ### Gas volume log
 
@@ -55,32 +93,33 @@
 
 ### Expected result
 
-V_H₂ / V_O₂ ≈ **2** (ideal); 1.6–2.2 common in classroom conditions
+V_H₂ / V_O₂ ≈ **2** (ideal). Classroom range **1.6–2.2** is a success — discuss solubility and collection errors.
 
 ### Observations
 
 - Bubble rate at each electrode
-- Cloudiness or electrode degradation
+- Cloudiness or electrode crumbling
 - Temperature change (optional)
 
 ---
 
 ## Part C — Instructor-only pop test (65–75 min)
 
-**Optional demo — not for students to perform**
+**Optional demo — not for students**
 
-1. Collect a **tiny** amount of H₂ in a separate small tube (or use minimal bubble)
-2. Move away from main setup and students' faces
-3. Quick flame test — audible "pop"
-4. **Never** ignite sealed or mixed H₂/O₂ containers
+1. Collect a **tiny** amount of H₂ in a separate small tube.
+2. Move away from the main tub and faces.
+3. Brief flame → soft “pop.”
+4. Never ignite sealed or mixed H₂/O₂ containers.
+5. Skip if the venue forbids open flame.
 
 ---
 
 ## Part D — Extensions (if time)
 
-- [ ] Add pH indicator — observe acid/base zones near electrodes
-- [ ] Power with small solar panel instead of battery
-- [ ] Compare baking soda vs. sodium sulfate
+- [ ] Add universal indicator — look for acid/base zones near electrodes
+- [ ] Power with a small solar panel instead of a battery
+- [ ] Compare baking soda vs. 0.1 M sodium sulfate side by side
 
 ---
 
@@ -88,24 +127,34 @@ V_H₂ / V_O₂ ≈ **2** (ideal); 1.6–2.2 common in classroom conditions
 
 ![Electrolytic rust removal setup](../../assets/figures/session5-electrolytic-derusting.svg)
 
-*Figure 2 — Start cells now; reveal cleaned nails at opening of Session 5. Rusty iron on cathode (−); sacrificial anode on (+).*
+*Figure 2 — Start cells now; reveal cleaned nails at opening of Session 5.*
 
-**Quick setup (5–10 min per group or instructor demo stations):**
+### Derusting electrolyte
 
-1. Mix **washing soda** solution (~1 tbsp per cup warm water) or reuse baking soda electrolyte from Part B
-2. Place **rusty iron** nail in jar; clip to **cathode (−)** of 9 V battery
-3. Place **steel strip or graphite** as sacrificial **anode (+)**
-4. Leave running overnight; keep **control** rusty nail in plain water (no power)
-5. Label each cell with group name; photograph before state
+| Ingredient | Amount |
+|------------|--------|
+| **Washing soda** (sodium carbonate, Na₂CO₃) preferred | **1 tbsp (~15 g) per ~250 mL** warm water |
+| **or baking soda** | **1 tbsp per ~250 mL** warm water |
 
-**Do NOT use NaCl** — same safety rule as water electrolysis.
+≈ **0.5–0.6 M** Na₂CO₃ if using washing soda at that kitchen measure — exact molarity is not critical.  
+**Do NOT use NaCl.**
+
+### Setup steps
+
+1. Dissolve washing soda (or baking soda) in warm water; pour into a small jar (~100–250 mL).
+2. Clip **rusty iron** nail/hardware to battery **cathode (−)**.
+3. Clip **sacrificial steel strip or graphite** to battery **anode (+)**.
+4. Immerse both; keep them from touching; confirm gentle bubbling.
+5. Label group name; photograph the nail **before**.
+6. Place a **control** rusty nail in plain water (no battery).
+7. Leave powered overnight per instructor / venue rules.
 
 ### End-of-class checklist
 
 - [ ] All derusting cells connected and bubbling (or current confirmed)
 - [ ] Control nails in plain water labeled
 - [ ] Before photos taken
-- [ ] Instructor note: disconnect if fire/safety policy requires (ideal: run overnight supervised or in locked prep room)
+- [ ] Overnight power policy confirmed (prep room preferred)
 
 ---
 
@@ -113,26 +162,27 @@ V_H₂ / V_O₂ ≈ **2** (ideal); 1.6–2.2 common in classroom conditions
 
 | Problem | Cause | Fix |
 |---------|-------|-----|
-| No bubbles | Poor contact, bad electrolyte | Check clips; add baking soda |
-| One side only | Single electrode connected | Check circuit |
-| Ratio far from 2:1 | Air in tube at start, leaks | Rebuild tubes |
-| Chlorine smell | **Salt used** | Stop; replace with fresh baking soda solution |
+| No bubbles | Poor contact / weak electrolyte | Check clips; add more baking soda |
+| One side only | Single electrode connected | Check both leads |
+| Ratio far from 2:1 | Air in tube at start; leaks | Rebuild tubes with no air gap |
+| Chlorine smell | **Salt used** | Stop; dump; remake baking soda bath |
+| Tubes won’t stay full | Air introduced on invert | Practice underwater release |
 
 ---
 
 ## Safety checklist
 
-- [ ] No NaCl electrolyte anywhere at this station
-- [ ] No flames near collection setup
+- [ ] No NaCl electrolyte at this station
+- [ ] No flames near the collection setup (except instructor pop test)
 - [ ] Small gas volumes only
-- [ ] Pop test performed by instructor only, at safe distance
+- [ ] Pop test instructor-only, at a safe distance
 
 ---
 
 ## Experiment status
 
-- [ ] Tube sizing and volume measurement method chosen
+- [ ] Electrolyte recipe posted (baking soda amounts)
+- [ ] Tube sizing / volume method chosen
 - [ ] H₂ vs. O₂ side identified in pilot (cathode = H₂)
-- [ ] Typical ratio documented from pilot run
-- [ ] Solar panel extension tested (optional)
-- [ ] Rust-removal jars staged for Part E end-of-class
+- [ ] Typical ratio from pilot: ___
+- [ ] Rust-removal jars + washing soda staged for Part E

@@ -81,16 +81,54 @@
 <p><strong>Instructors:</strong> area pitfalls, ammeter series wiring, I_avg — <a href="instructor.html">instructor.md</a>.</p>
 </blockquote>
 <hr>
+<h2>Silver nitrate solution — concentration and prep</h2>
+<p><strong>Target working solution: 0.01 M AgNO₃</strong> (instructor prepares before class).</p>
+<table>
+<thead>
+<tr>
+<th>Batch</th>
+<th>Solid AgNO₃ needed</th>
+<th>Distilled water</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 mL of 0.01 M</td>
+<td><strong>0.17 g</strong> AgNO₃</td>
+<td>Fill to 100 mL</td>
+</tr>
+<tr>
+<td>250 mL of 0.01 M</td>
+<td><strong>0.42 g</strong> AgNO₃</td>
+<td>Fill to 250 mL</td>
+</tr>
+<tr>
+<td>500 mL of 0.01 M</td>
+<td><strong>0.85 g</strong> AgNO₃</td>
+<td>Fill to 500 mL</td>
+</tr>
+</tbody>
+</table>
+<p>(Molar mass AgNO₃ ≈ 169.9 g/mol → 0.01 mol/L × 169.9 ≈ 1.70 g/L.)</p>
+<h3>If you have a more concentrated stock</h3>
+<p>Example: dilute <strong>0.1 M</strong> stock <strong>1:10</strong> → 0.01 M<br>
+(e.g. 25 mL of 0.1 M + 225 mL distilled water = 250 mL of 0.01 M).</p>
+<h3>Volume per group today</h3>
+<p><strong>20–30 mL</strong> of 0.01 M AgNO₃ — use the minimum that covers the object. Do not prepare large open beakers of AgNO₃ at student benches.</p>
+<h3>Labeling</h3>
+<p><code>0.01 M AgNO₃ — Session 3 — gloves required — silver waste only</code></p>
+<hr>
 <h2>Part A — Estimate surface area (25–35 min)</h2>
 <h3>Object options</h3>
-<p>Copper coin, copper washer, cleaned brass charm, small flat piece</p>
+<p>Copper coin, copper washer, cleaned brass charm, or small flat copper piece.</p>
 <h3>Methods</h3>
-<p><strong>Coin ( cylinder face ):</strong>
-- Measure diameter d → A = π(d/2)² (one face) or ×2 for both faces if fully immersed</p>
-<p><strong>Flat washer:</strong>
-- Outer and inner diameter → A ≈ π(R_outer² − R_inner²)</p>
-<p><strong>Irregular object:</strong>
-- Approximate as rectangle: length × width of immersed region</p>
+<p><strong>Coin (one face):</strong><br>
+Measure diameter (d) in cm → (A = \pi (d/2)^2).<br>
+If both faces plate, use (A = 2\pi (d/2)^2).</p>
+<p><strong>Flat washer:</strong><br>
+(A \approx \pi(R_\text{outer}^2 - R_\text{inner}^2)) (one side), or ×2 if both sides plate.</p>
+<p><strong>Irregular object:</strong><br>
+Approximate immersed region as length × width (cm × cm). State the approximation in your notes.</p>
 <h3>Record</h3>
 <table>
 <thead>
@@ -110,6 +148,7 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Tip:</strong> A typical coin face is ~2–4 cm². If your A is 50 cm², you probably measured wrong — recheck before calculating thickness.</p>
 <hr>
 <h2>Part B — Setup (35–45 min)</h2>
 <figure class="figure-wrap" aria-label="Silver plating with ammeter in series"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
@@ -165,14 +204,34 @@
   <text x="40" y="408" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Estimate plated area A before starting (coin face, washer ring, etc.)</text>
 </svg></figure>
 <p><em>Figure 1 — Plate the cathode object (−); measure current with the multimeter in series for Faraday calculations.</em></p>
-<p><strong>Preferred:</strong> 3 V battery pack (9 V can work but less ideal)</p>
+<h3>Power supply</h3>
+<table>
+<thead>
+<tr>
+<th>Preferred</th>
+<th>Acceptable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3 V</strong> battery pack</td>
+<td>9 V with short runs and careful current checks</td>
+</tr>
+</tbody>
+</table>
+<p>Target current: <strong>~10–30 mA</strong> (0.010–0.030 A).</p>
 <h3>Procedure</h3>
 <ol>
-<li>Pour <strong>small volume</strong> (~20–30 mL) of 0.01 M AgNO₃ — use minimum needed</li>
-<li>Clean cathode object (sand, rinse, dry)</li>
-<li>Connect <strong>multimeter in series</strong> on current (DC mA) range</li>
-<li>Cathode = object (−); anode = silver wire/strip (+) if available</li>
-<li>Verify current before full immersion — target modest current (~10–30 mA)</li>
+<li>Put on <strong>gloves and goggles</strong>.</li>
+<li>Pour <strong>20–30 mL</strong> of <strong>0.01 M AgNO₃</strong> into a small beaker or jar.</li>
+<li>Clean the cathode object: sand → rinse with distilled water → dry → handle with forceps/gloves only.</li>
+<li>Wire the circuit <strong>in series</strong>:</li>
+<li>Battery (+) → anode (silver wire/strip if available; otherwise an inert conductor — note that Ag⁺ will deplete)</li>
+<li>Anode in solution → solution → object</li>
+<li>Object (−) → multimeter <strong>mA</strong> input → battery (−)<br>
+   Or: battery → meter → object → solution → anode → battery.</li>
+<li>Set multimeter to <strong>DC mA</strong> (not voltage). The meter must be <strong>in series</strong>, never clipped across the battery terminals alone.</li>
+<li>Brief test: dip electrodes; confirm current is in the 10–30 mA range. If much higher, lift electrodes partially or use 3 V instead of 9 V.</li>
 </ol>
 <h3>Setup record</h3>
 <table>
@@ -192,6 +251,10 @@
 <td></td>
 </tr>
 <tr>
+<td>AgNO₃ concentration</td>
+<td><strong>0.01 M</strong></td>
+</tr>
+<tr>
 <td>Solution volume (mL)</td>
 <td></td>
 </tr>
@@ -200,7 +263,15 @@
 <td></td>
 </tr>
 <tr>
+<td>Supply voltage</td>
+<td></td>
+</tr>
+<tr>
 <td>Target plating time (s)</td>
+<td>e.g. <strong>300 s</strong></td>
+</tr>
+<tr>
+<td>Initial current (mA)</td>
 <td></td>
 </tr>
 </tbody>
@@ -208,18 +279,19 @@
 <hr>
 <h2>Part C — Timed plating run (45–65 min)</h2>
 <ol>
-<li>Start stopwatch when stable current flows</li>
-<li>Record current every <strong>30–60 s</strong></li>
-<li>Run for planned duration (e.g. 300 s = 5 min)</li>
-<li>Disconnect; rinse object; pat dry</li>
-<li>Observe: color, uniformity, mirror-like vs. dull</li>
+<li>Start the stopwatch when a <strong>stable</strong> current is flowing with the object immersed.</li>
+<li>Record current every <strong>30–60 s</strong> for the planned time (recommend <strong>300 s = 5 min</strong>).</li>
+<li>If current drifts, keep logging — you will use the average.</li>
+<li>At stop time: disconnect power first, then remove the object.</li>
+<li>Rinse with distilled water; pat dry. Observe color and uniformity.</li>
 </ol>
 <h3>Current log</h3>
 <table>
 <thead>
 <tr>
 <th>Time (s)</th>
-<th>I (A or mA)</th>
+<th>I (mA)</th>
+<th>I (A) = mA ÷ 1000</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -228,9 +300,11 @@
 <td>0</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>60</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -238,9 +312,11 @@
 <td>120</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>180</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -248,18 +324,49 @@
 <td>240</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>300</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Average current:</strong> I_avg = ______ A</p>
+<p><strong>Average current:</strong><br>
+I_avg (mA) = <strong><em>_</em>_ → I_avg (A) = </strong>____ <strong>A</strong><br>
+(Example: 20 mA = <strong>0.020 A</strong>)</p>
 <hr>
 <h2>Part D — Faraday calculations (65–80 min)</h2>
-<p>Use <strong>I_avg</strong> and total time <strong>t</strong> (seconds).</p>
+<p>Use <strong>I_avg in amperes</strong> and total time <strong>t in seconds</strong>.</p>
+<p>Constants for silver:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faraday constant F</td>
+<td>96,485 C/mol</td>
+</tr>
+<tr>
+<td>Molar mass Ag</td>
+<td>107.87 g/mol</td>
+</tr>
+<tr>
+<td>Density ρ_Ag</td>
+<td>10.49 g/cm³</td>
+</tr>
+<tr>
+<td>Electrons per Ag⁺</td>
+<td><strong>z = 1</strong></td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -284,7 +391,7 @@
 </tr>
 <tr>
 <td>3. Moles Ag</td>
-<td>n_Ag = n_e</td>
+<td>n_Ag = n_e (because z = 1)</td>
 <td></td>
 <td>mol</td>
 </tr>
@@ -304,35 +411,43 @@
 <td>6. Thickness</td>
 <td>d = V / A</td>
 <td></td>
-<td>cm → <strong>µm</strong></td>
+<td>cm</td>
+</tr>
+<tr>
+<td>7. Micrometers</td>
+<td>d_µm = d_cm × 10,000</td>
+<td></td>
+<td><strong>µm</strong></td>
 </tr>
 </tbody>
 </table>
-<h3>Convert thickness to micrometers</h3>
-<p>d (µm) = d (cm) × 10,000</p>
+<h3>Worked check example (board / instructor)</h3>
+<p>I = 0.020 A, t = 300 s, A = 10 cm² → Q = 6.0 C → n = 6.22×10⁻⁵ mol → m ≈ 0.0067 g → d ≈ <strong>0.64 µm</strong>.</p>
 <hr>
 <h2>Part E — Compare to reality (80–90 min)</h2>
 <p>Discussion prompts:</p>
 <ol>
 <li>Can you <strong>see</strong> a layer ~0.5–1 µm thick?</li>
-<li>If current dropped during the run, did you use average I correctly?</li>
-<li>What side reactions might steal electrons?</li>
-<li>Would doubling the time double the thickness (ideal case)?</li>
+<li>If current dropped, did you use <strong>I_avg</strong>?</li>
+<li>What side reactions might steal electrons (e.g. H₂)?</li>
+<li>Would doubling the time double the thickness in the ideal case?</li>
 </ol>
 <h3>Optional: efficiency estimate</h3>
-<p>If a balance is available:</p>
+<p>If a balance (±0.001 g) is available:</p>
 <p>η = (actual mass gained / calculated mass) × 100%</p>
 <hr>
 <h2>Safety</h2>
 <ul>
-<li><strong>Gloves and goggles mandatory</strong> — AgNO₃ stains skin and clothing permanently</li>
-<li>Small volumes only</li>
-<li>Dedicated silver waste container — <strong>never</strong> pour down drain</li>
-<li>Instructor prepares/dilutes AgNO₃ stock</li>
+<li><strong>Gloves and goggles mandatory</strong> — AgNO₃ stains skin and clothing permanently dark brown/black</li>
+<li>Small volumes only (20–30 mL per group)</li>
+<li>Dedicated <strong>silver waste</strong> container — <strong>never</strong> pour down the drain</li>
+<li>Instructor prepares/dilutes AgNO₃; students do not handle solid AgNO₃</li>
+<li>Wash gloves/hands protocol as directed before leaving</li>
 </ul>
 <hr>
 <h2>Student calculation sheet (duplicate for handout)</h2>
 <pre><code>Given: I_avg = _____ A,  t = _____ s,  A = _____ cm²
+AgNO₃ bath: 0.01 M
 
 Q = I × t = __________ C
 n_e = Q / 96485 = __________ mol
@@ -342,8 +457,8 @@ d = m_Ag / (10.49 × A) = __________ cm = __________ µm
 <hr>
 <h2>Experiment status</h2>
 <ul>
-<li>[ ] AgNO₃ diluted and labeled</li>
-<li>[ ] Typical current at 3 V recorded in pilot</li>
+<li>[ ] 0.01 M AgNO₃ prepared and labeled (volume: ___ mL)</li>
+<li>[ ] Typical current at 3 V recorded in pilot (___ mA)</li>
 <li>[ ] Worksheet tested with sample numbers</li>
 <li>[ ] Silver waste protocol confirmed with facility</li>
 </ul>

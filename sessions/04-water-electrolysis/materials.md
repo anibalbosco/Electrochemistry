@@ -3,8 +3,8 @@
 ## Per group
 
 - [ ] Clear plastic tub or container
-- [ ] Water
-- [ ] Baking soda **or** sodium sulfate (electrolyte)
+- [ ] Water (~500 mL per tub)
+- [ ] Baking soda: **1–2 tsp per 500 mL** (~0.1–0.2 M) **or** sodium sulfate ~0.1 M (~7 g / 500 mL)
 - [ ] Graphite electrodes (thick pencil leads or carbon rods)
 - [ ] 9 V battery or DC power supply
 - [ ] Alligator clips
@@ -27,7 +27,7 @@
 ## Part E — Start rust removal (end of class)
 
 - [ ] Rusty iron nails or hardware (2+ per group)
-- [ ] Washing soda **or** baking soda (NOT NaCl)
+- [ ] Washing soda: **1 tbsp per ~250 mL** warm water (preferred) **or** baking soda same measure (NOT NaCl)
 - [ ] Sacrificial steel strips or graphite rods
 - [ ] Small jars or cups
 - [ ] Labels and camera for before photos
