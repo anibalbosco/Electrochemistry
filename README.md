@@ -61,6 +61,7 @@ Each session folder contains:
 - **README.md** — Overview, learning outcomes, and timed session plan
 - **lecture.md** — Concept block: hooks, talking points, key questions, and visual aids
 - **experiment.md** — Hands-on procedure, variables, observations, and data sheets
+- **instructor.md** — Expanded instructor notes (atomic structure, series, misconceptions, coaching)
 - **materials.md** — Per-session materials checklist
 - **preparation.md** — Pre-class setup (overnight steps, solution prep, etc.)
 

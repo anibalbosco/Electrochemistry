@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 1 — Instructor Notes: Fruit Battery Deep Dive | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub active" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/01-fruit-battery/index.html">Session 1</a> / Instructor Notes: Fruit Battery Deep Dive</div>
+      <header class="page-header">
+        <h1>Session 1 — Instructor Notes: Fruit Battery Deep Dive</h1>
+        <div class="page-meta"><span class="badge">Session 1</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors and TAs only. Students see the shorter <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>. Use this page to answer “why?” with confidence.</p>
+<hr>
+<h2>Why this session exists</h2>
+<p>Students already know “batteries make electricity.” The fruit cell makes the chemistry visible: two different metals, an acidic juice, a measurable voltage, and (with luck) a tiny load. Your job is to connect that demo to <strong>electrons leaving metal atoms</strong>, <strong>ions moving in solution</strong>, and the idea that <strong>oxidation and reduction are always paired</strong>.</p>
+<hr>
+<h2>Atomic and electronic foundations</h2>
+<h3>Atoms, electrons, and valence shells (what students need)</h3>
+<p>Keep this brief but precise if students lack chemistry background:</p>
+<ol>
+<li>Atoms have a <strong>nucleus</strong> (protons + neutrons) and <strong>electrons</strong> outside.</li>
+<li>Chemistry of batteries is almost entirely about the <strong>outermost (valence) electrons</strong>.</li>
+<li>Metals tend to <strong>lose</strong> valence electrons → become <strong>positive ions</strong> (cations).</li>
+<li>In solution, those electrons do not vanish — they travel through a wire and are gained by something else (reduction).</li>
+</ol>
+<h3>Zinc and copper electron structure (instructor level)</h3>
+<table>
+<thead>
+<tr>
+<th>Metal</th>
+<th>Atomic number</th>
+<th>Valence electrons (simplified)</th>
+<th>Typical ion</th>
+<th>What that means here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zn</td>
+<td>30</td>
+<td>2 (4s²)</td>
+<td>Zn²⁺</td>
+<td>Readily loses 2e⁻ → dissolves as Zn²⁺</td>
+</tr>
+<tr>
+<td>Cu</td>
+<td>29</td>
+<td>1 (4s¹) in free atom; chemistry often treated as Cu²⁺/Cu</td>
+<td>Cu²⁺ or Cu⁺</td>
+<td>Less eager than Zn to dissolve in this cell</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teaching tip:</strong> You do <strong>not</strong> need full electron configurations with students. Say: <em>“Zinc holds its outer electrons less tightly than copper in this setup, so zinc is the metal that oxidizes.”</em></p>
+<h3>What “oxidation” means at the atom scale</h3>
+<p>At the zinc surface:</p>
+<pre><code>Zn(s) → Zn²⁺(aq) + 2e⁻
+</code></pre>
+<ul>
+<li>The solid zinc atom leaves the metal lattice as Zn²⁺ into the juice.</li>
+<li>The two electrons stay in the metal and can travel through the external wire.</li>
+<li>That is why the zinc electrode is the <strong>anode</strong> (oxidation site) and, in a galvanic cell, the <strong>negative</strong> terminal (source of electrons into the external circuit).</li>
+</ul>
+<p>At the copper surface (simplified classroom story for acidic fruit juice):</p>
+<pre><code>2H⁺(aq) + 2e⁻ → H₂(g)
+</code></pre>
+<ul>
+<li>Protons from the acidic juice gain electrons and become hydrogen gas.</li>
+<li>Copper mainly provides a surface for reduction; it is <strong>not</strong> the main reactant being consumed (though real cells can have side reactions).</li>
+</ul>
+<p><strong>Nuance for you (not always for students):</strong> In some fruit cells, dissolved oxygen or other species also accept electrons. The H⁺ → H₂ story is the clean teaching model; bubbles may be subtle.</p>
+<hr>
+<h2>Periodic trends and the electrochemical series</h2>
+<h3>Activity / reactivity series (classroom version)</h3>
+<p>More active metals oxidize <strong>preferentially</strong>:</p>
+<pre><code>Mg &gt; Al &gt; Zn &gt; Fe &gt; Sn &gt; Pb &gt; (H) &gt; Cu &gt; Ag &gt; Au
+</code></pre>
+<p><strong>How to use this in Session 1:</strong></p>
+<ul>
+<li>Zn is above Cu → Zn oxidizes; Cu is the better cathode surface.</li>
+<li>Swap electrodes in discussion: if both metals are the same, ΔE ≈ 0.</li>
+<li>If students try Al or Mg: expect different voltages and often messy oxide layers (Al₂O₃ film can block current).</li>
+</ul>
+<h3>Standard reduction potentials (instructor reference)</h3>
+<p>Approximate aqueous standard potentials (vs SHE, acidic):</p>
+<table>
+<thead>
+<tr>
+<th>Half-reaction</th>
+<th>E° (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zn²⁺ + 2e⁻ → Zn</td>
+<td>−0.76</td>
+</tr>
+<tr>
+<td>2H⁺ + 2e⁻ → H₂</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>Cu²⁺ + 2e⁻ → Cu</td>
+<td>+0.34</td>
+</tr>
+</tbody>
+</table>
+<p>Cell potential (ideal Zn/H⁺ picture):</p>
+<pre><code>E°_cell ≈ E°_cathode − E°_anode(as oxidation)
+       ≈ 0.00 − (−0.76) = +0.76 V
+</code></pre>
+<p>Students measure ~0.8–1.0 V — close enough for a lemon. Real fruit cells are <strong>not</strong> standard conditions (unknown [H⁺], mixed ions, internal resistance), so do not oversell exact E° matching.</p>
+<p><strong>Key instructor point:</strong> Voltage measures a <strong>difference in chemical preference</strong> for holding electrons, not “how much electricity is stored.”</p>
+<hr>
+<h2>Lecture concepts — expanded</h2>
+<h3>Galvanic cell definition</h3>
+<p>A <strong>galvanic (voltaic) cell</strong> converts chemical energy into electrical energy spontaneously:</p>
+<ul>
+<li>Oxidation at anode, reduction at cathode</li>
+<li>Electrons flow <strong>anode → cathode</strong> in the external wire</li>
+<li>Ions migrate in the electrolyte to keep charge balanced</li>
+</ul>
+<p>Without ion motion, the circuit is incomplete: electrons pile up on one side, charge separation stops the reaction.</p>
+<h3>Anode / cathode sign convention (the #1 confusion)</h3>
+<table>
+<thead>
+<tr>
+<th>Cell type</th>
+<th>Anode process</th>
+<th>Anode sign</th>
+<th>Cathode process</th>
+<th>Cathode sign</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Galvanic (Session 1)</td>
+<td>Oxidation</td>
+<td><strong>−</strong></td>
+<td>Reduction</td>
+<td><strong>+</strong></td>
+</tr>
+<tr>
+<td>Electrolytic (Session 2+)</td>
+<td>Oxidation</td>
+<td><strong>+</strong> (connected to battery +)</td>
+<td>Reduction</td>
+<td><strong>−</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Memory aid for instructors: <em>Anode = oxidation always. Sign depends on whether the cell is spontaneous or driven.</em></p>
+<h3>Voltage vs current vs power</h3>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>What it is</th>
+<th>Fruit cell reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voltage (V)</td>
+<td>Electrical potential difference</td>
+<td>Often ~0.8–1.0 V per cell</td>
+</tr>
+<tr>
+<td>Current (I)</td>
+<td>Charge flow rate</td>
+<td>Usually tiny (µA–mA)</td>
+</tr>
+<tr>
+<td>Power (P = VI)</td>
+<td>Energy per time</td>
+<td>Too small for most loads unless many cells / good contacts</td>
+</tr>
+</tbody>
+</table>
+<p>Students often think “1 V is a lot.” Emphasize: a AA battery is ~1.5 V <strong>and</strong> can supply much higher current. Lemons fail LEDs more from <strong>current / internal resistance</strong> than from voltage alone.</p>
+<h3>Internal resistance</h3>
+<p>Model a real cell as an ideal voltage source in series with resistance (R_\text{int}):</p>
+<pre><code>V_load = E − I·R_int
+</code></pre>
+<p>When a load draws current, measured voltage <strong>drops</strong>. Rolling fruit, clean metal, larger electrode area, and better juice contact all lower (R_\text{int}).</p>
+<h3>Series vs parallel</h3>
+<ul>
+<li><strong>Series:</strong> voltages add; same current through each cell. Needed for LED (~2 V).</li>
+<li><strong>Parallel:</strong> voltage stays ~one cell; current capacity increases (in ideal theory). Fruit cells rarely reward parallel setups because contacts and mismatches dominate.</li>
+</ul>
+<hr>
+<h2>Experiment notes — what to watch for</h2>
+<h3>Build quality that actually matters</h3>
+<ol>
+<li><strong>Roll the fruit</strong> — ruptures juice sacs; improves ion pathways.</li>
+<li><strong>Gap between electrodes</strong> — touching shorts the cell (0 V externally).</li>
+<li><strong>Clean metal</strong> — oxide/dirt raises resistance.</li>
+<li><strong>Clip polarity</strong> — decide a convention (e.g. red → Cu) and stick to it so series wiring is consistent.</li>
+</ol>
+<h3>Typical numbers (pilot these yourself)</h3>
+<table>
+<thead>
+<tr>
+<th>Setup</th>
+<th>Expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lemon + Zn + Cu</td>
+<td>~0.8–1.0 V open circuit</td>
+</tr>
+<tr>
+<td>Potato / apple</td>
+<td>Often slightly lower or similar</td>
+</tr>
+<tr>
+<td>3 cells in series</td>
+<td>~2.4–3.0 V open circuit</td>
+</tr>
+<tr>
+<td>Voltage under LED load</td>
+<td>Often collapses if current demand is high</td>
+</tr>
+</tbody>
+</table>
+<h3>Why the LED may fail even at “enough volts”</h3>
+<ul>
+<li>LED needs both <strong>forward voltage</strong> (~1.8–2.2 V for red) <strong>and</strong> a few mA.</li>
+<li>Fruit cell can show 2.7 V open-circuit but sag under load.</li>
+<li>Wrong LED polarity → no light.</li>
+<li>Prefer <strong>red diffused LEDs</strong>; blue/white need higher voltage.</li>
+</ul>
+<h3>Extension: metal comparisons (how to narrate results)</h3>
+<p>If students replace Zn with Fe or Al:</p>
+<ul>
+<li>Fe vs Cu: smaller voltage than Zn vs Cu (Fe less active than Zn).</li>
+<li>Al vs Cu: theoretically high activity, but Al₂O₃ film often suppresses performance — great teachable moment about <strong>surface chemistry</strong>, not just the activity table.</li>
+</ul>
+<h3>End-of-session copper jars (for Session 2)</h3>
+<p>Vinegar + salt + copper metal slowly forms Cu²⁺ (and related complexes). Overnight blue-green color = dissolved copper. Students are making tomorrow’s electrolyte. Emphasize: this is <strong>chemical dissolution / corrosion</strong>, not yet electroplating.</p>
+<hr>
+<h2>Misconceptions to preempt</h2>
+<table>
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Better framing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“The lemon is the battery.”</td>
+<td>The lemon is the <strong>electrolyte</strong>; the metals drive the chemistry.</td>
+</tr>
+<tr>
+<td>“Electricity is stored in the lemon.”</td>
+<td>Energy comes from the <strong>chemical reaction</strong>, mainly Zn oxidation.</td>
+</tr>
+<tr>
+<td>“Electrons travel through the juice.”</td>
+<td>Electrons travel in the <strong>wire</strong>; <strong>ions</strong> travel in the juice.</td>
+</tr>
+<tr>
+<td>“Anode is always +.”</td>
+<td>Only true for driven electrolytic cells; here anode is −.</td>
+</tr>
+<tr>
+<td>“Higher voltage always means brighter LED.”</td>
+<td>Current and internal resistance matter as much as voltage.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Board plan (20 min concept block)</h2>
+<ol>
+<li>Draw lemon + Zn + Cu; label anode/cathode.</li>
+<li>Write Zn oxidation and H⁺ reduction half-reactions.</li>
+<li>Draw external e⁻ path and internal ion path (two different arrows).</li>
+<li>Show one cell vs three in series.</li>
+<li>Preview Session 2: <em>tomorrow we reverse the idea — electricity moves metal atoms.</em></li>
+</ol>
+<hr>
+<h2>Optional enrichment (if a strong student asks)</h2>
+<ul>
+<li>Nernst equation qualitatively: concentration and pH shift voltage.</li>
+<li>Salt bridges vs fruit electrolyte (why Daniell cells use two compartments).</li>
+<li>Why commercial batteries use solid electrolytes / pastes (leakage, shelf life, current density).</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

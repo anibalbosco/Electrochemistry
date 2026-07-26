@@ -1,5 +1,7 @@
 # Session 3 — Experiment: Silver Plating + Calculations
 
+> **Instructors:** area pitfalls, ammeter series wiring, I_avg — [instructor.md](instructor.md).
+
 ---
 
 ## Part A — Estimate surface area (25–35 min)

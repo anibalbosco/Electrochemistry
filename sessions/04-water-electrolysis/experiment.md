@@ -1,5 +1,7 @@
 # Session 4 — Experiment: Water Electrolysis
 
+> **Instructors:** gas ID, ratio systematics, Part E polarity — [instructor.md](instructor.md).
+
 ---
 
 ## Part A — Build gas collection setup (25–40 min)

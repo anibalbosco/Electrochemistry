@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 2 — Instructor Notes: Copper Electroplating Deep Dive | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub active" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/02-copper-electroplating/index.html">Session 2</a> / Instructor Notes: Copper Electroplating Deep Dive</div>
+      <header class="page-header">
+        <h1>Session 2 — Instructor Notes: Copper Electroplating Deep Dive</h1>
+        <div class="page-meta"><span class="badge">Session 2</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
+<hr>
+<h2>Why this session exists</h2>
+<p>Session 1 made electricity from chemistry. Session 2 <strong>forces</strong> chemistry with electricity: copper ions become solid metal on a student’s object. Visually dramatic, conceptually the reverse of a galvanic cell. Students must leave knowing: <strong>cathode = reduction = object being plated</strong>, and the power supply — not spontaneous chemistry — drives the process.</p>
+<hr>
+<h2>Atomic / ionic picture of plating</h2>
+<h3>What Cu²⁺ is</h3>
+<p>Copper metal atoms have valence electrons that can be removed:</p>
+<pre><code>Cu(s) → Cu²⁺(aq) + 2e⁻   (oxidation / dissolution)
+Cu²⁺(aq) + 2e⁻ → Cu(s)   (reduction / plating)
+</code></pre>
+<p>Cu²⁺ in water is typically a hydrated complex (often written Cu²⁺(aq) or [Cu(H₂O)₆]²⁺). The blue color of many copper solutions comes from these hydrated ions (and related species). Students only need: <em>blue liquid ≈ dissolved copper ions ready to plate.</em></p>
+<h3>Why two electrons matter</h3>
+<p>Each Cu²⁺ needs <strong>two</strong> electrons to become one Cu atom. Faraday’s law (Session 3) makes this quantitative; here it explains rate qualitatively:</p>
+<ul>
+<li>Higher current → more electrons per second → more Cu atoms deposited per second</li>
+<li>Too high current density → ions cannot arrive / arrange orderly → powdery, dark deposits</li>
+</ul>
+<h3>Valence and periodic context</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Common ion in this lab</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cu</td>
+<td>Cu²⁺</td>
+<td>Transition metal; d-electrons give colored solutions</td>
+</tr>
+<tr>
+<td>Fe (nail)</td>
+<td>Fe²⁺ / Fe³⁺ possible side products</td>
+<td>Steel cathode is a <strong>substrate</strong>, not the ion being plated</td>
+</tr>
+<tr>
+<td>H</td>
+<td>H⁺</td>
+<td>Competing reduction → H₂ bubbles if overpotential / acidity allows</td>
+</tr>
+</tbody>
+</table>
+<p>Copper sits <strong>below</strong> hydrogen and iron in the activity series for many contexts — which is why Cu²⁺ is relatively easy to reduce onto steel. That is also why iron nails rust when left wet, but copper plating can stick if the surface is clean.</p>
+<hr>
+<h2>Galvanic vs electrolytic — master the signs</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Session 1 galvanic</th>
+<th>Session 2 electrolytic plating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy direction</td>
+<td>Chemical → electrical</td>
+<td>Electrical → chemical</td>
+</tr>
+<tr>
+<td>Spontaneous?</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Anode</td>
+<td>Zn oxidizes (− terminal)</td>
+<td>Cu oxidizes (<strong>+</strong> of battery)</td>
+</tr>
+<tr>
+<td>Cathode</td>
+<td>H⁺ reduced (+ terminal)</td>
+<td>Cu²⁺ reduced (<strong>−</strong> of battery)</td>
+</tr>
+<tr>
+<td>Who supplies energy?</td>
+<td>Chemical reactants</td>
+<td>Battery / supply</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Classroom one-liner:</strong> <em>“Yesterday zinc wanted to give away electrons. Today we force copper ions to take electrons by connecting the object to the negative terminal.”</em></p>
+<hr>
+<h2>Half-reactions in the plating bath</h2>
+<h3>Preferred teaching set (copper anode)</h3>
+<p><strong>Cathode (−) — object:</strong></p>
+<pre><code>Cu²⁺(aq) + 2e⁻ → Cu(s)
+</code></pre>
+<p><strong>Anode (+) — copper metal:</strong></p>
+<pre><code>Cu(s) → Cu²⁺(aq) + 2e⁻
+</code></pre>
+<p><strong>Net:</strong> copper is transferred from anode to cathode. Solution Cu²⁺ concentration stays roughly constant if the anode is copper (idealized).</p>
+<h3>If the anode is <em>not</em> copper (graphite, steel)</h3>
+<p>Anode reaction may become water oxidation or anode metal dissolution:</p>
+<pre><code>2H₂O → O₂ + 4H⁺ + 4e⁻   (water oxidation, simplified)
+</code></pre>
+<p>Then Cu²⁺ in solution is <strong>consumed</strong> and not replenished — bath depletes, plating slows, quality suffers. Emphasize why a copper anode is preferred.</p>
+<h3>Competing cathode reaction</h3>
+<pre><code>2H⁺ + 2e⁻ → H₂(g)
+</code></pre>
+<p>Bubbles on the object mean some current is wasted on hydrogen instead of copper. Acidic baths and high current density increase this. Dark/powdery deposits often correlate with high current and side reactions.</p>
+<hr>
+<h2>Electrochemical series connection</h2>
+<p>Approximate E° values:</p>
+<table>
+<thead>
+<tr>
+<th>Couple</th>
+<th>E° (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cu²⁺/Cu</td>
+<td>+0.34</td>
+</tr>
+<tr>
+<td>H⁺/H₂</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>Fe²⁺/Fe</td>
+<td>−0.44</td>
+</tr>
+<tr>
+<td>Zn²⁺/Zn</td>
+<td>−0.76</td>
+</tr>
+</tbody>
+</table>
+<p>Plating Cu onto Fe is thermodynamically reasonable: Cu²⁺ is a stronger oxidant than Fe²⁺ (Cu²⁺ more easily reduced). Students do not need the calculation; you can say: <em>“Copper ions are ‘eager’ to become metal compared with iron ions — so copper coats the nail when we supply electrons.”</em></p>
+<hr>
+<h2>Current density and deposit quality</h2>
+<p><strong>Current density</strong> ≈ current / cathode area.</p>
+<table>
+<thead>
+<tr>
+<th>Too low</th>
+<th>Just right</th>
+<th>Too high</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very slow, thin coat</td>
+<td>Smooth, adherent, coppery</td>
+<td>Burnt, black, powdery, treeing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Instructor controls if groups struggle:</strong></p>
+<ul>
+<li>Series resistor (100–500 Ω) with 9 V pack</li>
+<li>Larger anode–cathode distance</li>
+<li>Shorter plating times (2–5 min first)</li>
+<li>Cleaner surface prep</li>
+</ul>
+<h3>Why cleaning matters (surface chemistry)</h3>
+<p>Oils and oxides:</p>
+<ul>
+<li>Block electron transfer</li>
+<li>Prevent metallic bonding of new Cu atoms to the substrate</li>
+<li>Cause peeling or patchy color</li>
+</ul>
+<p>Protocol: sand → rinse → handle by edges → plate immediately. Fingerprints are a real failure mode.</p>
+<hr>
+<h2>Experiment coaching notes</h2>
+<h3>Homemade vinegar/salt copper solution</h3>
+<ul>
+<li>Often weaker and less blue than CuSO₄.</li>
+<li>May contain mixed copper species; still plates if enough Cu²⁺ is present.</li>
+<li>Keep backup CuSO₄ for demos or failed jars.</li>
+<li><strong>Waste:</strong> collect copper solutions; do not pour casually down drains.</li>
+</ul>
+<h3>Wiring checklist (walk the room)</h3>
+<ol>
+<li>Object on <strong>battery negative (−)</strong></li>
+<li>Copper strip/wire on <strong>battery positive (+)</strong></li>
+<li>Electrodes not touching</li>
+<li>Both immersed in solution</li>
+<li>Optional ammeter in series</li>
+</ol>
+<p>Students reverse polarity constantly. A reversed cell can etch the object or plate onto the “wrong” electrode.</p>
+<h3>What good vs bad looks like</h3>
+<table>
+<thead>
+<tr>
+<th>Appearance</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bright salmon/copper color</td>
+<td>Good reduction, moderate current</td>
+</tr>
+<tr>
+<td>Dark brown / black powder</td>
+<td>Too much current; wipe/stop/reduce I</td>
+</tr>
+<tr>
+<td>Patchy</td>
+<td>Dirty surface or poor immersion</td>
+</tr>
+<tr>
+<td>Bubbling heavily on object</td>
+<td>Competing H₂ evolution</td>
+</tr>
+</tbody>
+</table>
+<h3>Variable tests (how to interpret group data)</h3>
+<ul>
+<li><strong>Time:</strong> thicker coat, then roughness if too long</li>
+<li><strong>Distance:</strong> closer → higher current → faster but riskier</li>
+<li><strong>Resistor:</strong> lower current → slower, often prettier</li>
+<li><strong>Surface prep:</strong> dirty control looks obviously worse — best demo variable</li>
+</ul>
+<hr>
+<h2>Misconceptions to preempt</h2>
+<table>
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“The battery stores the copper.”</td>
+<td>Battery supplies <strong>electrons</strong>; copper comes from ions / anode.</td>
+</tr>
+<tr>
+<td>“Positive terminal plates the object.”</td>
+<td>Object must be <strong>negative</strong> (cathode).</td>
+</tr>
+<tr>
+<td>“Color in solution is paint.”</td>
+<td>Color is from <strong>dissolved Cu²⁺ ions</strong>.</td>
+</tr>
+<tr>
+<td>“More voltage always better.”</td>
+<td>Excess driving force → burnt deposits.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Board plan</h2>
+<ol>
+<li>Draw Session 1 cell vs Session 2 cell side by side (energy arrows opposite).</li>
+<li>Label anode/cathode signs for <strong>electrolytic</strong> case.</li>
+<li>Write both half-reactions; circle “object = cathode.”</li>
+<li>Show photo timeline: 0 / 2 / 5 min plating.</li>
+<li>Bridge: next time we <strong>count</strong> atoms with Faraday’s law using silver.</li>
+</ol>
+<hr>
+<h2>Optional enrichment</h2>
+<ul>
+<li>Overpotential and why real plating baths use additives (levelers, brighteners).</li>
+<li>Hull cell concept for current-density mapping (advanced).</li>
+<li>Industrial electroplating: chrome, nickel, PCB copper deposition.</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

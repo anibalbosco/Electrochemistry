@@ -2,6 +2,8 @@
 
 **Target duration:** ~20 minutes
 
+> **Instructors:** galvanic vs electrolytic signs, Cu²⁺ chemistry, current density — [instructor.md](instructor.md).
+
 ---
 
 ## Opening hook (0–10 min)

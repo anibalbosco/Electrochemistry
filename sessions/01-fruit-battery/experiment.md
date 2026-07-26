@@ -2,6 +2,8 @@
 
 **Main experiment:** Lemon/lime/potato battery — generating electricity from chemistry.
 
+> **Instructors:** expected voltages, LED failure modes, and extension interpretation — [instructor.md](instructor.md).
+
 ![Single fruit cell schematic](../../assets/figures/session1-fruit-cell.svg)
 
 *Figure 1 — Single galvanic cell: Zn anode (−), Cu cathode (+), electrons through the wire, ions through the fruit juice.*

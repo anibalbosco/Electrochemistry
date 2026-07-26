@@ -1,5 +1,7 @@
 # Session 2 — Experiment: Copper Electroplating
 
+> **Instructors:** polarity checks, deposit quality, and solution notes — [instructor.md](instructor.md).
+
 ---
 
 ## Prep — Clean the cathode (25–35 min)

@@ -2,6 +2,8 @@
 
 **Target duration:** ~20 minutes
 
+> **Instructors:** worked Faraday example, z-factor for Ag vs Cu, efficiency — [instructor.md](instructor.md).
+
 ---
 
 ## Opening hook (0–10 min)

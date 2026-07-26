@@ -2,6 +2,8 @@
 
 **Part C** opens the session (overnight reveal). **Parts A & B** are student hands-on.
 
+> **Instructors:** jar narratives, metal-pair voltages, reveal protocol — [instructor.md](instructor.md).
+
 ---
 
 ## Part C — Electrolytic rust removal reveal (0–15 min)

@@ -49,6 +49,7 @@ SESSION_PAGES = [
     ("index", "Overview", "README.md"),
     ("lecture", "Lecture", "lecture.md"),
     ("experiment", "Experiment", "experiment.md"),
+    ("instructor", "Instructor Notes", "instructor.md"),
     ("materials", "Materials", "materials.md"),
     ("preparation", "Preparation", "preparation.md"),
 ]

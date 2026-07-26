@@ -2,6 +2,8 @@
 
 **Target duration:** ~20 minutes (may occur before, during, or after the experiment)
 
+> **Instructors:** for atomic structure, activity series, anode/cathode signs, and coaching notes, see [instructor.md](instructor.md).
+
 ---
 
 ## Opening hook (0–10 min)

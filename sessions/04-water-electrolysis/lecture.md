@@ -2,6 +2,8 @@
 
 **Target duration:** ~20 minutes (+ energy discussion at end)
 
+> **Instructors:** half-reactions, why no NaCl, 2:1 ratio errors, derusting handoff — [instructor.md](instructor.md).
+
 ---
 
 ## Opening hook (0–10 min)

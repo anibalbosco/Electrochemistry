@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 3 — Instructor Notes: Silver Plating + Faraday Deep Dive | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub active" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/03-silver-plating-faraday/index.html">Session 3</a> / Instructor Notes: Silver Plating + Faraday Deep Dive</div>
+      <header class="page-header">
+        <h1>Session 3 — Instructor Notes: Silver Plating + Faraday Deep Dive</h1>
+        <div class="page-meta"><span class="badge">Session 3</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
+<hr>
+<h2>Why this session exists</h2>
+<p>Students saw copper move in Session 2. Now they <strong>quantify</strong> electrodeposition: charge → moles of electrons → moles of metal → mass → thickness. Silver is ideal because Ag⁺ + e⁻ → Ag is 1:1 (simpler stoichiometry than Cu²⁺ + 2e⁻). This is the week’s heaviest math session — go slowly on units.</p>
+<hr>
+<h2>Atomic / electronic foundations for silver</h2>
+<h3>Silver ion and electron count</h3>
+<pre><code>Ag⁺(aq) + e⁻ → Ag(s)
+</code></pre>
+<ul>
+<li>Silver atom (Ag, Z = 47) loses one valence electron → Ag⁺.</li>
+<li>Plating reverses that: one electron returns → one Ag atom deposited.</li>
+<li>Therefore: <strong>n_Ag = n_e</strong> (moles silver = moles electrons) when plating is 100% efficient.</li>
+</ul>
+<p>Compare with copper from Session 2:</p>
+<pre><code>Cu²⁺ + 2e⁻ → Cu    ⇒   n_Cu = n_e / 2
+</code></pre>
+<p>Mention this contrast so students see why the electron count in the half-reaction matters.</p>
+<h3>Why dilute AgNO₃</h3>
+<p>Silver nitrate provides Ag⁺. Classroom concentration <strong>0.01 M</strong> keeps:</p>
+<ul>
+<li>Cost down</li>
+<li>Staining / hazard manageable</li>
+<li>Thin films that still look metallic</li>
+</ul>
+<p><strong>Safety (non-negotiable):</strong> AgNO₃ stains skin/clothes permanently dark; gloves + goggles; collect all silver waste.</p>
+<hr>
+<h2>Faraday’s law — instructor mastery</h2>
+<h3>Charge from current and time</h3>
+<pre><code>Q = I × t
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>ampere (A) = C/s</td>
+<td>Current</td>
+</tr>
+<tr>
+<td>t</td>
+<td>second (s)</td>
+<td>Time</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>coulomb (C)</td>
+<td>Total charge passed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trap:</strong> students record mA but forget to convert. 20 mA = 0.020 A.</p>
+<h3>Faraday constant</h3>
+<pre><code>F = 96,485 C/mol e⁻ ≈ 9.65 × 10⁴ C/mol
+</code></pre>
+<p>Meaning: one mole of electrons carries ~96,485 C.</p>
+<pre><code>n_e = Q / F
+</code></pre>
+<h3>Stoichiometry factor (general form)</h3>
+<p>For a reduction requiring <strong>z</strong> electrons per metal ion:</p>
+<pre><code>n_metal = n_e / z = Q / (z F)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Metal ion</th>
+<th>z</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ag⁺</td>
+<td>1</td>
+<td>Session 3</td>
+</tr>
+<tr>
+<td>Cu²⁺</td>
+<td>2</td>
+<td>Session 2</td>
+</tr>
+<tr>
+<td>Al³⁺</td>
+<td>3</td>
+<td>not used here</td>
+</tr>
+</tbody>
+</table>
+<h3>Mass and thickness</h3>
+<pre><code>m = n × M
+V = m / ρ
+d = V / A
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Silver value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Molar mass M</td>
+<td>107.87 g/mol</td>
+</tr>
+<tr>
+<td>Density ρ</td>
+<td>10.49 g/cm³</td>
+</tr>
+<tr>
+<td>A</td>
+<td>geometric plated area (cm²) — <strong>biggest student error source</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Worked example (memorize this board version)</h2>
+<p>Given: I = 0.020 A, t = 300 s, A = 10 cm², Ag plating, z = 1.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Math</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q</td>
+<td>0.020 × 300</td>
+<td>6.0 C</td>
+</tr>
+<tr>
+<td>n_e</td>
+<td>6.0 / 96485</td>
+<td>6.22 × 10⁻⁵ mol</td>
+</tr>
+<tr>
+<td>n_Ag</td>
+<td>= n_e</td>
+<td>6.22 × 10⁻⁵ mol</td>
+</tr>
+<tr>
+<td>m</td>
+<td>6.22e−5 × 107.87</td>
+<td>6.71 × 10⁻³ g</td>
+</tr>
+<tr>
+<td>V</td>
+<td>m / 10.49</td>
+<td>6.40 × 10⁻⁴ cm³</td>
+</tr>
+<tr>
+<td>d</td>
+<td>V / 10</td>
+<td>6.4 × 10⁻⁵ cm = <strong>0.64 µm</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sense-check:</strong> visible silver films are often tenths of a micrometer to a few micrometers — students’ numbers should be in that ballpark if I, t, A are sane.</p>
+<h3>Average current when I drifts</h3>
+<p>If students log I every 30–60 s:</p>
+<pre><code>I_avg ≈ (I₀ + I₁ + … + Iₙ) / (n+1)
+</code></pre>
+<p>or trapezoidal estimate. Then Q ≈ I_avg × t_total.</p>
+<p>Do <strong>not</strong> use only the first reading if current falls (common as concentration polarization / surface changes).</p>
+<hr>
+<h2>Ideal vs real plating (current efficiency)</h2>
+<p>Faraday assumes <strong>every</strong> electron reduces Ag⁺. Reality:</p>
+<pre><code>current efficiency η = (charge used for Ag plating) / (total charge) ≤ 1
+</code></pre>
+<p>Loss channels:</p>
+<ul>
+<li>H₂ evolution</li>
+<li>Impurity reductions</li>
+<li>Non-uniform current (edges plate more — “dog-boning”)</li>
+<li>Flaky deposit that rinses off</li>
+</ul>
+<p>If calculated thickness looks “too thick” vs visual: area underestimate or optimistic η = 1. If “too thin”: efficiency &lt; 1, area overestimate, or current logged wrong.</p>
+<hr>
+<h2>Electrochemical series note for Ag</h2>
+<table>
+<thead>
+<tr>
+<th>Couple</th>
+<th>E° (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ag⁺/Ag</td>
+<td>+0.80</td>
+</tr>
+<tr>
+<td>Cu²⁺/Cu</td>
+<td>+0.34</td>
+</tr>
+<tr>
+<td>H⁺/H₂</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+<p>Ag⁺ is a strong oxidant relative to H⁺ and Cu²⁺ — silver plates readily. That is why even dilute AgNO₃ works visually. It is also why silver ions are “eager” to reduce and why waste must be handled carefully (and why Ag stains via reduction on skin/organics).</p>
+<p><strong>Anode choice:</strong></p>
+<ul>
+<li><strong>Silver anode:</strong> replenishes Ag⁺ (like Cu anode in Session 2).</li>
+<li><strong>Inert anode:</strong> Ag⁺ depletes; oxygen evolution possible; calculations still OK for short runs if solution starts with enough Ag⁺.</li>
+</ul>
+<hr>
+<h2>Experiment coaching</h2>
+<h3>Area estimation — coach aggressively</h3>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Reasonable approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coin face</td>
+<td>A = π(r)² per face; ×2 if both faces plate</td>
+</tr>
+<tr>
+<td>Washer</td>
+<td>π(R² − r²)</td>
+</tr>
+<tr>
+<td>Irregular</td>
+<td>Length × width of immersed region; say so</td>
+</tr>
+</tbody>
+</table>
+<p>Students who invent a huge area get absurdly small thickness and think Faraday “failed.”</p>
+<h3>Ammeter in series</h3>
+<p>Multimeter must be <strong>in series</strong> on DC current range — not across the cell like a voltmeter (that shorts / misreads). Walk each station once.</p>
+<h3>Timing discipline</h3>
+<p>Start stopwatch when current is flowing and stable. Stop when disconnected. Gaps in logging → poor I_avg.</p>
+<h3>What success looks like</h3>
+<ul>
+<li>Whitish / silvery sheen on copper object</li>
+<li>Not necessarily mirror-bright (classroom baths lack brighteners)</li>
+<li>Calculation completed with units at every step</li>
+</ul>
+<hr>
+<h2>Misconceptions</h2>
+<table>
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“Q = I + t”</td>
+<td>Q = I × t</td>
+</tr>
+<tr>
+<td>“Use mA directly in Q = It”</td>
+<td>Convert to amperes</td>
+</tr>
+<tr>
+<td>“Cu and Ag use the same z”</td>
+<td>Ag⁺ needs 1e⁻; Cu²⁺ needs 2e⁻</td>
+</tr>
+<tr>
+<td>“Thickness must match a ruler”</td>
+<td>Micrometers are invisible to a ruler; appearance is qualitative</td>
+</tr>
+<tr>
+<td>“Faraday is wrong if deposit looks thin”</td>
+<td>Efficiency and area errors dominate</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Board plan</h2>
+<ol>
+<li>Write Ag⁺ + e⁻ → Ag; circle “1 electron per atom.”</li>
+<li>Flowchart: I,t → Q → n_e → n_Ag → m → V → d.</li>
+<li>Full numerical example with units.</li>
+<li>Discuss why I_avg beats a single reading.</li>
+<li>Bridge to Session 4: next we count <strong>gas molecules</strong> by volume ratio, not metal atoms by charge.</li>
+</ol>
+<hr>
+<h2>Optional enrichment</h2>
+<ul>
+<li>Derive z from half-reaction for Cu plating retroactively (Session 2 data).</li>
+<li>Mention electrolysis mass production (Al from Hall–Héroult — huge Faraday consumer).</li>
+<li>Introduce faradaic efficiency formally if a student is ready.</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

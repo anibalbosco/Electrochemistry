@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 4 — Instructor Notes: Water Electrolysis Deep Dive | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub active" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/04-water-electrolysis/index.html">Session 4</a> / Instructor Notes: Water Electrolysis Deep Dive</div>
+      <header class="page-header">
+        <h1>Session 4 — Instructor Notes: Water Electrolysis Deep Dive</h1>
+        <div class="page-meta"><span class="badge">Session 4</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
+<hr>
+<h2>Why this session exists</h2>
+<p>Students have plated metals. Now electricity splits <strong>molecules</strong> of water into elemental gases, and stoichiometry becomes visible as a <strong>2:1 volume ratio</strong>. This also introduces hydrogen as an energy carrier and sets up overnight electrolytic rust removal for Session 5.</p>
+<hr>
+<h2>Atomic / molecular foundations</h2>
+<h3>Water’s bonding (instructor talking points)</h3>
+<ul>
+<li>H₂O: oxygen shares electrons with two hydrogens (polar covalent bonds).</li>
+<li>Oxygen is more electronegative → partial negative charge on O, partial positive on H.</li>
+<li>Liquid water also has extensive hydrogen bonding (affects boiling point, solvation) — optional aside.</li>
+<li>Pure water has very few ions (autoionization): H₂O ⇌ H⁺ + OH⁻ with tiny [H⁺][OH⁻] = 10⁻¹⁴ at 25 °C. That is why <strong>pure water is a poor conductor</strong>.</li>
+</ul>
+<h3>Why we add baking soda or Na₂SO₄</h3>
+<p>Electrolysis needs mobile ions. Baking soda (NaHCO₃) or sodium sulfate (Na₂SO₄) dissolves into ions that carry current. They are <strong>supporting electrolytes</strong> — they enable conduction without (ideally) being the main reactants consumed.</p>
+<p><strong>Critical safety contrast:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Electrolyte</th>
+<th>OK for classroom gas electrolysis?</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baking soda / NaHCO₃</td>
+<td>Yes</td>
+<td>No chlorine evolution</td>
+</tr>
+<tr>
+<td>Sodium sulfate</td>
+<td>Yes</td>
+<td>Inert supporting electrolyte</td>
+</tr>
+<tr>
+<td>Table salt NaCl</td>
+<td><strong>NO</strong></td>
+<td>Chloride oxidizes → <strong>Cl₂ gas</strong> (toxic)</td>
+</tr>
+</tbody>
+</table>
+<p>If anyone smells chlorine or sees greenish gas character — <strong>stop immediately</strong>, ventilate, replace electrolyte.</p>
+<hr>
+<h2>Half-reactions — what to teach vs what is “true”</h2>
+<h3>Classroom-friendly version</h3>
+<p><strong>Cathode (−):</strong></p>
+<pre><code>2H₂O + 2e⁻ → H₂(g) + 2OH⁻
+</code></pre>
+<p>(or in acid: <code>2H⁺ + 2e⁻ → H₂</code>)</p>
+<p><strong>Anode (+):</strong></p>
+<pre><code>2H₂O → O₂(g) + 4H⁺ + 4e⁻
+</code></pre>
+<p>(or in base: <code>4OH⁻ → O₂ + 2H₂O + 4e⁻</code>)</p>
+<p><strong>Overall:</strong></p>
+<pre><code>2H₂O(l) → 2H₂(g) + O₂(g)
+</code></pre>
+<h3>Why the 2:1 ratio appears</h3>
+<p>Oxygen half-reaction involves <strong>4 electrons</strong> per O₂; hydrogen involves <strong>2 electrons</strong> per H₂. Balancing electrons requires twice as many H₂ molecules as O₂ molecules:</p>
+<pre><code>4e⁻ make 2 H₂ and 1 O₂  ⇒  V(H₂)/V(O₂) = 2
+</code></pre>
+<p>At the same T and P, gas volume ∝ moles (Avogadro / ideal gas). So volumes follow mole ratio.</p>
+<h3>Electron bookkeeping (Faraday connection)</h3>
+<p>Same idea as Session 3: charge passed determines moles of e⁻, which determines moles of gas — but today students measure <strong>volumes</strong>, not mass.</p>
+<hr>
+<h2>Thermodynamics (instructor background)</h2>
+<p>Water splitting is <strong>non-spontaneous</strong> under standard conditions. Rough minimum theoretical voltage for water electrolysis is ~1.23 V (thermodynamic), but real cells need more due to overpotentials and resistance — classroom 9 V packs are plenty. Students need only: <em>“We must push with a battery; water does not split by itself.”</em></p>
+<hr>
+<h2>Gas collection by water displacement</h2>
+<h3>Why tubes start full of water</h3>
+<p>Any air bubble at the start ruins the stoichiometric comparison. Gas collected = displaced water volume.</p>
+<h3>Identifying H₂ vs O₂ without a pop test</h3>
+<table>
+<thead>
+<tr>
+<th>Clue</th>
+<th>H₂ side</th>
+<th>O₂ side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rate</td>
+<td>Faster (2× volume)</td>
+<td>Slower</td>
+</tr>
+<tr>
+<td>Electrode</td>
+<td>Cathode (−)</td>
+<td>Anode (+)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Pop test (instructor)</td>
+<td>Relights glowing splint (advanced / careful)</td>
+</tr>
+</tbody>
+</table>
+<p>Default classroom ID: <strong>faster = H₂ = cathode</strong>.</p>
+<h3>Why ratios drift from 2.0</h3>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O₂ more soluble than H₂</td>
+<td>O₂ volume low → ratio high</td>
+</tr>
+<tr>
+<td>Leaks / escaped bubbles</td>
+<td>Either side low</td>
+</tr>
+<tr>
+<td>Unequal electrode area / current distribution</td>
+<td>Skewed rates</td>
+</tr>
+<tr>
+<td>Air left in tube at t = 0</td>
+<td>Systematic error</td>
+</tr>
+<tr>
+<td>Electrode oxidation / side reactions</td>
+<td>Extra gases or lost current</td>
+</tr>
+</tbody>
+</table>
+<p>Accept <strong>1.6–2.2</strong> as a successful classroom result; discuss systematics rather than demanding perfection.</p>
+<hr>
+<h2>Pop test protocol (instructor only)</h2>
+<ol>
+<li>Collect a <strong>tiny</strong> volume of H₂ in a separate small tube.</li>
+<li>Move away from the main tub and from faces.</li>
+<li>Brief flame → soft “pop.”</li>
+<li>Never ignite sealed containers or mixed H₂/O₂.</li>
+<li>Skip entirely if venue rules forbid open flame.</li>
+</ol>
+<hr>
+<h2>Hydrogen as energy storage (end-of-session talk)</h2>
+<p>Frame carefully:</p>
+<ol>
+<li>Renewables make electricity intermittently.</li>
+<li>Extra electricity can electrolyze water → H₂.</li>
+<li>H₂ can be stored and later oxidized in a <strong>fuel cell</strong> → electricity + water.</li>
+<li>H₂ is an <strong>energy carrier</strong>, not a source — the energy came from the electricity (ultimately the sun/wind).</li>
+<li>Round-trip efficiency &lt; 100% always (heat losses).</li>
+</ol>
+<p>You are <strong>not</strong> running a fuel cell demo this week (Session 5 uses rust removal instead). Keep fuel cells as a conceptual bridge only.</p>
+<hr>
+<h2>Part E — Start electrolytic rust removal (handoff to Session 5)</h2>
+<h3>Correct polarity (students reverse this)</h3>
+<table>
+<thead>
+<tr>
+<th>Electrode</th>
+<th>Connection</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rusty iron (object to clean)</td>
+<td>Battery <strong>−</strong> (cathode)</td>
+<td>Reduction / cleaning</td>
+</tr>
+<tr>
+<td>Sacrificial steel or graphite</td>
+<td>Battery <strong>+</strong> (anode)</td>
+<td>Oxidizes / sacrifices</td>
+</tr>
+<tr>
+<td>Electrolyte</td>
+<td>Washing soda or baking soda</td>
+<td><strong>Not NaCl</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>What is happening chemically (simplified)</h3>
+<p>Rust is largely Fe₂O₃·nH₂O / FeOOH mixtures. At the cathode, electrochemical reduction and associated chemistry loosen / reduce oxide layers toward metallic iron; H₂ evolution often accompanies the process. The anode corrodes or evolves O₂ depending on material.</p>
+<p><strong>Teaching link:</strong> same “electricity drives non-spontaneous change” idea as water electrolysis — applied to undoing corrosion.</p>
+<h3>Overnight logistics</h3>
+<ul>
+<li>Label cells; photograph “before.”</li>
+<li>Keep a no-power control nail in water.</li>
+<li>Confirm venue policy for leaving batteries connected overnight (prep room preferred).</li>
+</ul>
+<hr>
+<h2>Misconceptions</h2>
+<table>
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“Bubbles are steam.”</td>
+<td>They are <strong>H₂ and O₂ gases</strong>, not water vapor from boiling.</td>
+</tr>
+<tr>
+<td>“Salt makes electrolysis better.”</td>
+<td>Salt makes <strong>chlorine</strong> — forbidden here.</td>
+</tr>
+<tr>
+<td>“Ratio must be exactly 2.000.”</td>
+<td>Classroom data have solubility and collection errors.</td>
+</tr>
+<tr>
+<td>“Hydrogen is a fuel like oil.”</td>
+<td>It’s a <strong>carrier</strong>; energy was put in by electrolysis.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Board plan</h2>
+<ol>
+<li>Write overall 2H₂O → 2H₂ + O₂; circle 2:1.</li>
+<li>Assign cathode/anode gases with signs.</li>
+<li>Sketch displacement tubes; emphasize “no air at start.”</li>
+<li>Safety slide: no NaCl.</li>
+<li>Preview energy carrier concept + start derusting cells before dismissal.</li>
+</ol>
+<hr>
+<h2>Optional enrichment</h2>
+<ul>
+<li>Pourbaix diagrams for Fe–H₂O (why rust forms / removes — advanced).</li>
+<li>Overpotential differences for H₂ vs O₂ on graphite.</li>
+<li>Industrial alkaline electrolyzers vs PEM electrolyzers (names only).</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

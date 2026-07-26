@@ -2,6 +2,8 @@
 
 **Target duration:** ~20 minutes (+ 10 min synthesis at end)
 
+> **Instructors:** activity series, galvanic couples, rust chemistry, derusting polarity — [instructor.md](instructor.md).
+
 ---
 
 ## Opening hook (0–15 min)
