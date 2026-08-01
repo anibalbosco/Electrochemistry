@@ -174,9 +174,9 @@ If students replace Zn with Fe or Al:
 - Fe vs Cu: smaller voltage than Zn vs Cu (Fe less active than Zn).
 - Al vs Cu: theoretically high activity, but Al₂O₃ film often suppresses performance — great teachable moment about **surface chemistry**, not just the activity table.
 
-### End-of-session copper jars (for Session 2)
+### Bridge to Session 2 (no overnight copper prep)
 
-Vinegar + salt + copper metal slowly forms Cu²⁺ (and related complexes). Overnight blue-green color = dissolved copper. Students are making tomorrow’s electrolyte. Emphasize: this is **chemical dissolution / corrosion**, not yet electroplating.
+Session 2 uses **dissolved copper sulfate (CuSO₄)** mixed day-of (or shortly before). Do not start vinegar/salt copper jars at the end of Session 1. Preview only: tomorrow electricity will force Cu²⁺ ions onto a nail.
 
 ---
 

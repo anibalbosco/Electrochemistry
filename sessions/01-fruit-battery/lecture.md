@@ -109,4 +109,4 @@ Ensure students can define before leaving:
 
 End concept block with a preview:
 
-*"Today we used chemistry to **make** electricity. Next session we'll **use** electricity to force chemistry — moving copper atoms onto a nail. We'll need copper ions in solution; we'll start making that solution at the end of today."*
+*"Today we used chemistry to **make** electricity. Next session we'll **use** electricity to force chemistry — moving copper atoms onto a nail from a copper sulfate solution."*

@@ -22,8 +22,7 @@ By the end of this session, students should be able to:
 | 25–45 min | Build one cell; measure voltage | See [experiment.md](experiment.md) — Part 1 |
 | 45–60 min | Series battery challenge | See [experiment.md](experiment.md) — Part 2 |
 | 60–75 min | Power LED, buzzer, or clock; discuss V, I, and internal resistance | See [experiment.md](experiment.md) — Part 3 |
-| 75–85 min | Side experiments: fruits, metals, pH, salt, parallel | See [experiment.md](experiment.md) — Extensions |
-| 85–90 min | Start copper solution prep for Session 2 | See [preparation.md](preparation.md) |
+| 75–90 min | Side experiments: fruits, metals, pH, salt, parallel; wrap-up + preview Session 2 | See [experiment.md](experiment.md) — Extensions |
 
 ## Key reactions
 
@@ -40,7 +39,7 @@ Overall: Zn(s) + 2H⁺(aq) → Zn²⁺(aq) + H₂(g)
 | [lecture.md](lecture.md) | ~20 min concept block |
 | [experiment.md](experiment.md) | Hands-on procedures and data |
 | [materials.md](materials.md) | Session checklist |
-| [preparation.md](preparation.md) | Pre-class and end-of-session prep |
+| [preparation.md](preparation.md) | Pre-class setup |
 
 ## Instructor reminders
 
@@ -54,4 +53,4 @@ Overall: Zn(s) + 2H⁺(aq) → Zn²⁺(aq) + H₂(g)
 - [ ] Lecture outline finalized
 - [ ] Experiment procedure tested
 - [ ] Materials procured
-- [ ] Copper solution prep started for Session 2
+- [ ] Session 2 CuSO₄ crystals on hand for next day

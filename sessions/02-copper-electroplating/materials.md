@@ -2,7 +2,7 @@
 
 ## Per group
 
-- [ ] Copper solution — homemade from Session 1 **or** **0.5 M CuSO₄** backup (50–100 mL)
+- [ ] **0.5 M CuSO₄** plating solution (50–100 mL)
 - [ ] Copper gasket, strip, or wire (anode)
 - [ ] Steel nail, screw, coin, washer, or key (cathode)
 - [ ] 9 V battery or low-voltage DC supply
@@ -13,7 +13,7 @@
 - [ ] Jam jar or beaker (~100 mL)
 - [ ] Gloves and goggles
 
-## Instructor / backup — 0.5 M CuSO₄
+## Instructor — 0.5 M CuSO₄ stock
 
 | Batch | CuSO₄·5H₂O | Water |
 |-------|------------|-------|
@@ -25,15 +25,11 @@
 - [ ] Waste container for copper-bearing liquids
 - [ ] Paper towels for rinsing/drying
 
-## From Session 1 carryover
-
-- [ ] Overnight vinegar/salt/copper jars — inspect before class
-
 ## Pilot notes
 
 | Parameter | Target from pilot |
 |-----------|-------------------|
-| Solution | 0.5 M CuSO₄ or homemade |
+| Solution | 0.5 M CuSO₄ |
 | Solution volume | ~50–100 mL |
 | Typical current (with resistor) | ___ mA |
 | Good plating time | ___ min |

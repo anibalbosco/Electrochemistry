@@ -6,22 +6,9 @@
 
 ## Copper solution — what to use
 
-You need a blue **copper(II)** solution. Use either the overnight homemade bath from Session 1 or the instructor CuSO₄ backup.
+You need a blue **copper(II)** plating bath from **copper sulfate**. Mix before class (or shortly before students plate). Do **not** rely on overnight vinegar/copper jars.
 
-### Option A — Homemade (from Session 1)
-
-| Ingredient | Amount per jar |
-|------------|----------------|
-| White vinegar | ~100 mL |
-| Table salt | 1–2 tsp (~5–10 g) |
-| Clean copper metal | Large surface area (wire coil, gasket, or strips) |
-
-- Started at end of Session 1; should look pale blue/green after overnight.
-- If almost colorless → use Option B.
-
-### Option B — Copper sulfate backup (instructor prepares)
-
-**Target concentration: 0.5 M CuSO₄** (recommended classroom strength).
+### Recipe — 0.5 M CuSO₄ (recommended)
 
 | Batch size | CuSO₄·5H₂O (blue crystals) | Water |
 |------------|----------------------------|-------|
@@ -44,7 +31,7 @@ You need a blue **copper(II)** solution. Use either the overnight homemade bath 
 
 ### Volume per group today
 
-**50–100 mL** of copper solution in a jam jar or small beaker (enough to immerse both electrodes).
+**50–100 mL** of 0.5 M CuSO₄ in a jam jar or small beaker (enough to immerse both electrodes).
 
 ---
 
@@ -78,7 +65,7 @@ Steel nail, screw, coin, washer, or key (one “good” object + optional unplat
 
 ### Materials at the station
 
-- 50–100 mL copper solution (Option A or B)
+- 50–100 mL **0.5 M CuSO₄**
 - Copper strip, gasket, or thick wire (**anode**)
 - Cleaned object (**cathode**)
 - 9 V battery (fresh)
@@ -98,7 +85,7 @@ Steel nail, screw, coin, washer, or key (one “good” object + optional unplat
 
 ### Procedure
 
-1. Pour **50–100 mL** copper solution into the jar.
+1. Pour **50–100 mL** CuSO₄ solution into the jar.
 2. Clip the **copper anode** to battery **(+)**; clip the **object** to battery **(−)**.
 3. If using a resistor: put it in series so current must pass through it.
 4. If using a multimeter for current: set to DC mA; wire it **in series** (not across the battery like a voltmeter).
@@ -110,7 +97,7 @@ Steel nail, screw, coin, washer, or key (one “good” object + optional unplat
 
 | Item | Value |
 |------|-------|
-| Solution (homemade / 0.5 M CuSO₄) | |
+| Solution (0.5 M CuSO₄) | |
 | Approximate concentration if known | |
 | Solution volume (mL) | |
 | Solution color | |
@@ -162,7 +149,7 @@ Groups test **one** variable (share results):
 | Plating time | 2 vs. 8 min | Thickness, color |
 | Current | With vs. without 220–470 Ω resistor | Smoothness |
 | Surface prep | Clean vs. finger-greased | Adhesion, coverage |
-| Solution | Homemade vs. 0.5 M CuSO₄ | Speed, color quality |
+| Concentration | ~0.25 M vs. 0.5 M (if you dilute a portion) | Speed, color quality |
 | Distance | ~1 cm vs. ~4 cm electrode gap | Uniformity, current |
 
 ### Results table (class compilation)
@@ -178,12 +165,12 @@ Groups test **one** variable (share results):
 | Problem | Cause | Fix |
 |---------|-------|-----|
 | No plating | Reversed polarity | Object must be on **(−)** |
-| No plating | Solution too weak | Switch to 0.5 M CuSO₄ backup |
+| No plating | Solution too weak / wrong bath | Remake 0.5 M CuSO₄; check polarity |
 | Black/powdery Cu | Current too high | Add 100–500 Ω resistor; increase distance |
 | Patchy deposit | Dirty / oily surface | Re-sand, rinse, no fingerprints |
 | Anode not dissolving | Wrong anode (not copper) | Use copper strip/wire |
 | Battery gets hot | Short circuit | Separate electrodes; check clips |
-| Very slow plating | Low [Cu²⁺] or bad contacts | Use backup bath; clean clips |
+| Very slow plating | Low [Cu²⁺] or bad contacts | Remake / concentrate bath; clean clips |
 
 ---
 
@@ -199,7 +186,7 @@ Groups test **one** variable (share results):
 
 ## Experiment status
 
-- [ ] 0.5 M CuSO₄ backup mixed and labeled (or homemade jars verified)
+- [ ] 0.5 M CuSO₄ mixed and labeled
 - [ ] Optimal plating time determined in pilot (record: ___ min)
 - [ ] Resistor value chosen for ~10–40 mA (record: ___ Ω)
 - [ ] Before/after photos for lecture use

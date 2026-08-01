@@ -1,41 +1,34 @@
 # Session 2 — Preparation
 
-## Depends on Session 1
-
-Copper solution should be started at end of Session 1. See [../01-fruit-battery/preparation.md](../01-fruit-battery/preparation.md).
-
 ## Before Session 2 (instructor)
 
-- [ ] Inspect all overnight jars — note color and clarity
-- [ ] Prepare **backup 0.5 M CuSO₄** (e.g. 62 g CuSO₄·5H₂O per 500 mL tap or distilled water); label concentration
+- [ ] Prepare **0.5 M CuSO₄** plating bath (e.g. 62 g CuSO₄·5H₂O per 500 mL tap water); label concentration
 - [ ] Pilot plate one nail: record time, current, appearance
 - [ ] Pre-sand a few demo objects
 - [ ] Source resistors if using current limiting
 
-### Homemade solution quality guide
+### Mixing 0.5 M CuSO₄ (quick recipe)
 
-| Appearance | Action |
-|------------|--------|
-| Pale blue/green, clear | Likely usable |
-| Very weak color | Use backup or extend prep time |
-| No color change | Switch to CuSO₄ backup |
+| Batch size | CuSO₄·5H₂O (blue crystals) | Water |
+|------------|----------------------------|-------|
+| 200 mL | **25 g** | Fill to 200 mL |
+| 500 mL | **62 g** | Fill to 500 mL |
+| 1.0 L | **125 g** | Fill to 1.0 L |
+
+1. Weigh CuSO₄·5H₂O; dissolve in ~¾ of the water; stir until clear blue.
+2. Top up to final volume; label **"0.5 M CuSO₄ — Session 2 — do not drink"**.
+3. Tap water is fine; use distilled only if hard tap water makes the bath milky.
 
 ## Day-of setup
 
 - [ ] Goggles and gloves at each station
+- [ ] Aliquot **50–100 mL** CuSO₄ per group jar
 - [ ] One 9 V battery per group (fresh if possible)
 - [ ] Waste bucket labeled "copper waste — do not drain"
 - [ ] Demo cell ready for hook (jar + electrodes + meter)
 
-## Backup plan
-
-If homemade solution fails for multiple groups:
-
-1. Switch to dilute CuSO₄ backup
-2. Explain that industrial plating uses optimized baths — ours is "kitchen chemistry"
-
 ## Open questions / notes
 
-- Backup CuSO₄ concentration: 0.5 M (or note if different):
+- CuSO₄ concentration mixed (target 0.5 M):
 - Resistor value used in pilot:
 - Best demo object (nail vs. key):

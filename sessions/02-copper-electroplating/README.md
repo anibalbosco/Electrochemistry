@@ -13,7 +13,7 @@
 
 | Time | Activity | Reference |
 |------|----------|-----------|
-| 0–10 min | Inspect overnight copper solution; discuss color and dissolution evidence | [lecture.md](lecture.md) — Hook |
+| 0–10 min | Show blue CuSO₄ solution / dissolving crystals; preview plating | [lecture.md](lecture.md) — Hook |
 | 10–25 min | Concept: ion deposition at cathode, anode dissolution | [lecture.md](lecture.md) |
 | 25–35 min | Clean cathode object (sand, rinse, no fingerprints) | [experiment.md](experiment.md) — Prep |
 | 35–50 min | Set up plating cell | [experiment.md](experiment.md) — Setup |
@@ -33,11 +33,10 @@ Anode (+):   Cu(s) → Cu²⁺(aq) + 2e⁻
 - [lecture.md](lecture.md) — Concept block
 - [experiment.md](experiment.md) — Plating procedure
 - [materials.md](materials.md) — Checklist
-- [preparation.md](preparation.md) — Solution prep and backup plan
+- [preparation.md](preparation.md) — CuSO₄ solution prep
 
 ## Status
 
-- [ ] Copper solution from Session 1 inspected
-- [ ] Backup CuSO₄ solution prepared
+- [ ] 0.5 M CuSO₄ mixed and labeled
 - [ ] Plating procedure pilot-tested
 - [ ] Lecture slides/diagrams ready

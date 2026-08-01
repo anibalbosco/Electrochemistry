@@ -160,29 +160,11 @@ Two cells in parallel (Cu–Cu and Zn–Zn tied): voltage ≈ one cell; compare 
 
 ---
 
-## End-of-session task — Copper solution prep for Session 2 (85–90 min)
+## Wrap-up (85–90 min)
 
-Start overnight prep so Session 2 has Cu²⁺ solution ready.
-
-### Recipe (per jar)
-
-| Ingredient | Amount |
-|------------|--------|
-| White vinegar | **~100 mL** |
-| Table salt | **1–2 tsp** (~5–10 g); stir to dissolve |
-| Clean copper | Gasket, coiled wire, or strips — **maximize surface area** |
-
-Tap water is fine if you dilute vinegar slightly; vinegar itself is the main solvent. No need for distilled water here.
-
-### Steps
-
-1. Mix vinegar + salt in a jam jar.
-2. Add copper metal so much of it is submerged.
-3. Cover **loosely** (not airtight — air helps dissolve copper).
-4. Label with group name and date.
-5. Leave overnight in a ventilated area.
-
-**Expected next day:** pale blue, green, or blue-green liquid. Instructor also prepares **0.5 M CuSO₄** backup (see Session 2 experiment).
+1. Clean stations; fruit goes to waste (not food waste).
+2. Quick share: best voltage, whether the LED lit, one surprising result.
+3. Preview Session 2: *tomorrow we dissolve copper sulfate and use electricity to plate copper onto a nail.*
 
 ---
 
@@ -201,4 +183,4 @@ Tap water is fine if you dilute vinegar slightly; vinegar itself is the main sol
 - [ ] Typical voltage range documented (record: ___ V)
 - [ ] LED/buzzer compatibility verified (# cells needed: ___)
 - [ ] Extension options ranked by time available
-- [ ] Copper prep jars staged for end of class
+- [ ] Wrap-up / Session 2 preview timed

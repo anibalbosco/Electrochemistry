@@ -138,11 +138,11 @@ Protocol: sand → rinse → handle by edges → plate immediately. Fingerprints
 
 ## Experiment coaching notes
 
-### Homemade vinegar/salt copper solution
+### CuSO₄ plating bath
 
-- Often weaker and less blue than CuSO₄.
-- May contain mixed copper species; still plates if enough Cu²⁺ is present.
-- Keep backup CuSO₄ for demos or failed jars.
+- Use **0.5 M CuSO₄** mixed before class (tap water OK).
+- Blue color = hydrated Cu²⁺ ready to plate — a useful visual for students.
+- Acceptable improvised range: ~0.25–1.0 M if you must adjust.
 - **Waste:** collect copper solutions; do not pour casually down drains.
 
 ### Wiring checklist (walk the room)

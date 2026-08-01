@@ -19,14 +19,6 @@
 - [ ] Magnesium ribbon
 - [ ] Table salt (small amount for salt-addition test)
 
-## End-of-session prep (Session 2 setup)
-
-- [ ] White vinegar (~100 mL per jar)
-- [ ] Table salt (1–2 tsp per jar)
-- [ ] Copper gaskets, strips, or wire (large surface area)
-- [ ] Jam jars or beakers with loose lids
-- [ ] Labels and marker
-
 ## Instructor / room
 
 - [ ] Waste bin for used fruit (not food waste)

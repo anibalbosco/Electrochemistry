@@ -10,9 +10,9 @@
 
 ### Demo / inspection
 
-1. Hold up jars from Session 1 overnight prep
-2. Ask: *"What changed? Why is the liquid colored? Where did the copper go?"*
-3. Optional: compare weak homemade solution vs. blue CuSO₄ backup
+1. Hold up blue **CuSO₄** crystals and/or the pre-mixed blue plating bath
+2. Ask: *"Why is this liquid blue? What dissolved particles make plating possible?"*
+3. Optional: dissolve a pinch of CuSO₄ in water in front of the class
 
 ### Guiding questions
 
