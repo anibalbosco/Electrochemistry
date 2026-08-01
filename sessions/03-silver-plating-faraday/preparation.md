@@ -2,7 +2,7 @@
 
 ## Before class (instructor)
 
-- [ ] Prepare 0.01 M AgNO₃ from stock (calculate volume needed for all groups + 20% extra)
+- [ ] Prepare 0.01 M AgNO₃ with **distilled/deionized water** (not tap); volume for all groups + 20% extra
 - [ ] Pilot plate one object: record I_avg, t, appearance
 - [ ] Verify 3 V packs deliver stable ~10–30 mA in this cell
 - [ ] Print calculation worksheets

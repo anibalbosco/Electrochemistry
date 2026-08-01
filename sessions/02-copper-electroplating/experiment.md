@@ -23,11 +23,13 @@ You need a blue **copper(II)** solution. Use either the overnight homemade bath 
 
 **Target concentration: 0.5 M CuSO₄** (recommended classroom strength).
 
-| Batch size | CuSO₄·5H₂O (blue crystals) | Distilled or tap water |
-|------------|----------------------------|------------------------|
+| Batch size | CuSO₄·5H₂O (blue crystals) | Water |
+|------------|----------------------------|-------|
 | 200 mL (about 2 groups) | **25 g** | Fill to 200 mL |
 | 500 mL | **62 g** | Fill to 500 mL |
 | 1.0 L | **125 g** | Fill to 1.0 L |
+
+**Water:** tap water is fine. Distilled is slightly better if your tap water is very hard (bath may look milky). Save distilled water for Session 3 silver nitrate.
 
 **How to mix:**
 

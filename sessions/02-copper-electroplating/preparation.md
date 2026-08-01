@@ -7,7 +7,7 @@ Copper solution should be started at end of Session 1. See [../01-fruit-battery/
 ## Before Session 2 (instructor)
 
 - [ ] Inspect all overnight jars — note color and clarity
-- [ ] Prepare **backup 0.5 M CuSO₄** (e.g. 62 g CuSO₄·5H₂O per 500 mL water); label concentration
+- [ ] Prepare **backup 0.5 M CuSO₄** (e.g. 62 g CuSO₄·5H₂O per 500 mL tap or distilled water); label concentration
 - [ ] Pilot plate one nail: record time, current, appearance
 - [ ] Pre-sand a few demo objects
 - [ ] Source resistors if using current limiting

@@ -8,6 +8,8 @@
 
 **Target working solution: 0.01 M AgNO₃** (instructor prepares before class).
 
+**Water: use distilled or deionized water only.** Tap water often contains chloride, which precipitates AgCl (cloudy white) and can ruin a dilute silver bath. Rinse plated objects with distilled water too.
+
 | Batch | Solid AgNO₃ needed | Distilled water |
 |-------|--------------------|-----------------|
 | 100 mL of 0.01 M | **0.17 g** AgNO₃ | Fill to 100 mL |
@@ -19,7 +21,7 @@
 ### If you have a more concentrated stock
 
 Example: dilute **0.1 M** stock **1:10** → 0.01 M  
-(e.g. 25 mL of 0.1 M + 225 mL distilled water = 250 mL of 0.01 M).
+(e.g. 25 mL of 0.1 M + 225 mL **distilled** water = 250 mL of 0.01 M).
 
 ### Volume per group today
 

@@ -172,6 +172,8 @@ Start overnight prep so Session 2 has Cu²⁺ solution ready.
 | Table salt | **1–2 tsp** (~5–10 g); stir to dissolve |
 | Clean copper | Gasket, coiled wire, or strips — **maximize surface area** |
 
+Tap water is fine if you dilute vinegar slightly; vinegar itself is the main solvent. No need for distilled water here.
+
 ### Steps
 
 1. Mix vinegar + salt in a jam jar.

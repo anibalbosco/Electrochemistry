@@ -15,16 +15,16 @@
 | Washing soda (Na₂CO₃) preferred | **1 tbsp (~15 g) per ~250 mL** warm water |
 | or baking soda (NaHCO₃) | **1 tbsp per ~250 mL** warm water |
 
-**No NaCl.**
+**No NaCl.** Tap water is fine for derusting baths.
 
 ### Saltwater for galvanic / corrosion demos only
 
 | Ingredient | Amount |
 |------------|--------|
 | Table salt (NaCl) | **25–50 g per 500 mL water** |
-| Water | 500 mL |
+| Water | 500 mL tap water |
 
-≈ **5–10% w/v NaCl** (“strong saltwater”).  
+≈ **5–10% w/v NaCl** (“strong saltwater”). Tap water is fine.  
 Label clearly: **"CORROSION / GALVANIC ONLY — NOT for electrolysis or derusting"**.
 
 ---

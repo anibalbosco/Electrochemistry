@@ -29,13 +29,15 @@
 
 **Target: 0.01 M AgNO₃** — instructor prepares before class.
 
+**Use distilled/deionized water only** (tap chloride can precipitate AgCl).
+
 | Batch | Solid AgNO₃ | Distilled water |
 |-------|-------------|-----------------|
 | 100 mL | 0.17 g | to 100 mL |
 | 250 mL | 0.42 g | to 250 mL |
 | 500 mL | 0.85 g | to 500 mL |
 
-Or dilute 0.1 M stock **1:10**. Label date and concentration. ~20–30 mL per group.
+Or dilute 0.1 M stock **1:10** with distilled water. Label date and concentration. ~20–30 mL per group.
 
 ## Waste
 

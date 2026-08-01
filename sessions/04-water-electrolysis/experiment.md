@@ -19,6 +19,8 @@ Stir until dissolved. Label **"baking soda electrolyte — NO SALT"**.
 
 Approximate concentration: **~0.1–0.2 M NaHCO₃** (kitchen measuring is fine; exact molarity is not critical).
 
+**Water:** tap water is fine — the baking soda (or Na₂SO₄) provides the ions you need. Distilled water is unnecessary here.
+
 ### Option B — Sodium sulfate (optional)
 
 | Batch | Na₂SO₄ (anhydrous) | Water |

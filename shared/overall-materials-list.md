@@ -35,11 +35,25 @@ Master checklist for the full week. Per-session quantities are in each session's
 - [ ] Table salt
 - [ ] Baking soda
 - [ ] Washing soda (sodium carbonate) — preferred for electrolytic rust removal
-- [ ] Distilled water
+- [ ] Distilled (or deionized) water — **required for Session 3 AgNO₃**; optional elsewhere
+- [ ] Tap water — fine for most other solutions (see water guidance below)
 - [ ] Copper sulfate pentahydrate for **0.5 M CuSO₄** backup (Session 2)
 - [ ] Silver nitrate for **0.01 M AgNO₃** working solution (Session 3)
 - [ ] Sodium sulfate (optional electrolyte for water electrolysis)
 - [ ] pH paper or indicator
+
+## Water guidance (tap vs distilled)
+
+| Use | Water | Notes |
+|-----|-------|-------|
+| Session 1 fruit cells; vinegar–salt copper prep | Tap | Vinegar / fruit dominate impurities |
+| Session 2 0.5 M CuSO₄ | Tap OK; distilled slightly better | Very hard tap water may cloud the bath; plating still works |
+| Session 3 0.01 M AgNO₃ (+ rinses) | **Distilled** | Tap Cl⁻ can precipitate AgCl and spoil the bath |
+| Session 4 baking soda / Na₂SO₄ electrolysis | Tap | Supporting electrolyte overwhelms tap minerals |
+| Session 5 saltwater corrosion jars | Tap | You add 5–10% NaCl anyway |
+| Session 4–5 washing-soda derusting | Tap | High ionic strength |
+
+**Camp rule of thumb:** one jug of distilled water for silver only; tap for everything else unless CuSO₄ looks milky.
 
 ## Session 4–5 (rust removal)
 

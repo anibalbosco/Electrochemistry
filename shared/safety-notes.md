@@ -8,6 +8,7 @@ Apply these across all sessions. Session-specific hazards are listed in each ses
 2. **Avoid short circuits.** Batteries can heat up if directly shorted.
 3. **Clean surfaces matter.** Electroplating requires clean metal surfaces.
 4. **Metal salt waste should be collected.** Copper and silver solutions should not be casually poured down the drain.
+5. **Water choice:** tap water is fine for most baths; use **distilled/deionized water for 0.01 M AgNO₃** (Session 3) so chloride does not precipitate silver.
 
 ## Session-specific hazards
 
