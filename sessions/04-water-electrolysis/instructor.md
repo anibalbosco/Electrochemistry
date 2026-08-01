@@ -19,16 +19,18 @@ Students have plated metals. Now electricity splits **molecules** of water into 
 - Liquid water also has extensive hydrogen bonding (affects boiling point, solvation) — optional aside.
 - Pure water has very few ions (autoionization): H₂O ⇌ H⁺ + OH⁻ with tiny [H⁺][OH⁻] = 10⁻¹⁴ at 25 °C. That is why **pure water is a poor conductor**.
 
-### Why we add baking soda or Na₂SO₄
+### Why we add Na₂SO₄
 
-Electrolysis needs mobile ions. Baking soda (NaHCO₃) or sodium sulfate (Na₂SO₄) dissolves into ions that carry current. They are **supporting electrolytes** — they enable conduction without (ideally) being the main reactants consumed.
+Electrolysis needs mobile ions. **Sodium sulfate (Na₂SO₄)** dissolves into Na⁺ and SO₄²⁻ that carry current. It is a **supporting electrolyte** — it enables conduction without (ideally) being the main reactant consumed. This workshop uses **~0.1 M Na₂SO₄** in the U-tube cell.
+
+Baking soda (NaHCO₃) is an acceptable emergency backup, but plan on sodium sulfate.
 
 **Critical safety contrast:**
 
 | Electrolyte | OK for classroom gas electrolysis? | Why |
 |-------------|-------------------------------------|-----|
-| Baking soda / NaHCO₃ | Yes | No chlorine evolution |
-| Sodium sulfate | Yes | Inert supporting electrolyte |
+| Sodium sulfate | **Yes — planned** | Inert supporting electrolyte |
+| Baking soda / NaHCO₃ | Yes (backup) | No chlorine evolution |
 | Table salt NaCl | **NO** | Chloride oxidizes → **Cl₂ gas** (toxic) |
 
 If anyone smells chlorine or sees greenish gas character — **stop immediately**, ventilate, replace electrolyte.
@@ -81,18 +83,22 @@ Water splitting is **non-spontaneous** under standard conditions. Rough minimum 
 
 ---
 
-## Gas collection by water displacement
+## U-tube apparatus coaching
 
-### Why tubes start full of water
+### What students are looking at
 
-Any air bubble at the start ruins the stoichiometric comparison. Gas collected = displaced water volume.
+Glass U-tube on an acrylic stand; graphite rods through rubber stoppers; side arms near the top of each limb; red/black leads with spade connectors to a DC supply. Fill with **Na₂SO₄**, not salt. Keep side arms open or vented so pressure does not build against sealed stoppers.
+
+### Measuring the ratio
+
+Gas collected in each limb displaces liquid downward. Compare gas column heights (or graduated volumes) once bubbling is steady. Equal arm geometry matters for a fair ratio.
 
 ### Identifying H₂ vs O₂ without a pop test
 
 | Clue | H₂ side | O₂ side |
 |------|---------|---------|
 | Rate | Faster (2× volume) | Slower |
-| Electrode | Cathode (−) | Anode (+) |
+| Electrode | Cathode (−) / black | Anode (+) / red |
 | Optional | Pop test (instructor) | Relights glowing splint (advanced / careful) |
 
 Default classroom ID: **faster = H₂ = cathode**.

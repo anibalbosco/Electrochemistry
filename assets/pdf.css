@@ -250,11 +250,18 @@ figure {
 
 .diagram,
 svg.diagram,
-.figure-wrap svg {
+.figure-wrap svg,
+.figure-wrap img,
+img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.figure-wrap img {
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 em {

@@ -2,20 +2,19 @@
 
 ## Before class (instructor)
 
-- [ ] **Pilot full setup** — confirm 2:1 ratio visible within session time
-- [ ] Pre-cut graphite electrodes to useful lengths
-- [ ] Mix electrolyte batch: water + baking soda (label "NO SALT")
-- [ ] Test tubes: practice inversion technique — no trapped air
+- [ ] **Pilot the U-tube apparatus** — confirm 2:1 ratio visible within session time
+- [ ] Check graphite electrodes, stoppers, and spade connectors
+- [ ] Mix **~0.1 M Na₂SO₄** batch; label **"NO SALT"**
 - [ ] Review pop test safety; decide if demo will run (weather, room rules)
-- [ ] Optional: test solar panel output with same cell
+- [ ] Optional: test solar panel output with the same cell
 - [ ] Stage rusty nails, washing soda, sacrificial anodes, and spare jars for **Part E** (end of class)
 - [ ] Confirm overnight power policy for derusting cells (prep room vs. disconnect)
 
 ## Day-of setup
 
-- [ ] Pre-fill tub at each station (or central fill station)
-- [ ] Pre-fill inverted tubes underwater as demo for students
-- [ ] Large sign: **"No salt in electrolysis"**
+- [ ] One U-tube station per group (or shared stations if kits are limited)
+- [ ] Pre-mix Na₂SO₄; aliquot or fill stations
+- [ ] Large sign: **"No salt in electrolysis — use sodium sulfate"**
 - [ ] Separate instructor area for pop test marked off
 - [ ] Part E station: rusty nails, washing soda, steel/graphite anodes, labels, camera
 
@@ -23,12 +22,13 @@
 
 | Issue | Prevention |
 |-------|------------|
-| Air in tubes | Demo inversion step slowly |
-| Weak bubble rate | Fresh baking soda; clean graphite |
-| Students add salt "to speed up" | Pre-brief; labeled solutions |
+| Weak bubble rate | Fresh ~0.1 M Na₂SO₄; clean graphite; firm spade connections |
+| Students add salt "to speed up" | Pre-brief; labeled Na₂SO₄ only |
+| Overpressure | Keep side arms open or vented |
+| Reversed polarity | Mark (−)=H₂ / (+)=O₂ on the stand before power-on |
 
 ## Open questions / notes
 
-- Electrode material used:
-- Best tube type for measurement:
+- Supply voltage used:
+- Best volume-measurement method (graduations vs. ruler):
 - Pop test yes/no for this venue:

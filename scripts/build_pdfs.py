@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 import markdown
@@ -24,8 +25,10 @@ from markdown.extensions.tables import TableExtension
 # Reuse figure inlining helpers from the HTML site builder.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_site import (  # noqa: E402
+    IMG_TAG_RE,
     ROOT,
     SESSIONS,
+    SRC_RE,
     inline_svg_figures,
     unwrap_block_figures,
 )
@@ -115,6 +118,28 @@ def extract_title(md_text: str, fallback: str) -> str:
     return fallback
 
 
+def absolutize_raster_images(html_body: str, html_anchor: Path) -> str:
+    """Point leftover <img> tags (e.g. PNG photos) at absolute file URIs for Chrome PDF."""
+
+    def replace_img(tag: str) -> str:
+        src_match = SRC_RE.search(tag)
+        if not src_match:
+            return tag
+        src = src_match.group(1)
+        if src.lower().endswith(".svg") or src.startswith(("http://", "https://", "file:")):
+            return tag
+        path = (html_anchor.parent / src).resolve()
+        if not path.is_file():
+            candidate = ROOT / "assets" / "figures" / Path(src).name
+            if candidate.is_file():
+                path = candidate
+            else:
+                return tag
+        return SRC_RE.sub(f' src="{path.as_uri()}"', tag)
+
+    return IMG_TAG_RE.sub(lambda m: replace_img(m.group(0)), html_body)
+
+
 def section_html(
     label: str,
     md_path: Path,
@@ -123,6 +148,7 @@ def section_html(
     text = read_md(md_path)
     title = extract_title(text, label)
     body = unwrap_block_figures(inline_svg_figures(md_to_html(text), html_anchor))
+    body = absolutize_raster_images(body, html_anchor)
     return f"""
 <section class="section">
   <div class="section-label">{label}</div>
@@ -198,7 +224,22 @@ def html_to_pdf(browser: Path, html_path: Path, pdf_path: Path) -> None:
                 "PDF generation failed for "
                 f"{html_path.name}\nstdout: {result.stdout}\nstderr: {result.stderr}"
             )
-        shutil.copyfile(tmp_pdf, pdf_path)
+        last_err: OSError | None = None
+        for _ in range(8):
+            try:
+                shutil.copyfile(tmp_pdf, pdf_path)
+                last_err = None
+                break
+            except OSError as exc:
+                last_err = exc
+                time.sleep(0.75)
+        if last_err is not None:
+            alt = pdf_path.with_name(pdf_path.stem + "-new.pdf")
+            shutil.copyfile(tmp_pdf, alt)
+            raise RuntimeError(
+                f"Could not overwrite {pdf_path.name} (file may be open): {last_err}. "
+                f"Wrote {alt.name} instead — close the PDF viewer and rename/replace."
+            ) from last_err
 
 
 def build_packet(session: dict, doc_key: str, css_text: str, browser: Path) -> Path:
@@ -337,15 +378,20 @@ def main() -> None:
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     BUILD_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Remove prior PDFs so renamed files do not linger.
-    for old in PDF_DIR.glob("session-*.pdf"):
-        old.unlink()
-
     pdf_paths: list[Path] = []
     for session in SESSIONS:
         print(f"Session {session['num']}: {session['title']}")
         for doc_key in ("experiment", "lecture"):
             pdf_paths.append(build_packet(session, doc_key, css_text, browser))
+
+    # Drop stale PDFs that no longer match the naming scheme.
+    keep = {p.name for p in pdf_paths}
+    for old in PDF_DIR.glob("session-*.pdf"):
+        if old.name not in keep:
+            try:
+                old.unlink()
+            except OSError as exc:
+                print(f"  WARNING: could not remove stale {old.name}: {exc}")
 
     write_index(pdf_paths)
     print("Done.")

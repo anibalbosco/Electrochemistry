@@ -299,6 +299,18 @@ body {
   margin: 1.25rem 0;
 }
 
+.main-article .figure-wrap img,
+.main-article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.25rem auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
 .main-article p:has(img) + p {
   text-align: center;
   font-size: 0.88rem;

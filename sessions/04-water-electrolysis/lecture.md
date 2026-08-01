@@ -8,9 +8,9 @@
 
 ## Opening hook (0–10 min)
 
-Show inverted test tubes filled with water in a tub.
+Show the Hoffman-style **U-tube** with graphite electrodes (or the photo in [experiment.md](experiment.md)).
 
-*"One electrode makes hydrogen. One makes oxygen. Which side will fill **twice as fast**? Why?"*
+*"One limb makes hydrogen. One makes oxygen. Which side will fill **twice as fast**? Why?"*
 
 ---
 
@@ -18,7 +18,7 @@ Show inverted test tubes filled with water in a tub.
 
 ### 1. Electrolysis of water
 
-- Pure water conducts poorly → add **baking soda** or **sodium sulfate** (NOT NaCl)
+- Pure water conducts poorly → add **sodium sulfate (Na₂SO₄)** as supporting electrolyte (**NOT NaCl**)
 - Power supply forces non-spontaneous reaction: water → hydrogen + oxygen
 
 ### 2. Half-reactions (simplified)
@@ -33,18 +33,20 @@ From overall equation: **2H₂O → 2H₂ + O₂**
 - **2 volumes H₂ : 1 volume O₂** (same T and P)
 - Avogadro: 2 moles H₂ : 1 mole O₂
 
-### 4. Gas collection by displacement
+### 4. The U-tube cell
 
-- Tubes start **100% full of water** — no air bubble
-- Gas pushes water out as it forms
-- Measure **volume of gas space** at intervals
+- Two graphite electrodes in a glass U-tube (side arms; stoppers at the top)
+- Gases collect in each limb; compare column heights / volumes
+- Red (+) = anode = O₂; black (−) = cathode = H₂
 
-![Gas collection setup](../../assets/figures/session4-water-electrolysis.svg)
+![Hoffman-style U-tube apparatus](../../assets/figures/session4-hoffman-utube-apparatus.png)
+
+![Gas collection schematic](../../assets/figures/session4-water-electrolysis.svg)
 
 ### 5. Why observed ratio may differ from 2:1
 
 - O₂ slightly more soluble in water than H₂
-- Small bubbles escape before collection
+- Small bubbles escape through side arms
 - Leaks, uneven electrode areas
 - Still a strong qualitative and semi-quantitative demo
 

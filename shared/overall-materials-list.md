@@ -38,7 +38,7 @@ Master checklist for the full week. Per-session quantities are in each session's
 - [ ] Tap water — fine for most other solutions (see water guidance below)
 - [ ] Copper sulfate pentahydrate for **0.5 M CuSO₄** plating bath (Session 2)
 - [ ] Silver nitrate for **0.01 M AgNO₃** working solution (Session 3)
-- [ ] Sodium sulfate (optional electrolyte for water electrolysis)
+- [ ] Sodium sulfate for **~0.1 M Na₂SO₄** water-electrolysis electrolyte (Session 4)
 - [ ] pH paper or indicator
 
 ## Water guidance (tap vs distilled)
@@ -48,7 +48,7 @@ Master checklist for the full week. Per-session quantities are in each session's
 | Session 1 fruit cells | Tap | Fruit juice dominates impurities |
 | Session 2 0.5 M CuSO₄ | Tap OK; distilled slightly better | Very hard tap water may cloud the bath; plating still works |
 | Session 3 0.01 M AgNO₃ (+ rinses) | **Distilled** | Tap Cl⁻ can precipitate AgCl and spoil the bath |
-| Session 4 baking soda / Na₂SO₄ electrolysis | Tap | Supporting electrolyte overwhelms tap minerals |
+| Session 4 ~0.1 M Na₂SO₄ electrolysis (U-tube) | Tap | Supporting electrolyte overwhelms tap minerals |
 | Session 5 saltwater corrosion jars | Tap | You add 5–10% NaCl anyway |
 | Session 4–5 washing-soda derusting | Tap | High ionic strength |
 
@@ -70,7 +70,7 @@ Master checklist for the full week. Per-session quantities are in each session's
 ## Safety reminders
 
 - No eating experimental materials
-- No saltwater electrolysis (use baking soda or sodium sulfate)
+- No saltwater electrolysis (use sodium sulfate; baking soda only as backup)
 - Silver nitrate: gloves and goggles required
 - Hydrogen ignition: instructor-only, tiny volumes
 - Collect copper and silver waste; do not pour down drain

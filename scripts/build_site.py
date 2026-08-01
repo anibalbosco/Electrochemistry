@@ -86,10 +86,15 @@ def inline_svg_figures(html_body: str, html_path: Path) -> str:
     def replace_img(tag: str) -> str:
         nonlocal counter
         src_match = SRC_RE.search(tag)
-        if not src_match or not src_match.group(1).lower().endswith(".svg"):
+        if not src_match:
             return tag
 
         src = src_match.group(1)
+        if not src.lower().endswith(".svg"):
+            # Keep raster photos as images, but wrap for layout.
+            alt_match = ALT_RE.search(tag)
+            alt = alt_match.group(1) if alt_match else "Photo"
+            return f'<figure class="figure-wrap" aria-label="{alt}">{tag}</figure>'
         alt_match = ALT_RE.search(tag)
         alt = alt_match.group(1) if alt_match else "Diagram"
 

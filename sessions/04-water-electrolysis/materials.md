@@ -1,22 +1,22 @@
 # Session 4 — Materials
 
-## Per group
+## Per group / station
 
-- [ ] Clear plastic tub or container
-- [ ] Water (~500 mL per tub)
-- [ ] Baking soda: **1–2 tsp per 500 mL** (~0.1–0.2 M) **or** sodium sulfate ~0.1 M (~7 g / 500 mL)
-- [ ] Graphite electrodes (thick pencil leads or carbon rods)
-- [ ] 9 V battery or DC power supply
-- [ ] Alligator clips
-- [ ] Two small test tubes, vials, syringes, or narrow plastic bottles
-- [ ] Ruler (volume estimation)
+- [ ] Hoffman-style glass **U-tube** with side arms + acrylic stand
+- [ ] Two graphite electrodes with rubber/cork stoppers
+- [ ] Red (+) / black (−) leads with spade connectors
+- [ ] DC power supply or battery pack (6–12 V typical)
+- [ ] **Sodium sulfate** electrolyte: **~0.1 M Na₂SO₄** (~7 g anhydrous / 500 mL; ~3.5 g / 250 mL)
+- [ ] Tap water for mixing
+- [ ] Ruler (gas column / liquid-level comparison)
 - [ ] Goggles
 
 ## Optional
 
-- [ ] pH indicator
+- [ ] pH / universal indicator
 - [ ] Small solar panel
-- [ ] Graduated cylinders for calibration
+- [ ] Tubing for side-arm gas collection
+- [ ] Baking soda (emergency backup electrolyte only)
 
 ## Instructor-only (pop test)
 
@@ -34,12 +34,13 @@
 
 ## Explicitly excluded
 
-- [ ] ~~Table salt (NaCl)~~ — **do not use**
+- [ ] ~~Table salt (NaCl)~~ — **do not use** in electrolysis or derusting baths
 
 ## Pilot notes
 
 | Parameter | Value from pilot |
 |-----------|------------------|
-| Electrolyte | Baking soda / Na₂SO₄ |
+| Electrolyte | ~0.1 M Na₂SO₄ |
+| Supply voltage | ___ V |
 | Time to visible gas difference | ___ min |
 | Typical V_H₂/V_O₂ | ___ |
