@@ -77,36 +77,45 @@
         <div class="page-meta"><span class="badge">Session 4</span></div>
       </header>
       <article class="main-article">
-<p><strong>Target duration:</strong> ~20 minutes (+ energy discussion at end)</p>
+<p><strong>Target duration:</strong> ~15–20 minutes (concepts interleaved with Parts A–B work)</p>
 <blockquote>
-<p><strong>Instructors:</strong> half-reactions, why no NaCl, 2:1 ratio errors, derusting handoff — <a href="instructor.html">instructor.md</a>.</p>
+<p><strong>Instructors:</strong> electrolyte contrast, Faraday rate, balloon safety — <a href="instructor.html">instructor.md</a>.</p>
 </blockquote>
 <hr>
 <h2>Opening hook (0–10 min)</h2>
-<p>Show the Hoffman-style <strong>U-tube</strong> with graphite electrodes (or the photo in <a href="experiment.html">experiment.md</a>).</p>
-<p><em>"One limb makes hydrogen. One makes oxygen. Which side will fill </em><em>twice as fast</em><em>? Why?"</em></p>
+<p>Show two graphite rods in a beaker of <strong>tap water</strong>.</p>
+<p><em>"If water is H₂O, why doesn’t electricity immediately split it into visible gas? What are we missing?"</em></p>
+<p>Preview today’s arc: slow → add electrolyte → measure current/rate → collect volumes → H₂ balloon pop.</p>
 <hr>
-<h2>Core concepts (10–25 min)</h2>
-<h3>1. Electrolysis of water</h3>
+<h2>Core concepts (10–20 min)</h2>
+<h3>1. Why tap water is a poor electrolyzer</h3>
 <ul>
-<li>Pure water conducts poorly → add <strong>sodium sulfate (Na₂SO₄)</strong> as supporting electrolyte (<strong>NOT NaCl</strong>)</li>
-<li>Power supply forces non-spontaneous reaction: water → hydrogen + oxygen</li>
+<li>Pure / tap water has <strong>very few ions</strong></li>
+<li>Current needs a closed path of mobile charge carriers</li>
+<li>Result: tiny current, almost no bubbles (<strong>Part A</strong>)</li>
 </ul>
-<h3>2. Half-reactions (simplified)</h3>
-<p><strong>Cathode (−):</strong> water reduced → <strong>hydrogen gas</strong><br>
-<strong>Anode (+):</strong> water oxidized → <strong>oxygen gas</strong></p>
-<h3>3. Stoichiometry — the 2:1 ratio</h3>
-<p>From overall equation: <strong>2H₂O → 2H₂ + O₂</strong></p>
+<h3>2. Role of sodium sulfate</h3>
 <ul>
-<li><strong>2 volumes H₂ : 1 volume O₂</strong> (same T and P)</li>
-<li>Avogadro: 2 moles H₂ : 1 mole O₂</li>
+<li>Add <strong>Na₂SO₄</strong> → Na⁺ and SO₄²⁻ carry current</li>
+<li>Supporting electrolyte: enables conduction; water is still what is split</li>
+<li><strong>Never NaCl</strong> (chlorine risk)</li>
+<li>Result: larger current, fast bubbling (<strong>Part B</strong>)</li>
 </ul>
-<h3>4. The U-tube cell</h3>
+<h3>3. Voltage needed</h3>
 <ul>
-<li>Two graphite electrodes in a glass U-tube (side arms; stoppers at the top)</li>
-<li>Gases collect in each limb; compare column heights / volumes</li>
-<li>Red (+) = anode = O₂; black (−) = cathode = H₂</li>
+<li>Thermodynamic minimum ≈ <strong>1.23 V</strong> to split water</li>
+<li>Real cells need <strong>more</strong> (overpotential + resistance)</li>
+<li>Students record the <strong>applied voltage</strong> they actually use</li>
 </ul>
+<h3>4. Rate from current (Faraday)</h3>
+<pre><code>ṅ(H₂) = I / (2F)     ṅ(O₂) = I / (4F)
+F ≈ 96485 C/mol e⁻
+</code></pre>
+<p>Same current ⇒ H₂ mole rate is <strong>twice</strong> O₂ mole rate.</p>
+<h3>5. Stoichiometry in volumes (<strong>Part C</strong>)</h3>
+<pre><code>2H₂O → 2H₂ + O₂   ⇒   V(H₂) : V(O₂) ≈ 2 : 1
+</code></pre>
+<p>U-tube collects the two gases separately so students can measure the ratio.</p>
 <figure class="figure-wrap" aria-label="Hoffman-style U-tube apparatus"><img alt="Hoffman-style U-tube apparatus" src="../../assets/figures/session4-hoffman-utube-apparatus.png"></figure>
 <figure class="figure-wrap" aria-label="Gas collection schematic"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
   <title id="fig1_title">Water electrolysis with gas collection</title>
@@ -164,50 +173,34 @@
   <text x="360" y="432" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Fill tubes completely with water, invert underwater - measure gas volume over time</text>
   <text x="360" y="448" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Expected ratio V(H&#x2082;) : V(O&#x2082;) &#x2248; 2 : 1</text>
 </svg></figure>
-<h3>5. Why observed ratio may differ from 2:1</h3>
-<ul>
-<li>O₂ slightly more soluble in water than H₂</li>
-<li>Small bubbles escape through side arms</li>
-<li>Leaks, uneven electrode areas</li>
-<li>Still a strong qualitative and semi-quantitative demo</li>
-</ul>
+<h3>6. Identifying hydrogen (<strong>Part D</strong>)</h3>
+<p>Instructor collects cathode gas in a <strong>balloon</strong> and ignites → pop. Combustible = H₂.</p>
 <hr>
-<h2>Energy discussion (75–85 min)</h2>
-<h3>Hydrogen as energy storage</h3>
+<h2>Energy discussion (if time after Part D)</h2>
 <ol>
-<li><strong>Excess renewable electricity</strong> (solar/wind) → electrolysis → H₂</li>
-<li>Store H₂ (compressed, or other methods — brief mention)</li>
-<li>Later: <strong>fuel cell</strong> converts H₂ + O₂ back to electricity + water</li>
+<li>Extra renewable electricity → electrolysis → H₂  </li>
+<li>Store H₂; later use in a fuel cell → electricity + water  </li>
+<li>H₂ is an <strong>energy carrier</strong>, not a primary source  </li>
 </ol>
-<p><strong>Key idea:</strong> Hydrogen is an <strong>energy carrier</strong>, not a primary energy source — energy is lost at each step.</p>
-<h3>Efficiency chain (qualitative)</h3>
-<p>Solar → electricity → H₂ → storage → fuel cell → electricity → motor/light<br>
-(Each arrow loses some energy as heat)</p>
 <hr>
-<h2>Preview Session 5 (85–90 min)</h2>
-<p><em>"We used electricity to </em><em>make</em><em> hydrogen. Overnight we'll use electricity to </em><em>undo</em><em> rust on iron. Tomorrow: reveal the results, then connect corrosion, galvanic cells, and sacrificial protection."</em></p>
-<p>Start derusting cells per <a href="experiment.html">experiment.md</a> Part E before students leave.</p>
-<hr>
-<h2>Visual aids</h2>
-<ul>
-<li>[ ] Balanced equation with mole/volume ratio highlighted</li>
-<li>[ ] Photo of setup with gas volumes marked</li>
-<li>[ ] Simple energy diagram: renewable → H₂ → (optional fuel cell concept)</li>
-</ul>
+<h2>Preview Session 5 (end of class)</h2>
+<p><em>"We used electricity to </em><em>make</em><em> hydrogen. Overnight we'll use electricity to </em><em>undo</em><em> rust. Tomorrow: corrosion, galvanic cells, and sacrificial protection."</em></p>
+<p>Start derusting cells per <a href="experiment.html">experiment.md</a> Part E.</p>
 <hr>
 <h2>Vocabulary</h2>
 <ul>
-<li>[ ] Electrolysis (applied to water)</li>
-<li>[ ] Stoichiometry / mole ratio</li>
-<li>[ ] Water displacement</li>
+<li>[ ] Electrolyte / supporting electrolyte</li>
+<li>[ ] Electrolysis</li>
+<li>[ ] Faraday’s law (rate from current)</li>
+<li>[ ] Stoichiometry / 2:1 volume ratio</li>
 <li>[ ] Energy carrier vs. energy source</li>
 </ul>
 <hr>
-<h2>Safety talking points (brief in lecture, detailed in experiment)</h2>
+<h2>Safety talking points</h2>
 <ul>
 <li><strong>Never use saltwater</strong> — chlorine gas risk</li>
-<li>No open flames near apparatus</li>
-<li>Pop test: instructor only, tiny H₂ volume</li>
+<li>Ammeter in <strong>series</strong></li>
+<li>Balloon pop / flame: <strong>instructor only</strong>, small balloon, clear area</li>
 </ul>
       </article>
     </main>

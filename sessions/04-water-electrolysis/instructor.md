@@ -6,162 +6,111 @@
 
 ## Why this session exists
 
-Students have plated metals. Now electricity splits **molecules** of water into elemental gases, and stoichiometry becomes visible as a **2:1 volume ratio**. This also introduces hydrogen as an energy carrier and sets up overnight electrolytic rust removal for Session 5.
+Students have plated metals. Today they discover that **splitting water needs ions in solution**, quantify **rate from current** (Faraday), prove **2:1 stoichiometry** by gas collection, and see a dramatic **H₂ balloon pop**. Overnight electrolytic rust removal still starts at the end for Session 5.
+
+---
+
+## Teaching sequence (keep this order)
+
+1. **Tap water beaker** — expect disappointment (almost no bubbles). That disappointment is the lesson.
+2. **Add Na₂SO₄** — same voltage → much larger current → fast bubbles. Measure I.
+3. **Calculate** ṅ = I/(nF) and discuss why applied V > 1.23 V.
+4. **U-tube volumes** — same 2:1 that Faraday already predicted.
+5. **Balloon** — qualitative ID of H₂ (instructor only).
+6. **Derusting cells** — handoff to Session 5.
 
 ---
 
 ## Atomic / molecular foundations
 
-### Water’s bonding (instructor talking points)
+### Why tap water fails
 
-- H₂O: oxygen shares electrons with two hydrogens (polar covalent bonds).
-- Oxygen is more electronegative → partial negative charge on O, partial positive on H.
-- Liquid water also has extensive hydrogen bonding (affects boiling point, solvation) — optional aside.
-- Pure water has very few ions (autoionization): H₂O ⇌ H⁺ + OH⁻ with tiny [H⁺][OH⁻] = 10⁻¹⁴ at 25 °C. That is why **pure water is a poor conductor**.
+- Autoionization: H₂O ⇌ H⁺ + OH⁻ with [H⁺][OH⁻] = 10⁻¹⁴ at 25 °C — vanishingly few ions.
+- Tap water adds some minerals, but still a **poor conductor** compared with 0.1 M Na₂SO₄.
+- Without current, half-reactions barely run → “slow reaction.”
 
-### Why we add Na₂SO₄
+### Why Na₂SO₄ works
 
-Electrolysis needs mobile ions. **Sodium sulfate (Na₂SO₄)** dissolves into Na⁺ and SO₄²⁻ that carry current. It is a **supporting electrolyte** — it enables conduction without (ideally) being the main reactant consumed. This workshop uses **~0.1 M Na₂SO₄** in the U-tube cell.
+- Dissolves to Na⁺ and SO₄²⁻ — **supporting electrolyte**.
+- Water remains the species oxidized/reduced (classroom story).
+- **Never NaCl** → Cl₂ risk at the anode.
 
-Baking soda (NaHCO₃) is an acceptable emergency backup, but plan on sodium sulfate.
-
-**Critical safety contrast:**
-
-| Electrolyte | OK for classroom gas electrolysis? | Why |
-|-------------|-------------------------------------|-----|
+| Electrolyte | OK? | Why |
+|-------------|-----|-----|
 | Sodium sulfate | **Yes — planned** | Inert supporting electrolyte |
-| Baking soda / NaHCO₃ | Yes (backup) | No chlorine evolution |
-| Table salt NaCl | **NO** | Chloride oxidizes → **Cl₂ gas** (toxic) |
-
-If anyone smells chlorine or sees greenish gas character — **stop immediately**, ventilate, replace electrolyte.
+| Baking soda | Backup only | No chlorine |
+| Table salt NaCl | **NO** | Cl₂ gas |
 
 ---
 
-## Half-reactions — what to teach vs what is “true”
+## Half-reactions and the 2:1 ratio
 
-### Classroom-friendly version
+**Cathode (−):** `2H₂O + 2e⁻ → H₂ + 2OH⁻`  
+**Anode (+):** `2H₂O → O₂ + 4H⁺ + 4e⁻` (or base form with OH⁻)  
+**Overall:** `2H₂O → 2H₂ + O₂`
 
-**Cathode (−):**
-
-```
-2H₂O + 2e⁻ → H₂(g) + 2OH⁻
-```
-(or in acid: `2H⁺ + 2e⁻ → H₂`)
-
-**Anode (+):**
-
-```
-2H₂O → O₂(g) + 4H⁺ + 4e⁻
-```
-(or in base: `4OH⁻ → O₂ + 2H₂O + 4e⁻`)
-
-**Overall:**
-
-```
-2H₂O(l) → 2H₂(g) + O₂(g)
-```
-
-### Why the 2:1 ratio appears
-
-Oxygen half-reaction involves **4 electrons** per O₂; hydrogen involves **2 electrons** per H₂. Balancing electrons requires twice as many H₂ molecules as O₂ molecules:
-
-```
-4e⁻ make 2 H₂ and 1 O₂  ⇒  V(H₂)/V(O₂) = 2
-```
-
-At the same T and P, gas volume ∝ moles (Avogadro / ideal gas). So volumes follow mole ratio.
-
-### Electron bookkeeping (Faraday connection)
-
-Same idea as Session 3: charge passed determines moles of e⁻, which determines moles of gas — but today students measure **volumes**, not mass.
+Electron balance: 4e⁻ make **2 H₂** and **1 O₂** ⇒ volume ratio 2:1 at same T, P.
 
 ---
 
-## Thermodynamics (instructor background)
+## Faraday coaching (Part B)
 
-Water splitting is **non-spontaneous** under standard conditions. Rough minimum theoretical voltage for water electrolysis is ~1.23 V (thermodynamic), but real cells need more due to overpotentials and resistance — classroom 9 V packs are plenty. Students need only: *“We must push with a battery; water does not split by itself.”*
+```
+ṅ(H₂) = I / (2F)     ṅ(O₂) = I / (4F)
+F ≈ 9.65×10⁴ C/mol
+```
 
----
+- Students must convert **mA → A** before dividing.
+- Emphasize: **same I** already implies ṅ(H₂) = 2 ṅ(O₂) — volumes later confirm chemistry, not a new idea.
+- Optional volume rate: use ~24.5 L/mol at ~25 °C (or 22.4 L/mol at STP — pick one and stay consistent).
 
-## U-tube apparatus coaching
+### Voltage talking points
 
-### What students are looking at
+- Thermodynamic minimum ≈ **1.23 V**.
+- Graphite + solution resistance + overpotentials → classroom cells often need **several volts**.
+- “Voltage needed” = discuss 1.23 V floor + record **applied V**; if supply is adjustable, hunt the onset of visible bubbling.
 
-Glass U-tube on an acrylic stand; graphite rods through rubber stoppers; side arms near the top of each limb; red/black leads with spade connectors to a DC supply. Fill with **Na₂SO₄**, not salt. Keep side arms open or vented so pressure does not build against sealed stoppers.
-
-### Measuring the ratio
-
-Gas collected in each limb displaces liquid downward. Compare gas column heights (or graduated volumes) once bubbling is steady. Equal arm geometry matters for a fair ratio.
-
-### Identifying H₂ vs O₂ without a pop test
-
-| Clue | H₂ side | O₂ side |
-|------|---------|---------|
-| Rate | Faster (2× volume) | Slower |
-| Electrode | Cathode (−) / black | Anode (+) / red |
-| Optional | Pop test (instructor) | Relights glowing splint (advanced / careful) |
-
-Default classroom ID: **faster = H₂ = cathode**.
-
-### Why ratios drift from 2.0
-
-| Cause | Effect |
-|-------|--------|
-| O₂ more soluble than H₂ | O₂ volume low → ratio high |
-| Leaks / escaped bubbles | Either side low |
-| Unequal electrode area / current distribution | Skewed rates |
-| Air left in tube at t = 0 | Systematic error |
-| Electrode oxidation / side reactions | Extra gases or lost current |
-
-Accept **1.6–2.2** as a successful classroom result; discuss systematics rather than demanding perfection.
+**Pilot tip:** note typical I (tap) vs I (Na₂SO₄) at your fixed V so TAs know what “good” looks like.
 
 ---
 
-## Pop test protocol (instructor only)
+## U-tube coaching (Part C)
 
-1. Collect a **tiny** volume of H₂ in a separate small tube.
-2. Move away from the main tub and from faces.
-3. Brief flame → soft “pop.”
-4. Never ignite sealed containers or mixed H₂/O₂.
-5. Skip entirely if venue rules forbid open flame.
+Glass U-tube, graphite through stoppers, side arms vented, Na₂SO₄ fill. Black (−) = faster H₂ limb. Accept ratio **1.6–2.2**.
 
----
-
-## Hydrogen as energy storage (end-of-session talk)
-
-Frame carefully:
-
-1. Renewables make electricity intermittently.
-2. Extra electricity can electrolyze water → H₂.
-3. H₂ can be stored and later oxidized in a **fuel cell** → electricity + water.
-4. H₂ is an **energy carrier**, not a source — the energy came from the electricity (ultimately the sun/wind).
-5. Round-trip efficiency < 100% always (heat losses).
-
-You are **not** running a fuel cell demo this week (Session 5 uses rust removal instead). Keep fuel cells as a conceptual bridge only.
+| Ratio error cause | Effect |
+|-------------------|--------|
+| O₂ more soluble | Ratio high |
+| Escaped bubbles / leaks | Skew either way |
+| Air at t = 0 | Systematic error |
 
 ---
 
-## Part E — Start electrolytic rust removal (handoff to Session 5)
+## H₂ balloon pop (Part D) — safety first
 
-### Correct polarity (students reverse this)
+This is a **demo**, not a free-for-all.
 
-| Electrode | Connection | Role |
-|-----------|------------|------|
-| Rusty iron (object to clean) | Battery **−** (cathode) | Reduction / cleaning |
-| Sacrificial steel or graphite | Battery **+** (anode) | Oxidizes / sacrifices |
-| Electrolyte | Washing soda or baking soda | **Not NaCl** |
+1. Feed **cathode gas only** into a **small** balloon (anode vents separately).
+2. Modest inflation — not a large balloon.
+3. Tie off; move away from the bath and faces.
+4. Long lighter; arm’s length; clear space; extinguisher ready.
+5. Skip if venue forbids open flame.
 
-### What is happening chemically (simplified)
+**Never** inflate with mixed H₂/O₂. **Never** use a rigid sealed vessel.
 
-Rust is largely Fe₂O₃·nH₂O / FeOOH mixtures. At the cathode, electrochemical reduction and associated chemistry loosen / reduce oxide layers toward metallic iron; H₂ evolution often accompanies the process. The anode corrodes or evolves O₂ depending on material.
+Loud pop startles — warn the room; protect ears if needed.
 
-**Teaching link:** same “electricity drives non-spontaneous change” idea as water electrolysis — applied to undoing corrosion.
+---
 
-### Overnight logistics
+## Part E — Rust removal handoff
 
-- Label cells; photograph “before.”
-- Keep a no-power control nail in water.
-- Confirm venue policy for leaving batteries connected overnight (prep room preferred).
+| Role | Connection |
+|------|------------|
+| Rusty iron | Battery **−** (cathode) |
+| Sacrificial steel/graphite | Battery **+** (anode) |
+| Electrolyte | Washing soda or baking soda — **not NaCl** |
+
+Photograph before; control nail without power; overnight policy confirmed.
 
 ---
 
@@ -169,25 +118,27 @@ Rust is largely Fe₂O₃·nH₂O / FeOOH mixtures. At the cathode, electrochemi
 
 | Misconception | Correction |
 |---------------|------------|
-| “Bubbles are steam.” | They are **H₂ and O₂ gases**, not water vapor from boiling. |
-| “Salt makes electrolysis better.” | Salt makes **chlorine** — forbidden here. |
-| “Ratio must be exactly 2.000.” | Classroom data have solubility and collection errors. |
-| “Hydrogen is a fuel like oil.” | It’s a **carrier**; energy was put in by electrolysis. |
+| “Bubbles are steam.” | H₂ and O₂ gases, not boiling. |
+| “Salt makes it better.” | Salt makes chlorine — forbidden. |
+| “We need huge voltage because water is special.” | Minimum ~1.23 V; extras are kinetics/resistance. |
+| “Current and stoichiometry are unrelated.” | Faraday **is** the stoichiometry in electron language. |
+| “Hydrogen is a fuel like oil.” | It’s a **carrier**; energy came from electricity. |
 
 ---
 
 ## Board plan
 
-1. Write overall 2H₂O → 2H₂ + O₂; circle 2:1.
-2. Assign cathode/anode gases with signs.
-3. Sketch displacement tubes; emphasize “no air at start.”
-4. Safety slide: no NaCl.
-5. Preview energy carrier concept + start derusting cells before dismissal.
+1. Sketch beaker + two graphite rods; label “few ions.”
+2. Add Na₂SO₄; write I↑ → rate↑.
+3. Write ṅ = I/(nF) and 1.23 V note.
+4. Write 2H₂O → 2H₂ + O₂; circle 2:1.
+5. Safety: no NaCl; balloon = instructor only.
+6. Start derusting before dismissal.
 
 ---
 
 ## Optional enrichment
 
-- Pourbaix diagrams for Fe–H₂O (why rust forms / removes — advanced).
-- Overpotential differences for H₂ vs O₂ on graphite.
-- Industrial alkaline electrolyzers vs PEM electrolyzers (names only).
+- Conductivity of tap vs 0.1 M Na₂SO₄ (if you have a meter).
+- Overpotential on graphite vs platinum (names only).
+- Industrial alkaline vs PEM electrolyzers (names only).

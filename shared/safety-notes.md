@@ -17,11 +17,13 @@ Apply these across all sessions. Session-specific hazards are listed in each ses
 | 1 | Sharp nails/wires | Supervise handling; wash hands after metals |
 | 2 | Copper solutions | Goggles; no ingestion; collect waste |
 | 3 | Silver nitrate | Gloves + goggles; stains skin/clothing; small volumes |
-| 4 | Gas evolution | No saltwater; no flames near setup; instructor-only pop test |
+| 4 | Gas evolution + H₂ balloon | No saltwater; ammeter in series; instructor-only balloon/flame demo |
 | 5 | Corrosion demos + electrolytic derusting | Use washing soda or baking soda only — NOT NaCl; disconnect power when not supervised |
 
-## Hydrogen pop test (Session 4, instructor-only)
+## Hydrogen balloon / pop demo (Session 4, instructor-only)
 
-- Use a **tiny** volume of hydrogen only
-- Perform away from the electrolysis setup
-- **Never** ignite a sealed container or a mixed H₂/O₂ container
+- Feed **cathode (H₂) gas only** into a **small** balloon — do not mix with O₂
+- Inflate modestly; move away from the electrolysis bath and faces
+- Long lighter at arm’s length; clear area; extinguisher accessible
+- **Never** ignite a sealed rigid container or a mixed H₂/O₂ balloon
+- Skip entirely if the venue forbids open flame

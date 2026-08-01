@@ -78,8 +78,16 @@
       </header>
       <article class="main-article">
 <blockquote>
-<p><strong>Instructors:</strong> gas ID, ratio systematics, Part E polarity — <a href="instructor.html">instructor.md</a>.</p>
+<p><strong>Instructors:</strong> electrolyte contrast, Faraday rate math, U-tube stoichiometry, H₂ balloon safety — <a href="instructor.html">instructor.md</a>.</p>
 </blockquote>
+<p><strong>Session arc</strong></p>
+<ol>
+<li><strong>Part A</strong> — Graphite in a beaker of <strong>tap water only</strong> (slow / almost no reaction)</li>
+<li><strong>Part B</strong> — Add <strong>Na₂SO₄</strong>; measure <strong>current</strong>; link voltage and rate to Faraday’s law</li>
+<li><strong>Part C</strong> — Collect gases in the <strong>U-tube</strong>; measure volumes → <strong>2:1 stoichiometry</strong></li>
+<li><strong>Part D</strong> — Separate demo: fill an <strong>H₂ balloon</strong> and pop it (instructor-led)</li>
+<li><strong>Part E</strong> — Start overnight <strong>rust-removal</strong> cells for Session 5</li>
+</ol>
 <hr>
 <h2>Electrolyte — sodium sulfate (Na₂SO₄)</h2>
 <p><strong>Never use table salt (NaCl)</strong> — chloride can produce toxic chlorine gas at the anode.</p>
@@ -94,7 +102,7 @@
 </thead>
 <tbody>
 <tr>
-<td>250 mL (about one U-tube fill)</td>
+<td>250 mL</td>
 <td><strong>~3.5 g</strong></td>
 <td>Fill to 250 mL</td>
 </tr>
@@ -111,14 +119,10 @@
 </tbody>
 </table>
 <p>Stir until dissolved. Label <strong>"0.1 M Na₂SO₄ electrolyte — NO SALT"</strong>.</p>
-<p><strong>Water:</strong> tap water is fine — Na₂SO₄ provides the ions you need. Distilled water is unnecessary here.</p>
-<p><strong>If you only have baking soda as emergency backup:</strong> 1–2 tsp NaHCO₃ per 500 mL works, but the planned electrolyte for this workshop is <strong>sodium sulfate</strong>.</p>
-<h3>Volume per station</h3>
-<p>Fill the U-tube so both arms are mostly full of electrolyte, with liquid well above the lower ends of the graphite electrodes and below the side-arm ports (see Part A). Mix <strong>fresh</strong> electrolyte if someone contaminated a batch with salt.</p>
+<p><strong>Water:</strong> start Parts A–B with plain <strong>tap water</strong> in the beaker; add solid Na₂SO₄ (or a concentrated aliquot) for Part B. Distilled water is unnecessary here.</p>
+<p><strong>Baking soda backup only if Na₂SO₄ is unavailable:</strong> 1–2 tsp NaHCO₃ per 500 mL.</p>
 <hr>
-<h2>Part A — Assemble the U-tube electrolysis cell (25–40 min)</h2>
-<figure class="figure-wrap" aria-label="Hoffman-style U-tube electrolysis apparatus with graphite electrodes"><img alt="Hoffman-style U-tube electrolysis apparatus with graphite electrodes" src="../../assets/figures/session4-hoffman-utube-apparatus.png"></figure>
-<p><em>Figure 1 — Classroom apparatus: glass U-tube on an acrylic stand, graphite electrodes sealed with rubber stoppers, side arms on each limb, red (+) / black (−) leads with spade connectors for a DC supply.</em></p>
+<h2>Part A — Tap water only (slow reaction) (20–30 min)</h2>
 <figure class="figure-wrap" aria-label="Water electrolysis schematic"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
   <title id="fig1_title">Water electrolysis with gas collection</title>
   <desc id="fig1_desc">Electrolysis of water using baking soda electrolyte with inverted tubes collecting hydrogen and oxygen by water displacement.</desc>
@@ -175,47 +179,214 @@
   <text x="360" y="432" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Fill tubes completely with water, invert underwater - measure gas volume over time</text>
   <text x="360" y="448" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Expected ratio V(H&#x2082;) : V(O&#x2082;) &#x2248; 2 : 1</text>
 </svg></figure>
-<p><em>Figure 2 — Concept: H₂ forms at the cathode (−) at about twice the volume of O₂ at the anode (+). Electrolyte is sodium sulfate — not salt.</em></p>
-<h3>Materials</h3>
+<p><em>Figure 1 — Concept: H₂ at the cathode (−), O₂ at the anode (+). Without electrolyte, almost no current flows.</em></p>
+<h3>Materials (beaker cell)</h3>
 <ul>
-<li>Hoffman-style <strong>glass U-tube</strong> with <strong>side arms</strong> (one per limb), on acrylic stand</li>
-<li>Two <strong>graphite</strong> electrodes with rubber/cork stoppers</li>
-<li>Red (+) and black (−) leads with spade (fork) connectors</li>
-<li>DC power supply or battery pack (typically <strong>6–12 V</strong>; 9 V packs also work if current is adequate)</li>
-<li><strong>0.1 M Na₂SO₄</strong> electrolyte</li>
-<li>Ruler or markings to compare gas column heights / liquid levels</li>
+<li>Beaker or clear cup (~200–400 mL)</li>
+<li>Two <strong>graphite</strong> rods (same rods you will use later in the U-tube if needed)</li>
+<li>DC supply or battery pack + leads (red +, black −)</li>
+<li>Multimeter (DC <strong>mA</strong> or A range) wired <strong>in series</strong></li>
+<li>Multimeter or supply display for <strong>voltage</strong> across the cell</li>
+<li>Tap water only — <strong>no salt, no Na₂SO₄ yet</strong></li>
 <li>Goggles</li>
 </ul>
-<h3>Build steps</h3>
+<h3>Procedure</h3>
 <ol>
-<li>Place the U-tube securely in its acrylic stand.</li>
-<li>Fill with <strong>Na₂SO₄</strong> electrolyte until both arms are nearly full — liquid should cover the immersed electrode tips and sit <strong>below</strong> the side-arm openings so gas can collect (or exit) there.</li>
-<li>Insert one graphite electrode through each rubber stopper into each arm. Stoppers should seal the top of each limb.</li>
-<li>Confirm electrodes do <strong>not</strong> touch each other or short through loose wires.</li>
-<li>Connect leads:</li>
-<li><strong>Black / (−)</strong> → cathode → electrode that will collect <strong>H₂</strong> (faster-filling limb)</li>
-<li><strong>Red / (+)</strong> → anode → other electrode (<strong>O₂</strong>)</li>
-<li>Attach spade connectors to the DC supply (or battery pack). Keep connections <strong>dry</strong>.</li>
-<li>Side arms: leave open to air for classroom volume comparison, <strong>or</strong> attach collection tubing if your kit includes it. Do not seal both the stopper tops and the side arms airtight with no outlet — pressure must have a path.</li>
-<li>When current flows, the <strong>faster-rising gas column</strong> (or faster liquid drop) is hydrogen (cathode).</li>
+<li>Fill the beaker with <strong>tap water</strong> only (~200–300 mL).</li>
+<li>Clamp or hold two graphite rods so they are immersed, <strong>2–4 cm apart</strong>, not touching.</li>
+<li>Connect: black (−) to one rod (cathode), red (+) to the other (anode).</li>
+<li>Put the ammeter <strong>in series</strong> with one lead. Measure voltage across the two electrodes (or read the supply setpoint).</li>
+<li>Power on for <strong>2–3 minutes</strong>. Watch carefully for bubbles.</li>
 </ol>
-<h3>Pre-run checklist</h3>
-<ul>
-<li>[ ] U-tube filled with <strong>Na₂SO₄</strong> — <strong>not salt</strong></li>
-<li>[ ] Stoppers seated; electrodes immersed and not touching</li>
-<li>[ ] Polarity marked: (−) = H₂ limb, (+) = O₂ limb</li>
-<li>[ ] Side arms open or properly tubed (no overpressure trap)</li>
-<li>[ ] Goggles on</li>
-<li>[ ] Power supply set; leads dry</li>
-</ul>
+<h3>Expected observation</h3>
+<table>
+<thead>
+<tr>
+<th>What you look for</th>
+<th>Typical result (tap water)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bubbles</td>
+<td>None, or very few / slow</td>
+</tr>
+<tr>
+<td>Current</td>
+<td>Very small (often ≪ 1–10 mA depending on supply and meter)</td>
+</tr>
+<tr>
+<td>Conclusion</td>
+<td>Tap water has too few ions → poor conductor → slow electrolysis</td>
+</tr>
+</tbody>
+</table>
+<h3>Data — tap water</h3>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applied voltage V (V)</td>
+<td></td>
+</tr>
+<tr>
+<td>Current I (mA)</td>
+<td></td>
+</tr>
+<tr>
+<td>Bubbles visible? (Y/N, describe)</td>
+<td></td>
+</tr>
+<tr>
+<td>Time observed (min)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Talking point:</strong> <em>Water itself is the reactant, but without mobile ions the circuit almost cannot run.</em></p>
 <hr>
-<h2>Part B — Run and measure (40–65 min)</h2>
+<h2>Part B — Add electrolyte; measure current and rate (30–45 min)</h2>
+<h3>Procedure</h3>
 <ol>
-<li>Start the timer when bubbles are clearly visible at both electrodes.</li>
-<li>Every <strong>2–3 min</strong>, measure gas produced in each arm:</li>
-<li>Prefer graduated limbs (mL) if marked, <strong>or</strong></li>
-<li>Measure <strong>gas column height</strong> or <strong>liquid level drop</strong> (cm) with a ruler (ratio ≈ volume ratio if the two arms match).</li>
-<li>Continue until a clear difference appears or ~15–20 min have elapsed.</li>
+<li><strong>Keep the same beaker and electrodes</strong> (or reset with fresh tap water and the same spacing).</li>
+<li>Add <strong>Na₂SO₄</strong> to make roughly <strong>0.1 M</strong> in the beaker:</li>
+<li>For ~250 mL water: add <strong>~3.5 g</strong> anhydrous Na₂SO₄; stir until dissolved  </li>
+<li>Or pour in a pre-measured aliquot of stock 0.1 M Na₂SO₄ and top up</li>
+<li>Reconnect the circuit with the ammeter in series. Use the <strong>same applied voltage</strong> as Part A if possible (fair comparison).</li>
+<li>Record current once it stabilizes (~10–30 s). Observe bubble rate at each electrode.</li>
+<li>Optional: briefly raise/lower voltage and note how current (and bubbling) changes.</li>
+</ol>
+<h3>Expected observation</h3>
+<table>
+<thead>
+<tr>
+<th>What you look for</th>
+<th>Typical result (with Na₂SO₄)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bubbles</td>
+<td>Much faster at both electrodes</td>
+</tr>
+<tr>
+<td>Current</td>
+<td>Much larger than Part A</td>
+</tr>
+<tr>
+<td>Conclusion</td>
+<td>Electrolyte ions carry charge → higher I → faster water splitting</td>
+</tr>
+</tbody>
+</table>
+<h3>Data — with Na₂SO₄</h3>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applied voltage V (V)</td>
+<td></td>
+</tr>
+<tr>
+<td>Current I (mA) → convert to A: I = ___ A</td>
+<td></td>
+</tr>
+<tr>
+<td>Qualitative bubble rate vs Part A</td>
+<td></td>
+</tr>
+<tr>
+<td>Theoretical minimum for water splitting</td>
+<td><strong>~1.23 V</strong> (thermodynamic; real cells need more)</td>
+</tr>
+</tbody>
+</table>
+<h3>Calculations — voltage, current, and rate</h3>
+<p><strong>1. Voltage needed (classroom framing)</strong></p>
+<ul>
+<li>Ideal minimum to split water: <strong>E° ≈ 1.23 V</strong></li>
+<li>Your supply must provide <strong>at least</strong> that, usually <strong>more</strong> (overpotential + resistance). Record the <strong>applied V</strong> you actually use.</li>
+<li>Optional: if the supply is adjustable, find the lowest V where bubbles become clearly visible.</li>
+</ul>
+<p><strong>2. Reaction rate from current (Faraday)</strong></p>
+<p>Charge of electrons: Faraday constant <strong>F ≈ 96485 C/mol e⁻</strong></p>
+<p>Hydrogen half-reaction uses <strong>2 e⁻ per H₂</strong>:</p>
+<pre><code>rate of H₂ production (mol/s) = I / (2 F)
+</code></pre>
+<p>with <strong>I in amperes</strong> (A = C/s).</p>
+<p>Oxygen uses <strong>4 e⁻ per O₂</strong>:</p>
+<pre><code>rate of O₂ production (mol/s) = I / (4 F)
+</code></pre>
+<p>So the mole rate of H₂ is always <strong>twice</strong> the mole rate of O₂ for the same current — foreshadowing the volume ratio.</p>
+<p><strong>3. Optional volume rate at room conditions</strong></p>
+<p>At ~25 °C, 1 atm, molar volume ≈ <strong>24.5 L/mol</strong> (or use 22.4 L/mol at STP if your instructor prefers):</p>
+<pre><code>rate of H₂ (L/s) ≈ [I / (2 F)] × 24.5
+rate of H₂ (mL/min) ≈ [I / (2 F)] × 24.5 × 1000 × 60
+</code></pre>
+<h3>Worked example (fill in your I)</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Expression</th>
+<th>Your value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>___ A</td>
+<td></td>
+</tr>
+<tr>
+<td>ṅ(H₂) = I/(2F)</td>
+<td>___ mol/s</td>
+<td></td>
+</tr>
+<tr>
+<td>ṅ(O₂) = I/(4F)</td>
+<td>___ mol/s</td>
+<td></td>
+</tr>
+<tr>
+<td>Approx. H₂ volume rate</td>
+<td>___ mL/min</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Check:</strong> ṅ(H₂) / ṅ(O₂) should equal <strong>2</strong> from the electron count alone.</p>
+<hr>
+<h2>Part C — Collect gas; measure stoichiometry (45–70 min)</h2>
+<figure class="figure-wrap" aria-label="Hoffman-style U-tube electrolysis apparatus with graphite electrodes"><img alt="Hoffman-style U-tube electrolysis apparatus with graphite electrodes" src="../../assets/figures/session4-hoffman-utube-apparatus.png"></figure>
+<p><em>Figure 2 — U-tube apparatus for collecting H₂ and O₂ separately and comparing volumes.</em></p>
+<h3>Materials</h3>
+<ul>
+<li>Hoffman-style <strong>glass U-tube</strong> with side arms + acrylic stand</li>
+<li>Graphite electrodes + rubber stoppers</li>
+<li>Red (+) / black (−) leads with spade connectors</li>
+<li>DC supply</li>
+<li><strong>0.1 M Na₂SO₄</strong> (fill the U-tube)</li>
+<li>Ruler or limb graduations</li>
+<li>Goggles</li>
+</ul>
+<h3>Build / run</h3>
+<ol>
+<li>Fill the U-tube with <strong>Na₂SO₄</strong> electrolyte (liquid covers electrode tips; sits below side-arm ports).</li>
+<li>Insert graphite electrodes through stoppers; seal tops; keep side arms <strong>open or vented</strong>.</li>
+<li>Connect: <strong>black (−) = H₂ limb</strong>, <strong>red (+) = O₂ limb</strong>.</li>
+<li>Power on. Mark starting liquid levels.</li>
+<li>Every <strong>2–3 min</strong>, record gas column height or volume in each limb.</li>
 </ol>
 <h3>Gas volume log</h3>
 <table>
@@ -264,38 +435,46 @@
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td>20</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 <h3>Expected result</h3>
-<p>V_H₂ / V_O₂ ≈ <strong>2</strong> (ideal). Classroom range <strong>1.6–2.2</strong> is a success — discuss solubility and collection errors.</p>
-<h3>Observations</h3>
+<p>V_H₂ / V_O₂ ≈ <strong>2</strong> (ideal). Classroom range <strong>1.6–2.2</strong> is a success.</p>
+<p>Connect to Part B: the same <strong>2:1</strong> appears in Faraday rates <strong>and</strong> in collected volumes — that is the stoichiometry of</p>
+<pre><code>2H₂O(l) → 2H₂(g) + O₂(g)
+</code></pre>
+<h3>Pre-run checklist</h3>
 <ul>
-<li>Bubble rate at each electrode</li>
-<li>Cloudiness or electrode crumbling</li>
-<li>Temperature change (optional)</li>
+<li>[ ] Electrolyte is <strong>Na₂SO₄</strong> — <strong>not salt</strong></li>
+<li>[ ] Polarity marked; side arms vented</li>
+<li>[ ] Goggles on</li>
 </ul>
 <hr>
-<h2>Part C — Instructor-only pop test (65–75 min)</h2>
-<p><strong>Optional demo — not for students</strong></p>
-<ol>
-<li>Collect a <strong>tiny</strong> amount of H₂ from the cathode side arm (or a small separate tube).</li>
-<li>Move away from the main apparatus and faces.</li>
-<li>Brief flame → soft “pop.”</li>
-<li>Never ignite sealed or mixed H₂/O₂ containers.</li>
-<li>Skip if the venue forbids open flame.</li>
-</ol>
-<hr>
-<h2>Part D — Extensions (if time)</h2>
+<h2>Part D — H₂ balloon fill and pop (70–80 min)</h2>
+<p><strong>Instructor-led demo</strong> (students observe; do not hand students lit flames). Use a <strong>separate</strong> cathode setup from the U-tube if needed so stoichiometry data are already recorded.</p>
+<h3>Idea</h3>
+<p>Collect hydrogen from the <strong>cathode (−)</strong> into a small balloon, then ignite for a loud <strong>pop</strong> — qualitative proof that the fast gas is combustible H₂.</p>
+<h3>Materials (demo station)</h3>
 <ul>
-<li>[ ] Add universal indicator — look for acid/base zones near electrodes</li>
-<li>[ ] Power with a small solar panel instead of a battery pack</li>
-<li>[ ] Swap polarity briefly: volumes reverse which limb grows faster (then restore)</li>
+<li>Beaker or bottle with <strong>Na₂SO₄</strong> + two graphite electrodes (or cathode tubing from a dedicated H₂ generator)</li>
+<li>Small balloon (party balloon)</li>
+<li>Tubing / stopper so H₂ from the cathode feeds the balloon (O₂ must <strong>not</strong> mix into the balloon)</li>
+<li>Long lighter / candle on a stick</li>
+<li>Fire extinguisher nearby; clear area; eye protection for everyone nearby</li>
+</ul>
+<h3>Procedure (instructor)</h3>
+<ol>
+<li>Set up electrolysis so <strong>only cathode gas</strong> enters the balloon (anode vents separately to air).</li>
+<li>Run until the balloon is <strong>modestly</strong> inflated (small volume — do not make a large balloon).</li>
+<li>Tie off; move <strong>away</strong> from the electrolysis bath and from faces.</li>
+<li>Ignite with a long lighter at arm’s length → sharp pop.</li>
+<li>Never ignite a balloon that may contain mixed H₂/O₂; never use a sealed rigid container.</li>
+</ol>
+<h3>Safety (non-negotiable)</h3>
+<ul>
+<li>[ ] Instructor only handles flame</li>
+<li>[ ] Small balloon only; outdoor or well-cleared indoor space per venue rules</li>
+<li>[ ] No salt electrolyte</li>
+<li>[ ] Skip entirely if open flame is forbidden</li>
 </ul>
 <hr>
 <h2>Part E — Start electrolytic rust removal (80–90 min)</h2>
@@ -351,7 +530,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Washing soda</strong> (sodium carbonate, Na₂CO₃) preferred</td>
+<td><strong>Washing soda</strong> (Na₂CO₃) preferred</td>
 <td><strong>1 tbsp (~15 g) per ~250 mL</strong> warm water</td>
 </tr>
 <tr>
@@ -360,24 +539,21 @@
 </tr>
 </tbody>
 </table>
-<p>≈ <strong>0.5–0.6 M</strong> Na₂CO₃ if using washing soda at that kitchen measure — exact molarity is not critical.<br>
-<strong>Do NOT use NaCl.</strong> (Derusting is a separate bath from the Na₂SO₄ U-tube.)</p>
+<p><strong>Do NOT use NaCl.</strong> Separate bath from the Na₂SO₄ electrolysis.</p>
 <h3>Setup steps</h3>
 <ol>
-<li>Dissolve washing soda (or baking soda) in warm water; pour into a small jar (~100–250 mL).</li>
-<li>Clip <strong>rusty iron</strong> nail/hardware to battery <strong>cathode (−)</strong>.</li>
-<li>Clip <strong>sacrificial steel strip or graphite</strong> to battery <strong>anode (+)</strong>.</li>
-<li>Immerse both; keep them from touching; confirm gentle bubbling.</li>
-<li>Label group name; photograph the nail <strong>before</strong>.</li>
-<li>Place a <strong>control</strong> rusty nail in plain water (no battery).</li>
-<li>Leave powered overnight per instructor / venue rules.</li>
+<li>Dissolve washing soda (or baking soda); pour into a small jar.</li>
+<li>Rusty iron → battery <strong>cathode (−)</strong>.</li>
+<li>Sacrificial steel or graphite → battery <strong>anode (+)</strong>.</li>
+<li>Immerse without touching; confirm gentle bubbling.</li>
+<li>Label; photograph <strong>before</strong>; set a control nail in plain water (no battery).</li>
+<li>Leave powered overnight per venue rules.</li>
 </ol>
 <h3>End-of-class checklist</h3>
 <ul>
-<li>[ ] All derusting cells connected and bubbling (or current confirmed)</li>
-<li>[ ] Control nails in plain water labeled</li>
-<li>[ ] Before photos taken</li>
-<li>[ ] Overnight power policy confirmed (prep room preferred)</li>
+<li>[ ] Derusting cells bubbling / current confirmed</li>
+<li>[ ] Controls labeled; before photos taken</li>
+<li>[ ] Overnight power policy confirmed</li>
 </ul>
 <hr>
 <h2>Troubleshooting</h2>
@@ -391,29 +567,34 @@
 </thead>
 <tbody>
 <tr>
-<td>No bubbles</td>
-<td>Poor contact / weak electrolyte</td>
-<td>Check spade connectors; remake ~0.1 M Na₂SO₄</td>
+<td>No bubbles in Part A</td>
+<td>Expected if current tiny</td>
+<td>Proceed to add Na₂SO₄</td>
 </tr>
 <tr>
-<td>One side only</td>
-<td>Single electrode connected</td>
-<td>Check both leads and polarity</td>
+<td>Still no bubbles in Part B</td>
+<td>Bad contacts / wrong polarity</td>
+<td>Check clips; raise V slightly; remake ~0.1 M Na₂SO₄</td>
 </tr>
 <tr>
-<td>Ratio far from 2:1</td>
-<td>Uneven arms; leaks; late start</td>
-<td>Equal fill levels; reseat stoppers; restart timer after steady bubbling</td>
+<td>Current barely rises after salt… wait, <strong>Na₂SO₄</strong></td>
+<td>Not dissolved / too dilute</td>
+<td>Stir; add more sulfate (not NaCl)</td>
 </tr>
 <tr>
 <td>Chlorine smell</td>
 <td><strong>Salt used</strong></td>
-<td>Stop; dump; remake <strong>Na₂SO₄</strong> bath</td>
+<td>Stop; dump; remake Na₂SO₄</td>
 </tr>
 <tr>
-<td>Pressure / liquid spray</td>
-<td>Side arms sealed with no outlet</td>
-<td>Open side arms or attach vent tubing</td>
+<td>Ratio far from 2:1</td>
+<td>Leaks; late start; unequal arms</td>
+<td>Reseat stoppers; restart after steady bubbling</td>
+</tr>
+<tr>
+<td>Balloon won’t inflate</td>
+<td>Leak; wrong electrode to balloon</td>
+<td>Confirm cathode feed only</td>
 </tr>
 <tr>
 <td>Graphite crumbling</td>
@@ -425,20 +606,20 @@
 <hr>
 <h2>Safety checklist</h2>
 <ul>
-<li>[ ] No NaCl electrolyte in the U-tube</li>
-<li>[ ] No flames near the apparatus (except instructor pop test)</li>
-<li>[ ] Small gas volumes only</li>
-<li>[ ] Pop test instructor-only, at a safe distance</li>
-<li>[ ] Do not over-pressurize sealed limbs</li>
+<li>[ ] No NaCl in any electrolysis bath</li>
+<li>[ ] Ammeter in <strong>series</strong> (never short the supply)</li>
+<li>[ ] Flames only for instructor balloon / tiny pop demo</li>
+<li>[ ] U-tube side arms vented (no overpressure)</li>
+<li>[ ] Goggles on for wet work</li>
 </ul>
 <hr>
 <h2>Experiment status</h2>
 <ul>
-<li>[ ] Na₂SO₄ electrolyte recipe posted (~0.1 M amounts)</li>
-<li>[ ] U-tube apparatus pilot-tested (polarity, bubble rate, volume method)</li>
-<li>[ ] H₂ vs. O₂ side identified in pilot (cathode = H₂)</li>
-<li>[ ] Typical ratio from pilot: ___</li>
-<li>[ ] Rust-removal jars + washing soda staged for Part E</li>
+<li>[ ] Part A/B beaker contrast pilot-tested (I before vs after Na₂SO₄)</li>
+<li>[ ] Faraday rate worksheet numbers checked with pilot current</li>
+<li>[ ] U-tube 2:1 visible in pilot</li>
+<li>[ ] Balloon demo rehearsed safely (or cancelled per venue)</li>
+<li>[ ] Rust-removal jars staged for Part E</li>
 </ul>
       </article>
     </main>
