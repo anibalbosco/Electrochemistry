@@ -4,7 +4,7 @@ Five 90-minute sessions for science-oriented students, ages 15–16.
 
 ## Browse the workshop (HTML)
 
-Open **[index.html](index.html)** in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep notes. Markdown sources (`.md`) are kept alongside the HTML.
+Open the **[workshop home](index.html)** in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep notes. Markdown sources (`.md`) are kept alongside the HTML.
 
 To rebuild HTML after editing markdown:
 
