@@ -12,6 +12,12 @@ To rebuild HTML after editing markdown:
 python scripts/build_site.py
 ```
 
+Instructor/TA printable PDFs (experiment packet + lecture/instructor notes for each day) live in **[pdfs/](pdfs/)**. Regenerate after content changes:
+
+```bash
+python scripts/build_pdfs.py
+```
+
 ## GitHub
 
 This project is a standalone git repository. To publish or clone:

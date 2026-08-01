@@ -4,6 +4,9 @@ __pycache__/
 .venv/
 venv/
 
+# Intermediate HTML for PDF generation (final PDFs in pdfs/ are kept)
+pdfs/_build/
+
 # OS / editor
 .DS_Store
 Thumbs.db

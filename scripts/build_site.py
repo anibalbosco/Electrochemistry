@@ -264,10 +264,30 @@ def extract_title(md_text: str, fallback: str) -> str:
     return fallback
 
 
-def build_md_page(md_path: Path, html_path: Path, badge: str | None = None) -> None:
+def pdf_download_block(session: dict, prefix: str) -> str:
+    """Download links for instructor/TA PDF packets (relative to session pages)."""
+    slug = session["slug"]
+    exp = f"{prefix}pdfs/session-{slug}-experiment.pdf"
+    lec = f"{prefix}pdfs/session-{slug}-lecture-notes.pdf"
+    return f"""
+<aside class="pdf-downloads">
+  <h2>Instructor / TA PDFs</h2>
+  <p>Detailed printable packets for teaching this session.</p>
+  <ul>
+    <li><a href="{exp}" download>Experiment packet (PDF)</a> — overview, prep, materials, full procedure, safety</li>
+    <li><a href="{lec}" download>Lecture &amp; instructor notes (PDF)</a> — talking points, deep-dive notes, prep reminders</li>
+  </ul>
+  <p class="pdf-downloads-all"><a href="{prefix}pdfs/">All session PDFs</a></p>
+</aside>
+"""
+
+
+def build_md_page(md_path: Path, html_path: Path, badge: str | None = None, extra_body: str = "") -> None:
     text = md_path.read_text(encoding="utf-8")
     title = extract_title(text, html_path.stem.replace("-", " ").title())
     body = unwrap_block_figures(inline_svg_figures(md_to_html_body(text), html_path))
+    if extra_body:
+        body = extra_body + body
     html_path.write_text(wrap_page(html_path, title, body, badge), encoding="utf-8")
     print(f"  {html_path.relative_to(ROOT)}")
 
@@ -287,7 +307,43 @@ def build_home_extras(body: str, prefix: str) -> str:
         )
     cards.append("</div>")
     insert = "\n".join(cards)
-    return body.replace("<h2>Weekly sequence</h2>", insert + "\n<h2>Weekly sequence</h2>", 1)
+    body = body.replace("<h2>Weekly sequence</h2>", insert + "\n<h2>Weekly sequence</h2>", 1)
+
+    pdf_rows = []
+    for session in SESSIONS:
+        slug = session["slug"]
+        pdf_rows.append(
+            "<tr>"
+            f"<td>Session {session['num']}: {session['title']}</td>"
+            f'<td><a href="{prefix}pdfs/session-{slug}-experiment.pdf" download>Experiment PDF</a></td>'
+            f'<td><a href="{prefix}pdfs/session-{slug}-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td>'
+            "</tr>"
+        )
+    pdf_block = f"""
+<aside class="pdf-downloads">
+  <h2>Instructor / TA PDF packets</h2>
+  <p>Download detailed printable packets for each day (experiment instructions and lecture/instructor notes).</p>
+  <table>
+    <thead><tr><th>Session</th><th>Experiment</th><th>Lecture &amp; notes</th></tr></thead>
+    <tbody>
+{"".join(pdf_rows)}
+    </tbody>
+  </table>
+  <p class="pdf-downloads-all"><a href="{prefix}pdfs/">Browse all PDFs</a></p>
+</aside>
+"""
+    # Place after the weekly sequence heading block when present; else append.
+    if "<h2>Weekly sequence</h2>" in body:
+        # Insert after the weekly sequence table (next h2 or end of article content).
+        match = re.search(r"(<h2>Weekly sequence</h2>.*?</table>)", body, flags=re.DOTALL)
+        if match:
+            end = match.end()
+            body = body[:end] + pdf_block + body[end:]
+        else:
+            body += pdf_block
+    else:
+        body += pdf_block
+    return body
 
 
 def main() -> None:
@@ -313,7 +369,10 @@ def main() -> None:
         for page_slug, _, md_name in SESSION_PAGES:
             md_path = session_dir / md_name
             html_name = "index.html" if page_slug == "index" else f"{page_slug}.html"
-            build_md_page(md_path, session_dir / html_name, badge)
+            extra = ""
+            if page_slug == "index":
+                extra = pdf_download_block(session, "../../")
+            build_md_page(md_path, session_dir / html_name, badge, extra_body=extra)
 
     print("Done.")
 

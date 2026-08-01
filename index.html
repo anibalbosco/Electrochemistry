@@ -83,6 +83,9 @@
 <p>To rebuild HTML after editing markdown:</p>
 <pre><code class="language-bash">python scripts/build_site.py
 </code></pre>
+<p>Instructor/TA printable PDFs (experiment packet + lecture/instructor notes for each day) live in <strong><a href="pdfs/">pdfs/</a></strong>. Regenerate after content changes:</p>
+<pre><code class="language-bash">python scripts/build_pdfs.py
+</code></pre>
 <h2>GitHub</h2>
 <p>This project is a standalone git repository. To publish or clone:</p>
 <pre><code class="language-bash"># One-time: log in to GitHub (opens browser)
@@ -194,6 +197,18 @@ git push -u origin main
 </tr>
 </tbody>
 </table>
+<aside class="pdf-downloads">
+  <h2>Instructor / TA PDF packets</h2>
+  <p>Download detailed printable packets for each day (experiment instructions and lecture/instructor notes).</p>
+  <table>
+    <thead><tr><th>Session</th><th>Experiment</th><th>Lecture &amp; notes</th></tr></thead>
+    <tbody>
+<tr><td>Session 1: Fruit Battery</td><td><a href="pdfs/session-01-fruit-battery-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-01-fruit-battery-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 2: Copper Electroplating</td><td><a href="pdfs/session-02-copper-electroplating-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-02-copper-electroplating-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 3: Silver Plating + Faraday's Law</td><td><a href="pdfs/session-03-silver-plating-faraday-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-03-silver-plating-faraday-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 4: Water Electrolysis</td><td><a href="pdfs/session-04-water-electrolysis-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-04-water-electrolysis-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 5: Galvanic Corrosion + Rust Removal</td><td><a href="pdfs/session-05-galvanic-corrosion-fuel-cell-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-05-galvanic-corrosion-fuel-cell-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr>
+    </tbody>
+  </table>
+  <p class="pdf-downloads-all"><a href="pdfs/">Browse all PDFs</a></p>
+</aside>
+
 <h2>Folder structure (each session)</h2>
 <p>Each session folder contains:</p>
 <ul>
