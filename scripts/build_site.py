@@ -29,19 +29,19 @@ SESSIONS = [
         "num": 3,
         "slug": "03-silver-plating-faraday",
         "title": "Silver Plating + Faraday's Law",
-        "hook": "Estimate how many atoms were deposited",
+        "hook": "Count the atoms you deposited",
     },
     {
         "num": 4,
         "slug": "04-water-electrolysis",
         "title": "Water Electrolysis",
-        "hook": "Split water and see a 2:1 ratio",
+        "hook": "Predict a gas volume, then go and measure it",
     },
     {
         "num": 5,
-        "slug": "05-galvanic-corrosion-fuel-cell",
-        "title": "Galvanic Corrosion + Rust Removal",
-        "hook": "Corrosion, sacrificial protection, and reversing rust",
+        "slug": "05-corrosion-and-rust-removal",
+        "title": "Corrosion + Rust Removal",
+        "hook": "Find the battery nobody wanted, then run it backwards",
     },
 ]
 
@@ -55,8 +55,11 @@ SESSION_PAGES = [
 ]
 
 SHARED_PAGES = [
+    ("multi-day-setup", "Multi-Day Setup", "multi-day-setup.md"),
     ("overall-materials-list", "Materials List", "overall-materials-list.md"),
     ("safety-notes", "Safety Notes", "safety-notes.md"),
+    ("next-year-notes", "Next-Year Notes", "next-year-notes.md"),
+    ("teaching-log", "Teaching Log", "teaching-log.md"),
 ]
 
 MD = markdown.Markdown(

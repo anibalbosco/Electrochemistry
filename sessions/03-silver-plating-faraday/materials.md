@@ -2,43 +2,73 @@
 
 ## Per group
 
-- [ ] 0.01 M AgNO₃ solution (~20–30 mL per group — prepare from stock)
-- [ ] Distilled water (for rinsing)
-- [ ] Object to plate: copper coin, washer, brass piece
-- [ ] 3 V battery pack (preferred) or 9 V with caution
+- [ ] **30–40 mL** of plating bath: **0.05 M AgNO₃ / 0.2 M KNO₃** (instructor prepares)
+- [ ] Distilled water for rinsing
+- [ ] **Two** objects to plate — copper coins or washers, matched. One is plated, one is the **no-power control**
+- [ ] **Graphite** electrode (anode — inert, does not replenish Ag⁺)
+- [ ] 3 V battery pack
+- [ ] **1 kΩ resistor** — required, one per station
+- [ ] Multimeter (DC mA)
 - [ ] Alligator clips
-- [ ] Multimeter (current + voltage)
 - [ ] Stopwatch
+- [ ] Small beaker or jar, plus a second small dish for the control
+- [ ] Ruler or calipers (area estimation)
+- [ ] Sandpaper or steel wool
 - [ ] Gloves, goggles, forceps
-- [ ] Small beaker or jar
-- [ ] Ruler (area estimation)
+- [ ] Soft cloth for burnishing
+- [ ] pH paper or a meter (start and end readings)
 
-## Optional
+## Solution preparation — instructor
 
-- [ ] Silver wire or strip (anode — replenishes Ag⁺)
-- [ ] Balance (for efficiency check)
-- [ ] Calipers (diameter measurement)
+**Target: 0.05 M AgNO₃ in 0.2 M KNO₃. Distilled water only.**
+
+| Batch | AgNO₃ | KNO₃ | Or NaNO₃ instead |
+|-------|-------|------|------------------|
+| 250 mL | **2.12 g** | **5.05 g** | 4.25 g |
+| 500 mL | **4.25 g** | **10.11 g** | 8.50 g |
+
+**Half-strength silver option** (if AgNO₃ is scarce): 0.025 M AgNO₃ — 1.06 g / 250 mL, 2.12 g / 500 mL — with the same KNO₃, and halve the target current to about 1 mA.
+
+Dissolve the nitrate salt first, then the AgNO₃. Label `0.05 M AgNO₃ / 0.2 M KNO₃ — gloves — silver waste only` with the date. Store dark.
+
+### Chloride check on your KNO₃ — before mixing a full batch
+
+Combine a few drops of dissolved KNO₃ with a few drops of AgNO₃ solution on a watch glass. **Clear** = good. **Milky white** = chloride contamination; find a purer grade. Two minutes here saves a ruined batch.
 
 ## Instructor-only
 
-- [ ] AgNO₃ stock solution (instructor dilutes to 0.01 M)
-- [ ] Dedicated **silver waste** container
-- [ ] Spare gloves (staining risk)
+- [ ] Solid AgNO₃ — students never handle it
+- [ ] Dedicated **silver waste** container, with a coil of bare copper wire in it for recovery
+- [ ] Spare gloves (staining)
+- [ ] Printed pre-lab worksheets — [lecture.md](lecture.md) §5
+- [ ] Last year's photo of the dendritic overnight failure, for §3.8
 
-## Solution prep note
+## Optional
 
-**Target: 0.01 M AgNO₃** — instructor prepares before class.
+- [ ] Magnetic stirrer or stir sticks — raises the current ceiling and improves the deposit
+- [ ] Balance (see the note below before promising an efficiency measurement)
+- [ ] Silver anode — sterling wire or a bullion round. Eliminates pH drift and bath depletion entirely; a reusable purchase worth considering
 
-**Use distilled/deionized water only** (tap chloride can precipitate AgCl).
+## A note on the balance
 
-| Batch | Solid AgNO₃ | Distilled water |
-|-------|-------------|-----------------|
-| 100 mL | 0.17 g | to 100 mL |
-| 250 mL | 0.42 g | to 250 mL |
-| 500 mL | 0.85 g | to 500 mL |
-
-Or dilute 0.1 M stock **1:10** with distilled water. Label date and concentration. ~20–30 mL per group.
+The predicted deposit is about **2 mg**. A ±0.001 g balance resolves that to roughly ±50%, so a mass-based efficiency check is not really achievable here. Either use a ±0.1 mg balance or skip it — and tell students *why* it is being skipped. Session 4 measures a gas volume instead, which is where the efficiency question finally gets a real answer.
 
 ## Waste
 
-- [ ] All Ag-containing liquids go to labeled waste container
+- [ ] All silver-bearing liquid to the labeled container — never the drain
+- [ ] Copper coil left in the waste bottle strips the silver back out as metal (K ≈ 3×10¹⁵); filter and keep it
+
+## Pilot notes — fill in for next year
+
+| Parameter | Value |
+|-----------|-------|
+| Bath concentration used | |
+| Resistor used | ______ Ω |
+| Measured current | ______ mA |
+| Current density | ______ mA/cm² |
+| Plating time | ______ s |
+| Appearance: even? matte or bright? | |
+| Did it survive a rub? | |
+| Control coin appearance | |
+| Starting / final pH | ______ / ______ |
+| Predicted pH | ______ |

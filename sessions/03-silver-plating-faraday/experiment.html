@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -78,59 +81,81 @@
       </header>
       <article class="main-article">
 <blockquote>
-<p><strong>Instructors:</strong> area pitfalls, ammeter series wiring, I_avg — <a href="instructor.html">instructor.md</a>.</p>
+<p><strong>Instructors:</strong> bath design, the displacement problem, limiting current, live entry — <a href="instructor.html">instructor.md</a>.</p>
 </blockquote>
+<p><strong>Session arc</strong></p>
+<ol>
+<li><strong>Part A</strong> — Estimate the plated area</li>
+<li><strong>Part B</strong> — Build the cell: series resistor sets the current, live entry protects the copper</li>
+<li><strong>Part C</strong> — Timed plating run, with a <strong>no-power control coin</strong> running alongside</li>
+<li><strong>Part D</strong> — Faraday calculations, compared against the prediction</li>
+<li><strong>Part E</strong> — Compare plated vs control; measure the pH change and check it against the charge</li>
+</ol>
 <hr>
-<h2>Silver nitrate solution — concentration and prep</h2>
-<p><strong>Target working solution: 0.01 M AgNO₃</strong> (instructor prepares before class).</p>
-<p><strong>Water: use distilled or deionized water only.</strong> Tap water often contains chloride, which precipitates AgCl (cloudy white) and can ruin a dilute silver bath. Rinse plated objects with distilled water too.</p>
+<h2>The bath — 0.05 M AgNO₃ in 0.2 M KNO₃</h2>
+<p>Two dissolved things, doing two different jobs. Students should be able to say which is which.</p>
 <table>
 <thead>
 <tr>
-<th>Batch</th>
-<th>Solid AgNO₃ needed</th>
-<th>Distilled water</th>
+<th>Component</th>
+<th>Job</th>
+<th>Consumed?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>100 mL of 0.01 M</td>
-<td><strong>0.17 g</strong> AgNO₃</td>
-<td>Fill to 100 mL</td>
+<td><strong>AgNO₃, 0.05 M</strong></td>
+<td>Supplies the Ag⁺ that becomes the coating</td>
+<td><strong>Yes</strong> — it is the reactant</td>
 </tr>
 <tr>
-<td>250 mL of 0.01 M</td>
-<td><strong>0.42 g</strong> AgNO₃</td>
-<td>Fill to 250 mL</td>
-</tr>
-<tr>
-<td>500 mL of 0.01 M</td>
-<td><strong>0.85 g</strong> AgNO₃</td>
-<td>Fill to 500 mL</td>
+<td><strong>KNO₃, 0.2 M</strong></td>
+<td>Supporting electrolyte: carries current through the solution</td>
+<td><strong>No</strong> — spectator, like Session 4's sulfate</td>
 </tr>
 </tbody>
 </table>
-<p>(Molar mass AgNO₃ ≈ 169.9 g/mol → 0.01 mol/L × 169.9 ≈ 1.70 g/L.)</p>
-<h3>If you have a more concentrated stock</h3>
-<p>Example: dilute <strong>0.1 M</strong> stock <strong>1:10</strong> → 0.01 M<br>
-(e.g. 25 mL of 0.1 M + 225 mL <strong>distilled</strong> water = 250 mL of 0.01 M).</p>
-<h3>Volume per group today</h3>
-<p><strong>20–30 mL</strong> of 0.01 M AgNO₃ — use the minimum that covers the object. Do not prepare large open beakers of AgNO₃ at student benches.</p>
-<h3>Labeling</h3>
-<p><code>0.01 M AgNO₃ — Session 3 — gloves required — silver waste only</code></p>
+<h3>Recipe</h3>
+<p><strong>Distilled water only.</strong> Tap chloride precipitates AgCl and ruins the bath.</p>
+<table>
+<thead>
+<tr>
+<th>Batch</th>
+<th>AgNO₃ (0.05 M)</th>
+<th>KNO₃ (0.2 M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>250 mL</td>
+<td><strong>2.12 g</strong></td>
+<td><strong>5.05 g</strong></td>
+</tr>
+<tr>
+<td>500 mL</td>
+<td><strong>4.25 g</strong></td>
+<td><strong>10.11 g</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Sodium nitrate works identically if you have it instead: <strong>4.25 g / 250 mL</strong>, <strong>8.50 g / 500 mL</strong>.</p>
+<p><strong>Half-strength option</strong> if silver is tight: 0.025 M AgNO₃ (1.06 g / 250 mL) with the same KNO₃, and halve the target current to about 1 mA.</p>
+<p><strong>Mixing order:</strong> dissolve the KNO₃ first, then add the AgNO₃ and stir until clear. Label <code>0.05 M AgNO₃ / 0.2 M KNO₃ — gloves — silver waste only</code> with the date.</p>
+<h3>Chloride check on the KNO₃ — 30 seconds, do it before mixing a full batch</h3>
+<p>Any chloride contamination in your nitrate salt will fog the bath with AgCl. Put a few drops of your dissolved KNO₃ into a few drops of AgNO₃ solution on a watch glass.</p>
+<ul>
+<li><strong>Stays clear</strong> → good, proceed.</li>
+<li><strong>Goes milky white</strong> → your nitrate is contaminated. Find a purer grade; do not use it.</li>
+</ul>
+<h3>Volume per group</h3>
+<p><strong>30–40 mL</strong> — enough to cover the object with the electrodes 2–3 cm apart.</p>
 <hr>
-<h2>Part A — Estimate surface area (25–35 min)</h2>
-<h3>Object options</h3>
-<p>Copper coin, copper washer, cleaned brass charm, or small flat copper piece.</p>
-<h3>Methods</h3>
-<p><strong>Coin (one face):</strong><br>
-Measure diameter (d) in cm → (A = \pi (d/2)^2).<br>
-If both faces plate, use (A = 2\pi (d/2)^2).</p>
-<p><strong>Flat washer:</strong><br>
-(A \approx \pi(R_\text{outer}^2 - R_\text{inner}^2)) (one side), or ×2 if both sides plate.</p>
-<p><strong>Irregular object:</strong><br>
-Approximate immersed region as length × width (cm × cm). State the approximation in your notes.</p>
-<h3>Record</h3>
+<h2>Part A — Estimate the plated area (42–47 min)</h2>
+<p>You cannot calculate a thickness without an area, and area is where most groups go wrong.</p>
+<p><strong>Coin, one face:</strong> measure diameter <em>d</em> in cm → A = π(d/2)².
+<strong>Both faces plate:</strong> A = 2π(d/2)².
+<strong>Washer, one side:</strong> A ≈ π(R²outer − R²inner).
+<strong>Irregular:</strong> approximate the immersed part as length × width and write down that you approximated.</p>
 <table>
 <thead>
 <tr>
@@ -149,9 +174,9 @@ Approximate immersed region as length × width (cm × cm). State the approximati
 </tr>
 </tbody>
 </table>
-<p><strong>Tip:</strong> A typical coin face is ~2–4 cm². If your A is 50 cm², you probably measured wrong — recheck before calculating thickness.</p>
+<p><strong>Tip:</strong> a typical coin face is 2–4 cm². If you calculated 12 cm², you used the diameter where the radius belongs.</p>
 <hr>
-<h2>Part B — Setup (35–45 min)</h2>
+<h2>Part B — Build the cell (47–52 min)</h2>
 <figure class="figure-wrap" aria-label="Silver plating with ammeter in series"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
   <title id="fig1_title">Silver plating cell with ammeter</title>
   <desc id="fig1_desc">Electrolytic silver plating setup with multimeter in series to measure current for Faraday's law calculations.</desc>
@@ -172,9 +197,9 @@ Approximate immersed region as length × width (cm × cm). State the approximati
   <path d="M280 220 L360 250" stroke="#2563eb" stroke-width="1.5" marker-end="url(#fig1_arrowBlue)" fill="none"/>
   <text x="265" y="215" font-family="Segoe UI, sans-serif" font-size="10" fill="#2563eb">Ag&#x207a;</text>
 
-  <!-- Ag anode -->
-  <rect x="260" y="105" width="16" height="120" rx="2" fill="#cbd5e1" stroke="#94a3b8"/>
-  <text x="268" y="98" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#475569">Ag anode (+)</text>
+  <!-- Graphite anode -->
+  <rect x="260" y="105" width="16" height="120" rx="2" fill="#334155" stroke="#1e293b"/>
+  <text x="268" y="98" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#475569">Graphite anode (+)</text>
 
   <!-- Cathode coin -->
   <circle cx="430" cy="250" r="28" fill="#b45309" stroke="#92400e" stroke-width="1.5"/>
@@ -204,36 +229,85 @@ Approximate immersed region as length × width (cm × cm). State the approximati
   <text x="40" y="388" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Q = I &#x00d7; t  &#x2192;  n = Q/F  &#x2192;  m_Ag  &#x2192;  thickness d = m/(&#x03c1;A)</text>
   <text x="40" y="408" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Estimate plated area A before starting (coin face, washer ring, etc.)</text>
 </svg></figure>
-<p><em>Figure 1 — Plate the cathode object (−); measure current with the multimeter in series for Faraday calculations.</em></p>
-<h3>Power supply</h3>
+<p><em>Figure 1 — Object on (−) as the cathode, graphite anode on (+), ammeter in series, and a resistor that fixes the current.</em></p>
+<h3>The circuit</h3>
 <table>
 <thead>
 <tr>
-<th>Preferred</th>
-<th>Acceptable</th>
+<th>Part</th>
+<th>Connects to</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>3 V</strong> battery pack</td>
-<td>9 V with short runs and careful current checks</td>
+<td><strong>Object to plate</strong></td>
+<td>Battery <strong>(−)</strong> — this makes it the cathode</td>
+</tr>
+<tr>
+<td><strong>Graphite anode</strong></td>
+<td>Battery <strong>(+)</strong></td>
+</tr>
+<tr>
+<td><strong>1 kΩ resistor</strong></td>
+<td>In series, on either lead — <strong>required, not optional</strong></td>
+</tr>
+<tr>
+<td><strong>Multimeter on DC mA</strong></td>
+<td>In series</td>
 </tr>
 </tbody>
 </table>
-<p>Target current: <strong>~10–30 mA</strong> (0.010–0.030 A).</p>
-<h3>Procedure</h3>
+<h3>Why the resistor is not optional</h3>
+<p>Last year this cell was run by setting a voltage and hoping. It does not work, because the current then depends on how deep the electrodes are, how far apart they are, and how the solution is behaving — so every group gets a different current and half of them get a bad deposit.</p>
+<p>With 0.2 M KNO₃ the solution barely resists current at all, so a <strong>1 kΩ resistor in series completely dominates the circuit and sets the current for you</strong>:</p>
+<pre><code>I ≈ (3 V − about 1 V across the cell) / 1000 Ω  ≈  2 mA
+</code></pre>
+<p>Change the resistor to change the current, and nothing else matters much. That is what makes this experiment reproducible across eight benches.</p>
+<table>
+<thead>
+<tr>
+<th>Resistor (3 V pack)</th>
+<th>Approximate current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.2 kΩ</td>
+<td>~1 mA</td>
+</tr>
+<tr>
+<td><strong>1 kΩ</strong></td>
+<td><strong>~2 mA — use this</strong></td>
+</tr>
+<tr>
+<td>470 Ω</td>
+<td>~4 mA</td>
+</tr>
+</tbody>
+</table>
+<h3>Target current density — the number that decides whether it works</h3>
+<p>Aim for <strong>0.5–1.0 mA/cm²</strong>, which for a typical 3 cm² coin means about <strong>2–3 mA</strong>.</p>
+<p>Go much above that and you exceed the rate at which Ag⁺ can diffuse to the surface. Then the deposit stops being a coating and starts being a <strong>dendrite</strong> — a grey fluffy tree that grows off the tips and falls off. Gentle stirring raises the ceiling, so stir if you can.</p>
+<h3>Clean the object</h3>
 <ol>
-<li>Put on <strong>gloves and goggles</strong>.</li>
-<li>Pour <strong>20–30 mL</strong> of <strong>0.01 M AgNO₃</strong> into a small beaker or jar.</li>
-<li>Clean the cathode object: sand → rinse with distilled water → dry → handle with forceps/gloves only.</li>
-<li>Wire the circuit <strong>in series</strong>:</li>
-<li>Battery (+) → anode (silver wire/strip if available; otherwise an inert conductor — note that Ag⁺ will deplete)</li>
-<li>Anode in solution → solution → object</li>
-<li>Object (−) → multimeter <strong>mA</strong> input → battery (−)<br>
-   Or: battery → meter → object → solution → anode → battery.</li>
-<li>Set multimeter to <strong>DC mA</strong> (not voltage). The meter must be <strong>in series</strong>, never clipped across the battery terminals alone.</li>
-<li>Brief test: dip electrodes; confirm current is in the 10–30 mA range. If much higher, lift electrodes partially or use 3 V instead of 9 V.</li>
+<li>Sand or steel-wool until bright metal shows all over.</li>
+<li>Rinse with distilled water, pat dry.</li>
+<li><strong>Do not touch the surface to be plated.</strong> Handle by the edge with forceps. Finger oil ruins adhesion.</li>
 </ol>
+<h3>Live entry — the step that decides whether the coating sticks</h3>
+<p><strong>Connect the circuit and confirm current is flowing BEFORE the object touches the solution.</strong></p>
+<p>Here is why. Copper spontaneously reacts with silver ions the instant they meet, with no power at all:</p>
+<pre><code>Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s)        E° = +0.46 V
+</code></pre>
+<p>That reaction deposits a loose, powdery, badly stuck layer of silver — and anything you plate on top of it flakes off along with it. Powering the object first makes it a cathode from the moment it gets wet, which stops the copper dissolving and stops the loose layer forming.</p>
+<p><strong>The sequence, in order:</strong></p>
+<ol>
+<li>Wire everything up with the object held <strong>above</strong> the solution.</li>
+<li>Switch on. Confirm the ammeter reads a small current (it will read near zero until the circuit closes through the liquid).</li>
+<li><strong>Lower the object in while powered.</strong> Start the stopwatch as it goes under.</li>
+<li>At the end: <strong>lift the object out while still powered</strong>, then switch off.</li>
+</ol>
+<p>Never let the object sit in the bath unpowered. Not before, not after, not "just for a second."</p>
 <h3>Setup record</h3>
 <table>
 <thead>
@@ -252,15 +326,23 @@ Approximate immersed region as length × width (cm × cm). State the approximati
 <td></td>
 </tr>
 <tr>
-<td>AgNO₃ concentration</td>
-<td><strong>0.01 M</strong></td>
+<td>Bath</td>
+<td><strong>0.05 M AgNO₃ / 0.2 M KNO₃</strong></td>
 </tr>
 <tr>
 <td>Solution volume (mL)</td>
 <td></td>
 </tr>
 <tr>
-<td>Anode type</td>
+<td><strong>Starting pH</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Anode</td>
+<td>Graphite</td>
+</tr>
+<tr>
+<td>Series resistor (Ω)</td>
 <td></td>
 </tr>
 <tr>
@@ -268,23 +350,32 @@ Approximate immersed region as length × width (cm × cm). State the approximati
 <td></td>
 </tr>
 <tr>
-<td>Target plating time (s)</td>
-<td>e.g. <strong>300 s</strong></td>
+<td>Target time (s)</td>
+<td><strong>900 s (15 min)</strong></td>
 </tr>
 <tr>
 <td>Initial current (mA)</td>
 <td></td>
 </tr>
+<tr>
+<td>Current density (mA/cm²)</td>
+<td>I/A =</td>
+</tr>
 </tbody>
 </table>
 <hr>
-<h2>Part C — Timed plating run (45–65 min)</h2>
+<h2>Part C — Timed run, plus the control (52–70 min)</h2>
+<h3>Set the control going at the same moment</h3>
+<p>Take a <strong>second, identically cleaned coin</strong>. Drop it into a small dish of the same bath with <strong>no wires attached at all</strong>, at the same time you start plating. Leave it the full 15 minutes.</p>
+<p>This coin is the experiment's most valuable single piece of data. It shows you exactly what the copper does on its own, so that at the end you can tell the difference between silver you <em>plated</em> and silver that simply <em>arrived</em>.</p>
+<h3>The plating run</h3>
 <ol>
-<li>Start the stopwatch when a <strong>stable</strong> current is flowing with the object immersed.</li>
-<li>Record current every <strong>30–60 s</strong> for the planned time (recommend <strong>300 s = 5 min</strong>).</li>
-<li>If current drifts, keep logging — you will use the average.</li>
-<li>At stop time: disconnect power first, then remove the object.</li>
-<li>Rinse with distilled water; pat dry. Observe color and uniformity.</li>
+<li>Start the stopwatch as the powered object enters the solution.</li>
+<li>Log the current every 60 s.</li>
+<li>Stir gently every couple of minutes, or leave a slow stirrer running.</li>
+<li>At 900 s, lift the object out <strong>while powered</strong>, then switch off.</li>
+<li>Rinse with distilled water, pat dry. Do not scrape it.</li>
+<li><strong>Burnish</strong> lightly with a soft cloth or a soft brush. A matte deposit comes up noticeably brighter — this is normal practice, not cheating.</li>
 </ol>
 <h3>Current log</h3>
 <table>
@@ -304,44 +395,42 @@ Approximate immersed region as length × width (cm × cm). State the approximati
 <td></td>
 </tr>
 <tr>
-<td>60</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>120</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
 <td>180</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>240</td>
+<td>360</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>300</td>
+<td>540</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>720</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>900</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Average current:</strong><br>
-I_avg (mA) = <strong><em>_</em>_ → I_avg (A) = </strong>____ <strong>A</strong><br>
-(Example: 20 mA = <strong>0.020 A</strong>)</p>
+<p><strong>Average current:</strong> I_avg = <strong><em>_</em>_ mA = </strong>____ <strong>A</strong></p>
+<p>With the resistor in place the current should be nearly flat. <strong>A steady current is itself a result</strong> — last year's cell, without a resistor and without supporting electrolyte, drifted all over the place.</p>
 <hr>
-<h2>Part D — Faraday calculations (65–80 min)</h2>
-<p>Use <strong>I_avg in amperes</strong> and total time <strong>t in seconds</strong>.</p>
-<p>Constants for silver:</p>
+<h2>Part D — Faraday calculations (70–80 min)</h2>
+<p>Use <strong>I_avg in amperes</strong> and <strong>t in seconds</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -359,7 +448,7 @@ I_avg (mA) = <strong><em>_</em>_ → I_avg (A) = </strong>____ <strong>A</strong
 <td>107.87 g/mol</td>
 </tr>
 <tr>
-<td>Density ρ_Ag</td>
+<td>Density ρ(Ag)</td>
 <td>10.49 g/cm³</td>
 </tr>
 <tr>
@@ -382,86 +471,213 @@ I_avg (mA) = <strong><em>_</em>_ → I_avg (A) = </strong>____ <strong>A</strong
 <td>1. Charge</td>
 <td>Q = I_avg × t</td>
 <td></td>
-<td>C</td>
+<td>______ C</td>
 </tr>
 <tr>
 <td>2. Moles e⁻</td>
 <td>n_e = Q / 96,485</td>
 <td></td>
-<td>mol</td>
+<td>______ mol</td>
 </tr>
 <tr>
 <td>3. Moles Ag</td>
-<td>n_Ag = n_e (because z = 1)</td>
+<td>n_Ag = n_e (since z = 1)</td>
 <td></td>
-<td>mol</td>
+<td>______ mol</td>
 </tr>
 <tr>
 <td>4. Mass Ag</td>
 <td>m = n_Ag × 107.87</td>
 <td></td>
-<td>g</td>
+<td>______ g</td>
 </tr>
 <tr>
 <td>5. Volume Ag</td>
 <td>V = m / 10.49</td>
 <td></td>
-<td>cm³</td>
+<td>______ cm³</td>
 </tr>
 <tr>
 <td>6. Thickness</td>
 <td>d = V / A</td>
 <td></td>
-<td>cm</td>
+<td>______ cm</td>
 </tr>
 <tr>
-<td>7. Micrometers</td>
-<td>d_µm = d_cm × 10,000</td>
+<td>7. In micrometres</td>
+<td>d × 10,000</td>
 <td></td>
-<td><strong>µm</strong></td>
+<td>______ <strong>µm</strong></td>
+</tr>
+<tr>
+<td>8. Atoms</td>
+<td>n_Ag × 6.022×10²³</td>
+<td></td>
+<td>______ atoms</td>
 </tr>
 </tbody>
 </table>
-<h3>Worked check example (board / instructor)</h3>
-<p>I = 0.020 A, t = 300 s, A = 10 cm² → Q = 6.0 C → n = 6.22×10⁻⁵ mol → m ≈ 0.0067 g → d ≈ <strong>0.64 µm</strong>.</p>
+<h3>Worked check (instructor board version)</h3>
+<p>I = 0.0020 A, t = 900 s, A = 3.14 cm²:</p>
+<p>Q = <strong>1.80 C</strong> → n_e = <strong>1.87×10⁻⁵ mol</strong> → m = <strong>2.01 mg</strong> → V = 1.92×10⁻⁴ cm³ → d = <strong>0.61 µm</strong> → <strong>1.1×10¹⁹ atoms</strong></p>
+<p>Two milligrams of silver, six tenths of a micrometre thick, eleven billion billion atoms. All three of those numbers describe the same object.</p>
 <hr>
-<h2>Part E — Compare to reality (80–90 min)</h2>
-<p>Discussion prompts:</p>
+<h2>Part E — Compare with reality (80–86 min)</h2>
+<h3>E1 — Your coin versus the control coin</h3>
+<p>Put them side by side.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Plated coin (powered)</th>
+<th>Control coin (no power)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colour</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Even or patchy?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Shiny or matte/grey?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Does it survive a firm rub with a cloth?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The control will have picked up silver too — that is the displacement reaction — but it should be <strong>duller, greyer, patchier, and it should rub off</strong>. The powered coin should be more even and should stay put. If they look the same, your live entry did not work, and the honest conclusion is that most of your coating arrived chemically rather than electrically.</p>
+<h3>E2 — Check the pH against the charge</h3>
+<p>The graphite anode is splitting water and releasing protons:</p>
+<pre><code>2H₂O → O₂ + 4H⁺ + 4e⁻
+</code></pre>
+<p>So the moles of H⁺ released should equal the moles of electrons you already calculated in step 2.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moles of e⁻ (from step 2)</td>
+<td>______ mol</td>
+</tr>
+<tr>
+<td>Bath volume in litres</td>
+<td>______ L</td>
+</tr>
+<tr>
+<td>Predicted [H⁺] added = mol / L</td>
+<td>______ M</td>
+</tr>
+<tr>
+<td><strong>Predicted pH</strong> = −log[H⁺]</td>
+<td>______</td>
+</tr>
+<tr>
+<td><strong>Measured final pH</strong></td>
+<td>______</td>
+</tr>
+</tbody>
+</table>
+<p>For the worked example above in 30 mL, this predicts <strong>pH ≈ 3.2</strong>, down from about 7.</p>
+<p>If your measurement lands near the prediction, you have just confirmed that essentially every electron did the job you assigned it. If the measured pH is much <em>higher</em> than predicted, then something at the cathode was consuming protons instead of depositing silver — which is exactly what happens when a bath is run too hard or for too long and runs out of Ag⁺.</p>
+<h3>Discussion prompts</h3>
 <ol>
-<li>Can you <strong>see</strong> a layer ~0.5–1 µm thick?</li>
-<li>If current dropped, did you use <strong>I_avg</strong>?</li>
-<li>What side reactions might steal electrons (e.g. H₂)?</li>
-<li>Would doubling the time double the thickness in the ideal case?</li>
+<li>Can you <em>see</em> a layer 0.6 µm thick? What does the calculation actually predict you will observe?</li>
+<li>Did your current stay flat? What would have made it drift?</li>
+<li>Your coin and the control coin both gained silver. Which process do you trust, and why?</li>
+<li>What would happen if you left this running overnight?</li>
 </ol>
-<h3>Optional: efficiency estimate</h3>
-<p>If a balance (±0.001 g) is available:</p>
-<p>η = (actual mass gained / calculated mass) × 100%</p>
+<hr>
+<h2>Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grey fluffy growth instead of a coating</td>
+<td>Current density too high — you are past the diffusion limit</td>
+<td>Bigger resistor; stir; check your area estimate</td>
+</tr>
+<tr>
+<td>Coating rubs straight off</td>
+<td>Displacement layer underneath — object entered unpowered</td>
+<td>Re-clean and repeat with live entry</td>
+</tr>
+<tr>
+<td>Deposit black rather than silvery</td>
+<td>Very fine silver, from too much current</td>
+<td>Lower the current; burnish afterwards</td>
+</tr>
+<tr>
+<td>Bath cloudy white from the start</td>
+<td>Chloride — tap water, or contaminated KNO₃</td>
+<td>Remake with distilled water and tested nitrate</td>
+</tr>
+<tr>
+<td>Bath turns faintly blue over the day</td>
+<td>Cu²⁺ from displacement</td>
+<td>Expected; a reason not to leave objects sitting in the bath</td>
+</tr>
+<tr>
+<td>Current much lower than expected</td>
+<td>Bad clip, meter fuse, electrodes not both immersed</td>
+<td>Check the fuse first</td>
+</tr>
+<tr>
+<td>Current drifting downward</td>
+<td>Poor contact, or bath running low on silver</td>
+<td>Check clips; at 0.05 M depletion is under 2% per run, so suspect the contact</td>
+</tr>
+<tr>
+<td>Calculated thickness absurd</td>
+<td>mA not converted to A, or area wrong</td>
+<td>Recheck both; 0.1–2 µm is the sane window</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2>Safety</h2>
 <ul>
-<li><strong>Gloves and goggles mandatory</strong> — AgNO₃ stains skin and clothing permanently dark brown/black</li>
-<li>Small volumes only (20–30 mL per group)</li>
-<li>Dedicated <strong>silver waste</strong> container — <strong>never</strong> pour down the drain</li>
-<li>Instructor prepares/dilutes AgNO₃; students do not handle solid AgNO₃</li>
-<li>Wash gloves/hands protocol as directed before leaving</li>
+<li><strong>Gloves and goggles mandatory.</strong> AgNO₃ stains skin and clothing dark brown-black and the stain is effectively permanent — it is metallic silver forming in your skin</li>
+<li>Instructor prepares and dilutes all silver solutions; students never handle solid AgNO₃</li>
+<li>Small volumes only, 30–40 mL per group</li>
+<li>Keep the bath out of direct light; silver nitrate is light-sensitive</li>
+<li><strong>Never add ammonia to silver nitrate.</strong> Ammoniacal silver solutions form explosive silver nitride on standing. Online "silver mirror" recipes use exactly this — do not follow them</li>
+<li>All silver-bearing liquid goes to the labeled <strong>silver waste</strong> container, never down the drain</li>
 </ul>
-<hr>
-<h2>Student calculation sheet (duplicate for handout)</h2>
-<pre><code>Given: I_avg = _____ A,  t = _____ s,  A = _____ cm²
-AgNO₃ bath: 0.01 M
-
-Q = I × t = __________ C
-n_e = Q / 96485 = __________ mol
-m_Ag = n_e × 107.87 = __________ g
-d = m_Ag / (10.49 × A) = __________ cm = __________ µm
-</code></pre>
+<h3>Silver recovery — worth doing, and it teaches something</h3>
+<p>Drop a coil of bare copper wire into the silver waste bottle and leave it. The same displacement reaction that spoiled last year's overnight run will strip essentially every silver ion out of the waste and leave it as grey metallic fluff on the wire, which you can filter and keep. The equilibrium constant is about 3×10¹⁵, so it goes to completion.</p>
+<p>The reaction that was the problem in the cell is the standard industrial method for recovering silver from spent solution. That is worth pointing out.</p>
 <hr>
 <h2>Experiment status</h2>
 <ul>
-<li>[ ] 0.01 M AgNO₃ prepared and labeled (volume: ___ mL)</li>
-<li>[ ] Typical current at 3 V recorded in pilot (___ mA)</li>
-<li>[ ] Worksheet tested with sample numbers</li>
-<li>[ ] Silver waste protocol confirmed with facility</li>
+<li>[ ] KNO₃ chloride-tested against AgNO₃ (stayed clear)</li>
+<li>[ ] 0.05 M AgNO₃ / 0.2 M KNO₃ mixed with distilled water and labeled</li>
+<li>[ ] 1 kΩ resistors, one per station</li>
+<li>[ ] Pilot run done: current <strong><em>_</em>_ mA, appearance </strong>____</li>
+<li>[ ] Live entry rehearsed by every TA</li>
+<li>[ ] Second cleaned coin per group, for the no-power control</li>
+<li>[ ] pH meter or paper checked against a known buffer</li>
+<li>[ ] Silver waste container labeled; copper coil in it for recovery</li>
 </ul>
       </article>
     </main>

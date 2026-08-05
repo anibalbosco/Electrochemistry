@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub active" href="../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -78,45 +81,167 @@
       </header>
       <article class="main-article">
 <p>Master checklist for the full week. Per-session quantities are in each session's <code>materials.md</code>.</p>
+<h2>Buy-ahead list — the things that stop a session dead</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Needed for</th>
+<th>Why it is on this list</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mains DC supply or 5 V USB bricks</strong></td>
+<td>Sessions 4 and 5</td>
+<td>The overnight derusting cells will not survive on 9 V alkalines. This is the most common cause of a failed Session 5</td>
+</tr>
+<tr>
+<td><strong>Sodium sulfate (Na₂SO₄)</strong></td>
+<td>Session 4</td>
+<td>The only permitted electrolysis electrolyte. Check whether yours is anhydrous or decahydrate</td>
+</tr>
+<tr>
+<td><strong>Distilled water</strong></td>
+<td>Session 3 (essential), Session 4 (ladder)</td>
+<td>Tap chloride ruins the silver bath</td>
+</tr>
+<tr>
+<td><strong>Silver nitrate</strong></td>
+<td>Session 3</td>
+<td>Often needs ordering well ahead. The bath is now <strong>0.05 M</strong> — five times the old strength, so budget accordingly</td>
+</tr>
+<tr>
+<td><strong>Potassium nitrate (KNO₃)</strong></td>
+<td>Session 3</td>
+<td>Supporting electrolyte for the silver bath. Must be <strong>chloride-free</strong> — test it against AgNO₃ before mixing a batch. NaNO₃ works identically</td>
+</tr>
+<tr>
+<td><strong>1 kΩ resistors</strong></td>
+<td>Sessions 2 and 3</td>
+<td>The resistor sets the plating current. Without one, every bench gets a different answer</td>
+</tr>
+<tr>
+<td><strong>Rusty iron</strong></td>
+<td>Sessions 4 and 5</td>
+<td>Two matched nails per group. Rusty hardware is surprisingly hard to find on demand — start collecting early, or leave nails in saltwater for a fortnight</td>
+</tr>
+<tr>
+<td><strong>Wooden splints</strong></td>
+<td>Session 4</td>
+<td>The reliable gas identification</td>
+</tr>
+<tr>
+<td><strong>Spare rubber stoppers</strong></td>
+<td>Session 4</td>
+<td>A split stopper ends the U-tube run</td>
+</tr>
+<tr>
+<td><strong>Spare multimeter fuses</strong></td>
+<td>All week</td>
+<td>A blown mA fuse reads zero and looks exactly like "no reaction"</td>
+</tr>
+</tbody>
+</table>
 <h2>Common equipment</h2>
 <ul>
-<li>[ ] Multimeters (ideally one per group)</li>
+<li>[ ] Multimeters, ideally one per group, with <strong>working DC mA ranges</strong></li>
+<li>[ ] Spare multimeter fuses</li>
 <li>[ ] Alligator clip leads</li>
-<li>[ ] 9 V batteries</li>
-<li>[ ] AA battery packs or adjustable DC power supplies</li>
-<li>[ ] Small LEDs, buzzers, or motors</li>
+<li>[ ] <strong>Bench DC power supply</strong> (adjustable, current-limited) — or 5 V USB power bricks</li>
+<li>[ ] 9 V batteries (short in-class runs only)</li>
+<li>[ ] AA battery packs</li>
+<li>[ ] Small LEDs, buzzers or motors</li>
 <li>[ ] Jam jars or clear plastic cups</li>
 <li>[ ] Plastic tubs</li>
 <li>[ ] Gloves and safety goggles</li>
 <li>[ ] Paper towels</li>
 <li>[ ] Sandpaper or steel wool</li>
-<li>[ ] Stopwatches or phones for timing</li>
-<li>[ ] Optional: balance, rulers, calipers</li>
+<li>[ ] Stopwatches or phones</li>
+<li>[ ] Forceps</li>
+<li>[ ] Camera or phone for before/after photos</li>
+<li>[ ] Balance, ruler, calipers</li>
 </ul>
 <h2>Metals</h2>
 <ul>
-<li>[ ] Copper wire, strips, or gaskets</li>
-<li>[ ] Galvanized nails</li>
+<li>[ ] Copper wire, strips or gaskets</li>
 <li>[ ] Iron nails</li>
-<li>[ ] Zinc strips (if available)</li>
-<li>[ ] Aluminum foil</li>
-<li>[ ] Graphite rods or pencil leads</li>
-<li>[ ] Silver wire or strip (optional for silver plating)</li>
+<li>[ ] Galvanized nails</li>
+<li>[ ] Zinc strips</li>
+<li>[ ] Aluminium foil or strip</li>
+<li>[ ] Magnesium ribbon (optional, Session 5)</li>
+<li>[ ] <strong>Graphite rods</strong> — Sessions 3, 4 and 5. Buy spares; they erode</li>
 <li>[ ] Small coins, washers, screws, keys</li>
+<li>[ ] <strong>Rusty</strong> nails or hardware, 2+ per group</li>
 </ul>
 <h2>Chemicals</h2>
 <ul>
 <li>[ ] Lemons, limes, potatoes, apples</li>
-<li>[ ] Table salt</li>
+<li>[ ] Table salt — <strong>Session 5 corrosion jars only</strong></li>
 <li>[ ] Baking soda</li>
-<li>[ ] Washing soda (sodium carbonate) — preferred for electrolytic rust removal</li>
-<li>[ ] Distilled (or deionized) water — <strong>required for Session 3 AgNO₃</strong>; optional elsewhere</li>
-<li>[ ] Tap water — fine for most other solutions (see water guidance below)</li>
-<li>[ ] Copper sulfate pentahydrate for <strong>0.5 M CuSO₄</strong> plating bath (Session 2)</li>
-<li>[ ] Silver nitrate for <strong>0.01 M AgNO₃</strong> working solution (Session 3)</li>
-<li>[ ] Sodium sulfate for <strong>~0.1 M Na₂SO₄</strong> water-electrolysis electrolyte (Session 4)</li>
+<li>[ ] Washing soda (sodium carbonate) — preferred for derusting</li>
+<li>[ ] Distilled water — <strong>required for Session 3</strong>, useful in Session 4</li>
+<li>[ ] Copper sulfate pentahydrate — <strong>0.5 M CuSO₄</strong> plating bath (Session 2)</li>
+<li>[ ] Silver nitrate — <strong>0.05 M AgNO₃</strong> working solution (Session 3)</li>
+<li>[ ] <strong>Potassium nitrate (or sodium nitrate)</strong> — <strong>0.2 M</strong> supporting electrolyte for the silver bath (Session 3)</li>
+<li>[ ] <strong>Sodium sulfate — ~0.1 M Na₂SO₄</strong> electrolysis electrolyte (Session 4)</li>
 <li>[ ] pH paper or indicator</li>
 </ul>
+<h3>Session 3 silver bath — 0.05 M AgNO₃ in 0.2 M KNO₃</h3>
+<table>
+<thead>
+<tr>
+<th>Batch</th>
+<th>AgNO₃</th>
+<th>KNO₃</th>
+<th>Or NaNO₃</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>250 mL</td>
+<td>2.12 g</td>
+<td>5.05 g</td>
+<td>4.25 g</td>
+</tr>
+<tr>
+<td>500 mL</td>
+<td>4.25 g</td>
+<td>10.11 g</td>
+<td>8.50 g</td>
+</tr>
+</tbody>
+</table>
+<p>Distilled water only. Dissolve the nitrate salt first. Half-strength silver option: 0.025 M AgNO₃ (1.06 g / 250 mL) with the same KNO₃ and half the current.</p>
+<p><strong>Chloride-test the nitrate salt first.</strong> A few drops of your dissolved KNO₃ into a few drops of AgNO₃ — clear is good, milky white means contamination and a ruined batch.</p>
+<h3>Sodium sulfate — check which one you bought</h3>
+<table>
+<thead>
+<tr>
+<th>Batch</th>
+<th>Anhydrous (142.04 g/mol)</th>
+<th>Decahydrate (322.19 g/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>250 mL of 0.1 M</td>
+<td>3.6 g</td>
+<td>8.1 g</td>
+</tr>
+<tr>
+<td>500 mL</td>
+<td>7.1 g</td>
+<td>16.1 g</td>
+</tr>
+<tr>
+<td>1.0 L</td>
+<td>14.2 g</td>
+<td>32.2 g</td>
+</tr>
+</tbody>
+</table>
+<p>Decahydrate is more than half water by mass. Weighing it as if it were anhydrous gives a bath at under half the intended strength — which looks like a mysteriously feeble Session 4.</p>
 <h2>Water guidance (tap vs distilled)</h2>
 <table>
 <thead>
@@ -130,57 +255,100 @@
 <tr>
 <td>Session 1 fruit cells</td>
 <td>Tap</td>
-<td>Fruit juice dominates impurities</td>
+<td>Fruit juice dominates</td>
 </tr>
 <tr>
-<td>Session 2 0.5 M CuSO₄</td>
-<td>Tap OK; distilled slightly better</td>
-<td>Very hard tap water may cloud the bath; plating still works</td>
+<td>Session 2, 0.5 M CuSO₄</td>
+<td>Tap acceptable</td>
+<td>Very hard water may cloud the bath; plating still works</td>
 </tr>
 <tr>
-<td>Session 3 0.01 M AgNO₃ (+ rinses)</td>
+<td>Session 3, silver bath and rinses</td>
 <td><strong>Distilled</strong></td>
-<td>Tap Cl⁻ can precipitate AgCl and spoil the bath</td>
+<td>Tap Cl⁻ precipitates AgCl and spoils the bath</td>
 </tr>
 <tr>
-<td>Session 4 ~0.1 M Na₂SO₄ electrolysis (U-tube)</td>
+<td>Session 4 conductivity ladder, rung 1</td>
+<td><strong>Distilled</strong></td>
+<td>The whole point of the rung</td>
+</tr>
+<tr>
+<td>Session 4, 0.1 M Na₂SO₄</td>
 <td>Tap</td>
-<td>Supporting electrolyte overwhelms tap minerals</td>
+<td>The electrolyte overwhelms tap minerals</td>
 </tr>
 <tr>
-<td>Session 5 saltwater corrosion jars</td>
+<td>Session 5 saltwater jars</td>
 <td>Tap</td>
-<td>You add 5–10% NaCl anyway</td>
+<td>You are adding 5–10% NaCl anyway</td>
 </tr>
 <tr>
-<td>Session 4–5 washing-soda derusting</td>
+<td>Derusting baths</td>
 <td>Tap</td>
 <td>High ionic strength</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Camp rule of thumb:</strong> one jug of distilled water for silver only; tap for everything else unless CuSO₄ looks milky.</p>
-<h2>Session 4–5 (rust removal)</h2>
+<p><strong>Rule of thumb:</strong> one jug of distilled for silver and for the ladder's first rung; tap for everything else.</p>
+<h2>Session 4–5 specific</h2>
 <ul>
-<li>[ ] Rusty iron nails or small rusty hardware</li>
-<li>[ ] Sacrificial steel or graphite anodes</li>
-<li>[ ] Washing soda or baking soda (NOT NaCl)</li>
-<li>[ ] Small plastic cups or jars for overnight cells</li>
+<li>[ ] Hoffman-style U-tube with side arms and stand</li>
+<li>[ ] Small test tubes for gas collection</li>
+<li>[ ] Wooden splints; long lighter; fire extinguisher</li>
+<li>[ ] Small balloons (pre-stretch before use)</li>
+<li>[ ] Tubing and stoppers for the balloon generator</li>
+<li>[ ] Sacrificial steel or graphite anodes — <strong>not stainless</strong></li>
+<li>[ ] Washing soda or baking soda for derusting — <strong>not NaCl</strong></li>
+<li>[ ] Small open jars for the overnight cells</li>
 </ul>
-<h2>Optional items</h2>
-<ul>
-<li>[ ] Small solar panel</li>
-<li>[ ] Conductivity meter</li>
-<li>[ ] pH meter</li>
-</ul>
+<h2>Optional / worth adding next year</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it buys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Universal indicator</strong></td>
+<td>Session 4: cathode turns blue-purple, anode red-yellow. Makes the half-reactions directly visible. Best cheap upgrade to the week</td>
+</tr>
+<tr>
+<td><strong>Ferroxyl indicator</strong> (K₃[Fe(CN)₆] + phenolphthalein)</td>
+<td>Session 5: anodic sites blue, cathodic pink, in minutes rather than days. Would free Session 5 from depending on jars started on Day 1. Never acidify or heat it</td>
+</tr>
+<tr>
+<td><strong>Silver anode</strong> (sterling wire or a bullion round)</td>
+<td>Session 3: replenishes Ag⁺, eliminates bath depletion and pH drift entirely. A one-off reusable purchase</td>
+</tr>
+<tr>
+<td>Magnetic stirrer</td>
+<td>Session 3: stirring roughly doubles the current the bath can sustain before it goes dendritic</td>
+</tr>
+<tr>
+<td>Conductivity meter</td>
+<td>Turns the Session 4 ladder quantitative, in µS/cm</td>
+</tr>
+<tr>
+<td>Small solar panel</td>
+<td>Session 4 energy discussion</td>
+</tr>
+<tr>
+<td>pH meter</td>
+<td>Alternative to indicator paper</td>
+</tr>
+</tbody>
+</table>
 <h2>Safety reminders</h2>
 <ul>
 <li>No eating experimental materials</li>
-<li>No saltwater electrolysis (use sodium sulfate; baking soda only as backup)</li>
-<li>Silver nitrate: gloves and goggles required</li>
-<li>Hydrogen ignition: instructor-only, tiny volumes</li>
-<li>Collect copper and silver waste; do not pour down drain</li>
-<li>Avoid short circuits on batteries</li>
+<li><strong>No NaCl in any electrolysis or derusting bath</strong> — Session 5 corrosion jars only</li>
+<li>Silver nitrate: gloves and goggles; <strong>never add ammonia to it</strong> — ammoniacal silver forms explosive solids on standing</li>
+<li>Hydrogen ignition: instructor only, small volumes, never a sealed container</li>
+<li>Overnight cells: open jars, ventilated room</li>
+<li>Collect copper and silver waste; do not pour down the drain</li>
+<li>Ammeters in series; avoid shorting batteries</li>
 </ul>
       </article>
     </main>

@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -77,36 +80,115 @@
         <div class="page-meta"><span class="badge">Session 3</span></div>
       </header>
       <article class="main-article">
+<h2>The three things that decide whether this session works</h2>
+<ol>
+<li><strong>The bath is 0.05 M AgNO₃ in 0.2 M KNO₃</strong>, not dilute silver nitrate alone. The silver concentration sets the maximum current the cell can sustain; the nitrate makes the solution conduct.</li>
+<li><strong>A 1 kΩ resistor goes in series at every station.</strong> It sets the current, so all benches match and nobody has to chase a target by fiddling with electrode depth.</li>
+<li><strong>Live entry.</strong> The object is powered before it touches the liquid and stays powered until it leaves. Otherwise copper displaces silver directly and the coating will not adhere.</li>
+</ol>
+<hr>
 <h2>Before class (instructor)</h2>
+<h3>Solution</h3>
 <ul>
-<li>[ ] Prepare 0.01 M AgNO₃ with <strong>distilled/deionized water</strong> (not tap); volume for all groups + 20% extra</li>
-<li>[ ] Pilot plate one object: record I_avg, t, appearance</li>
-<li>[ ] Verify 3 V packs deliver stable ~10–30 mA in this cell</li>
-<li>[ ] Print calculation worksheets</li>
-<li>[ ] Confirm silver waste disposal with school/facility protocol</li>
+<li>[ ] <strong>Chloride-check the KNO₃</strong> against AgNO₃ on a watch glass — clear, not milky</li>
+<li>[ ] Mix the bath with <strong>distilled water</strong>: dissolve KNO₃ first, then AgNO₃</li>
+<li>[ ] Enough for all groups at 30–40 mL each, plus 20%</li>
+<li>[ ] Label with concentration and date; store dark</li>
+<li>[ ] Confirm the silver waste protocol with the facility</li>
+</ul>
+<h3>Pilot — do this properly, it takes fifteen minutes</h3>
+<ul>
+<li>[ ] Plate one object end to end and record current, time, and appearance</li>
+<li>[ ] Confirm the <strong>1 kΩ resistor</strong> gives about <strong>2 mA</strong> with your 3 V packs</li>
+<li>[ ] Confirm the current stays flat across the run</li>
+<li>[ ] Practise <strong>live entry</strong> yourself before teaching it</li>
+<li>[ ] Run a <strong>control coin with no power</strong> for the same time and keep it — it is your demonstration piece</li>
+<li>[ ] Measure start and end pH and check them against the charge</li>
+<li>[ ] Photograph both coins side by side</li>
+</ul>
+<h3>Hardware</h3>
+<ul>
+<li>[ ] 1 kΩ resistors, one per station plus spares</li>
+<li>[ ] Clean graphite anodes</li>
+<li>[ ] Multimeter fuses checked — a blown mA fuse reads zero and looks like "no reaction"</li>
+<li>[ ] Two matched, cleaned coins per group</li>
+<li>[ ] Print pre-lab worksheets (<a href="lecture.html">lecture.md</a> §5) and station cards</li>
 </ul>
 <h3>AgNO₃ handling</h3>
 <ul>
-<li>Wear gloves when preparing</li>
-<li>Work in ventilated area</li>
-<li>Label all bottles clearly</li>
-<li>Store away from organic materials and light if possible</li>
+<li>Gloves when preparing; ventilated area</li>
+<li>Label everything; store away from organics and light</li>
+<li>Have the ammonia warning ready to say out loud — see the safety section in <a href="experiment.html">experiment.md</a></li>
 </ul>
+<hr>
 <h2>Day-of setup</h2>
 <ul>
-<li>[ ] Small volumes pre-measured per station (reduces spills)</li>
-<li>[ ] Goggles enforced at door</li>
-<li>[ ] Waste container visible and labeled</li>
-<li>[ ] Demo calculation on board with example numbers (before students start)</li>
+<li>[ ] Pre-measured bath volumes at each station, to reduce spills</li>
+<li>[ ] Resistors already inserted in the leads, so nobody forgets</li>
+<li>[ ] Goggles enforced at the door</li>
+<li>[ ] Silver waste container visible and labeled</li>
+<li>[ ] Worked example on the board before students start</li>
+<li>[ ] Control-coin dishes at each bench</li>
+<li>[ ] Last year's dendrite photo displayed</li>
 </ul>
+<hr>
+<h2>Common failure modes</h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Prevention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coating rubs off</td>
+<td>Object entered the bath unpowered. Station a TA at each bench for the first entry</td>
+</tr>
+<tr>
+<td>Grey fluffy deposit</td>
+<td>Current density too high. Check the resistor is actually in circuit and the area estimate is right</td>
+</tr>
+<tr>
+<td>Bath cloudy from the start</td>
+<td>Chloride — tap water or contaminated nitrate. Chloride-check beforehand</td>
+</tr>
+<tr>
+<td>Every bench a different current</td>
+<td>Resistor missing, or someone set a voltage instead</td>
+</tr>
+<tr>
+<td>Meter reads zero</td>
+<td>Blown mA fuse, or not in series</td>
+</tr>
+<tr>
+<td>Calculations stall</td>
+<td>Groups that skipped the §5 pre-lab gate. Enforce it</td>
+</tr>
+<tr>
+<td>pH reading drifts or looks wrong</td>
+<td>Silver attacks glass electrodes with KCl references. Calibrate immediately before, rinse well after, or use paper</td>
+</tr>
+<tr>
+<td>Someone proposes adding ammonia</td>
+<td>Pre-empt it in the safety brief. Ammoniacal silver forms explosive solids on standing</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <h2>Timing note</h2>
-<p>Calculations take longer than expected for some groups. Have I_avg pre-computed on board as check, or provide a spreadsheet template.</p>
-<h2>Open questions / notes</h2>
+<p>Calculations take longer than expected. Have the worked example on the board as a check, and consider a spreadsheet template for groups that finish the arithmetic early — they can recompute for a different current and see how thickness scales.</p>
+<hr>
+<h2>Open questions / notes for next year</h2>
 <ul>
-<li>Stock AgNO₃ concentration on hand:</li>
-<li>Volume prepared (mL):</li>
-<li>Pilot I_avg (mA):</li>
-<li>Pilot plating time (s):</li>
+<li>Bath concentration used, and whether 0.05 M was necessary or 0.025 M would have done:</li>
+<li>Resistor value and the current it actually gave:</li>
+<li>Measured current density:</li>
+<li>Appearance — even? matte or bright? Did burnishing help?</li>
+<li>Did the plated coin survive a rub, and did the control fail one?</li>
+<li>Predicted vs measured pH:</li>
+<li>Volume of AgNO₃ consumed across the class:</li>
+<li>Was live entry followed reliably, or did groups need reminding?</li>
 </ul>
       </article>
     </main>

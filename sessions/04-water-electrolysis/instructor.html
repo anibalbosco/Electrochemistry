@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -80,117 +83,219 @@
 <p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
 <hr>
 <h2>Why this session exists</h2>
-<p>Students have plated metals. Today they discover that <strong>splitting water needs ions in solution</strong>, quantify <strong>rate from current</strong> (Faraday), prove <strong>2:1 stoichiometry</strong> by gas collection, and see a dramatic <strong>H₂ balloon pop</strong>. Overnight electrolytic rust removal still starts at the end for Session 5.</p>
+<p>For three days the students changed a <strong>metal</strong>. Today they change the <strong>solvent</strong>, and for the first time the product is something they can actually measure. That is what makes this the quantitative high point of the week: Session 3 asked them to trust Faraday's law, and Session 4 lets them audit it.</p>
+<p>The session is built around one arc: <strong>predict a volume from a current, then go and measure that volume.</strong> Everything else — the conductivity ladder, the splint tests, the balloon — is scaffolding around that arc. If you are short on time, protect Parts B and C and cut elsewhere.</p>
 <hr>
 <h2>Teaching sequence (keep this order)</h2>
 <ol>
-<li><strong>Tap water beaker</strong> — expect disappointment (almost no bubbles). That disappointment is the lesson.</li>
-<li><strong>Add Na₂SO₄</strong> — same voltage → much larger current → fast bubbles. Measure I.</li>
-<li><strong>Calculate</strong> ṅ = I/(nF) and discuss why applied V &gt; 1.23 V.</li>
-<li><strong>U-tube volumes</strong> — same 2:1 that Faraday already predicted.</li>
-<li><strong>Balloon</strong> — qualitative ID of H₂ (instructor only).</li>
+<li><strong>Distilled water beaker</strong> — expect disappointment. That disappointment is the lesson.</li>
+<li><strong>Ladder up through tap to electrolyte</strong> — one voltage, three liquids, three currents.</li>
+<li><strong>Measure I and predict</strong> a gas volume in millilitres, on paper, before collecting.</li>
+<li><strong>U-tube</strong> — the ratio confirms the electron counting; the absolute volume audits the efficiency.</li>
+<li><strong>Splint tests</strong> — cheap, reliable identification of both gases.</li>
+<li><strong>Balloon</strong> — the memorable one, already running since before class.</li>
 <li><strong>Derusting cells</strong> — handoff to Session 5.</li>
 </ol>
 <hr>
-<h2>Atomic / molecular foundations</h2>
-<h3>Why tap water fails</h3>
+<h2>The three things that most often go wrong</h2>
+<p>Ranked by how much damage they do, and all three are avoidable:</p>
+<h3>1. The balloon generator started too late</h3>
+<p>This is the most common failure and it is pure arithmetic. Faraday sets the pace:</p>
+<table>
+<thead>
+<tr>
+<th>Current</th>
+<th>H₂ rate</th>
+<th>Time to a 500 mL balloon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5 A</td>
+<td>3.8 mL/min</td>
+<td>132 min</td>
+</tr>
+<tr>
+<td>1.0 A</td>
+<td>7.6 mL/min</td>
+<td>66 min</td>
+</tr>
+<tr>
+<td>2.0 A</td>
+<td>15.2 mL/min</td>
+<td>33 min</td>
+</tr>
+<tr>
+<td>3.0 A</td>
+<td>22.8 mL/min</td>
+<td>22 min</td>
+</tr>
+</tbody>
+</table>
+<p>A "modestly inflated" party balloon is around 500 mL. There is no clever technique that beats this table — the electrons have to arrive one at a time. <strong>Switch the generator on before the students walk in</strong>, run the highest current your supply and electrodes tolerate, and pre-stretch the balloon so it does not fight the very low pressure the cell can deliver.</p>
+<p>Pilot this and write the actual time in <a href="materials.html">materials.md</a>. It is the single most useful number to hand next year's version of yourself.</p>
+<h3>2. The U-tube filled below the side arms</h3>
+<p>Gas collects in the sealed dome under each stopper and pushes the liquid <strong>down</strong>; the displaced liquid rises into the open side arm, which is the vent. So:</p>
 <ul>
-<li>Autoionization: H₂O ⇌ H⁺ + OH⁻ with [H⁺][OH⁻] = 10⁻¹⁴ at 25 °C — vanishingly few ions.</li>
-<li>Tap water adds some minerals, but still a <strong>poor conductor</strong> compared with 0.1 M Na₂SO₄.</li>
-<li>Without current, half-reactions barely run → “slow reaction.”</li>
+<li>Fill until liquid <strong>stands part-way up both side arms</strong>, equal on both sides.</li>
+<li>If you fill to below the side-arm junction, the gas has a free path out of the side arm. The cell bubbles beautifully and collects nothing, which is a genuinely confusing failure to debug live.</li>
+<li>Stop the run before the falling level in the <strong>H₂</strong> limb reaches its side-arm junction. The H₂ limb fills twice as fast, so it always gets there first, and once it vents the ratio slides toward 1.</li>
 </ul>
-<h3>Why Na₂SO₄ works</h3>
-<ul>
-<li>Dissolves to Na⁺ and SO₄²⁻ — <strong>supporting electrolyte</strong>.</li>
-<li>Water remains the species oxidized/reduced (classroom story).</li>
-<li><strong>Never NaCl</strong> → Cl₂ risk at the anode.</li>
-</ul>
+<h3>3. Timing started before the solution is saturated</h3>
+<p>The first gas produced dissolves rather than collecting, and it does so unequally, because O₂ is roughly twice as soluble as H₂. Run <strong>2–3 minutes before marking t = 0</strong> and most of that error disappears. Groups that skip it get the worst ratios and conclude the chemistry is unreliable.</p>
+<hr>
+<h2>Atomic and molecular foundations</h2>
+<h3>Why pure water fails</h3>
+<p>Autoionization gives [H⁺] = [OH⁻] = 10⁻⁷ M at 25 °C, against a water concentration of 55.5 M — about <strong>one molecule in 550 million</strong> is ionized. Conductivity of ultrapure water is around 0.055 µS/cm; typical tap water is 50–800 µS/cm; 0.1 M Na₂SO₄ is on the order of 10,000 µS/cm.</p>
+<p>That spread is why the ladder is worth doing as three rungs rather than two. Tap water is the interesting middle case: it is emphatically not pure, and students who have been told "water doesn't conduct" need to meet the version of the statement that is actually true — <em>pure</em> water conducts poorly, and purity is a variable, not a property of the word "water."</p>
+<h3>Why Na₂SO₄ and not something else</h3>
+<p>Sodium is far too difficult to reduce in water (its reduction potential is well below that of water itself, so hydrogen evolves instead), and sulfate is already at maximum oxidation state, so neither ion has a competing half-reaction available. Both are pure charge carriers. This is the definition of a supporting electrolyte, and it is a concept students have not met in Sessions 2 and 3, where the dissolved salt was the <em>reactant</em>. Make the contrast explicit — the table in <a href="lecture.html">lecture.md</a> §3.3 exists for this.</p>
 <table>
 <thead>
 <tr>
 <th>Electrolyte</th>
-<th>OK?</th>
-<th>Why</th>
+<th>Verdict</th>
+<th>Reason</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Sodium sulfate</td>
-<td><strong>Yes — planned</strong></td>
-<td>Inert supporting electrolyte</td>
+<td><strong>Planned</strong></td>
+<td>Inert; no competing half-reaction</td>
 </tr>
 <tr>
 <td>Baking soda</td>
-<td>Backup only</td>
-<td>No chlorine</td>
+<td>Backup</td>
+<td>No chlorine risk, but CO₂ evolution muddies the anode gas measurement</td>
 </tr>
 <tr>
-<td>Table salt NaCl</td>
-<td><strong>NO</strong></td>
-<td>Cl₂ gas</td>
+<td>Table salt</td>
+<td><strong>Never</strong></td>
+<td>Chloride oxidizes in preference to water → Cl₂</td>
+</tr>
+<tr>
+<td>Sulfuric acid</td>
+<td>Not for this age group</td>
+<td>Works well, but the hazard is not worth it</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<h2>Half-reactions and the 2:1 ratio</h2>
-<p><strong>Cathode (−):</strong> <code>2H₂O + 2e⁻ → H₂ + 2OH⁻</code><br>
-<strong>Anode (+):</strong> <code>2H₂O → O₂ + 4H⁺ + 4e⁻</code> (or base form with OH⁻)<br>
+<h3>Half-reactions and where the 2:1 comes from</h3>
+<p><strong>Cathode (−):</strong> <code>2H₂O + 2e⁻ → H₂ + 2OH⁻</code>
+<strong>Anode (+):</strong> <code>2H₂O → O₂ + 4H⁺ + 4e⁻</code> (or <code>4OH⁻ → O₂ + 2H₂O + 4e⁻</code> in base)
 <strong>Overall:</strong> <code>2H₂O → 2H₂ + O₂</code></p>
-<p>Electron balance: 4e⁻ make <strong>2 H₂</strong> and <strong>1 O₂</strong> ⇒ volume ratio 2:1 at same T, P.</p>
+<p>Four electrons make <strong>two H₂ and one O₂</strong>. Series circuit ⇒ identical charge through both electrodes ⇒ the ratio is forced. Then Avogadro does the rest: equal numbers of gas molecules occupy equal volumes at the same temperature and pressure, so the mole ratio <em>is</em> the volume ratio.</p>
+<p>Worth saying explicitly, because students often think the 2:1 comes from the formula H₂O. It does, but only via the electron count — and framing it that way is what makes Faraday's law feel like a tool rather than a formula.</p>
 <hr>
 <h2>Faraday coaching (Part B)</h2>
-<pre><code>ṅ(H₂) = I / (2F)     ṅ(O₂) = I / (4F)
-F ≈ 9.65×10⁴ C/mol
+<pre><code>ṅ(H₂) = I / (2F)     ṅ(O₂) = I / (4F)     F ≈ 9.65 × 10⁴ C/mol
+V̇(H₂) in mL/min ≈ 7.6 × I  (I in A, room conditions)
 </code></pre>
 <ul>
-<li>Students must convert <strong>mA → A</strong> before dividing.</li>
-<li>Emphasize: <strong>same I</strong> already implies ṅ(H₂) = 2 ṅ(O₂) — volumes later confirm chemistry, not a new idea.</li>
-<li>Optional volume rate: use ~24.5 L/mol at ~25 °C (or 22.4 L/mol at STP — pick one and stay consistent).</li>
+<li><strong>mA → A first, every time.</strong> A thousandfold error is invisible on a calculator.</li>
+<li>The 2:1 is already present in the mole rates. The U-tube confirms chemistry students have <em>already derived</em>; it is not a new fact.</li>
+<li>Molar volume: 24.45 L/mol at 25 °C, or 22.4 L/mol at 0 °C. Pick one and stay with it all session. Mixing them introduces a 9% discrepancy that will surface exactly when you are computing efficiency and trying to explain a 15% shortfall.</li>
 </ul>
-<h3>Voltage talking points</h3>
-<ul>
-<li>Thermodynamic minimum ≈ <strong>1.23 V</strong>.</li>
-<li>Graphite + solution resistance + overpotentials → classroom cells often need <strong>several volts</strong>.</li>
-<li>“Voltage needed” = discuss 1.23 V floor + record <strong>applied V</strong>; if supply is adjustable, hunt the onset of visible bubbling.</li>
-</ul>
-<p><strong>Pilot tip:</strong> note typical I (tap) vs I (Na₂SO₄) at your fixed V so TAs know what “good” looks like.</p>
-<hr>
-<h2>U-tube coaching (Part C)</h2>
-<p>Glass U-tube, graphite through stoppers, side arms vented, Na₂SO₄ fill. Black (−) = faster H₂ limb. Accept ratio <strong>1.6–2.2</strong>.</p>
+<h3>The efficiency conversation</h3>
+<p>The measured-over-predicted ratio is the payoff of the whole week's arithmetic. Expect <strong>70–95%</strong>. Losses:</p>
 <table>
 <thead>
 <tr>
-<th>Ratio error cause</th>
-<th>Effect</th>
+<th>Loss</th>
+<th>Typical size</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>O₂ more soluble</td>
-<td>Ratio high</td>
+<td>Gas dissolved in solution</td>
+<td>Largest single term, especially early</td>
 </tr>
 <tr>
-<td>Escaped bubbles / leaks</td>
-<td>Skew either way</td>
+<td>Leaks past stoppers</td>
+<td>Variable; the fixable one</td>
 </tr>
 <tr>
-<td>Air at t = 0</td>
-<td>Systematic error</td>
+<td>Side reactions on graphite (anode attack)</td>
+<td>Small but real; grows with current</td>
+</tr>
+<tr>
+<td>Gas escaping the side arm</td>
+<td>Should be zero if the fill level is right</td>
 </tr>
 </tbody>
 </table>
+<p>Above 100% is always a measurement artifact: an air bubble trapped under the stopper at t = 0, a mis-measured tube diameter (it enters squared, so a 10% diameter error is a 21% volume error), or a t = 0 mark made after the run had already started.</p>
+<h3>Voltage talking points</h3>
+<ul>
+<li>1.23 V thermodynamic floor.</li>
+<li>Onset of visible bubbling on graphite is typically <strong>1.6–2.0 V</strong> — the gap is overpotential, mostly on the oxygen side, which is kinetically the harder reaction.</li>
+<li>Several volts to run briskly; the surplus is dissipated as heat and buys rate, not yield per coulomb.</li>
+<li>If your supply is adjustable, hunting the bubbling threshold is a genuinely nice measurement and takes 90 seconds.</li>
+</ul>
 <hr>
-<h2>H₂ balloon pop (Part D) — safety first</h2>
-<p>This is a <strong>demo</strong>, not a free-for-all.</p>
-<ol>
-<li>Feed <strong>cathode gas only</strong> into a <strong>small</strong> balloon (anode vents separately).</li>
-<li>Modest inflation — not a large balloon.</li>
-<li>Tie off; move away from the bath and faces.</li>
-<li>Long lighter; arm’s length; clear space; extinguisher ready.</li>
-<li>Skip if venue forbids open flame.</li>
-</ol>
-<p><strong>Never</strong> inflate with mixed H₂/O₂. <strong>Never</strong> use a rigid sealed vessel.</p>
-<p>Loud pop startles — warn the room; protect ears if needed.</p>
+<h2>U-tube coaching (Part C)</h2>
+<p>Equal bore in both limbs means <strong>column height ratio = volume ratio</strong>, so the diameter is irrelevant to the ratio and only needed for the absolute Faraday check. Measure it once, put it on the board, done.</p>
+<p><strong>Accept 2.0–2.6.</strong> Tell students the expected direction <em>before</em> they measure — see <a href="lecture.html">lecture.md</a> §3.8. Causes of a high ratio:</p>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O₂ roughly 2× more soluble than H₂</td>
+<td>Dominant early; mostly cured by pre-saturating</td>
+</tr>
+<tr>
+<td>Graphite anode attacked; some O as CO₂</td>
+<td>CO₂ is highly soluble, so it vanishes from the gas phase</td>
+</tr>
+<tr>
+<td>O₂ evolution has the larger overpotential</td>
+<td>Slower to start</td>
+</tr>
+</tbody>
+</table>
+<p>A ratio <strong>below 2</strong> is a fault, not a subtlety. Check the H₂ stopper seal first, then whether the H₂ level reached the side arm.</p>
+<hr>
+<h2>Gas identification (Part D)</h2>
+<h3>Splint tests — do these even if the balloon works</h3>
+<table>
+<thead>
+<tr>
+<th>Gas</th>
+<th>Test</th>
+<th>Why it works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H₂</td>
+<td>Lit splint at the mouth → <strong>squeaky pop</strong></td>
+<td>H₂ burns in the air around it; the pop is the flame front crossing the gas/air boundary</td>
+</tr>
+<tr>
+<td>O₂</td>
+<td>Glowing splint → <strong>relights</strong></td>
+<td>Pure O₂ raises the combustion rate enough to restart a smouldering ember</td>
+</tr>
+</tbody>
+</table>
+<p>These take two minutes, cost nothing, work every time, and are a <em>better</em> piece of chemistry than the balloon because they identify <strong>both</strong> gases rather than one. At 0.3 A a 10 mL test tube of hydrogen fills in about 4 minutes — start them at the beginning of Part C.</p>
+<p>Keep collection tubes <strong>mouth-down</strong> until the moment of testing. Hydrogen is 14 times lighter than air and leaves an upright tube almost immediately.</p>
+<h3>The balloon — safety and physics</h3>
+<p>Beyond the timing table above:</p>
+<ul>
+<li><strong>Cathode gas only.</strong> A balloon of pure H₂ deflagrates: it burns at the surface where it meets air, giving a bark. A stoichiometric H₂/O₂ mixture <strong>detonates</strong> — much louder, genuinely dangerous, and never a classroom demo.</li>
+<li><strong>Never a rigid container.</strong> A balloon fails by tearing; glass fails by becoming shrapnel.</li>
+<li>Untie and ignite <strong>well away from the generator</strong>, which is still making hydrogen the whole time.</li>
+<li>Warn the room. The bang startles, and some students find it genuinely distressing.</li>
+<li>Have the extinguisher present and know where it is, not merely "in the building."</li>
+</ul>
+<p>The teaching moment is immediately afterwards, while the room is still noisy: that bang was the electrical energy of the last hour coming back out in a fraction of a second. Hydrogen stored it. That is what "energy carrier" means, and it is the honest version of the hydrogen-economy story — round-trip efficiency is well under 100%, and the electricity has to come from somewhere first.</p>
 <hr>
 <h2>Part E — Rust removal handoff</h2>
 <table>
@@ -206,16 +311,18 @@ F ≈ 9.65×10⁴ C/mol
 <td>Battery <strong>−</strong> (cathode)</td>
 </tr>
 <tr>
-<td>Sacrificial steel/graphite</td>
+<td>Sacrificial steel or graphite</td>
 <td>Battery <strong>+</strong> (anode)</td>
 </tr>
 <tr>
 <td>Electrolyte</td>
-<td>Washing soda or baking soda — <strong>not NaCl</strong></td>
+<td>Washing soda (preferred) or baking soda — <strong>never NaCl</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Photograph before; control nail without power; overnight policy confirmed.</p>
+<p><strong>Power supply matters more than anything else here.</strong> A 9 V alkaline holds about 500 mAh and a derusting cell pulls a few hundred mA. It is flat in roughly two hours, and Session 5 then opens on a nail indistinguishable from the control — which is a bad start to the synthesis day. Use a mains supply or a 5 V USB brick. If neither exists, run the cells for 60–90 minutes during class and accept a smaller effect, rather than trusting a battery to last the night.</p>
+<p>Also: these cells evolve hydrogen continuously. Jars stay <strong>open</strong>, the room stays <strong>ventilated</strong>, and nothing sealed is ever used. Confirm the venue's overnight-power policy in advance rather than at 4 pm on the day.</p>
+<p>Photograph the "before". Set up an unpowered control in the same solution. Without both, tomorrow's reveal is an anecdote.</p>
 <hr>
 <h2>Misconceptions</h2>
 <table>
@@ -227,43 +334,63 @@ F ≈ 9.65×10⁴ C/mol
 </thead>
 <tbody>
 <tr>
-<td>“Bubbles are steam.”</td>
-<td>H₂ and O₂ gases, not boiling.</td>
+<td>"The bubbles are steam."</td>
+<td>H₂ and O₂. The water is being chemically split, not boiled — the beaker is barely warm.</td>
 </tr>
 <tr>
-<td>“Salt makes it better.”</td>
-<td>Salt makes chlorine — forbidden.</td>
+<td>"Water doesn't conduct electricity."</td>
+<td><em>Pure</em> water conducts poorly. Tap water conducts measurably. That is the whole point of the ladder.</td>
 </tr>
 <tr>
-<td>“We need huge voltage because water is special.”</td>
-<td>Minimum ~1.23 V; extras are kinetics/resistance.</td>
+<td>"The salt gets used up making the gas."</td>
+<td>Na⁺ and SO₄²⁻ are spectators. Water is the only reactant.</td>
 </tr>
 <tr>
-<td>“Current and stoichiometry are unrelated.”</td>
-<td>Faraday <strong>is</strong> the stoichiometry in electron language.</td>
+<td>"Salt would work better."</td>
+<td>Salt makes chlorine. A competing half-reaction, not a rule for its own sake.</td>
 </tr>
 <tr>
-<td>“Hydrogen is a fuel like oil.”</td>
-<td>It’s a <strong>carrier</strong>; energy came from electricity.</td>
+<td>"We need a big voltage because water is strong."</td>
+<td>Minimum is 1.23 V. The excess is kinetics and resistance, and it becomes heat.</td>
+</tr>
+<tr>
+<td>"Current and stoichiometry are separate topics."</td>
+<td>Faraday's law <strong>is</strong> stoichiometry, written in electrons.</td>
+</tr>
+<tr>
+<td>"The 2:1 comes from the formula H₂O."</td>
+<td>It comes from the electron counts, 2 and 4 — which of course trace back to the formula, but the electrons are the mechanism.</td>
+</tr>
+<tr>
+<td>"Hydrogen is a fuel like petrol."</td>
+<td>It is a carrier. The energy came from the socket, and you never get all of it back.</td>
+</tr>
+<tr>
+<td>"Our ratio was 2.3, so the experiment failed."</td>
+<td>2.0–2.6 is the correct answer for this apparatus, and its direction is predictable.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2>Board plan</h2>
 <ol>
-<li>Sketch beaker + two graphite rods; label “few ions.”</li>
-<li>Add Na₂SO₄; write I↑ → rate↑.</li>
-<li>Write ṅ = I/(nF) and 1.23 V note.</li>
-<li>Write 2H₂O → 2H₂ + O₂; circle 2:1.</li>
-<li>Safety: no NaCl; balloon = instructor only.</li>
-<li>Start derusting before dismissal.</li>
+<li>Beaker, two rods, distilled water. Write "1 in 550 million."</li>
+<li>Add ions: draw Na⁺ and SO₄²⁻ shuttling. Write "spectators."</li>
+<li>Half-reactions, with <strong>2 e⁻</strong> and <strong>4 e⁻</strong> circled.</li>
+<li><code>ṅ = I/(nF)</code> → <code>7.6 × I mL/min</code> → predicted volume in a box.</li>
+<li><code>2H₂O → 2H₂ + O₂</code>, circle the 2:1.</li>
+<li>Reserve a corner for measured ÷ predicted = efficiency. Fill it in live from the first group that finishes.</li>
+<li>Safety: no NaCl; side arms open; flame is mine.</li>
+<li>Before dismissal: <strong>rusty iron on negative.</strong></li>
 </ol>
 <hr>
 <h2>Optional enrichment</h2>
 <ul>
-<li>Conductivity of tap vs 0.1 M Na₂SO₄ (if you have a meter).</li>
-<li>Overpotential on graphite vs platinum (names only).</li>
-<li>Industrial alkaline vs PEM electrolyzers (names only).</li>
+<li>Conductivity measured properly, in µS/cm, if you have a meter — turns the ladder from qualitative to quantitative.</li>
+<li>Collected gas is saturated with water vapour; correcting for vapour pressure (~3.2 kPa at 25 °C, about 3% of atmospheric) is a nice touch for the strongest students and explains part of a systematic overestimate.</li>
+<li>Overpotential on graphite vs platinum, and why fuel cells pay for platinum.</li>
+<li>Alkaline vs PEM electrolyzers at industrial scale; the thousands-of-amps comparison lands well right after they compute 23 mL in ten minutes.</li>
+<li><strong>Universal indicator</strong> in the electrolysis cell, if you can get it for next year: the cathode region turns blue-purple from OH⁻ and the anode region red-yellow from H⁺, making the half-reactions directly visible. Cheap, fast, and the most vivid single upgrade available to this session.</li>
 </ul>
       </article>
     </main>

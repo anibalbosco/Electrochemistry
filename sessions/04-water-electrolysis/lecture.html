@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 4 — Lecture: Water Electrolysis and Stoichiometry | Electrochemistry Workshop</title>
+  <title>Session 4 — Lecture Notes: Water Electrolysis and Stoichiometry | Electrochemistry Workshop</title>
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -71,136 +74,539 @@
 </div>
     </aside>
     <main class="content">
-<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/04-water-electrolysis/index.html">Session 4</a> / Lecture: Water Electrolysis and Stoichiometry</div>
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/04-water-electrolysis/index.html">Session 4</a> / Lecture Notes: Water Electrolysis and Stoichiometry</div>
       <header class="page-header">
-        <h1>Session 4 — Lecture: Water Electrolysis and Stoichiometry</h1>
+        <h1>Session 4 — Lecture Notes: Water Electrolysis and Stoichiometry</h1>
         <div class="page-meta"><span class="badge">Session 4</span></div>
       </header>
       <article class="main-article">
-<p><strong>Target duration:</strong> ~15–20 minutes (concepts interleaved with Parts A–B work)</p>
+<p><strong>Audience:</strong> instructors / TAs — use this as your teaching script.
+<strong>Students</strong> get the talking points during class and complete the §5 prediction sheet before the U-tube.</p>
 <blockquote>
-<p><strong>Instructors:</strong> electrolyte contrast, Faraday rate, balloon safety — <a href="instructor.html">instructor.md</a>.</p>
+<p>Deep-dive chemistry, overpotential, and coaching traps: <a href="instructor.html">instructor.md</a>.
+Bench procedure: <a href="experiment.html">experiment.md</a>.</p>
 </blockquote>
 <hr>
-<h2>Opening hook (0–10 min)</h2>
-<p>Show two graphite rods in a beaker of <strong>tap water</strong>.</p>
-<p><em>"If water is H₂O, why doesn’t electricity immediately split it into visible gas? What are we missing?"</em></p>
-<p>Preview today’s arc: slow → add electrolyte → measure current/rate → collect volumes → H₂ balloon pop.</p>
+<h2>1. Summary of concepts from prior days</h2>
+<p>Spend <strong>5–8 minutes</strong> here. Today leans on all three previous sessions.</p>
+<h3>Session 1 — Fruit battery (galvanic cell)</h3>
+<table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>What to remind them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spontaneous chemistry</td>
+<td>The reaction <strong>made</strong> electricity by itself</td>
+</tr>
+<tr>
+<td>Electron vs ion path</td>
+<td>Electrons in the wire, ions in the juice — <strong>both</strong> are needed</td>
+</tr>
+<tr>
+<td>Weak electrolyte</td>
+<td>Fruit juice conducted poorly, so the current was feeble</td>
+</tr>
+</tbody>
+</table>
+<h3>Session 2 — Copper electroplating (electrolytic cell)</h3>
+<table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>What to remind them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electrolysis</td>
+<td>Electricity <strong>forces</strong> a reaction that would not happen on its own</td>
+</tr>
+<tr>
+<td>Polarity flips</td>
+<td>Object to plate goes to battery <strong>(−)</strong> = cathode = reduction</td>
+</tr>
+<tr>
+<td>Active anode</td>
+<td>The copper anode dissolved and resupplied Cu²⁺</td>
+</tr>
+</tbody>
+</table>
+<h3>Session 3 — Silver plating and Faraday's law</h3>
+<table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>What to remind them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q = I × t</td>
+<td>Charge is current multiplied by time</td>
+</tr>
+<tr>
+<td>n_e = Q/F</td>
+<td>F = 96,485 C per mole of electrons</td>
+</tr>
+<tr>
+<td>Electrons per atom</td>
+<td>Ag needed 1 e⁻; Cu needed 2. <strong>The number matters</strong></td>
+</tr>
+<tr>
+<td>Inert anode</td>
+<td>Graphite did not dissolve and did not resupply Ag⁺</td>
+</tr>
+<tr>
+<td>Current efficiency</td>
+<td>We <em>assumed</em> 100% and could not really check it</td>
+</tr>
+</tbody>
+</table>
+<p><strong>One-sentence bridge:</strong> <em>"For three days the thing being changed was a metal. Today it is the water itself."</em></p>
+<h3>What is new today</h3>
+<ul>
+<li>The substance being split is the <strong>solvent</strong>, not something dissolved in it</li>
+<li>The products are <strong>gases</strong>, which means for the first time we can <strong>measure</strong> how much we made</li>
+<li>Two products, with <strong>different electron counts</strong> — 2 e⁻ per H₂, 4 e⁻ per O₂ — so the amounts must come out in a fixed ratio</li>
+<li>The salt we add is <strong>not consumed</strong>. It is a supporting electrolyte, a new idea</li>
+</ul>
+<p><strong>One-sentence goal:</strong> <em>"Today we predict how much gas we will make before we make it — and then we check."</em></p>
 <hr>
-<h2>Core concepts (10–20 min)</h2>
-<h3>1. Why tap water is a poor electrolyzer</h3>
-<ul>
-<li>Pure / tap water has <strong>very few ions</strong></li>
-<li>Current needs a closed path of mobile charge carriers</li>
-<li>Result: tiny current, almost no bubbles (<strong>Part A</strong>)</li>
-</ul>
-<h3>2. Role of sodium sulfate</h3>
-<ul>
-<li>Add <strong>Na₂SO₄</strong> → Na⁺ and SO₄²⁻ carry current</li>
-<li>Supporting electrolyte: enables conduction; water is still what is split</li>
-<li><strong>Never NaCl</strong> (chlorine risk)</li>
-<li>Result: larger current, fast bubbling (<strong>Part B</strong>)</li>
-</ul>
-<h3>3. Voltage needed</h3>
-<ul>
-<li>Thermodynamic minimum ≈ <strong>1.23 V</strong> to split water</li>
-<li>Real cells need <strong>more</strong> (overpotential + resistance)</li>
-<li>Students record the <strong>applied voltage</strong> they actually use</li>
-</ul>
-<h3>4. Rate from current (Faraday)</h3>
-<pre><code>ṅ(H₂) = I / (2F)     ṅ(O₂) = I / (4F)
-F ≈ 96485 C/mol e⁻
-</code></pre>
-<p>Same current ⇒ H₂ mole rate is <strong>twice</strong> O₂ mole rate.</p>
-<h3>5. Stoichiometry in volumes (<strong>Part C</strong>)</h3>
-<pre><code>2H₂O → 2H₂ + O₂   ⇒   V(H₂) : V(O₂) ≈ 2 : 1
-</code></pre>
-<p>U-tube collects the two gases separately so students can measure the ratio.</p>
-<figure class="figure-wrap" aria-label="Hoffman-style U-tube apparatus"><img alt="Hoffman-style U-tube apparatus" src="../../assets/figures/session4-hoffman-utube-apparatus.png"></figure>
-<figure class="figure-wrap" aria-label="Gas collection schematic"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
-  <title id="fig1_title">Water electrolysis with gas collection</title>
-  <desc id="fig1_desc">Electrolysis of water using baking soda electrolyte with inverted tubes collecting hydrogen and oxygen by water displacement.</desc>
-  <defs>
-    <marker id="fig1_arrowTeal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#0d9488"/>
-    </marker>
-  </defs>
-  <rect width="720" height="460" fill="#f8fafc"/>
-  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 4 - Water electrolysis + gas collection</text>
-
-  <!-- Tub -->
-  <rect x="120" y="140" width="480" height="220" rx="8" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
-  <text x="360" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#0369a1">Water + baking soda (NOT salt)</text>
-
-  <!-- Left tube H&#x2082; - fills faster -->
-  <rect x="220" y="80" width="56" height="200" rx="4" fill="#fff" stroke="#64748b" stroke-width="1.5"/>
-  <rect x="224" y="140" width="48" height="136" fill="#bae6fd" opacity="0.5"/>
-  <rect x="224" y="80" width="48" height="60" fill="#fef9c3" opacity="0.85"/>
-  <text x="248" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#854d0e">H&#x2082;</text>
-  <text x="248" y="122" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">2&#x00d7; volume</text>
-
-  <!-- Right tube O&#x2082; -->
-  <rect x="440" y="80" width="56" height="200" rx="4" fill="#fff" stroke="#64748b" stroke-width="1.5"/>
-  <rect x="444" y="170" width="48" height="106" fill="#bae6fd" opacity="0.5"/>
-  <rect x="444" y="120" width="48" height="50" fill="#fce7f3" opacity="0.85"/>
-  <text x="468" y="142" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#9d174d">O&#x2082;</text>
-
-  <!-- Electrodes -->
-  <rect x="245" y="280" width="8" height="70" fill="#334155"/>
-  <rect x="463" y="280" width="8" height="70" fill="#334155"/>
-  <text x="249" y="365" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#334155">Graphite</text>
-  <text x="249" y="378" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#0d9488">cathode (&#x2212;)</text>
-  <text x="467" y="365" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#334155">Graphite</text>
-  <text x="467" y="378" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#dc2626">anode (+)</text>
-
-  <!-- Bubbles -->
-  <circle cx="249" cy="250" r="3" fill="#94a3b8" opacity="0.7"/>
-  <circle cx="255" cy="235" r="2" fill="#94a3b8" opacity="0.7"/>
-  <circle cx="467" cy="260" r="3" fill="#94a3b8" opacity="0.7"/>
-
-  <!-- Battery -->
-  <rect x="330" y="380" width="60" height="36" rx="4" fill="#fef3c7" stroke="#334155"/>
-  <text x="360" y="402" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700">9V DC</text>
-  <path d="M249 350 L249 398 L330 398" stroke="#334155" stroke-width="2" fill="none"/>
-  <path d="M467 350 L467 398 L390 398" stroke="#dc2626" stroke-width="2" fill="none"/>
-
-  <!-- Water level label -->
-  <line x1="130" y1="200" x2="590" y2="200" stroke="#0d9488" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="600" y="204" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">water line</text>
-
-  <!-- Instructions box -->
-  <rect x="24" y="410" width="672" height="42" rx="8" fill="#fff" stroke="#e2e8f0"/>
-  <text x="360" y="432" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Fill tubes completely with water, invert underwater - measure gas volume over time</text>
-  <text x="360" y="448" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Expected ratio V(H&#x2082;) : V(O&#x2082;) &#x2248; 2 : 1</text>
-</svg></figure>
-<h3>6. Identifying hydrogen (<strong>Part D</strong>)</h3>
-<p>Instructor collects cathode gas in a <strong>balloon</strong> and ignites → pop. Combustible = H₂.</p>
+<h2>2. Class plan (90 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Block</th>
+<th>What you do</th>
+<th>Student product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>−5 min</strong></td>
+<td><strong>TA starts the balloon generator</strong></td>
+<td>See <a href="experiment.html">experiment.md</a> Part D</td>
+<td>—</td>
+</tr>
+<tr>
+<td>0–8 min</td>
+<td>Review + hook</td>
+<td>§1 and §3.1; two rods in distilled water, nothing happens</td>
+<td>Oral answers</td>
+</tr>
+<tr>
+<td>8–18 min</td>
+<td>Teach today's concepts</td>
+<td>§3.2–3.6; board flowchart</td>
+<td>Notes / vocab</td>
+</tr>
+<tr>
+<td>18–26 min</td>
+<td>Quiz check + pre-lab</td>
+<td>§4 questions, then §5 prediction sheet</td>
+<td>Completed prediction sheet</td>
+</tr>
+<tr>
+<td>26–36 min</td>
+<td><strong>Part A</strong> — conductivity ladder</td>
+<td>Fixed voltage, three liquids</td>
+<td>Ladder table filled</td>
+</tr>
+<tr>
+<td>36–50 min</td>
+<td><strong>Part B</strong> — measure I, predict volume</td>
+<td>Faraday arithmetic with <strong>their</strong> current</td>
+<td>Predicted mL of H₂</td>
+</tr>
+<tr>
+<td>50–72 min</td>
+<td><strong>Part C</strong> — U-tube</td>
+<td>Ratio <strong>and</strong> prediction check</td>
+<td>Gas log + efficiency %</td>
+</tr>
+<tr>
+<td>72–82 min</td>
+<td><strong>Part D</strong> — splint tests, balloon</td>
+<td>Instructor demo</td>
+<td>Gas identifications</td>
+</tr>
+<tr>
+<td>82–90 min</td>
+<td><strong>Part E</strong> — start derusting</td>
+<td>Polarity called out as a class</td>
+<td>Cells running</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pacing tip:</strong> the prediction sheet in §5 is the gate. A group that has not written down a predicted volume has nothing to compare their U-tube data with, and Part C collapses into watching bubbles.</p>
 <hr>
-<h2>Energy discussion (if time after Part D)</h2>
+<h2>3. Detailed explanations to give students</h2>
+<h3>3.1 Hook (say this)</h3>
+<p>Hold up a beaker of distilled water with two graphite rods in it, already wired to the supply.</p>
+<p><em>"This is pure water. Water is H₂O — the hydrogen and oxygen are already in there, we are not making anything exotic. I have several volts across these two rods. Watch."</em></p>
+<p>Switch on. Nothing happens.</p>
+<p><em>"Nothing. So what is missing? The reactant is right there. The voltage is right there. What else does a chemical reaction driven by electricity need?"</em></p>
+<p>Take answers. Steer toward: <strong>charge has to be able to get across the gap</strong>, and in a liquid that means <strong>ions have to move</strong>.</p>
+<h3>3.2 Why pure water barely conducts (board)</h3>
+<p>Water does ionize, a little:</p>
+<pre><code>H₂O ⇌ H⁺ + OH⁻          [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C
+</code></pre>
+<p>so [H⁺] = 10⁻⁷ M. Put that next to the concentration of water itself, 55.5 M:</p>
+<p><strong>About one molecule in 550 million is ionized at any moment.</strong></p>
+<p>That is the whole of Part A rung 1. There is no road for the charge.</p>
+<p>Tap water is better — dissolved minerals give it real ions — but still hundreds of times worse than what we are about to make.</p>
+<h3>3.3 The supporting electrolyte — a genuinely new idea</h3>
+<p>Dissolve Na₂SO₄ and the solution fills with Na⁺ and SO₄²⁻. Current can now cross.</p>
+<p>But here is the part worth slowing down for, because it is not obvious and students will get it wrong on a test:</p>
+<p><strong>Neither Na⁺ nor SO₄²⁻ reacts.</strong> Sodium is far too hard to reduce and sulfate is already fully oxidized. They ferry charge through the solution and are exactly as abundant at the end as at the start. <strong>Water is still the only thing being split.</strong></p>
+<p>Contrast with what they have already seen:</p>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>The dissolved salt</th>
+<th>Its fate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>CuSO₄</td>
+<td>Cu²⁺ was <strong>consumed</strong> — it became the plating</td>
+</tr>
+<tr>
+<td>3</td>
+<td>AgNO₃</td>
+<td>Ag⁺ was <strong>consumed</strong> and slowly ran out</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Na₂SO₄</td>
+<td><strong>Not consumed.</strong> It only carries charge</td>
+</tr>
+</tbody>
+</table>
+<p>Ask: <em>"If the sulfate is not used up, could we run this cell forever?"</em> — until the water runs out, essentially yes. That is what an industrial electrolyzer does.</p>
+<p><strong>Why not table salt:</strong> chloride is easier to oxidize than water, so at the anode you would get <strong>Cl₂ gas</strong> instead of oxygen. This is not a rule for the sake of rules — it is a competing half-reaction, and it wins.</p>
+<h3>3.4 The two voltages</h3>
+<ul>
+<li><strong>1.23 V</strong> — the thermodynamic minimum. Below it, nothing, ever.</li>
+<li><strong>What you actually need</strong> — usually <strong>1.6–2.0 V</strong> before you see anything, and more to go fast.</li>
+</ul>
+<p>The gap is <strong>overpotential</strong>: an electrode surface can be thermodynamically willing and kinetically slow. Making an O₂ molecule requires assembling two oxygen atoms and breaking four O–H bonds on a surface that is not especially good at it, and that clumsiness costs voltage.</p>
+<p><em>"This is why the platinum in a fuel cell is worth its price — not because it changes the chemistry, but because it makes the same chemistry faster at lower voltage."</em></p>
+<h3>3.5 Rate from current — Faraday, third time</h3>
+<p>Same law as Session 3, with the electron count changed:</p>
+<pre><code>Cathode (−):  2H₂O + 2e⁻ → H₂ + 2OH⁻        2 electrons per H₂
+Anode (+):    2H₂O → O₂ + 4H⁺ + 4e⁻          4 electrons per O₂
+
+ṅ(H₂) = I / (2F)          ṅ(O₂) = I / (4F)
+</code></pre>
+<p><strong>Say this clearly, it is the intellectual core of the day:</strong> the same current passes through both electrodes — it has nowhere else to go. So the number of electrons arriving at one is the number leaving the other. If hydrogen costs 2 electrons and oxygen costs 4, then <strong>twice as much hydrogen must appear.</strong> The 2:1 ratio is not a coincidence of this experiment; it falls out of counting.</p>
+<p>Then convert to something they can see:</p>
+<pre><code>V̇(H₂) in mL/min ≈ 7.6 × I        (I in amperes, room conditions)
+</code></pre>
+<p><strong>Board this:</strong> <em>one amp ≈ 7.5 mL of hydrogen per minute.</em></p>
+<h3>3.6 The flowchart (draw it)</h3>
+<pre><code>I (A)
+   → ṅ(H₂) = I/(2F)  mol/s
+   → × 24,450 mL/mol → mL/s
+   → × 60 → mL/min
+   → × t → PREDICTED VOLUME
+                              ↓
+                    compare with the U-tube
+                              ↓
+              measured ÷ predicted = current efficiency
+</code></pre>
+<p>That last box is what Session 3 could not do. Silver film was too thin to weigh; gas is easy to measure.</p>
+<h3>3.7 How the U-tube works (show the apparatus while you say this)</h3>
+<p>Point at the physical parts:</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stopper + graphite rod</td>
+<td>Seals the top of each limb; gas collects underneath</td>
+</tr>
+<tr>
+<td>The dome under the stopper</td>
+<td>Where the gas accumulates</td>
+</tr>
+<tr>
+<td>The side arm</td>
+<td>The <strong>vent</strong>. Displaced liquid rises into it</td>
+</tr>
+<tr>
+<td>Both limbs, same bore</td>
+<td>So centimetres of column can be compared directly</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The one instruction that decides success:</strong> <em>fill until the liquid stands part-way up both side arms.</em> Fill below them and the gas escapes out of the side arm, and the apparatus looks like it is working while collecting nothing.</p>
+<h3>3.8 Set expectations before they measure</h3>
+<p>Tell them <strong>in advance</strong> that the ratio will probably come out a little <strong>above</strong> 2, and why:</p>
+<ul>
+<li>Oxygen is about twice as soluble in water as hydrogen, so some of it quietly dissolves</li>
+<li>The graphite anode is slowly eaten, and some oxygen leaves as CO₂, which is very soluble indeed</li>
+<li>Oxygen evolution is slower to get going</li>
+</ul>
+<p>Announcing this beforehand converts "our experiment was wrong" into "we predicted the direction of our own error." <strong>A ratio below 2 is the one that means something is broken</strong> — almost always a leak on the hydrogen side.</p>
+<h3>3.9 Safety (brief and firm)</h3>
+<ul>
+<li>No table salt in any bath in this room today. Chloride makes chlorine</li>
+<li>Ammeter in series, never across the supply</li>
+<li>The U-tube is <strong>never</strong> sealed — side arms stay open</li>
+<li>Flame is instructor-only, and the balloon is untied only when it is well away from every cell that is still making hydrogen</li>
+</ul>
+<hr>
+<h2>4. Quiz questions (before the lab)</h2>
+<p>Cold call, pair-share, or a 3-minute written check. Answers in <em>italics</em>.</p>
+<h3>A. Review from Days 1–3</h3>
+<p><strong>Q1.</strong> In Session 3, what did Q = I × t give us, and what did we divide it by to get moles of electrons?
+<em>Q was total charge in coulombs; divide by F = 96,485 C/mol.</em></p>
+<p><strong>Q2.</strong> Silver needed one electron per atom, copper needed two. Same charge through both cells — which gives more moles of metal?
+<em>Silver. Each atom is cheaper in electrons.</em></p>
+<p><strong>Q3.</strong> Why was the graphite anode in Session 3 called "inert"?
+<em>It did not dissolve, so it did not resupply Ag⁺ to the bath.</em></p>
+<h3>B. Today's concepts</h3>
+<p><strong>Q4.</strong> Pure water is 55.5 M in H₂O but only 10⁻⁷ M in H⁺. Roughly what fraction of molecules is ionized?
+<em>About one in 550 million — which is why it barely conducts.</em></p>
+<p><strong>Q5.</strong> We add Na₂SO₄. Which of Na⁺, SO₄²⁻, or H₂O gets split?
+<em>Water. The sulfate is a spectator that only carries charge — it is there at the end, unchanged.</em></p>
+<p><strong>Q6.</strong> So why bother adding it?
+<em>Without mobile ions, charge cannot cross the solution and no current flows, so no reaction happens at either electrode.</em></p>
+<p><strong>Q7.</strong> Why is table salt forbidden here?
+<em>Chloride is oxidized more easily than water, so the anode would make Cl₂ gas instead of O₂.</em></p>
+<p><strong>Q8.</strong> Write both half-reactions and say how many electrons each gas costs.
+<em>2H₂O + 2e⁻ → H₂ + 2OH⁻ (2 e⁻ per H₂); 2H₂O → O₂ + 4H⁺ + 4e⁻ (4 e⁻ per O₂).</em></p>
+<p><strong>Q9.</strong> The same current flows through both electrodes. Explain in one sentence why that forces a 2:1 volume ratio.
+<em>Equal electrons at both electrodes, but hydrogen costs half as many per molecule, so twice as many H₂ molecules form — and equal numbers of gas molecules occupy equal volumes.</em></p>
+<p><strong>Q10.</strong> A cell runs at 0.40 A. How many mL of H₂ per minute, roughly?
+<em>7.6 × 0.40 ≈ 3.0 mL/min.</em></p>
+<p><strong>Q11.</strong> Water needs 1.23 V. Your supply is set to 4 V. Is the extra 2.8 V wasted?
+<em>Largely yes — it pays for overpotential and solution resistance, and ends up as heat. It buys speed, not extra product per coulomb.</em></p>
+<h3>C. Stretch</h3>
+<p><strong>Q12.</strong> Your U-tube gives V(H₂)/V(O₂) = 2.4. Is the experiment wrong?
+<em>No — and the direction is predictable. O₂ is more soluble, and graphite anodes lose some oxygen as CO₂. A ratio below 2 would be the worrying one, because it usually means the hydrogen side is leaking.</em></p>
+<p><strong>Q13.</strong> You collect 82% of your predicted hydrogen. Where did the other 18% go?
+<em>Dissolved in solution, leaked past a stopper, or lost to side reactions on the graphite. This is exactly the current efficiency we had to assume was 100% in Session 3.</em></p>
+<hr>
+<h2>5. Interactive activity + prediction sheet (required before Part C)</h2>
+<h3>Activity name: "Predict the gas"</h3>
+<p><strong>Format:</strong> pairs or groups of 3–4. <strong>10–15 minutes.</strong>
+<strong>Goal:</strong> every group writes down a <strong>number in millilitres</strong> before they collect anything — the direct sequel to Session 3's "Predict before you plate," except this time the prediction is checkable.</p>
+<h3>Part 1 — Station card</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planned current I</td>
+<td><strong>0.30 A</strong> (300 mA)</td>
+</tr>
+<tr>
+<td>Planned collection time t</td>
+<td><strong>600 s</strong> (10 min)</td>
+</tr>
+<tr>
+<td>Gas of interest</td>
+<td>H₂ at the cathode (−)</td>
+</tr>
+<tr>
+<td>U-tube internal diameter</td>
+<td><strong>2.0 cm</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Part 2 — Live prompts</h3>
 <ol>
-<li>Extra renewable electricity → electrolysis → H₂  </li>
-<li>Store H₂; later use in a fuel cell → electricity + water  </li>
-<li>H₂ is an <strong>energy carrier</strong>, not a primary source  </li>
+<li>
+<p><strong>Unit police (1 min).</strong> Hold up a meter reading "300" on the mA range. <em>"What number goes into the formula?"</em> Chorus: <strong>0.300 A</strong>. Every year, someone divides by 2F using 300.</p>
+</li>
+<li>
+<p><strong>The two-for-one (2 min).</strong> <em>"Same current at both electrodes. Hydrogen costs 2 electrons, oxygen costs 4. Which side fills faster, and by exactly how much?"</em> Push until someone says it without hedging: <strong>hydrogen, exactly twice</strong>.</p>
+</li>
+<li>
+<p><strong>Human flowchart (3 min).</strong> Four volunteers hold signs: <code>I</code> → <code>ṅ = I/2F</code> → <code>mL/min</code> → <code>mL in 10 min</code>. The class shouts what connects each pair.</p>
+</li>
+<li>
+<p><strong>Order-of-magnitude bet (1 min).</strong> Before any arithmetic: <em>"Will 10 minutes at 300 mA give us a teaspoon, a soda can, or a bathtub?"</em> Let them commit out loud. Then calculate. A teaspoon is 5 mL and the answer is about 23 mL — most classes badly overestimate, which is exactly the useful surprise.</p>
+</li>
+</ol>
+<h3>Part 3 — Prediction sheet</h3>
+<p>Groups complete this before touching the U-tube. A TA initials one line per group.</p>
+<p><strong>Constants:</strong> F = 96,485 C/mol e⁻; molar volume ≈ 24,450 mL/mol at 25 °C</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Formula</th>
+<th>Work</th>
+<th>Answer + unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Current in amperes</td>
+<td>mA ÷ 1000</td>
+<td></td>
+<td>______ A</td>
+</tr>
+<tr>
+<td>2. Mole rate of H₂</td>
+<td>I / (2F)</td>
+<td></td>
+<td>______ mol/s</td>
+</tr>
+<tr>
+<td>3. Mole rate of O₂</td>
+<td>I / (4F)</td>
+<td></td>
+<td>______ mol/s</td>
+</tr>
+<tr>
+<td>4. Check</td>
+<td>rate H₂ ÷ rate O₂</td>
+<td></td>
+<td>should be <strong>2</strong></td>
+</tr>
+<tr>
+<td>5. H₂ volume rate</td>
+<td>step 2 × 24,450 × 60</td>
+<td></td>
+<td>______ mL/min</td>
+</tr>
+<tr>
+<td>6. <strong>H₂ in 10 min</strong></td>
+<td>step 5 × 10</td>
+<td></td>
+<td>______ mL</td>
+</tr>
+<tr>
+<td>7. <strong>O₂ in 10 min</strong></td>
+<td>step 6 ÷ 2</td>
+<td></td>
+<td>______ mL</td>
+</tr>
+<tr>
+<td>8. Column height of H₂</td>
+<td>step 6 ÷ 3.14 mL/cm</td>
+<td></td>
+<td>______ cm</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Target answers for the card above (for you):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td><strong>0.300 A</strong></td>
+</tr>
+<tr>
+<td>ṅ(H₂)</td>
+<td>0.300 / 192,970 ≈ <strong>1.55 × 10⁻⁶ mol/s</strong></td>
+</tr>
+<tr>
+<td>ṅ(O₂)</td>
+<td>≈ <strong>7.77 × 10⁻⁷ mol/s</strong></td>
+</tr>
+<tr>
+<td>Ratio check</td>
+<td><strong>2.00</strong></td>
+</tr>
+<tr>
+<td>H₂ rate</td>
+<td>≈ <strong>2.28 mL/min</strong></td>
+</tr>
+<tr>
+<td><strong>H₂ in 10 min</strong></td>
+<td>≈ <strong>22.8 mL</strong></td>
+</tr>
+<tr>
+<td><strong>O₂ in 10 min</strong></td>
+<td>≈ <strong>11.4 mL</strong></td>
+</tr>
+<tr>
+<td>H₂ column in a 2.0 cm tube</td>
+<td>≈ <strong>7.3 cm</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sense-check to say:</strong> <em>"About 23 mL — five teaspoons — after ten minutes. Splitting water is not hard, but it is slow. Remember that number when you read about hydrogen cars: an industrial electrolyzer is not doing anything cleverer than this, it is just doing it thousands of amps at a time."</em></p>
+<h3>Part 4 — Prediction statement (1 min)</h3>
+<p>Each group writes one sentence:</p>
+<blockquote>
+<p>"Running at about <strong><em>_</em>_ A for </strong><strong><em>_ minutes, we expect </em></strong><strong><em> mL of hydrogen and </em></strong>___ mL of oxygen, a ratio of 2:1."</p>
+</blockquote>
+<p>After the run they recalculate with their <strong>actual</strong> current and time, and divide measured by predicted to get their current efficiency.</p>
+<h3>Gate before the U-tube</h3>
+<ul>
+<li>[ ] Prediction sheet complete, ratio check equals 2</li>
+<li>[ ] TA has initialled the predicted volume</li>
+<li>[ ] Group can point to: cathode (−) = H₂ limb, anode (+) = O₂ limb, ammeter in series</li>
+<li>[ ] Group can state the fill rule: <strong>liquid part-way up both side arms</strong></li>
+<li>[ ] Goggles on</li>
+</ul>
+<hr>
+<h2>6. During and after the experiment — what to emphasize</h2>
+<ol>
+<li>Make them <strong>name the fast limb before reading the wires</strong>. If the fast limb is not on (−), the leads are swapped and everything downstream is backwards.</li>
+<li>The 2–3 minute pre-saturation run before t = 0 is not optional. Groups that skip it get the worst ratios and blame the apparatus.</li>
+<li>When a group reports 2.3, resist calling it error. Ask: <em>"Which of our three reasons would push it that way?"</em></li>
+<li>When a group reports 1.4, treat it as a fault to find: leaking stopper, or gas venting out of the side arm.</li>
+<li>Debrief questions:</li>
+<li>Did the sulfate get used up? How do you know?</li>
+<li>What was your current efficiency, and where did the missing gas go?</li>
+<li>Session 3 assumed 100% efficiency. Was that assumption safe?</li>
+<li>Where did the energy in the balloon pop come from?</li>
 </ol>
 <hr>
-<h2>Preview Session 5 (end of class)</h2>
-<p><em>"We used electricity to </em><em>make</em><em> hydrogen. Overnight we'll use electricity to </em><em>undo</em><em> rust. Tomorrow: corrosion, galvanic cells, and sacrificial protection."</em></p>
-<p>Start derusting cells per <a href="experiment.html">experiment.md</a> Part E.</p>
+<h2>7. Bridge to Session 5</h2>
+<p><em>"Today electricity forced water apart — a reaction that would never happen on its own. Tomorrow we look at the opposite: a reaction that happens whether we want it or not. Iron rusting. And then, with the cells we are starting in the next ten minutes, we will have spent a night forcing that one backwards."</em></p>
+<p>Start the derusting cells per <a href="experiment.html">experiment.md</a> Part E, and make the whole class say the polarity out loud: <strong>rusty iron on negative.</strong></p>
 <hr>
-<h2>Vocabulary</h2>
+<h2>8. Vocabulary checklist</h2>
 <ul>
-<li>[ ] Electrolyte / supporting electrolyte</li>
 <li>[ ] Electrolysis</li>
-<li>[ ] Faraday’s law (rate from current)</li>
-<li>[ ] Stoichiometry / 2:1 volume ratio</li>
-<li>[ ] Energy carrier vs. energy source</li>
+<li>[ ] Supporting electrolyte (vs a reactant salt)</li>
+<li>[ ] Spectator ion</li>
+<li>[ ] Overpotential</li>
+<li>[ ] Current efficiency</li>
+<li>[ ] Molar volume of a gas</li>
+<li>[ ] Stoichiometry — as a volume ratio and as an electron count</li>
+<li>[ ] Energy carrier vs energy source</li>
 </ul>
 <hr>
-<h2>Safety talking points</h2>
+<h2>9. Materials you need in hand while teaching</h2>
 <ul>
-<li><strong>Never use saltwater</strong> — chlorine gas risk</li>
-<li>Ammeter in <strong>series</strong></li>
-<li>Balloon pop / flame: <strong>instructor only</strong>, small balloon, clear area</li>
+<li>Beaker of <strong>distilled</strong> water with two graphite rods, pre-wired, for the opening hook</li>
+<li>The three ladder beakers, labeled</li>
+<li>A meter showing mA, for the unit-police moment</li>
+<li>Board space for the flowchart</li>
+<li>Printed prediction sheets (§5 Part 3)</li>
+<li>The U-tube, filled correctly, to point at while explaining §3.7</li>
+<li>Splints, and the balloon generator that has been running since before class</li>
 </ul>
       </article>
     </main>

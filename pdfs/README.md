@@ -14,7 +14,7 @@ python scripts/build_pdfs.py
 | 2. Copper Electroplating | [Download](session-02-copper-electroplating-experiment.pdf) | [Download](session-02-copper-electroplating-lecture-notes.pdf) |
 | 3. Silver Plating + Faraday's Law | [Download](session-03-silver-plating-faraday-experiment.pdf) | [Download](session-03-silver-plating-faraday-lecture-notes.pdf) |
 | 4. Water Electrolysis | [Download](session-04-water-electrolysis-experiment.pdf) | [Download](session-04-water-electrolysis-lecture-notes.pdf) |
-| 5. Galvanic Corrosion + Rust Removal | [Download](session-05-galvanic-corrosion-fuel-cell-experiment.pdf) | [Download](session-05-galvanic-corrosion-fuel-cell-lecture-notes.pdf) |
+| 5. Corrosion + Rust Removal | [Download](session-05-corrosion-and-rust-removal-experiment.pdf) | [Download](session-05-corrosion-and-rust-removal-lecture-notes.pdf) |
 
 ## Packet contents
 

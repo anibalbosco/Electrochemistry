@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -77,130 +80,140 @@
         <div class="page-meta"><span class="badge">Session 3</span></div>
       </header>
       <article class="main-article">
-<p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
+<p><strong>Audience:</strong> instructors and TAs only.
+<strong>Classroom teaching script</strong> (review, quiz, pre-lab): <a href="lecture.html">lecture.md</a>.
+<strong>Bench procedure:</strong> <a href="experiment.html">experiment.md</a>.</p>
 <hr>
 <h2>Why this session exists</h2>
-<p>Students saw copper move in Session 2. Now they <strong>quantify</strong> electrodeposition: charge → moles of electrons → moles of metal → mass → thickness. Silver is ideal because Ag⁺ + e⁻ → Ag is 1:1 (simpler stoichiometry than Cu²⁺ + 2e⁻). This is the week’s heaviest math session — go slowly on units.</p>
+<p>Students saw copper move in Session 2. Now they <strong>quantify</strong> electrodeposition: charge → moles of electrons → moles of metal → mass → thickness → atoms. Silver is ideal because Ag⁺ + e⁻ → Ag is 1:1. This is the week's heaviest math session — go slowly on units.</p>
 <hr>
-<h2>Atomic / electronic foundations for silver</h2>
-<h3>Silver ion and electron count</h3>
-<pre><code>Ag⁺(aq) + e⁻ → Ag(s)
-</code></pre>
-<ul>
-<li>Silver atom (Ag, Z = 47) loses one valence electron → Ag⁺.</li>
-<li>Plating reverses that: one electron returns → one Ag atom deposited.</li>
-<li>Therefore: <strong>n_Ag = n_e</strong> (moles silver = moles electrons) when plating is 100% efficient.</li>
-</ul>
-<p>Compare with copper from Session 2:</p>
-<pre><code>Cu²⁺ + 2e⁻ → Cu    ⇒   n_Cu = n_e / 2
-</code></pre>
-<p>Mention this contrast so students see why the electron count in the half-reaction matters.</p>
-<h3>Why dilute AgNO₃</h3>
-<p>Silver nitrate provides Ag⁺. Classroom concentration <strong>0.01 M</strong> keeps:</p>
-<ul>
-<li>Cost down</li>
-<li>Staining / hazard manageable</li>
-<li>Thin films that still look metallic</li>
-</ul>
-<p><strong>Safety (non-negotiable):</strong> AgNO₃ stains skin/clothes permanently dark; gloves + goggles; collect all silver waste.</p>
-<hr>
-<h2>Faraday’s law — instructor mastery</h2>
-<h3>Charge from current and time</h3>
-<pre><code>Q = I × t
-</code></pre>
+<h2>What changed this year, and why</h2>
+<p>The original bath was <strong>0.01 M AgNO₃ with no supporting electrolyte, run at 10–30 mA by setting a voltage</strong>. Three things were wrong with that, and they compound.</p>
+<p><strong>It was far past the diffusion limit.</strong> At 0.01 M unstirred, the maximum current the bath can sustain is about <strong>0.6 mA/cm²</strong>. On a 3 cm² coin that is under 2 mA total. Targeting 20 mA meant asking for roughly <strong>ten times</strong> what the solution can deliver. Beyond the limit the deposit does not just get worse gradually — it changes character, into dendrites.</p>
+<p><strong>The current was never going to reach the target anyway.</strong> 0.01 M AgNO₃ with nothing else in it is a poor conductor. A measured cell resistance of about 1700 Ω means a 3 V pack delivers under 2 mA no matter what the instruction sheet says. Groups would have chased a target they could not physically hit.</p>
+<p><strong>Nothing controlled the current.</strong> Setting a voltage means the current depends on immersion depth, electrode spacing and surface state, so every bench gets a different number and there is no way to compare results.</p>
+<h3>The fixes</h3>
 <table>
 <thead>
 <tr>
-<th>Symbol</th>
-<th>Unit</th>
-<th>Meaning</th>
+<th>Change</th>
+<th>What it fixes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>I</td>
-<td>ampere (A) = C/s</td>
-<td>Current</td>
+<td><strong>0.05 M AgNO₃</strong> (up 5×)</td>
+<td>Raises the diffusion limit to ~4 mA/cm² stirred; also makes depletion negligible</td>
 </tr>
 <tr>
-<td>t</td>
-<td>second (s)</td>
-<td>Time</td>
+<td><strong>0.2 M KNO₃ supporting electrolyte</strong></td>
+<td>Drops solution resistance; even current distribution; introduces a concept reused tomorrow</td>
 </tr>
 <tr>
-<td>Q</td>
-<td>coulomb (C)</td>
-<td>Total charge passed</td>
+<td><strong>1 kΩ series resistor</strong></td>
+<td>The resistor sets the current, so all benches match and the current stays flat</td>
+</tr>
+<tr>
+<td><strong>Target 0.5–1.0 mA/cm² (~2 mA)</strong></td>
+<td>About a quarter of the limit — the classic smooth-deposit window</td>
+</tr>
+<tr>
+<td><strong>Live entry</strong></td>
+<td>Prevents the displacement underlayer that stops coatings adhering</td>
+</tr>
+<tr>
+<td><strong>No-power control coin</strong></td>
+<td>Makes the displacement reaction a measured result rather than a hidden confounder</td>
+</tr>
+<tr>
+<td><strong>15 min instead of 5</strong></td>
+<td>Gets thickness to ~0.6 µm at the lower current</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Trap:</strong> students record mA but forget to convert. 20 mA = 0.020 A.</p>
-<h3>Faraday constant</h3>
-<pre><code>F = 96,485 C/mol e⁻ ≈ 9.65 × 10⁴ C/mol
+<h3>A counter-intuitive point you should understand before teaching it</h3>
+<p>Adding KNO₃ <strong>lowers</strong> the limiting current at fixed silver concentration, by about a factor of 1.9.</p>
+<p>Without a supporting electrolyte, Ag⁺ reaches the cathode by <em>two</em> mechanisms: diffusion <strong>and</strong> migration in the electric field. Adding an excess of inert ions means K⁺ carries nearly all the migration current instead, so silver arrives by diffusion alone. The transport number of Ag⁺ in AgNO₃ is about 0.46, and the enhancement factor 1/(1−t₊) is therefore about 1.9.</p>
+<p>So supporting electrolyte on its own would have made the dendrites <strong>worse</strong>. It only helps because we raised the silver concentration five-fold at the same time. If someone asks "why not just add KNO₃ to the old bath," this is the answer — and it is a genuinely good question to get.</p>
+<hr>
+<h2>Atomic / electronic foundations</h2>
+<pre><code>Ag⁺(aq) + e⁻ → Ag(s)
 </code></pre>
-<p>Meaning: one mole of electrons carries ~96,485 C.</p>
-<pre><code>n_e = Q / F
+<p>Silver (Z = 47) loses one valence electron to form Ag⁺; plating returns it. Hence <strong>n_Ag = n_e</strong> at 100% efficiency.</p>
+<p>Compare Session 2:</p>
+<pre><code>Cu²⁺ + 2e⁻ → Cu    ⇒   n_Cu = n_e / 2
 </code></pre>
-<h3>Stoichiometry factor (general form)</h3>
-<p>For a reduction requiring <strong>z</strong> electrons per metal ion:</p>
-<pre><code>n_metal = n_e / z = Q / (z F)
+<p>Mention the contrast so students see why the electron count in the half-reaction matters.</p>
+<hr>
+<h2>The displacement reaction — own this thoroughly</h2>
+<pre><code>Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s)        E° = +0.458 V
+ΔG° = −88 kJ/mol        K ≈ 3 × 10¹⁵
+</code></pre>
+<p>At [Cu²⁺] = 5 mM the equilibrium [Ag⁺] is around 10⁻⁹ M. In other words a copper object left in silver nitrate will strip the bath <strong>essentially dry</strong>, given time. This is not a side effect to be managed; on a long timescale it is the dominant reaction.</p>
+<p><strong>Consequences for teaching:</strong></p>
+<ul>
+<li>The deposit it produces is loose, dendritic and poorly adherent, because nothing controls where or how fast it forms. Anything electroplated on top delaminates with it.</li>
+<li>It is <strong>pH-neutral</strong> in the acid sense, and it passes no current through your external circuit — so it is invisible to your ammeter and to your Faraday calculation. A student can deposit a great deal of silver that their arithmetic knows nothing about.</li>
+<li>It is also the standard method for <strong>recovering silver from waste</strong>. Put a copper coil in the waste bottle; the same reaction that spoils the plating cell cleans out the waste. Worth doing, and worth pointing out.</li>
+</ul>
+<h3>Live entry</h3>
+<p>Making the object cathodic before it wets holds it below its own corrosion potential, so the copper cannot dissolve and the displacement reaction cannot proceed. With the 1 kΩ resistor in place, the first moment of contact wets a tiny area at ~2 mA, so the local current density is very high and protection is emphatic.</p>
+<p>Watch for the failure mode where a student dunks the coin to "check it fits" before switching on. That one action produces the loose layer and everything afterwards is compromised. Have TAs stand at each bench for the first entry.</p>
+<h3>Commercial context, if a student asks how real plating avoids this</h3>
+<p>Two answers, both worth a sentence. Industry plates from <strong>complexed</strong> silver, not free Ag⁺ — historically cyanide, now succinimide or thiosulfate systems. Complexing collapses the free-silver activity by ten orders of magnitude, which both kills the displacement driving force and forces fine-grained nucleation. A thiosulfate bath at 0.1 M free S₂O₃²⁻ puts [Ag⁺] near 10⁻¹³ M, which makes E(Ag⁺/Ag) about +0.04 V — now <em>below</em> copper, so displacement runs backwards and stops. Industry also uses a <strong>silver strike</strong>: a brief, very dilute, high-current first layer that establishes a bonded film before the main plate.</p>
+<p>We are not doing either, because a new bath chemistry introduced mid-week is a bigger risk than a matte finish. Live entry plus the control coin gets us most of the teaching value.</p>
+<p><strong>A warning to pre-empt:</strong> students who search this at home will find "silver mirror" recipes using ammoniacal silver nitrate (Tollens'). Ammonia does <strong>not</strong> help — it complexes copper about as strongly as silver, so the displacement driving force is essentially unchanged — and ammoniacal silver solutions deposit explosive silver nitride on standing. Say this out loud before someone tries it.</p>
+<hr>
+<h2>Faraday's law — instructor mastery</h2>
+<pre><code>Q = I × t          n_e = Q / F          F = 96,485 C/mol e⁻
+n_metal = Q / (z F)          m = n M          V = m / ρ          d = V / A
 </code></pre>
 <table>
 <thead>
 <tr>
 <th>Metal ion</th>
 <th>z</th>
-<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Ag⁺</td>
 <td>1</td>
-<td>Session 3</td>
 </tr>
 <tr>
 <td>Cu²⁺</td>
 <td>2</td>
-<td>Session 2</td>
 </tr>
 <tr>
 <td>Al³⁺</td>
 <td>3</td>
-<td>not used here</td>
 </tr>
 </tbody>
 </table>
-<h3>Mass and thickness</h3>
-<pre><code>m = n × M
-V = m / ρ
-d = V / A
-</code></pre>
 <table>
 <thead>
 <tr>
 <th>Quantity</th>
-<th>Silver value</th>
+<th>Silver</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Molar mass M</td>
+<td>M</td>
 <td>107.87 g/mol</td>
 </tr>
 <tr>
-<td>Density ρ</td>
+<td>ρ</td>
 <td>10.49 g/cm³</td>
 </tr>
 <tr>
 <td>A</td>
-<td>geometric plated area (cm²) — <strong>biggest student error source</strong></td>
+<td>geometric plated area — <strong>the biggest student error source</strong></td>
 </tr>
 </tbody>
 </table>
-<hr>
-<h2>Worked example (memorize this board version)</h2>
-<p>Given: I = 0.020 A, t = 300 s, A = 10 cm², Ag plating, z = 1.</p>
+<h3>Worked example — the board version (memorize this one)</h3>
+<p>I = 0.0020 A, t = 900 s, A = 3.14 cm² (a 2.0 cm coin, one face):</p>
 <table>
 <thead>
 <tr>
@@ -212,58 +225,60 @@ d = V / A
 <tbody>
 <tr>
 <td>Q</td>
-<td>0.020 × 300</td>
-<td>6.0 C</td>
+<td>0.0020 × 900</td>
+<td><strong>1.80 C</strong></td>
 </tr>
 <tr>
 <td>n_e</td>
-<td>6.0 / 96485</td>
-<td>6.22 × 10⁻⁵ mol</td>
+<td>1.80 / 96,485</td>
+<td><strong>1.87 × 10⁻⁵ mol</strong></td>
 </tr>
 <tr>
 <td>n_Ag</td>
 <td>= n_e</td>
-<td>6.22 × 10⁻⁵ mol</td>
+<td>1.87 × 10⁻⁵ mol</td>
 </tr>
 <tr>
 <td>m</td>
-<td>6.22e−5 × 107.87</td>
-<td>6.71 × 10⁻³ g</td>
+<td>× 107.87</td>
+<td><strong>2.01 mg</strong></td>
 </tr>
 <tr>
 <td>V</td>
 <td>m / 10.49</td>
-<td>6.40 × 10⁻⁴ cm³</td>
+<td>1.92 × 10⁻⁴ cm³</td>
 </tr>
 <tr>
 <td>d</td>
-<td>V / 10</td>
-<td>6.4 × 10⁻⁵ cm = <strong>0.64 µm</strong></td>
+<td>V / 3.14</td>
+<td>6.11 × 10⁻⁵ cm = <strong>0.61 µm</strong></td>
+</tr>
+<tr>
+<td>N</td>
+<td>n × 6.022×10²³</td>
+<td><strong>1.1 × 10¹⁹ atoms</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Sense-check:</strong> visible silver films are often tenths of a micrometer to a few micrometers — students’ numbers should be in that ballpark if I, t, A are sane.</p>
-<h3>Average current when I drifts</h3>
-<p>If students log I every 30–60 s:</p>
-<pre><code>I_avg ≈ (I₀ + I₁ + … + Iₙ) / (n+1)
-</code></pre>
-<p>or trapezoidal estimate. Then Q ≈ I_avg × t_total.</p>
-<p>Do <strong>not</strong> use only the first reading if current falls (common as concentration polarization / surface changes).</p>
+<p><strong>Use these numbers everywhere.</strong> Last year <code>lecture.md</code> and <code>experiment.md</code> carried two different worked examples with different areas and different answers, which reads as an inconsistency to any student comparing the two files.</p>
+<p><strong>Sense-check:</strong> 0.1–2 µm is the sane window. Outside it, suspect mA→A or the area.</p>
+<h3>Average current</h3>
+<p>With the resistor the current should be nearly flat, so I_avg is easy. If it does drift, use the mean of the logged values or a trapezoidal estimate — never the first reading alone.</p>
 <hr>
-<h2>Ideal vs real plating (current efficiency)</h2>
-<p>Faraday assumes <strong>every</strong> electron reduces Ag⁺. Reality:</p>
-<pre><code>current efficiency η = (charge used for Ag plating) / (total charge) ≤ 1
-</code></pre>
-<p>Loss channels:</p>
-<ul>
-<li>H₂ evolution</li>
-<li>Impurity reductions</li>
-<li>Non-uniform current (edges plate more — “dog-boning”)</li>
-<li>Flaky deposit that rinses off</li>
-</ul>
-<p>If calculated thickness looks “too thick” vs visual: area underestimate or optimistic η = 1. If “too thin”: efficiency &lt; 1, area overestimate, or current logged wrong.</p>
+<h2>The pH check — new this year, and a genuine test</h2>
+<p>Graphite anode: <code>2H₂O → O₂ + 4H⁺ + 4e⁻</code>, so <strong>moles H⁺ = moles e⁻</strong>.</p>
+<p>For the worked example in 30 mL: 1.87 × 10⁻⁵ mol in 0.030 L = 6.2 × 10⁻⁴ M → <strong>pH 3.2</strong>, from about 7.</p>
+<p>This is a real, checkable prediction, and it also functions as a diagnostic. If the measured pH comes out <strong>much higher</strong> than predicted, protons are being consumed at the cathode — which means the cathode has run short of Ag⁺ and switched to reducing dissolved O₂ or nitrate instead. That is precisely what happens in an over-driven or exhausted bath.</p>
+<p>At 0.05 M, a 15-minute run consumes only about <strong>1%</strong> of the silver in 30 mL, so this failure mode should not appear. If it does, look for a bath that has been sitting with copper objects in it.</p>
+<p><strong>Practical caution on measurement:</strong> silver ions are hostile to glass pH electrodes with KCl references — chloride leaking from the junction precipitates AgCl right where the junction is, and readings drift. Calibrate immediately before use, rinse the probe well afterwards, and treat a suspicious reading as an instrument problem before treating it as chemistry. Paper is acceptable here; you only need to resolve about one pH unit.</p>
 <hr>
-<h2>Electrochemical series note for Ag</h2>
+<h2>Current efficiency</h2>
+<pre><code>η = (charge that plated Ag) / (total charge)  ≤ 1
+</code></pre>
+<p>Loss channels: side reductions, non-uniform current (edges plate more), and deposit that rinses away. Note that displacement silver pushes the <em>apparent</em> efficiency <strong>above</strong> 100% if you weigh the object, because that silver arrived without passing through your ammeter — another reason the control coin matters.</p>
+<p>Honest note for the debrief: with a ±0.001 g balance and a 2 mg deposit, a mass-based efficiency measurement is not really possible — the deposit is only twice the balance resolution. Tell students that, and flag forward: <strong>tomorrow's gas volume is easy to measure, so Session 4 is where we finally audit the efficiency we have been assuming all week.</strong></p>
+<hr>
+<h2>Electrochemical series</h2>
 <table>
 <thead>
 <tr>
@@ -286,48 +301,14 @@ d = V / A
 </tr>
 </tbody>
 </table>
-<p>Ag⁺ is a strong oxidant relative to H⁺ and Cu²⁺ — silver plates readily. That is why even dilute AgNO₃ works visually. It is also why silver ions are “eager” to reduce and why waste must be handled carefully (and why Ag stains via reduction on skin/organics).</p>
-<p><strong>Anode choice:</strong></p>
-<ul>
-<li><strong>Silver anode:</strong> replenishes Ag⁺ (like Cu anode in Session 2).</li>
-<li><strong>Inert anode:</strong> Ag⁺ depletes; oxygen evolution possible; calculations still OK for short runs if solution starts with enough Ag⁺.</li>
-</ul>
+<p>The 0.46 V gap between silver and copper is exactly what drives both the useful plating and the unwanted displacement. Same number, two consequences.</p>
+<p><strong>Anode choice.</strong> Graphite is inert: Ag⁺ comes only from the bath and is not replenished, and O₂ plus H⁺ are produced instead. At 0.05 M this is fine for classroom runs. If you ever acquire a silver anode (sterling wire, or a 1 oz bullion round — a reusable purchase), it would replenish Ag⁺, eliminate the pH drift entirely, and make the bath effectively immortal. It would also remove the pH prediction exercise, which is now one of the better parts of the session, so it is not an unambiguous upgrade.</p>
 <hr>
 <h2>Experiment coaching</h2>
-<h3>Area estimation — coach aggressively</h3>
-<table>
-<thead>
-<tr>
-<th>Object</th>
-<th>Reasonable approach</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Coin face</td>
-<td>A = π(r)² per face; ×2 if both faces plate</td>
-</tr>
-<tr>
-<td>Washer</td>
-<td>π(R² − r²)</td>
-</tr>
-<tr>
-<td>Irregular</td>
-<td>Length × width of immersed region; say so</td>
-</tr>
-</tbody>
-</table>
-<p>Students who invent a huge area get absurdly small thickness and think Faraday “failed.”</p>
-<h3>Ammeter in series</h3>
-<p>Multimeter must be <strong>in series</strong> on DC current range — not across the cell like a voltmeter (that shorts / misreads). Walk each station once.</p>
-<h3>Timing discipline</h3>
-<p>Start stopwatch when current is flowing and stable. Stop when disconnected. Gaps in logging → poor I_avg.</p>
-<h3>What success looks like</h3>
-<ul>
-<li>Whitish / silvery sheen on copper object</li>
-<li>Not necessarily mirror-bright (classroom baths lack brighteners)</li>
-<li>Calculation completed with units at every step</li>
-</ul>
+<p><strong>Area estimation.</strong> Coach aggressively. Coin face = πr² per face; washer = π(R² − r²); irregular = length × width of the immersed region, stated as an approximation. Students who invent a huge area get an absurdly small thickness and conclude Faraday "failed."</p>
+<p><strong>Ammeter in series.</strong> Walk every station once. This is also rehearsal for Session 4.</p>
+<p><strong>Timing discipline.</strong> Clock starts as the powered object enters the liquid; stops as it leaves, still powered.</p>
+<p><strong>What success looks like.</strong> An even whitish-silver sheen, <strong>matte rather than mirror</strong> — classroom baths have no brighteners. Burnishing with a soft cloth brings it up noticeably and is normal practice. It should survive a firm rub; the control coin should not.</p>
 <hr>
 <h2>Misconceptions</h2>
 <table>
@@ -339,42 +320,63 @@ d = V / A
 </thead>
 <tbody>
 <tr>
-<td>“Q = I + t”</td>
+<td>"Q = I + t"</td>
 <td>Q = I × t</td>
 </tr>
 <tr>
-<td>“Use mA directly in Q = It”</td>
+<td>"Use mA directly in Q = It"</td>
 <td>Convert to amperes</td>
 </tr>
 <tr>
-<td>“Cu and Ag use the same z”</td>
-<td>Ag⁺ needs 1e⁻; Cu²⁺ needs 2e⁻</td>
+<td>"Cu and Ag use the same z"</td>
+<td>Ag⁺ needs 1 e⁻; Cu²⁺ needs 2</td>
 </tr>
 <tr>
-<td>“Thickness must match a ruler”</td>
-<td>Micrometers are invisible to a ruler; appearance is qualitative</td>
+<td>"Thickness should be measurable with a ruler"</td>
+<td>Sub-micrometre. Appearance is qualitative</td>
 </tr>
 <tr>
-<td>“Faraday is wrong if deposit looks thin”</td>
+<td>"Faraday is wrong, the deposit looks thin"</td>
 <td>Efficiency and area errors dominate</td>
+</tr>
+<tr>
+<td>"More current means a better coating"</td>
+<td>Past the diffusion limit, more current means dendrites</td>
+</tr>
+<tr>
+<td>"The KNO₃ ends up in the coating"</td>
+<td>It is a spectator; only silver deposits</td>
+</tr>
+<tr>
+<td>"Nothing happens until you switch on"</td>
+<td>Copper displaces silver spontaneously. The control coin proves it</td>
+</tr>
+<tr>
+<td>"A thicker coating is always better"</td>
+<td>Adhesion beats thickness. A loose 5 µm layer is worse than a bonded 0.5 µm one</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2>Board plan</h2>
 <ol>
-<li>Write Ag⁺ + e⁻ → Ag; circle “1 electron per atom.”</li>
-<li>Flowchart: I,t → Q → n_e → n_Ag → m → V → d.</li>
-<li>Full numerical example with units.</li>
-<li>Discuss why I_avg beats a single reading.</li>
-<li>Bridge to Session 4: next we count <strong>gas molecules</strong> by volume ratio, not metal atoms by charge.</li>
+<li><code>Ag⁺ + e⁻ → Ag</code>; circle "1 electron per atom."</li>
+<li>Two-column table: AgNO₃ = reactant, KNO₃ = spectator.</li>
+<li>Flowchart: I,t → Q → n_e → n_Ag → m → V → d → N.</li>
+<li>Full numerical example with units at every step.</li>
+<li><code>Cu + 2Ag⁺ → Cu²⁺ + 2Ag</code>, E° = +0.46 V. Write <strong>LIVE ENTRY</strong> beside it and box it.</li>
+<li>Current density: 2 mA / 3.14 cm² = 0.64, limit ≈ 4. Write "stay at a quarter."</li>
+<li>Predicted pH, in a box, to be checked at the end.</li>
+<li>Bridge: tomorrow the same law predicts a <strong>gas volume</strong> we can actually measure.</li>
 </ol>
 <hr>
 <h2>Optional enrichment</h2>
 <ul>
-<li>Derive z from half-reaction for Cu plating retroactively (Session 2 data).</li>
-<li>Mention electrolysis mass production (Al from Hall–Héroult — huge Faraday consumer).</li>
-<li>Introduce faradaic efficiency formally if a student is ready.</li>
+<li>Recover the silver from the waste bottle with copper wire and weigh it. Full circle, and it is real chemistry.</li>
+<li>Retroactively derive z for Session 2's copper from their own logged data.</li>
+<li>Hall–Héroult aluminium smelting as an industrial Faraday consumer — a single potline runs several hundred thousand amperes.</li>
+<li>Why complexing agents give bright deposits: fewer free ions, higher nucleation overpotential, finer grain.</li>
+<li>For a strong student: derive the limiting current from Fick's first law and explain why stirring raises it.</li>
 </ul>
       </article>
     </main>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 5 — Lecture Notes: Corrosion, Galvanic Couples, and Reversing Rust | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub active" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5</a> / Lecture Notes: Corrosion, Galvanic Couples, and Reversing Rust</div>
+      <header class="page-header">
+        <h1>Session 5 — Lecture Notes: Corrosion, Galvanic Couples, and Reversing Rust</h1>
+        <div class="page-meta"><span class="badge">Session 5</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors / TAs — use this as your teaching script.
+<strong>Students</strong> see the talking points, do the Part B predictions, and finish with the §5 capstone.</p>
+<blockquote>
+<p>Deep-dive chemistry, potentials, coaching traps: <a href="instructor.html">instructor.md</a>.
+Bench procedure: <a href="experiment.html">experiment.md</a>.</p>
+</blockquote>
+<hr>
+<h2>1. Where the week has got to</h2>
+<p>This is the synthesis day. Do not treat §1 as revision for its own sake — every idea listed here is load-bearing in today's lab.</p>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>The idea we need today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 — Fruit battery</td>
+<td>Two different metals in an electrolyte make a <strong>spontaneous</strong> cell with a measurable voltage</td>
+</tr>
+<tr>
+<td>2 — Copper plating</td>
+<td>Electricity can <strong>force</strong> a reaction that would not happen on its own; polarity decides everything</td>
+</tr>
+<tr>
+<td>3 — Silver plating</td>
+<td><strong>Q = It, n = Q/nF.</strong> Current is a rate of chemistry, and we can count atoms with it</td>
+</tr>
+<tr>
+<td>4 — Electrolysis</td>
+<td>A driven cell splits water; hydrogen appears at whatever we make negative</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The framing sentence for the whole day:</strong></p>
+<p><em>"Day 1 we made a battery on purpose. Today we are going to find one we did not want — and it has been eating iron for as long as there has been iron."</em></p>
+<h3>What is new today</h3>
+<ul>
+<li>The same galvanic cell from Day 1, but now it is a <strong>problem</strong> instead of a demonstration</li>
+<li>We <strong>predict</strong> a cell voltage from a table before measuring it — and then account for why the measurement falls short</li>
+<li>Current is reinterpreted one last time: in Session 3 it was a plating rate, in Session 4 a gas rate, and today it is a <strong>corrosion rate in grams per year</strong></li>
+<li>Everything the week has covered collapses onto one axis: spontaneous, or driven</li>
+</ul>
+<hr>
+<h2>2. Class plan (90 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Block</th>
+<th>What you do</th>
+<th>Student product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–15 min</td>
+<td><strong>Part A</strong> — the reveal</td>
+<td>Open the cells; nail, control, before-photo, side by side</td>
+<td>Observation sheet</td>
+</tr>
+<tr>
+<td>15–30 min</td>
+<td>Teach today's concepts</td>
+<td>§3; activity series on the board</td>
+<td>Notes / vocab</td>
+</tr>
+<tr>
+<td>30–55 min</td>
+<td><strong>Part B</strong> — predict, measure, measure again</td>
+<td>Predictions <strong>before</strong> meters are handed out</td>
+<td>Prediction vs measurement table + corrosion rate</td>
+</tr>
+<tr>
+<td>55–68 min</td>
+<td><strong>Part C</strong> — corrosion jars</td>
+<td>Rank A/B/C; link to their own Part B voltages</td>
+<td>Jar sheet</td>
+</tr>
+<tr>
+<td>68–78 min</td>
+<td><strong>Part D</strong> — week table</td>
+<td>Groups fill from memory, then compare</td>
+<td>Completed week table</td>
+</tr>
+<tr>
+<td>78–90 min</td>
+<td><strong>Capstone</strong> + closing</td>
+<td>§5</td>
+<td>Capstone worksheet</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pacing tip:</strong> the reveal is the best fifteen minutes of the week and it is tempting to let it run. Don't — Part B needs its full twenty-five minutes, because the predict-then-measure gap is where the real chemistry of the day lives.</p>
+<hr>
+<h2>3. Detailed explanations to give students</h2>
+<h3>3.1 Open with the reveal, not with talking</h3>
+<p>Hold up the treated nail and the control together, and say nothing for a moment. Then:</p>
+<p><em>"Same nail, same solution, same jar, same night. The only difference is that one of them had wires on it. What did the electricity do?"</em></p>
+<p>Take answers before correcting any of them. Then park the question — you will come back to it in §3.5 — and go and build the corrosion story first, because derusting only makes sense once they know what rusting <em>is</em>.</p>
+<h3>3.2 Rust is not dirt</h3>
+<p>The idea to dislodge, and most students hold it: that rust is a substance that lands on iron, like dust.</p>
+<pre><code>Fe → Fe²⁺ + 2e⁻                  at anodic sites
+O₂ + 2H₂O + 4e⁻ → 4OH⁻           at cathodic sites
+</code></pre>
+<p>Then Fe²⁺ is oxidized further and precipitates as hydrated iron oxides.</p>
+<p><strong>Rust is the iron.</strong> It is the same atoms, further along, having given up electrons. Nothing arrived — something left. This is why a rusted-through bolt has lost material, and why rust weighs <em>more</em> than the iron it came from, not less.</p>
+<p>Note what the cathodic half-reaction requires: <strong>oxygen and water, both</strong>. Iron does not rust in dry air, and does not rust in oxygen-free water. Ask why a car rusts at the wheel arches and a bicycle rusts where the paint chipped.</p>
+<h3>3.3 The activity series, and what it is really telling you</h3>
+<pre><code>Mg  &gt;  Al  &gt;  Zn  &gt;  Fe  &gt;  (H)  &gt;  Cu  &gt;  Ag  &gt;  Au
+←  more eager to give up electrons          less eager  →
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Metal</th>
+<th>E° (V)</th>
+<th>Where you meet it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mg</td>
+<td>−2.37</td>
+<td>Sacrificial anodes in water heaters</td>
+</tr>
+<tr>
+<td>Al</td>
+<td>−1.66</td>
+<td>Everything — because of its oxide film, see §3.6</td>
+</tr>
+<tr>
+<td>Zn</td>
+<td>−0.76</td>
+<td>Galvanizing; ship hull anodes</td>
+</tr>
+<tr>
+<td>Fe</td>
+<td>−0.44</td>
+<td>The metal we are trying to save</td>
+</tr>
+<tr>
+<td>Cu</td>
+<td>+0.34</td>
+<td>Plumbing, wiring — and a menace next to steel</td>
+</tr>
+<tr>
+<td>Ag</td>
+<td>+0.80</td>
+<td>Session 3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The rule, and it is the only one they need to memorise:</strong> put two of these in contact in an electrolyte, and the one <strong>higher in the list corrodes</strong>. The other is protected.</p>
+<p>Then the payoff:</p>
+<pre><code>Predicted voltage = E°(protected metal) − E°(corroding metal)
+</code></pre>
+<p>This is Session 1's fruit battery with the mystery removed. The lemon was never the point; the two different metals were.</p>
+<h3>3.4 The two consequences, which are the same fact</h3>
+<p><strong>Galvanic corrosion — the bad case.</strong> Iron touching copper in saltwater. Copper is nobler, so iron becomes the anode of a real cell and corrodes <em>faster than it would alone</em>. Jar B. This ruins real structures: a copper pipe threaded into a galvanized fitting, a steel bolt in an aluminium panel, a bronze propeller on a steel shaft.</p>
+<p><strong>Sacrificial protection — the good case.</strong> Iron touching zinc. Now zinc is the more active metal, so zinc becomes the anode and iron becomes the cathode. Jar C. The iron is protected not by being covered but by being <strong>electrically fed</strong> — which is why a scratch in galvanized steel does not start rusting, while a scratch in painted steel does.</p>
+<p>Ask this and let them sit with it:</p>
+<p><em>"Session 3, we silver-plated a copper coin. Suppose that silver layer gets scratched. Which metal corrodes now?"</em></p>
+<p>The copper. It is more active than silver, so the base metal underneath becomes the anode — and worse, it is a <strong>small anode wired to a large cathode</strong>, so the attack concentrates into a pit. A noble coating protects only while it is perfect. A sacrificial coating protects even when it is not. That is the whole difference between chrome plating and galvanizing, and it lands hard on students who assumed plating is plating.</p>
+<h3>3.5 Now come back to the nail</h3>
+<p>Rusting made iron the anode. So to reverse it, <strong>make the iron the cathode</strong> — and since that is not what it wants to do, you have to pay for it with a power supply. Session 4's driven cell, pointed at rust.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Rusting in jar B</th>
+<th>Derusting overnight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iron is the</td>
+<td><strong>Anode</strong> — oxidized</td>
+<td><strong>Cathode</strong> — reduced</td>
+</tr>
+<tr>
+<td>Driven by</td>
+<td>Difference in metal activity</td>
+<td>External power supply</td>
+</tr>
+<tr>
+<td>Direction</td>
+<td>Spontaneous, free, unstoppable</td>
+<td>Forced, costs energy</td>
+</tr>
+<tr>
+<td>Electrolyte</td>
+<td>Saltwater</td>
+<td>Washing soda, <strong>no chloride</strong></td>
+</tr>
+<tr>
+<td>Partner metal</td>
+<td>Copper survives</td>
+<td>The anode is consumed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>And the polarity is the entire experiment.</strong> Reverse the clips and you dissolve the nail rather than clean it. Same wires, same solution, same battery — opposite outcome. Nothing else this week makes the point so cheaply.</p>
+<p>Then be honest about the mechanism, because students will ask: the current does not turn rust back into shiny steel atom for atom. Some oxide is reduced; hydrogen bubbling at the surface mechanically lifts the rest; loose material falls into the bath as the sludge they can see. Metal already lost to rust is not coming back. Derusting saves what remains — it does not undo history.</p>
+<h3>3.6 Why the measurements will disagree with the table</h3>
+<p>Warn them <strong>before</strong> Part B, so the gap is a finding and not a disappointment.</p>
+<ol>
+<li><strong>The table assumes 1 M solutions of each metal ion.</strong> Our jar has essentially no Zn²⁺ or Cu²⁺ in it at all.</li>
+<li><strong>The copper is not doing what the table says.</strong> In an open jar of saltwater, the reaction at the copper is oxygen reduction — O₂ + 2H₂O + 4e⁻ → 4OH⁻ — not Cu²⁺ + 2e⁻ → Cu. We are reading the wrong line of the table, deliberately, because it still gets the <em>direction</em> right.</li>
+<li><strong>Aluminium lies.</strong> Predicted at −1.66 V it should be ferocious. It will probably read below iron, because it is wearing an oxide film only a few nanometres thick that is chemically tough and self-repairing.</li>
+</ol>
+<p>That third one is worth dwelling on: aluminium is thermodynamically one of the most reactive metals in daily use, and we make drink cans and aeroplanes out of it. The table tells you what <em>wants</em> to happen. It never tells you how fast — and engineering lives in that gap.</p>
+<h3>3.7 Corrosion as a rate</h3>
+<p>Last use of Faraday's law this week, and the most sobering:</p>
+<pre><code>mass of zinc lost per second = I × 65.4 / (2 × 96,485)
+</code></pre>
+<p><strong>A steady 1 mA consumes about 11 grams of zinc per year.</strong></p>
+<p>Measure the short-circuit current of the Zn–Cu jar and you have measured a corrosion rate. Scale it up and you have sized a ship's sacrificial anode. This is not an analogy for real engineering — it <em>is</em> the calculation real engineers do.</p>
+<h3>3.8 Safety (brief)</h3>
+<ul>
+<li>Salt is allowed today, and today only, and only in the corrosion jars</li>
+<li>Disconnect before touching any powered cell</li>
+<li>Rusty hardware is sharp; forceps or gloves</li>
+<li>Wash hands after handling saltwater and metals</li>
+</ul>
+<hr>
+<h2>4. Quiz questions</h2>
+<p>Cold call or a 3-minute written check, before Part B. Answers in <em>italics</em>.</p>
+<p><strong>Q1.</strong> Rust weighs more than the iron it formed from. Why?
+<em>The iron is still there, combined with oxygen and water. Nothing left; oxygen joined.</em></p>
+<p><strong>Q2.</strong> Iron needs two things to rust. Name both.
+<em>Water and oxygen. Remove either and rusting stops — which is why oiled tools and submerged-in-boiled-water samples survive.</em></p>
+<p><strong>Q3.</strong> Zinc and iron are in contact in saltwater. Which corrodes, and how do you know?
+<em>Zinc — it is more active, E° = −0.76 V versus −0.44 V for iron.</em></p>
+<p><strong>Q4.</strong> Predict the voltage of a Zn–Cu cell from the table.
+<em>0.34 − (−0.76) = +1.10 V.</em></p>
+<p><strong>Q5.</strong> Your measured Zn–Cu voltage is 0.95 V, not 1.10 V. Has something gone wrong?
+<em>No. The table's conditions (1 M ions, 25 °C) are not our conditions, and the copper electrode is actually reducing oxygen rather than copper ions.</em></p>
+<p><strong>Q6.</strong> In the derusting cell, which terminal did the rusty nail go to, and why that one?
+<em>Negative. It makes the iron the cathode, so it is reduced instead of oxidized.</em></p>
+<p><strong>Q7.</strong> What would have happened had we connected the nail to positive?
+<em>It would have become the anode and dissolved — accelerated corrosion, in a jar.</em></p>
+<p><strong>Q8.</strong> Why washing soda and not salt in the derusting bath?
+<em>Chloride would be oxidized at the anode to chlorine gas, and it drives pitting.</em></p>
+<p><strong>Q9.</strong> Jar A has only one metal in it. Why does that nail rust at all?
+<em>A single piece of iron already has anodic and cathodic regions — impurities, stress, scratches, and differences in oxygen access. Two metals only make it worse and more predictable.</em></p>
+<p><strong>Q10.</strong> A galvanized bucket gets scratched down to the steel. Does it start rusting there?
+<em>Not straight away. The surrounding zinc is still electrically connected and still more active, so it keeps protecting the exposed steel.</em></p>
+<hr>
+<h2>5. Capstone challenge (78–90 min)</h2>
+<p>Print this. Groups of 2–3, then discuss as a class. Section C is the part worth the time.</p>
+<h3>Section A — The week in one line each</h3>
+<ol>
+<li>Which session <strong>made</strong> electricity from chemistry?</li>
+<li>Which sessions <strong>spent</strong> electricity to force chemistry?</li>
+<li>Which session <strong>moved metal atoms</strong> from one place to another?</li>
+<li>Which session <strong>split a molecule</strong>?</li>
+<li>In every single experiment: where did the <strong>electrons</strong> travel, and where did the <strong>ions</strong> travel?</li>
+</ol>
+<h3>Section B — Calculations</h3>
+<p><strong>B1.</strong> Your Zn–Cu jar drew a short-circuit current of 4 mA. Using 1 mA ≈ 11 g of zinc per year, how much zinc would that couple consume in a year?</p>
+<p><strong>B2.</strong> A derusting cell ran overnight at 0.4 A for 12 hours.
+&nbsp;&nbsp;(a) How much charge passed?
+&nbsp;&nbsp;(b) How many moles of electrons is that?
+&nbsp;&nbsp;(c) If all of that made hydrogen, what volume of H₂ was produced? (24.45 L/mol)
+&nbsp;&nbsp;(d) Why does that answer make "keep the jar open and the room ventilated" a rule rather than a suggestion?</p>
+<p><strong>B3.</strong> A water electrolysis cell runs at 0.25 A for 8 minutes. How many mL of H₂ and of O₂? (Use ≈ 7.6 mL/min per amp of H₂.)</p>
+<h3>Section C — Applied scenarios</h3>
+<p><strong>C1.</strong> A boatyard fits <strong>steel</strong> screws into an <strong>aluminium</strong> hull. Six months later something is badly corroded. Which metal, and why? What would you do instead?</p>
+<p><strong>C2.</strong> A plumber joins a <strong>copper</strong> pipe directly to a <strong>galvanized steel</strong> pipe. Which side fails, and where exactly?</p>
+<p><strong>C3.</strong> A domestic water heater contains a <strong>magnesium rod</strong> that must be replaced every few years. What is it for, and what starts happening once it is fully consumed?</p>
+<p><strong>C4.</strong> A friend plans to derust an antique tool using <strong>saltwater</strong> because it is cheaper. Give them two specific reasons not to.</p>
+<p><strong>C5.</strong> A silver-plated copper spoon gets scratched through the silver. Which metal corrodes — and why is a scratch in silver plating more dangerous than a scratch in galvanizing?</p>
+<p><strong>C6.</strong> You are asked to protect a wrought-iron gate that stands outdoors for thirty years. Propose a strategy, name the electrochemistry behind each element of it, and say what maintenance it needs.</p>
+<h3>Answer key</h3>
+<p><strong>Section A.</strong> (1) Session 1, and jar B in Session 5 — corrosion is a battery discharging for free. (2) Sessions 2, 3, 4, and the derusting cell. (3) Sessions 2 and 3, and arguably corrosion, which moves iron into solution. (4) Session 4. (5) Electrons through the metal and wires; ions through the solution. Always both, always in a loop.</p>
+<p><strong>B1.</strong> 4 mA × 11 g/year per mA ≈ <strong>44 g of zinc per year</strong>.</p>
+<p><strong>B2.</strong> (a) Q = 0.4 × 43,200 = <strong>17,280 C</strong>. (b) 17,280 / 96,485 = <strong>0.179 mol e⁻</strong>. (c) 0.0895 mol H₂ × 24.45 L/mol ≈ <strong>2.2 litres</strong>. (d) Two litres of hydrogen accumulated overnight in a sealed container is an explosive hazard; in an open jar in a ventilated room it disperses harmlessly. The rule follows from the arithmetic.</p>
+<p><strong>B3.</strong> H₂: 7.6 × 0.25 × 8 = <strong>15.2 mL</strong>. O₂: half that, <strong>7.6 mL</strong>.</p>
+<p><strong>C1.</strong> The <strong>aluminium hull</strong> corrodes, and it concentrates around each screw. Aluminium is far more active than steel, so it becomes the anode — and a large anode area would be survivable, but here you have a large aluminium anode feeding small steel cathodes, so the damage spreads around every fastener. Fix: aluminium or compatible fasteners, insulating washers and sleeves, or a sealant that breaks the electrical path. Accept any answer that identifies aluminium as anodic and proposes breaking either the electron path or the electrolyte path.</p>
+<p><strong>C2.</strong> The <strong>galvanized steel</strong> side, right at the joint. Zinc goes first, then the steel underneath. Real plumbing codes require a dielectric union between copper and galvanized steel precisely for this. Credit for noting that the damage is worst <em>at</em> the junction, where the two metals and the water all meet.</p>
+<p><strong>C3.</strong> It is a <strong>sacrificial anode</strong>: magnesium is far more active than the steel tank, so it corrodes preferentially and keeps the tank cathodic. Once it is consumed the tank itself becomes the anode and starts to corrode from the inside — which is why the rod is cheap maintenance and the tank is an expensive failure.</p>
+<p><strong>C4.</strong> First, chloride is oxidized at the anode to <strong>chlorine gas</strong>, in a bucket, indoors. Second, chloride drives <strong>pitting</strong> — it breaks down passive films and attacks locally, so even where it does clean, it damages the surface it is meant to save. Washing soda costs almost nothing and does neither.</p>
+<p><strong>C5.</strong> The <strong>copper</strong> corrodes, because it is more active than silver. The danger is geometry: a scratch exposes a <strong>tiny anode</strong> connected to a <strong>large cathode</strong> of intact silver, so all the corrosion current concentrates into that one small spot and drills a pit. Galvanizing is the opposite arrangement — the coating itself is the anode, so a scratch is protected by the surrounding zinc instead of being attacked by it. A noble coating must be perfect to work; a sacrificial coating does not.</p>
+<p><strong>C6.</strong> Look for a <strong>layered</strong> answer rather than one silver bullet: a barrier (paint or powder coat) to keep water and oxygen off, ideally over a <strong>galvanized</strong> base so that any breach in the paint still has sacrificial protection underneath; attention to <strong>crevices and joints</strong>, where water sits and oxygen is scarce and corrosion concentrates; drainage so the base does not stand in a puddle; and inspection every few years, with touch-up before rust gets under the coating and lifts it. Strong answers mention that paint is <em>not</em> electrochemical — it works by denying the reaction its reactants — while galvanizing is, and that combining the two mechanisms is exactly why it is done that way in practice.</p>
+<hr>
+<h2>6. Closing</h2>
+<p>Put the week's six experiments on the board in one row, and draw a single arrow under all of them.</p>
+<p><em>"Every experiment this week was the same experiment. Electrons leaving something and arriving somewhere else. On Monday we let it happen and measured the voltage. On Tuesday and Wednesday we paid for it and got silver and copper where we wanted them. On Thursday we paid for it and pulled water apart. Today we found the same reaction running without permission, eating iron — and last night we paid to run it backwards.</em></p>
+<p><em>The chemistry never changed. All that ever changed was who was paying."</em></p>
+<hr>
+<h2>7. Vocabulary — full week review</h2>
+<ul>
+<li>[ ] Oxidation / reduction</li>
+<li>[ ] Anode / cathode, and how the signs differ between galvanic and electrolytic cells</li>
+<li>[ ] Electrolyte; supporting electrolyte; spectator ion</li>
+<li>[ ] Galvanic cell vs electrolytic cell; spontaneous vs driven</li>
+<li>[ ] Activity series; standard reduction potential</li>
+<li>[ ] Faraday's constant; current efficiency</li>
+<li>[ ] Sacrificial anode; cathodic protection; passivation</li>
+<li>[ ] Energy carrier vs energy source</li>
+</ul>
+<hr>
+<h2>8. Materials you need in hand while teaching</h2>
+<ul>
+<li>The treated nail, the control nail, and the printed before-photo</li>
+<li>Jars A, B and C, arranged where everyone can see them</li>
+<li>Activity series written large enough to stay on the board all session</li>
+<li>A galvanized nail and a plain iron nail, to pass around</li>
+<li>A photo of a ship's hull anode or a water-heater rod</li>
+<li>Printed E° prediction tables with the predictions column <strong>blank</strong></li>
+<li>Printed capstone worksheets</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

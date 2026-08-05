@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 3 — Lecture: Faraday's Law and Silver Plating | Electrochemistry Workshop</title>
+  <title>Session 3 — Lecture Notes: Silver Plating & Faraday's Law | Electrochemistry Workshop</title>
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="../../sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -71,31 +74,211 @@
 </div>
     </aside>
     <main class="content">
-<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/03-silver-plating-faraday/index.html">Session 3</a> / Lecture: Faraday's Law and Silver Plating</div>
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/03-silver-plating-faraday/index.html">Session 3</a> / Lecture Notes: Silver Plating & Faraday's Law</div>
       <header class="page-header">
-        <h1>Session 3 — Lecture: Faraday's Law and Silver Plating</h1>
+        <h1>Session 3 — Lecture Notes: Silver Plating & Faraday's Law</h1>
         <div class="page-meta"><span class="badge">Session 3</span></div>
       </header>
       <article class="main-article">
-<p><strong>Target duration:</strong> ~20 minutes</p>
+<p><strong>Audience:</strong> instructors / TAs — use this as your teaching script.
+<strong>Students</strong> see the shorter talking points during class; they do the worksheet in §5 before plating.</p>
 <blockquote>
-<p><strong>Instructors:</strong> worked Faraday example, z-factor for Ag vs Cu, efficiency — <a href="instructor.html">instructor.md</a>.</p>
+<p>Deep-dive chemistry, bath design, and coaching traps: <a href="instructor.html">instructor.md</a>.
+Bench procedure: <a href="experiment.html">experiment.md</a>.</p>
 </blockquote>
 <hr>
-<h2>Opening hook (0–10 min)</h2>
-<p>Show a dull copper coin or washer.</p>
-<p><em>"If we plate this with silver for exactly 5 minutes at 0.02 A, can we calculate how many silver </em><em>atoms</em><em> landed on the surface — without weighing it?"</em></p>
-<p>Answer preview: <strong>Yes — with Faraday's law.</strong></p>
+<h2>1. Summary of concepts from prior days</h2>
+<p>Spend <strong>5–8 minutes</strong> refreshing these. Students need them today.</p>
+<h3>Session 1 — Fruit battery (galvanic cell)</h3>
+<table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>What to remind them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oxidation / reduction</td>
+<td>Oxidation = lose e⁻; reduction = gain e⁻ (OIL RIG)</td>
+</tr>
+<tr>
+<td>Anode / cathode (galvanic)</td>
+<td>Anode = oxidation = <strong>negative (−)</strong> terminal; cathode = reduction = <strong>positive (+)</strong></td>
+</tr>
+<tr>
+<td>Electron vs ion path</td>
+<td>Electrons travel in the <strong>wire</strong>; ions travel in the <strong>juice</strong></td>
+</tr>
+<tr>
+<td>Series cells</td>
+<td>Voltages add; current is still limited by the weak fruit electrolyte</td>
+</tr>
+<tr>
+<td>Spontaneous chemistry</td>
+<td>The reaction <strong>makes</strong> electricity — no battery required</td>
+</tr>
+</tbody>
+</table>
+<p><strong>One-sentence bridge:</strong> <em>"Day 1: chemistry pushed electrons through a wire, all by itself."</em></p>
+<h3>Session 2 — Copper electroplating (electrolytic cell)</h3>
+<table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>What to remind them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electrolysis</td>
+<td>Electricity <strong>forces</strong> a non-spontaneous reaction</td>
+</tr>
+<tr>
+<td>Anode / cathode (electrolytic)</td>
+<td>Signs <strong>flip</strong>: the object to plate goes on battery <strong>(−)</strong> = cathode = reduction</td>
+</tr>
+<tr>
+<td>Cu²⁺ → Cu</td>
+<td>Copper ions gain electrons and become solid metal on the object</td>
+</tr>
+<tr>
+<td>Copper anode</td>
+<td>The metal anode <strong>dissolved</strong> and replenished Cu²⁺ in the bath</td>
+</tr>
+<tr>
+<td>Current &amp; quality</td>
+<td>Higher current → faster plating, but powdery or burnt deposits</td>
+</tr>
+<tr>
+<td>Surface prep</td>
+<td>Dirty or oily surfaces plate badly</td>
+</tr>
+</tbody>
+</table>
+<p><strong>One-sentence bridge:</strong> <em>"Day 2: electricity pushed copper atoms onto a nail — but we watched, we didn't count."</em></p>
+<h3>What is new today</h3>
+<ul>
+<li>Same electrolytic plating idea as Day 2</li>
+<li>The metal is <strong>silver</strong>: Ag⁺ + e⁻ → Ag, so <strong>one electron per atom</strong> — the simplest possible arithmetic</li>
+<li>The anode is <strong>graphite (inert)</strong> — it does <strong>not</strong> replenish Ag⁺, unlike Day 2's copper anode</li>
+<li>The bath contains a second salt, <strong>KNO₃</strong>, that is not a reactant at all</li>
+<li>Students <strong>measure current and time</strong>, then <strong>calculate</strong> moles, mass, atoms and thickness</li>
+</ul>
+<p><strong>One-sentence goal:</strong> <em>"Today we count how much silver we deposit, using electricity as a measuring stick."</em></p>
 <hr>
-<h2>Core concepts (10–25 min)</h2>
-<h3>1. Silver reduction</h3>
+<h2>2. Class plan (90 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Block</th>
+<th>What you do</th>
+<th>Student product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–8 min</td>
+<td>Prior-days review + hook</td>
+<td>§1; show a dull copper coin</td>
+<td>Oral answers</td>
+</tr>
+<tr>
+<td>8–18 min</td>
+<td>Teach today's concepts</td>
+<td>§3; board flowchart</td>
+<td>Notes / vocab</td>
+</tr>
+<tr>
+<td>18–26 min</td>
+<td><strong>Quiz check</strong></td>
+<td>§4, cold call or mini-whiteboard</td>
+<td>Quick answers</td>
+</tr>
+<tr>
+<td>26–42 min</td>
+<td><strong>Interactive pre-lab</strong></td>
+<td>§5 activity + worksheet</td>
+<td>Completed pre-lab sheet (<strong>required</strong> before plating)</td>
+</tr>
+<tr>
+<td>42–52 min</td>
+<td>Setup</td>
+<td>Area; clean; wire with <strong>resistor</strong>; rehearse <strong>live entry</strong></td>
+<td>Setup table filled</td>
+</tr>
+<tr>
+<td>52–70 min</td>
+<td>Plate</td>
+<td>15 min run + no-power control coin</td>
+<td>Current log</td>
+</tr>
+<tr>
+<td>70–80 min</td>
+<td>Post-lab calc</td>
+<td>Same pipeline with <strong>their</strong> I_avg</td>
+<td>Thickness + atom count</td>
+</tr>
+<tr>
+<td>80–86 min</td>
+<td>Compare</td>
+<td>Plated vs control; pH vs prediction</td>
+<td>Comparison sheet</td>
+</tr>
+<tr>
+<td>86–90 min</td>
+<td>Debrief + bridge</td>
+<td>Efficiency; preview Session 4</td>
+<td>Exit ticket</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pacing tip:</strong> do not start plating until the §5 pre-lab is checked. Groups that skip it stall later and wire the ammeter wrong.</p>
+<hr>
+<h2>3. Detailed explanations to give students</h2>
+<h3>3.1 Hook (say this)</h3>
+<p><em>"Yesterday copper appeared on a nail. Today we plate silver — and I want more than 'it looks shiny.' If we run 2 milliamps for 15 minutes, can we work out how many silver atoms landed, without weighing anything?"</em></p>
+<p>Answer: <strong>yes</strong>, if we know how charge relates to electrons, and electrons to atoms. That is <strong>Faraday's law</strong>.</p>
+<h3>3.2 The silver half-reaction (board)</h3>
 <pre><code>Ag⁺(aq) + e⁻ → Ag(s)
 </code></pre>
 <ul>
-<li>Each silver ion needs <strong>one electron</strong> to become silver metal</li>
-<li>So: <strong>moles of electrons = moles of silver deposited</strong> (1:1)</li>
+<li>One Ag⁺ ion needs <strong>exactly one electron</strong> to become one silver atom.</li>
+<li>So <strong>moles of Ag deposited = moles of electrons</strong>, if every electron does that job.</li>
 </ul>
-<h3>2. Charge, current, and time</h3>
+<p><strong>Contrast with Day 2:</strong></p>
+<pre><code>Cu²⁺ + 2e⁻ → Cu     ⇒  TWO electrons per copper atom
+Ag⁺  +  e⁻ → Ag     ⇒  ONE electron per silver atom
+</code></pre>
+<p>Ask: <em>"Same number of electrons — more moles of Ag or of Cu?"</em> → <strong>Ag</strong>, because each atom is cheaper.</p>
+<h3>3.3 Two salts in the bath, doing two different jobs</h3>
+<p>This is a concept students have not met yet, and it comes back tomorrow in Session 4.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Job</th>
+<th>Used up?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AgNO₃, 0.05 M</strong></td>
+<td>Supplies Ag⁺, which becomes the coating</td>
+<td><strong>Yes</strong> — the reactant</td>
+</tr>
+<tr>
+<td><strong>KNO₃, 0.2 M</strong></td>
+<td><strong>Supporting electrolyte</strong> — carries current across the solution</td>
+<td><strong>No</strong> — a spectator</td>
+</tr>
+</tbody>
+</table>
+<p><em>"Why add a salt that does nothing?"</em> Because without it the solution barely conducts. Charge has to physically cross the gap between the electrodes, and in a liquid that means ions moving. Dilute silver nitrate alone is a poor conductor, so most of your applied voltage is wasted pushing current through the liquid instead of driving chemistry — and the current concentrates on whatever sticks out furthest.</p>
+<p>Tomorrow the sulfate in Session 4 does exactly the same job. Naming it now means it costs nothing to explain then.</p>
+<p><strong>Water:</strong> distilled only. Tap chloride precipitates AgCl and fogs the bath.</p>
+<h3>3.4 What current and time mean</h3>
 <table>
 <thead>
 <tr>
@@ -107,159 +290,360 @@
 <tbody>
 <tr>
 <td><strong>I</strong></td>
-<td>Current</td>
-<td>Amperes (A) = C/s</td>
+<td>Current — how fast charge flows</td>
+<td>ampere (A) = coulomb per second</td>
 </tr>
 <tr>
 <td><strong>t</strong></td>
-<td>Time</td>
-<td>Seconds (s)</td>
+<td>Time current flows</td>
+<td>seconds (s)</td>
 </tr>
 <tr>
 <td><strong>Q</strong></td>
-<td>Charge</td>
-<td>Coulombs (C)</td>
+<td>Total charge passed</td>
+<td>coulomb (C)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Q = I × t</strong></p>
-<p>Example: 0.020 A for 300 s → Q = 6.0 C</p>
-<h3>3. Faraday constant</h3>
-<p><strong>F = 96,485 C/mol</strong> — charge of one mole of electrons</p>
-<p><strong>n_e = Q / F</strong></p>
-<p>Example: 6.0 / 96,485 = 6.22 × 10⁻⁵ mol e⁻</p>
-<h3>4. From moles to mass to thickness</h3>
+<pre><code>Q = I × t
+</code></pre>
+<p><strong>Trap to say out loud:</strong> meters read <strong>mA</strong>. 2 mA = 0.002 A. Forget the conversion and you are wrong by 1000×, and it will look perfectly reasonable on your calculator.</p>
+<h3>3.5 Faraday's constant</h3>
+<pre><code>F = 96,485 C/mol e⁻  ≈  9.65 × 10⁴ C per mole of electrons
+n_e = Q / F
+</code></pre>
+<p>Then for silver, since z = 1:</p>
+<pre><code>n_Ag = n_e
+m_Ag = n_Ag × 107.87 g/mol
+</code></pre>
+<h3>3.6 From mass to thickness</h3>
+<p>Silver density <strong>ρ = 10.49 g/cm³</strong>.</p>
+<pre><code>V = m / ρ           d = V / A
+</code></pre>
+<p><strong>A</strong> = plated area in cm², estimated from the geometry.</p>
+<p><strong>Say clearly:</strong> the answer will be under a micrometre. You will not measure it with a ruler. The calculation predicts an invisibly thin film; your eyes only tell you it looks more silvery.</p>
+<h3>3.7 The full pipeline (draw as a flowchart)</h3>
+<pre><code>I (A), t (s)
+    →  Q = I × t
+    →  n_e = Q / F
+    →  n_Ag = n_e
+    →  m = n_Ag × 107.87
+    →  d = m / (ρ × A)
+    →  N = n_Ag × 6.022×10²³
+</code></pre>
+<h3>3.8 Why the current must be small — and why there is a resistor</h3>
+<p>This is new this year, and it is the difference between a coating and a mess.</p>
+<p>Silver ions have to <strong>travel</strong> to the surface before they can be reduced. Near the coin they get used up, so more must diffuse in from the bulk. That sets a speed limit — a <strong>maximum current the bath can support</strong>, around <strong>4 mA per cm²</strong> for our stirred bath.</p>
+<p>Push past it and the surface starts starving. Any bump that pokes out further reaches into fresher solution, so it grows faster, so it pokes out further still. That runaway is a <strong>dendrite</strong> — a grey fluffy tree that grows off the tips and eventually falls off.</p>
+<p><em>(If you have last year's photo of the failed overnight run, show it here. It is the perfect illustration.)</em></p>
+<p>So we aim for roughly a <strong>quarter</strong> of the speed limit: <strong>0.5–1.0 mA/cm²</strong>, about <strong>2 mA on a coin</strong>.</p>
+<p>And rather than setting a voltage and hoping, we put a <strong>1 kΩ resistor in series</strong>. Since the bath now conducts well, the resistor dominates the circuit:</p>
+<pre><code>I ≈ (3 V − ~1 V across the cell) / 1000 Ω ≈ 2 mA
+</code></pre>
+<p><em>"The resistor decides the current, not the chemistry."</em> That is why every bench will get the same answer.</p>
+<h3>3.9 The reaction that happens without us — and live entry</h3>
+<p><strong>Do not skip this.</strong> It is the reason last year's attempt failed.</p>
+<p>Copper metal and silver ions react on contact, with no battery involved at all:</p>
+<pre><code>Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s)        E° = +0.46 V
+</code></pre>
+<p>Copper is more reactive than silver, so it hands over electrons directly. This is <strong>spontaneous, fast, and it goes essentially to completion</strong> — the equilibrium constant is about 3×10¹⁵.</p>
+<p>Ask: <em>"So if I just drop a copper coin in silver nitrate and walk away, what happens?"</em></p>
+<p>It gets coated in silver — but as a <strong>loose grey powder that rubs straight off</strong>, because the deposit forms wherever it likes with nothing controlling it. And anything you then plate on top comes off with it.</p>
+<p><strong>The fix is embarrassingly simple: turn the power on first.</strong></p>
+<p>Powering the object makes it a cathode from the instant it gets wet. Its own electrons stop leaving, so the copper cannot dissolve, so the loose layer never forms. Platers call it <strong>live entry</strong>.</p>
 <ol>
-<li>n_Ag = n_e (1 electron per Ag⁺)</li>
-<li>m_Ag = n_Ag × 107.87 g/mol</li>
-<li>Volume V = m_Ag / ρ_Ag  (ρ_Ag = 10.49 g/cm³)</li>
-<li>Thickness d = V / A  (A = plated area in cm²)</li>
+<li>Wire up with the object held <strong>above</strong> the bath</li>
+<li>Switch on</li>
+<li>Lower it in <strong>while powered</strong> — start the clock as it goes under</li>
+<li>Lift it out <strong>while still powered</strong>, then switch off</li>
 </ol>
-<h3>5. Worked example (on board)</h3>
+<p><em>"The object is never in the liquid without a current. Not before, not after, not for a second."</em></p>
+<p>Each group also runs a <strong>control coin</strong> with no wires at all, so they can see for themselves what the copper does when left to its own devices.</p>
+<h3>3.10 Ideal vs real (set expectations before they plate)</h3>
+<p>Faraday thickness assumes:</p>
+<ol>
+<li>Every electron plates silver (100% current efficiency)</li>
+<li>The deposit is uniform</li>
+<li>The area estimate is right</li>
+<li>You used the average current</li>
+</ol>
+<p>In reality some current makes side products, edges plate faster, and area is approximate. So the calculation is an <strong>ideal estimate</strong>, and today we get to check it two ways: against the control coin, and against the pH.</p>
+<h3>3.11 Safety (brief but firm)</h3>
+<ul>
+<li>Gloves and goggles <strong>before</strong> pouring AgNO₃</li>
+<li>It stains skin and clothing dark brown-black, effectively permanently — that stain is metallic silver forming in your skin</li>
+<li>Small volumes only, 30–40 mL</li>
+<li>All silver waste to the labeled container — <strong>never</strong> the drain</li>
+<li><strong>Never</strong> add ammonia to silver nitrate. Online "silver mirror" recipes do exactly this and the resulting solution forms an explosive solid on standing</li>
+</ul>
+<hr>
+<h2>4. Quiz questions (before the lab)</h2>
+<p>Cold call, pair-share, or a 3-minute written check. Answers in <em>italics</em>.</p>
+<h3>A. Review from Days 1–2</h3>
+<p><strong>Q1.</strong> In the fruit battery, which electrode was oxidized — zinc or copper?
+<em>Zinc. Zn → Zn²⁺ + 2e⁻. Copper is where reduction happened.</em></p>
+<p><strong>Q2.</strong> When electroplating, the object goes to which battery terminal, and why?
+<em>Negative. That makes it the cathode, so metal ions can gain electrons and become metal.</em></p>
+<p><strong>Q3.</strong> True or false: in an electrolytic cell the anode is always negative.
+<em>False. In electrolysis the anode is on battery (+). In a galvanic cell it is negative.</em></p>
+<p><strong>Q4.</strong> Why did Day 2 use a copper anode rather than any old metal?
+<em>It dissolves and replenishes Cu²⁺ in the bath.</em></p>
+<h3>B. Today's concepts</h3>
+<p><strong>Q5.</strong> Write the half-reaction for plating silver. How many electrons per atom?
+<em>Ag⁺ + e⁻ → Ag. One.</em></p>
+<p><strong>Q6.</strong> Our bath has AgNO₃ and KNO₃ in it. Which one ends up on the coin?
+<em>Only the silver. The KNO₃ carries current and is still there at the end — a supporting electrolyte.</em></p>
+<p><strong>Q7.</strong> A student measures 2 mA for 900 s. What is Q?
+<em>I = 0.002 A; Q = 0.002 × 900 = 1.8 C.</em></p>
+<p><strong>Q8.</strong> If Q = 9.65 C plates silver at 100% efficiency, roughly how many moles of Ag?
+<em>n = Q/F ≈ 9.65/96,485 ≈ 1.0 × 10⁻⁴ mol.</em></p>
+<p><strong>Q9.</strong> Why must the meter be in <strong>series</strong> on the current setting?
+<em>Current mode measures charge flowing through the circuit. Across the battery it is a short, gives nonsense, and can blow the meter fuse.</em></p>
+<p><strong>Q10.</strong> We use a graphite anode. Does it replace the Ag⁺ used at the cathode?
+<em>No — graphite is inert. Ag⁺ comes from the bath and slowly depletes.</em></p>
+<p><strong>Q11.</strong> Why distilled water and not tap?
+<em>Tap water contains chloride, which precipitates AgCl and ruins the bath.</em></p>
+<h3>C. Today's new ideas</h3>
+<p><strong>Q12.</strong> What happens if you drop a clean copper coin into silver nitrate with no battery at all?
+<em>It gets coated with silver anyway — copper is more reactive and hands electrons straight to Ag⁺. But the deposit is loose grey powder that rubs off.</em></p>
+<p><strong>Q13.</strong> So why do we switch the power on before the coin goes in?
+<em>Live entry. Powering it makes it a cathode immediately, so the copper cannot dissolve and the loose displacement layer never forms.</em></p>
+<p><strong>Q14.</strong> Why not just run 20 mA and finish in a minute?
+<em>Silver ions cannot diffuse to the surface that fast. Past the limit the deposit goes dendritic — fluffy grey trees instead of a coating.</em></p>
+<p><strong>Q15.</strong> What is the 1 kΩ resistor for?
+<em>It sets the current. Since the bath conducts well, the resistor dominates the circuit, so every group gets the same current regardless of how their electrodes sit.</em></p>
+<h3>D. Stretch</h3>
+<p><strong>Q16.</strong> Same charge, same efficiency — larger mass of Ag or of Cu? (M_Ag ≈ 108, M_Cu ≈ 63.5; remember z.)
+<em>n_Ag = Q/F but n_Cu = Q/2F. Mass Ag = (Q/F)(108); mass Cu = (Q/2F)(63.5). Silver wins by a factor of about 3.4.</em></p>
+<p><strong>Q17.</strong> The graphite anode releases H⁺. Predict the final pH — and say what it would mean if the real pH came out much higher than your prediction.
+<em>Moles of H⁺ = moles of e⁻. If the measured pH is much higher, something at the cathode consumed protons instead of depositing silver — meaning the bath ran short of Ag⁺.</em></p>
+<hr>
+<h2>5. Interactive activity + pre-lab calculation (required before plating)</h2>
+<h3>Activity: "Predict before you plate"</h3>
+<p><strong>Format:</strong> pairs or threes. <strong>15 minutes.</strong>
+<strong>Goal:</strong> every group completes one full Faraday calculation with realistic numbers before touching AgNO₃, then repeats it with real data after.</p>
+<h3>Part 1 — Station card</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planned current I</td>
+<td><strong>2.0 mA</strong></td>
+</tr>
+<tr>
+<td>Planned time t</td>
+<td><strong>900 s</strong> (15 min)</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Copper coin, <strong>one face</strong> plates</td>
+</tr>
+<tr>
+<td>Diameter</td>
+<td><strong>2.0 cm</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Part 2 — Live prompts</h3>
+<ol>
+<li>
+<p><strong>Area challenge (3 min).</strong> Each group computes A = π(d/2)². Expected <strong>3.14 cm²</strong>. Anyone who says 12.6 used the diameter as the radius — fix it now.</p>
+</li>
+<li>
+<p><strong>Unit police (2 min).</strong> Hold up a meter reading "2.0" on mA. <em>"What goes into Q = It?"</em> Chorus: <strong>0.0020 A</strong>.</p>
+</li>
+<li>
+<p><strong>Current-density check (2 min).</strong> <em>"2 mA over 3.14 cm² — what is that per cm²?"</em> → <strong>0.64 mA/cm²</strong>. <em>"The bath tops out near 4. Are we safe?"</em> → yes, about a quarter of the limit. This is the number that decides whether they get a coating or a fluffy mess.</p>
+</li>
+<li>
+<p><strong>Human flowchart (3 min).</strong> Five volunteers hold signs: <code>I,t</code> → <code>Q</code> → <code>n_e</code> → <code>m</code> → <code>d</code>. The class shouts the formula linking each pair.</p>
+</li>
+</ol>
+<h3>Part 3 — Calculation worksheet</h3>
+<p>Complete <strong>before</strong> collecting silver solution. A TA initials one line per group.</p>
+<p><strong>Constants:</strong> F = 96,485 C/mol; M_Ag = 107.87 g/mol; ρ_Ag = 10.49 g/cm³</p>
 <table>
 <thead>
 <tr>
 <th>Step</th>
-<th>Calculation</th>
+<th>Formula</th>
+<th>Work</th>
+<th>Answer + unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Area A</td>
+<td>π(r)²</td>
+<td></td>
+<td>______ cm²</td>
+</tr>
+<tr>
+<td>2. Current density</td>
+<td>I / A</td>
+<td></td>
+<td>______ mA/cm²</td>
+</tr>
+<tr>
+<td>3. Charge Q</td>
+<td>I × t</td>
+<td></td>
+<td>______ C</td>
+</tr>
+<tr>
+<td>4. Moles e⁻</td>
+<td>Q / F</td>
+<td></td>
+<td>______ mol</td>
+</tr>
+<tr>
+<td>5. Moles Ag</td>
+<td>n_Ag = n_e</td>
+<td></td>
+<td>______ mol</td>
+</tr>
+<tr>
+<td>6. Mass Ag</td>
+<td>n × 107.87</td>
+<td></td>
+<td>______ g</td>
+</tr>
+<tr>
+<td>7. Volume Ag</td>
+<td>m / 10.49</td>
+<td></td>
+<td>______ cm³</td>
+</tr>
+<tr>
+<td>8. Thickness</td>
+<td>V / A</td>
+<td></td>
+<td><strong><em>_</em>_ cm and </strong>____ µm</td>
+</tr>
+<tr>
+<td>9. Atoms</td>
+<td>n × 6.022×10²³</td>
+<td></td>
+<td>______ atoms</td>
+</tr>
+<tr>
+<td>10. Predicted pH</td>
+<td>n_e ÷ volume in L, then −log</td>
+<td></td>
+<td>______</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Target answers (for you):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
 <th>Result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>A</td>
+<td><strong>3.14 cm²</strong></td>
+</tr>
+<tr>
+<td>Current density</td>
+<td><strong>0.64 mA/cm²</strong></td>
+</tr>
+<tr>
 <td>Q</td>
-<td>0.020 A × 300 s</td>
-<td>6.0 C</td>
+<td>0.0020 × 900 = <strong>1.80 C</strong></td>
 </tr>
 <tr>
 <td>n_e</td>
-<td>6.0 / 96,485</td>
-<td>6.22 × 10⁻⁵ mol</td>
+<td>1.80 / 96,485 = <strong>1.87 × 10⁻⁵ mol</strong></td>
 </tr>
 <tr>
-<td>m_Ag</td>
-<td>n × 107.87</td>
-<td>0.00671 g</td>
+<td>m</td>
+<td><strong>2.01 mg</strong> (0.00201 g)</td>
 </tr>
 <tr>
 <td>V</td>
-<td>m / 10.49</td>
-<td>6.40 × 10⁻⁴ cm³</td>
+<td><strong>1.92 × 10⁻⁴ cm³</strong></td>
 </tr>
 <tr>
-<td>d (A = 10 cm²)</td>
-<td>V / A</td>
-<td>6.4 × 10⁻⁵ cm ≈ <strong>0.64 µm</strong></td>
+<td>d</td>
+<td><strong>6.11 × 10⁻⁵ cm = 0.61 µm</strong></td>
+</tr>
+<tr>
+<td>Atoms</td>
+<td><strong>1.1 × 10¹⁹</strong></td>
+</tr>
+<tr>
+<td>Predicted pH in 30 mL</td>
+<td>[H⁺] = 6.2 × 10⁻⁴ M → <strong>pH 3.2</strong></td>
 </tr>
 </tbody>
 </table>
-<h3>6. Ideal vs. real plating</h3>
-<p>Faraday gives the <strong>maximum</strong> if every electron plates silver.</p>
-<p>Reality may differ because:</p>
+<p><strong>Sense-checks to say:</strong></p>
+<p><em>"Two milligrams. Six tenths of a micrometre — about a hundredth the thickness of a sheet of paper. Eleven billion billion atoms. Those are all the same object, described three ways."</em></p>
+<p><em>"And notice the last line: we have predicted the pH of the bath before we have run it. Tomorrow we do the same trick with a volume of gas."</em></p>
+<h3>Part 4 — Prediction statement</h3>
+<p>Each group writes one sentence:</p>
+<blockquote>
+<p>"Plating at about <strong><em>_</em>_ mA for 15 minutes on </strong><strong><em>_ cm², we expect roughly </em></strong><strong><em> µm of silver, about </em></strong><strong><em> atoms, and the bath should finish near pH </em></strong>___."</p>
+</blockquote>
+<p>After the run they recalculate with <strong>I_avg</strong> and compare.</p>
+<h3>Gate before chemicals</h3>
 <ul>
-<li>Side reactions consume current (H₂ evolution, etc.)</li>
-<li>Deposit may be porous or non-uniform</li>
-<li>Current may drift over time</li>
-<li>Not all surface area plates equally</li>
+<li>[ ] Pre-lab table complete</li>
+<li>[ ] TA has checked Q, A, and the current density</li>
+<li>[ ] Gloves and goggles on</li>
+<li>[ ] Group can point to: cathode object (−), graphite anode (+), ammeter in series, <strong>resistor in series</strong></li>
+<li>[ ] Group can state the <strong>live entry</strong> rule and say why it matters</li>
+<li>[ ] Second coin cleaned and ready as the <strong>no-power control</strong></li>
 </ul>
 <hr>
-<h2>Wrap-up (80–90 min)</h2>
+<h2>6. During and after the experiment — what to emphasize</h2>
+<ol>
+<li>Watch for the coin going into the bath unpowered. It is the single easiest mistake and it invalidates the comparison.</li>
+<li>Log current often and use <strong>I_avg</strong>. With the resistor it should be nearly flat, and a flat current is itself worth remarking on.</li>
+<li>If a calculated thickness comes out absurd — centimetres, or 10⁻¹² cm — check mA→A first, area second.</li>
+<li>Make every group physically hold the two coins side by side. The control coin does more teaching than any explanation.</li>
+<li>Debrief questions:</li>
+<li>Did the coin look more silvery? Did the coating survive a rub?</li>
+<li>How did the control compare, and what does that tell you?</li>
+<li>Did the measured pH match your prediction? What would a mismatch mean?</li>
+<li>Why is our graphite anode different from Day 2's copper anode?</li>
+</ol>
+<hr>
+<h2>7. Bridge to Session 4</h2>
+<p><em>"We've counted metal atoms with electric charge, and we even predicted the pH of the bath. Tomorrow we split </em><em>water</em><em> — and the same law predicts a volume of gas we can actually see and measure. Same arithmetic, easier to check."</em></p>
+<p>Note the deliberate handoff: the KNO₃ they met today as a supporting electrolyte is exactly the role Na₂SO₄ plays tomorrow.</p>
+<hr>
+<h2>8. Vocabulary checklist</h2>
 <ul>
-<li>How close was your calculated thickness to what you see?</li>
-<li>What would happen with a <strong>silver anode</strong> vs. inert anode?</li>
-<li>Where else is Faraday's law used? (electrolysis industry, battery design, analytical chemistry)</li>
+<li>[ ] Electrolytic cell vs galvanic cell</li>
+<li>[ ] Cathode / anode (electrolytic signs)</li>
+<li>[ ] Faraday constant; coulomb; ampere</li>
+<li>[ ] <strong>Supporting electrolyte / spectator ion</strong></li>
+<li>[ ] <strong>Displacement (immersion) plating</strong></li>
+<li>[ ] <strong>Current density</strong></li>
+<li>[ ] Current efficiency</li>
+<li>[ ] Inert anode (graphite) vs sacrificial metal anode</li>
 </ul>
 <hr>
-<h2>Visual aids</h2>
+<h2>9. Materials you need in hand while teaching</h2>
 <ul>
-<li>[ ] Flowchart: I, t → Q → n → m → d</li>
-<li>[x] Plating setup (see experiment page and figure below)</li>
+<li>Dull copper coin for the hook</li>
+<li>Board markers and flowchart space</li>
+<li>Pre-lab cards or a projected table</li>
+<li>Printed worksheet (§5 Part 3), one per group</li>
+<li>A demo ammeter showing mA, and a 1 kΩ resistor to hold up</li>
+<li>Graphite rod and a coin, to show polarity dry</li>
+<li><strong>Last year's photo of the dendritic overnight failure</strong> — the best single visual in this session</li>
 </ul>
-<figure class="figure-wrap" aria-label="Silver plating cell with ammeter"><svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
-  <title id="fig1_title">Silver plating cell with ammeter</title>
-  <desc id="fig1_desc">Electrolytic silver plating setup with multimeter in series to measure current for Faraday's law calculations.</desc>
-  <defs>
-    <marker id="fig1_arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/>
-    </marker>
-  </defs>
-  <rect width="720" height="440" fill="#f8fafc"/>
-  <text x="360" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Session 3 - Silver plating with current measurement</text>
-
-  <!-- Beaker -->
-  <path d="M200 130 L200 320 L520 320 L520 130" fill="none" stroke="#64748b" stroke-width="2"/>
-  <rect x="202" y="190" width="316" height="128" fill="#f1f5f9" opacity="0.9"/>
-  <text x="360" y="255" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#475569">0.01 M AgNO&#x2083; (small volume)</text>
-
-  <!-- Ag+ arrows -->
-  <path d="M280 220 L360 250" stroke="#2563eb" stroke-width="1.5" marker-end="url(#fig1_arrowBlue)" fill="none"/>
-  <text x="265" y="215" font-family="Segoe UI, sans-serif" font-size="10" fill="#2563eb">Ag&#x207a;</text>
-
-  <!-- Ag anode -->
-  <rect x="260" y="105" width="16" height="120" rx="2" fill="#cbd5e1" stroke="#94a3b8"/>
-  <text x="268" y="98" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#475569">Ag anode (+)</text>
-
-  <!-- Cathode coin -->
-  <circle cx="430" cy="250" r="28" fill="#b45309" stroke="#92400e" stroke-width="1.5"/>
-  <circle cx="430" cy="250" r="22" fill="#d97706" opacity="0.5"/>
-  <text x="430" y="254" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#fff">Cu</text>
-  <text x="430" y="115" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#334155">Object (&#x2212;)</text>
-  <text x="490" y="250" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">silver deposits</text>
-
-  <!-- 3V pack -->
-  <rect x="580" y="150" width="50" height="36" rx="4" fill="#fef3c7" stroke="#334155"/>
-  <text x="605" y="172" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700">3V</text>
-
-  <!-- Circuit with ammeter in series -->
-  <path d="M268 105 L268 55 L400 55" stroke="#334155" stroke-width="2" fill="none"/>
-  <path d="M430 222 L430 55 L520 55 L605 55 L605 150" stroke="#334155" stroke-width="2" fill="none"/>
-  <path d="M605 186 L605 280 L430 280 L430 278" stroke="#334155" stroke-width="2" fill="none"/>
-
-  <!-- Ammeter -->
-  <circle cx="460" cy="55" r="22" fill="#fff" stroke="#0d9488" stroke-width="2"/>
-  <text x="460" y="52" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="700" fill="#0d9488">A</text>
-  <text x="460" y="64" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">mA</text>
-  <text x="460" y="38" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">multimeter in series</text>
-
-  <!-- Faraday box -->
-  <rect x="24" y="345" width="672" height="78" rx="8" fill="#fff" stroke="#e2e8f0"/>
-  <text x="40" y="368" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Ag&#x207a; + e&#x207b; &#x2192; Ag(s)     Record I every 30-60 s and total time t</text>
-  <text x="40" y="388" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155">Q = I &#x00d7; t  &#x2192;  n = Q/F  &#x2192;  m_Ag  &#x2192;  thickness d = m/(&#x03c1;A)</text>
-  <text x="40" y="408" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Estimate plated area A before starting (coin face, washer ring, etc.)</text>
-</svg></figure>
-<ul>
-<li>[ ] Optional: stacked-atom illustration for "thickness"</li>
-</ul>
-<hr>
-<h2>Vocabulary</h2>
-<ul>
-<li>[ ] Faraday constant</li>
-<li>[ ] Coulomb</li>
-<li>[ ] Stoichiometry of electron transfer</li>
-<li>[ ] Current efficiency (introductory)</li>
-</ul>
-<hr>
-<h2>Bridge to Session 4</h2>
-<p><em>"We've moved metal atoms with electricity. Next we split </em><em>water molecules</em><em> into hydrogen and oxygen — and measure the gases to prove the 2:1 ratio."</em></p>
       </article>
     </main>
   </div>

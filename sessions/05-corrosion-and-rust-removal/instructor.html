@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 5 — Instructor Notes: Corrosion and Rust Removal Deep Dive | Electrochemistry Workshop</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open menu" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <div class="layout">
+    <aside class="sidebar">
+<div class="sidebar-header">
+  <a href="../../index.html">Electrochemistry Lab<span class="subtitle">One-week workshop · ages 15–16</span></a>
+</div>
+<nav>
+  <div class="nav-section"><a class="nav-link" href="../../index.html">Home</a></div>
+<div class="nav-section">
+  <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="../../shared/multi-day-setup.html">Multi-Day Setup</a>
+  <a class="nav-link sub" href="../../shared/overall-materials-list.html">Materials List</a>
+  <a class="nav-link sub" href="../../shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="../../shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="../../shared/teaching-log.html">Teaching Log</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/01-fruit-battery/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/02-copper-electroplating/index.html">Session 2: Copper Electroplating</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/02-copper-electroplating/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/03-silver-plating-faraday/index.html">Session 3: Silver Plating + Faraday's Law</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/03-silver-plating-faraday/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/04-water-electrolysis/index.html">Session 4: Water Electrolysis</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/04-water-electrolysis/preparation.html">Preparation</a>
+</div>
+<div class="nav-section">
+  <a class="nav-link session-title" href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub active" href="../../sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="../../sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
+</div>
+</nav>
+<div class="sidebar-footer">
+  Markdown sources kept alongside HTML.
+</div>
+    </aside>
+    <main class="content">
+<div class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../../sessions/05-corrosion-and-rust-removal/index.html">Session 5</a> / Instructor Notes: Corrosion and Rust Removal Deep Dive</div>
+      <header class="page-header">
+        <h1>Session 5 — Instructor Notes: Corrosion and Rust Removal Deep Dive</h1>
+        <div class="page-meta"><span class="badge">Session 5</span></div>
+      </header>
+      <article class="main-article">
+<p><strong>Audience:</strong> instructors and TAs only. Pair with <a href="lecture.html">lecture.md</a> and <a href="experiment.html">experiment.md</a>.</p>
+<hr>
+<h2>Why this session exists</h2>
+<p>Four days of controlled electrochemistry, all of it something we did on purpose. Today the same chemistry turns up <strong>uninvited</strong>, doing billions of dollars of damage a year, and the students discover they already have every tool needed to explain it and to fight it.</p>
+<p>Your job is to make <strong>activity series</strong>, <strong>galvanic couples</strong>, and <strong>driven versus spontaneous</strong> land as one idea rather than three demos. The organising question for the whole session: <em>is this reaction happening because it wants to, or because somebody is paying for it?</em></p>
+<hr>
+<h2>The reveal — protect it, then get out of it</h2>
+<p>The overnight cells are the strongest visual of the week. Two things make or break it:</p>
+<p><strong>The control.</strong> A rusty nail sitting in alkaline solution overnight changes appearance all by itself. Without the unpowered control in the same solution, you have shown the students a nail that looks different from a photo, and a sharp student will say so. With the control, you have an experiment.</p>
+<p><strong>Disconnecting first.</strong> Every time, before any hand goes near the jar. Make it visible and make it ritual — a TA disconnects, then the nail comes out.</p>
+<p>Expect this to want to run long. Cap it at fifteen minutes. Part B is where the chemistry of the day actually lives.</p>
+<h3>What "cleaning" means, honestly</h3>
+<p>Be straightforward, because the students will push:</p>
+<ul>
+<li>Some iron oxide at the surface is genuinely electrochemically reduced.</li>
+<li>A great deal of the visible effect is <strong>mechanical</strong>: hydrogen evolving at the surface undermines and lifts loosely adherent oxide, which falls into the bath as the sludge everyone can see.</li>
+<li>Metal already lost to rust is gone. Derusting recovers the surface, not the missing steel.</li>
+<li>The nail comes out grey-black and needs brushing and drying. It is also now bare, active steel with no oxide layer at all, so it will flash-rust within hours if left wet. That is a genuinely satisfying detail to end on — you cleaned it so thoroughly that it is now more vulnerable than when you started.</li>
+</ul>
+<hr>
+<h2>Corrosion chemistry you should own</h2>
+<h3>Rust, properly</h3>
+<pre><code>Fe → Fe²⁺ + 2e⁻                       anodic dissolution
+O₂ + 2H₂O + 4e⁻ → 4OH⁻                cathodic oxygen reduction, neutral water
+</code></pre>
+<p>Fe²⁺ oxidizes further and precipitates as hydrated oxides and oxyhydroxides — the FeOOH / Fe₂O₃·nH₂O family. The exact mineralogy is genuinely complicated and depends on chloride, pH and oxygen; do not go there with this age group. What they need is: <strong>rust is oxidized iron, not a deposit that landed on iron.</strong></p>
+<p>Note the cathodic step needs <strong>both</strong> water and oxygen. This explains: oiled tools survive, fully submerged deoxygenated iron survives, and the waterline of a jar is the worst place of all because it has generous access to both.</p>
+<h3>Why a lone nail rusts (jar A)</h3>
+<p>Local cells on a single piece of metal, arising from impurities and grain boundaries, cold-worked or stressed regions (a bent nail rusts at the bend), and above all <strong>differential aeration</strong> — a region with poorer oxygen access becomes anodic relative to one with better access. This is why rust starts under washers, inside crevices, and beneath a lifting paint edge, which are exactly the places that look most protected.</p>
+<p>Differential aeration is counter-intuitive and worth thirty seconds: the sheltered spot corrodes <em>because</em> it is sheltered.</p>
+<h3>The reference table</h3>
+<p>Standard reduction potentials, acidic, versus SHE:</p>
+<table>
+<thead>
+<tr>
+<th>Half-reaction</th>
+<th>E° (V)</th>
+<th>Note for teaching</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mg²⁺ + 2e⁻ → Mg</td>
+<td>−2.37</td>
+<td>Water heater rods</td>
+</tr>
+<tr>
+<td>Al³⁺ + 3e⁻ → Al</td>
+<td>−1.66</td>
+<td>Thermodynamically wild, kinetically tame</td>
+</tr>
+<tr>
+<td>Zn²⁺ + 2e⁻ → Zn</td>
+<td>−0.76</td>
+<td>Galvanizing, hull anodes</td>
+</tr>
+<tr>
+<td>Fe²⁺ + 2e⁻ → Fe</td>
+<td>−0.44</td>
+<td>The metal at risk</td>
+</tr>
+<tr>
+<td>2H⁺ + 2e⁻ → H₂</td>
+<td>0.00</td>
+<td>Reference</td>
+</tr>
+<tr>
+<td>Cu²⁺ + 2e⁻ → Cu</td>
+<td>+0.34</td>
+<td>Noble relative to iron</td>
+</tr>
+<tr>
+<td>Ag⁺ + e⁻ → Ag</td>
+<td>+0.80</td>
+<td>Session 3</td>
+</tr>
+<tr>
+<td>O₂ + 4H⁺ + 4e⁻ → 2H₂O</td>
+<td>+1.23</td>
+<td><strong>The real cathodic reaction in wet corrosion</strong></td>
+</tr>
+</tbody>
+</table>
+<p>That last row is the one instructors most often skip and most need. In an open jar, the copper electrode is not reducing Cu²⁺ — there is barely any Cu²⁺ present. It is a surface on which <strong>dissolved oxygen</strong> is reduced. The Cu²⁺/Cu line still predicts the right <em>direction</em> for the couple, which is why we use it, but it is not the reaction taking place, and it is a large part of why measured voltages disagree with predictions.</p>
+<hr>
+<h2>Part B coaching — the predict-then-measure gap</h2>
+<p><strong>Collect the predictions before you hand out a single multimeter.</strong> The pedagogical value is entirely in the commitment.</p>
+<p>Expected behaviour:</p>
+<table>
+<thead>
+<tr>
+<th>Pair</th>
+<th>Predicted</th>
+<th>Typically measured</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zn–Cu</td>
+<td>+1.10 V</td>
+<td>0.9–1.1 V</td>
+<td>The well-behaved one</td>
+</tr>
+<tr>
+<td>Fe–Cu</td>
+<td>+0.78 V</td>
+<td>0.4–0.7 V</td>
+<td>Reasonable</td>
+</tr>
+<tr>
+<td>Zn–Fe</td>
+<td>+0.32 V</td>
+<td>0.2–0.4 V</td>
+<td>Small but correctly signed</td>
+</tr>
+<tr>
+<td>Mg–Cu</td>
+<td>+2.71 V</td>
+<td>1.4–1.7 V</td>
+<td>Large shortfall; Mg also reacts directly with water</td>
+</tr>
+<tr>
+<td><strong>Al–Cu</strong></td>
+<td><strong>+2.00 V</strong></td>
+<td><strong>0.3–0.9 V, erratic</strong></td>
+<td><strong>The teaching moment</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Three reasons for the shortfall, in order of size:</p>
+<ol>
+<li><strong>Wrong half-reaction at the cathode.</strong> Oxygen reduction, not metal deposition. What students measure is a <strong>mixed potential</strong> — the compromise where the anodic and cathodic rates match — not a thermodynamic cell potential.</li>
+<li><strong>Not standard conditions.</strong> No 1 M metal ions anywhere; Nernst shifts everything.</li>
+<li><strong>Surface films.</strong> Passive oxides, corrosion product build-up, and area ratios.</li>
+</ol>
+<p>Do not grade on closeness to E°. Grade on whether they got the <strong>direction</strong> right — which metal corrodes — and whether they can name a reason for the gap.</p>
+<h3>Aluminium is the lesson, not the outlier</h3>
+<p>Al is predicted second only to Mg and will usually read below iron. It carries a passive Al₂O₃ film a few nanometres thick that is adherent, insulating and self-repairing. This is why we build aircraft and window frames from a metal that is thermodynamically eager to burn.</p>
+<p>Push the class to the general principle: <strong>the table tells you what wants to happen, never how fast.</strong> Everything students will meet later in kinetics, catalysis, and materials engineering lives in that gap. It is also the same distinction they met yesterday as overpotential — the same idea, wearing different clothes.</p>
+<p>If someone sands the aluminium hard and immediately immerses it, they may briefly see a much larger voltage that then decays as the film reforms. That is worth stopping the room for.</p>
+<h3>The short-circuit current — do not skip it</h3>
+<p>Open-circuit voltage says whether corrosion is favoured. Current says how fast. This is the step that turns Day 5 from qualitative into a real measurement, and it reuses Faraday's law for the third time in three days.</p>
+<pre><code>mass rate of Zn loss = I × 65.4 / (2F)          1 mA ≈ 11 g of zinc per year
+</code></pre>
+<p>The reading decays over the first half-minute as the electrodes polarize. That decay is itself informative — corrosion current depends on how easily the cathodic reaction can be supplied with oxygen, which is why stirring or aerating speeds it up. Take a value at ~30 s and note that it is not stable.</p>
+<p>Sizing a ship's anode is exactly this calculation performed on a hull. Say so.</p>
+<hr>
+<h2>Corrosion jars — narrative and failure modes</h2>
+<table>
+<thead>
+<tr>
+<th>Jar</th>
+<th>Setup</th>
+<th>What they should see</th>
+<th>Story</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Fe alone</td>
+<td>Moderate, even rust</td>
+<td>Local cells on one metal</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Fe + Cu in firm contact</td>
+<td><strong>Worse</strong> rust on the iron</td>
+<td>Galvanic couple: Fe anode, Cu cathode</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Fe + Zn in firm contact</td>
+<td>Iron clean; zinc dull and powdery</td>
+<td>Sacrificial protection</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Failure mode, and it is the common one:</strong> the contact slips. No electron path, no couple, no difference between B and A. Wire the metals together tightly and check them on the day you set them up and again mid-week. A jar B that looks like jar A is not a subtle result, it is a disconnected circuit.</p>
+<p>Second failure mode: jars filled to the brim. Fill them <strong>half full</strong> so the metals cross the waterline, where oxygen supply is best and the effect is most visible.</p>
+<p>Have a photograph of a properly developed set of jars available as a backup. If this year's jars underperform, showing what they should look like and explaining why yours did not is a perfectly good lesson — and considerably better than pretending.</p>
+<h3>Chloride's role</h3>
+<p>Saltwater is the right choice here: it supplies ions, and chloride actively breaks down passive films, which is why marine environments are so aggressive and why road salt destroys cars. It is also exactly why chloride is banned from the derusting bath and from Session 4. Same property, opposite desirability. Making that explicit stops "no salt" sounding like an arbitrary safety rule.</p>
+<hr>
+<h2>Electrolytic derusting — the polarity point</h2>
+<table>
+<thead>
+<tr>
+<th>Piece</th>
+<th>Terminal</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rusty object</td>
+<td><strong>−</strong> cathode</td>
+<td>Reduced, cleaned</td>
+</tr>
+<tr>
+<td>Sacrificial steel or graphite</td>
+<td><strong>+</strong> anode</td>
+<td>Oxidized, consumed, sludges</td>
+</tr>
+<tr>
+<td>Electrolyte</td>
+<td>Washing soda (or baking soda)</td>
+<td>Alkaline, <strong>no chloride</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Reversing the clips dissolves the workpiece. This is the cheapest, sharpest demonstration of the week's central idea and it costs nothing to state: same jar, same battery, same solution, opposite outcome, decided entirely by which wire went where.</p>
+<p>Graphite anodes shed carbon and blacken the bath. Steel anodes produce more sludge but are cheaper and more robust. Stainless steel is sometimes suggested online and should be avoided — it can release chromium compounds into the bath.</p>
+<h3>Overnight practicalities</h3>
+<ul>
+<li><strong>Not a 9 V alkaline.</strong> ~500 mAh against a cell drawing a few hundred mA is roughly two hours. Use a mains supply or a 5 V USB brick. This is the most common reason a Session 5 reveal disappoints.</li>
+<li><strong>Hydrogen all night.</strong> Jars open, room ventilated, no ignition sources. A capstone question (§5 B2) has students calculate that an overnight cell can generate a couple of litres of H₂ — worth doing, because it converts the rule into arithmetic.</li>
+<li>Secure the wiring so nothing can tip or short.</li>
+</ul>
+<hr>
+<h2>Misconceptions</h2>
+<table>
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Rust is a coating that lands on iron."</td>
+<td>Rust <strong>is</strong> the iron, oxidized. Nothing arrived; electrons left.</td>
+</tr>
+<tr>
+<td>"Copper attacks iron chemically on contact."</td>
+<td>Copper does nothing. It provides a cathode surface, and the iron becomes the anode of a real cell.</td>
+</tr>
+<tr>
+<td>"Zinc protects steel by sealing it."</td>
+<td>It does seal, but it also <strong>sacrifices</strong>. That is why a scratch in galvanizing does not rust and a scratch in paint does.</td>
+</tr>
+<tr>
+<td>"Any coating protects. Plating is plating."</td>
+<td>A noble coating (silver, chrome) must be perfect — a breach makes a small anode under a large cathode and pits fast. A sacrificial coating protects through the breach.</td>
+</tr>
+<tr>
+<td>"The measured voltage should match the table."</td>
+<td>It should not. Non-standard conditions, oxygen reduction at the cathode, and surface films. The direction is what the table gets right.</td>
+</tr>
+<tr>
+<td>"Aluminium is unreactive."</td>
+<td>It is one of the most reactive metals in use. Its oxide film is what is unreactive.</td>
+</tr>
+<tr>
+<td>"Derusting turns rust back into steel."</td>
+<td>Some oxide is reduced; much is mechanically lifted by hydrogen. Lost metal is lost.</td>
+</tr>
+<tr>
+<td>"Salt is the best electrolyte."</td>
+<td>Best for corrosion demos, forbidden for anything driven — chlorine and pitting.</td>
+</tr>
+<tr>
+<td>"Stainless steel can't corrode."</td>
+<td>Its passive Cr₂O₃ film can be broken by chloride, and it pits in crevices.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Board plan</h2>
+<ol>
+<li>Treated nail vs control, held up. Say nothing for a beat.</li>
+<li><code>Fe → Fe²⁺ + 2e⁻</code> and <code>O₂ + 2H₂O + 4e⁻ → 4OH⁻</code>. Write "rust IS the iron."</li>
+<li>Activity series, left to right, large. Leave it up all session.</li>
+<li>Jars A / B / C sketched, with the anode labelled in each.</li>
+<li>Two-column table: rusting (spontaneous, Fe = anode) vs derusting (driven, Fe = cathode).</li>
+<li><code>1 mA ≈ 11 g Zn per year</code>, circled.</li>
+<li>The six experiments in a row, one arrow under all of them, for the closing.</li>
+</ol>
+<hr>
+<h2>Optional enrichment</h2>
+<ul>
+<li><strong>Crevice corrosion and differential aeration</strong> — why bolted joints and washers fail first.</li>
+<li><strong>Stainless steel passivation</strong> — Cr₂O₃, and why "stainless" fails in seawater and in crevices.</li>
+<li><strong>Impressed-current cathodic protection</strong> — pipelines and jetties; the industrial version of the derusting cell.</li>
+<li><strong>Pourbaix diagrams for iron</strong> — for a TA or a strong student who wants to know why pH matters.</li>
+<li><strong>Ferroxyl indicator</strong> (potassium hexacyanoferrate(III) plus phenolphthalein), if you can get it for next year. It stains anodic sites blue and cathodic sites pink within <strong>minutes</strong>, on a bent nail or a Fe–Cu couple, and would let this session show corrosion happening live instead of relying on jars started days earlier. It is a standard school reagent; the rules are never to acidify it and never to heat it. This is the single best upgrade available to Session 5.</li>
+</ul>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

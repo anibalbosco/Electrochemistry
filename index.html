@@ -17,8 +17,11 @@
   <div class="nav-section"><a class="nav-link active" href="index.html">Home</a></div>
 <div class="nav-section">
   <div class="nav-section-title">Shared</div>
+  <a class="nav-link sub" href="shared/multi-day-setup.html">Multi-Day Setup</a>
   <a class="nav-link sub" href="shared/overall-materials-list.html">Materials List</a>
   <a class="nav-link sub" href="shared/safety-notes.html">Safety Notes</a>
+  <a class="nav-link sub" href="shared/next-year-notes.html">Next-Year Notes</a>
+  <a class="nav-link sub" href="shared/teaching-log.html">Teaching Log</a>
 </div>
 <div class="nav-section">
   <a class="nav-link session-title" href="sessions/01-fruit-battery/index.html">Session 1: Fruit Battery</a>
@@ -57,13 +60,13 @@
   <a class="nav-link sub" href="sessions/04-water-electrolysis/preparation.html">Preparation</a>
 </div>
 <div class="nav-section">
-  <a class="nav-link session-title" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Session 5: Galvanic Corrosion + Rust Removal</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">Overview</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/lecture.html">Lecture</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/experiment.html">Experiment</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/instructor.html">Instructor Notes</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/materials.html">Materials</a>
-  <a class="nav-link sub" href="sessions/05-galvanic-corrosion-fuel-cell/preparation.html">Preparation</a>
+  <a class="nav-link session-title" href="sessions/05-corrosion-and-rust-removal/index.html">Session 5: Corrosion + Rust Removal</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/index.html">Overview</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/lecture.html">Lecture</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/experiment.html">Experiment</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/instructor.html">Instructor Notes</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/materials.html">Materials</a>
+  <a class="nav-link sub" href="sessions/05-corrosion-and-rust-removal/preparation.html">Preparation</a>
 </div>
 </nav>
 <div class="sidebar-footer">
@@ -79,27 +82,47 @@
       <article class="main-article">
 <p>Five 90-minute sessions for science-oriented students, ages 15–16.</p>
 <h2>Browse the workshop (HTML)</h2>
-<p>Open the <strong><a href="index.html">workshop home</a></strong> in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep notes. Markdown sources (<code>.md</code>) are kept alongside the HTML.</p>
+<p>Open the <strong><a href="index.html">workshop home</a></strong> in your browser for a navigable site with sidebar links to every session, lecture, experiment, materials list, and prep note. Markdown sources (<code>.md</code>) are kept alongside the HTML.</p>
 <p>To rebuild HTML after editing markdown:</p>
 <pre><code class="language-bash">python scripts/build_site.py
 </code></pre>
 <p>Instructor/TA printable PDFs (experiment packet + lecture/instructor notes for each day) live in <strong><a href="pdfs/">pdfs/</a></strong>. Regenerate after content changes:</p>
 <pre><code class="language-bash">python scripts/build_pdfs.py
 </code></pre>
-<h2>GitHub</h2>
-<p>This project is a standalone git repository. To publish or clone:</p>
-<pre><code class="language-bash"># One-time: log in to GitHub (opens browser)
-gh auth login
-
-# Create the remote repo and push (from project root)
-gh repo create Electrochemistry --public --source=. --remote=origin --push --description &quot;One-week electrochemistry lab workshop for ages 15-16&quot;
-</code></pre>
-<p>If the repo already exists on GitHub:</p>
-<pre><code class="language-bash">git remote add origin https://github.com/YOUR_USERNAME/Electrochemistry.git
-git push -u origin main
-</code></pre>
+<h2>Read these first</h2>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="shared/multi-day-setup.html">Multi-day setup calendar</a></strong></td>
+<td>Two demos need days to develop and are both revealed on Day 5. Read this <strong>before Session 1</strong>, not before Session 5</td>
+</tr>
+<tr>
+<td><a href="shared/safety-notes.html">Safety notes</a></td>
+<td>Applies to every session</td>
+</tr>
+<tr>
+<td><a href="shared/overall-materials-list.html">Overall materials list</a></td>
+<td>Includes the buy-ahead list of things that stop a session dead</td>
+</tr>
+<tr>
+<td><a href="shared/next-year-notes.html">Next-year notes</a></td>
+<td>Changes to make before running the course again</td>
+</tr>
+<tr>
+<td><a href="shared/teaching-log.html">Teaching log</a></td>
+<td>Fill in after each session, while it is fresh</td>
+</tr>
+</tbody>
+</table>
 <h2>Course theme</h2>
-<p>Electrochemistry is chemistry controlled by electrons. Students will see that chemical reactions can produce electricity, use electricity to drive reactions, move atoms around, split molecules, store energy, and explain corrosion.</p>
+<p>Electrochemistry is chemistry controlled by electrons. Students see that chemical reactions can produce electricity, that electricity can drive reactions, that atoms can be counted with a stopwatch and an ammeter, that molecules can be pulled apart, and that the same chemistry quietly destroys iron whether anybody wants it to or not.</p>
+<p>The through-line for the week is one question, asked five times: <strong>is this reaction happening because it wants to, or because somebody is paying for it?</strong></p>
 <h2>Format</h2>
 <table>
 <thead>
@@ -123,7 +146,7 @@ git push -u origin main
 </tr>
 <tr>
 <td>Goal</td>
-<td>Maximize visible, entertaining experiments while building electrochemical concepts</td>
+<td>Maximize visible, memorable experiments while building real quantitative electrochemistry</td>
 </tr>
 </tbody>
 </table>
@@ -141,17 +164,17 @@ git push -u origin main
   <a class="session-card" href="sessions/03-silver-plating-faraday/index.html">
     <div class="num">Session 3</div>
     <h3>Silver Plating + Faraday's Law</h3>
-    <p>Estimate how many atoms were deposited</p>
+    <p>Count the atoms you deposited</p>
   </a>
   <a class="session-card" href="sessions/04-water-electrolysis/index.html">
     <div class="num">Session 4</div>
     <h3>Water Electrolysis</h3>
-    <p>Split water and see a 2:1 ratio</p>
+    <p>Predict a gas volume, then go and measure it</p>
   </a>
-  <a class="session-card" href="sessions/05-galvanic-corrosion-fuel-cell/index.html">
+  <a class="session-card" href="sessions/05-corrosion-and-rust-removal/index.html">
     <div class="num">Session 5</div>
-    <h3>Galvanic Corrosion + Rust Removal</h3>
-    <p>Corrosion, sacrificial protection, and reversing rust</p>
+    <h3>Corrosion + Rust Removal</h3>
+    <p>Find the battery nobody wanted, then run it backwards</p>
   </a>
 </div>
 <h2>Weekly sequence</h2>
@@ -181,19 +204,19 @@ git push -u origin main
 <td>3</td>
 <td><a href="sessions/03-silver-plating-faraday/index.html">sessions/03-silver-plating-faraday</a></td>
 <td>Silver Plating + Faraday's Law</td>
-<td>Estimate how many atoms were deposited</td>
+<td>Count the atoms you deposited</td>
 </tr>
 <tr>
 <td>4</td>
 <td><a href="sessions/04-water-electrolysis/index.html">sessions/04-water-electrolysis</a></td>
 <td>Water Electrolysis + Gas Collection</td>
-<td>Split water and see a 2:1 stoichiometric ratio</td>
+<td>Predict a gas volume, then go and measure it</td>
 </tr>
 <tr>
 <td>5</td>
-<td><a href="sessions/05-galvanic-corrosion-fuel-cell/index.html">sessions/05-galvanic-corrosion-fuel-cell</a></td>
-<td>Galvanic Corrosion + Electrolytic Rust Removal</td>
-<td>Connect corrosion, sacrificial protection, and reversing rust with electricity</td>
+<td><a href="sessions/05-corrosion-and-rust-removal/index.html">sessions/05-corrosion-and-rust-removal</a></td>
+<td>Corrosion + Electrolytic Rust Removal</td>
+<td>Find the battery nobody wanted, then run it backwards</td>
 </tr>
 </tbody>
 </table>
@@ -203,30 +226,87 @@ git push -u origin main
   <table>
     <thead><tr><th>Session</th><th>Experiment</th><th>Lecture &amp; notes</th></tr></thead>
     <tbody>
-<tr><td>Session 1: Fruit Battery</td><td><a href="pdfs/session-01-fruit-battery-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-01-fruit-battery-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 2: Copper Electroplating</td><td><a href="pdfs/session-02-copper-electroplating-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-02-copper-electroplating-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 3: Silver Plating + Faraday's Law</td><td><a href="pdfs/session-03-silver-plating-faraday-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-03-silver-plating-faraday-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 4: Water Electrolysis</td><td><a href="pdfs/session-04-water-electrolysis-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-04-water-electrolysis-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 5: Galvanic Corrosion + Rust Removal</td><td><a href="pdfs/session-05-galvanic-corrosion-fuel-cell-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-05-galvanic-corrosion-fuel-cell-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr>
+<tr><td>Session 1: Fruit Battery</td><td><a href="pdfs/session-01-fruit-battery-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-01-fruit-battery-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 2: Copper Electroplating</td><td><a href="pdfs/session-02-copper-electroplating-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-02-copper-electroplating-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 3: Silver Plating + Faraday's Law</td><td><a href="pdfs/session-03-silver-plating-faraday-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-03-silver-plating-faraday-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 4: Water Electrolysis</td><td><a href="pdfs/session-04-water-electrolysis-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-04-water-electrolysis-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr><tr><td>Session 5: Corrosion + Rust Removal</td><td><a href="pdfs/session-05-corrosion-and-rust-removal-experiment.pdf" download>Experiment PDF</a></td><td><a href="pdfs/session-05-corrosion-and-rust-removal-lecture-notes.pdf" download>Lecture &amp; notes PDF</a></td></tr>
     </tbody>
   </table>
   <p class="pdf-downloads-all"><a href="pdfs/">Browse all PDFs</a></p>
 </aside>
 
+<h2>The quantitative spine</h2>
+<p>Faraday's law appears on three consecutive days, pointed at three different things. This is deliberate — it is what turns a week of demonstrations into a course.</p>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Current means</th>
+<th>What students compute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>A plating rate</td>
+<td>Mass, thickness, and number of silver atoms deposited</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A gas production rate</td>
+<td>Predicted mL of H₂, then measured — and so, for the first time, a real current efficiency</td>
+</tr>
+<tr>
+<td>5</td>
+<td>A corrosion rate</td>
+<td>Grams of zinc lost per year, which is how sacrificial anodes are actually sized</td>
+</tr>
+</tbody>
+</table>
+<h2>Multi-day dependencies</h2>
+<table>
+<thead>
+<tr>
+<th>Demo</th>
+<th>Start</th>
+<th>Reveal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corrosion jars A / B / C</td>
+<td><strong>End of Session 1</strong></td>
+<td>Session 5</td>
+</tr>
+<tr>
+<td>Electrolytic rust removal</td>
+<td><strong>End of Session 4</strong></td>
+<td>Session 5, opening</td>
+</tr>
+</tbody>
+</table>
+<p>Details in <a href="shared/multi-day-setup.html">shared/multi-day-setup.md</a>. Neither can be rescued on the day.</p>
 <h2>Folder structure (each session)</h2>
-<p>Each session folder contains:</p>
 <ul>
 <li><strong>README.md</strong> — Overview, learning outcomes, and timed session plan</li>
-<li><strong>lecture.md</strong> — Concept block: hooks, talking points, key questions, and visual aids</li>
-<li><strong>experiment.md</strong> — Hands-on procedure, variables, observations, and data sheets</li>
-<li><strong>instructor.md</strong> — Expanded instructor notes (atomic structure, series, misconceptions, coaching)</li>
-<li><strong>materials.md</strong> — Per-session materials checklist</li>
-<li><strong>preparation.md</strong> — Pre-class setup (overnight steps, solution prep, etc.)</li>
+<li><strong>lecture.md</strong> — Teaching script: prior-day review, explanations, quiz questions, pre-lab activity</li>
+<li><strong>experiment.md</strong> — Bench procedure, data sheets, troubleshooting</li>
+<li><strong>instructor.md</strong> — Deep-dive notes: chemistry, coaching, misconceptions, board plan</li>
+<li><strong>materials.md</strong> — Per-session checklist, plus a pilot-notes table to fill in</li>
+<li><strong>preparation.md</strong> — Pre-class setup, including anything that must happen days ahead</li>
 </ul>
 <h2>Reference</h2>
 <p>Full syllabus: <a href="electrochemistry_lab_syllabus.docx">electrochemistry_lab_syllabus.docx</a></p>
 <p>Experiment schematics (SVG): <a href="assets/figures/">assets/figures/</a></p>
-<p>Shared resources (add as needed):</p>
-<ul>
-<li><code>shared/</code> — Safety notes, overall materials list, student handouts</li>
-<li><code>shared/overall-materials-list.md</code> — Master equipment and chemicals list</li>
-</ul>
+<h2>GitHub</h2>
+<p>This project is a standalone git repository. To publish or clone:</p>
+<pre><code class="language-bash"># One-time: log in to GitHub (opens browser)
+gh auth login
+
+# Create the remote repo and push (from project root)
+gh repo create Electrochemistry --public --source=. --remote=origin --push --description &quot;One-week electrochemistry lab workshop for ages 15-16&quot;
+</code></pre>
+<p>If the repo already exists on GitHub:</p>
+<pre><code class="language-bash">git remote add origin https://github.com/YOUR_USERNAME/Electrochemistry.git
+git push -u origin main
+</code></pre>
       </article>
     </main>
   </div>
